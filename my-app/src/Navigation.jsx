@@ -12,7 +12,7 @@ const Navigation = ({ history }) => (
     <Navbar className=" custom-nav"  >
       <Navbar.Brand href="#home">
        <Link to="/">
-          <img src={logo} alt="IYC Logo" height="60px" />
+          <img src={logo} alt="LAESA_LOGO" height="60px" />
        </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
