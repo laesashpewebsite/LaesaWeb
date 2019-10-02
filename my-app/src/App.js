@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import './App.css';
 
-
 import Navigation from "./Navigation";
 import Main from "./Main";
 import Event from "./Event";

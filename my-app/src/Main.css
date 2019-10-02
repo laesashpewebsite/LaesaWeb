@@ -2,10 +2,13 @@
 }
 
 .Main-logo {
-  height: 20vmax;
-  width: 30vmax;
+  height: 15vmax;
+  width: 20vmax;
   animation: Main-logo-spin infinite 20s linear;
 
+}
+.Main-title{
+  margin-top: 80px;
 }
 
 .Main-header {

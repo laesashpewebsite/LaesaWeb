@@ -7,17 +7,9 @@ function main() {
     <div className="Main">
       <header className="Main-header">
         <img src={logo} className="Main-logo" alt="logo" />
-        <p>
-          Bienvenidos
+        <p className='Main-title'>
+          LAESA-SHPE WEBSITE COMING SOON!
         </p>
-        <a
-          className="Main-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          this link is to Learn React
-        </a>
       </header>
     </div>
   );
