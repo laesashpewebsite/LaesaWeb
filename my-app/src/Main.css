@@ -1,14 +1,15 @@
 .Main {
+  background-color: #D9C48A;
+}
+
+.Main-title{
+  margin-top: 80px;
 }
 
 .Main-logo {
   height: 15vmax;
   width: 20vmax;
   animation: Main-logo-spin infinite 20s linear;
-}
-
-.Main-title{
-  margin-top: 80px;
 }
 
 .Main-header {
@@ -23,9 +24,15 @@
 }
 
 .PCED-GROUP-PIC {
-  background-size: 50px 25px;
-  border: 10px solid #021a40;
-  border-radius: 8px;
+  /*background-size: 150px 75px;*/
+  object-fit: 100%;
+  border: 4px solid #D9C48A;
+  border-radius: 30px;
+  max-width: 100%;
+}
+
+.hr1 {
+  border: 1px solid black;
 }
 
 @keyframes Main-logo-spin {
