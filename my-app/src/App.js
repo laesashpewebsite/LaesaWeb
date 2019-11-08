@@ -6,7 +6,8 @@ import './App.css';
 
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Event from "./Event";
+import Events from "./Event";
+import Eboard from "./Eboard";
 
 class App extends Component {
   render() {
@@ -16,6 +17,9 @@ class App extends Component {
           <Navigation />
           <Route exact path="/" component={Main} />
           <Route path="/Main" component={Main} />
+          <Route path="/Events" component={Events} />
+          <Route path="/Eboard" component={Eboard} />
+
           
         </div>
       </Router>
