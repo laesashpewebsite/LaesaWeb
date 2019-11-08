@@ -5,14 +5,13 @@
   height: 15vmax;
   width: 20vmax;
   animation: Main-logo-spin infinite 20s linear;
-
 }
+
 .Main-title{
   margin-top: 80px;
 }
 
 .Main-header {
-
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,6 +22,12 @@
   color: white;
 }
 
+.PCED-GROUP-PIC {
+  background-size: 50px 25px;
+  border: 10px solid #021a40;
+  border-radius: 8px;
+}
+
 @keyframes Main-logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,3 +36,4 @@
     transform: rotate(360deg);
   }
 }
+

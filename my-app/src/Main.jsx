@@ -7,10 +7,8 @@ function main() {
   return (
   <div className="Main">
 
-  <div classname="PCED-GROUP-PIC">
-    <body>
-      <img src={PCED_group} alt="PCED-GROUP pictures" />
-    </body>
+  <div className="PCED-GROUP-PIC">
+      <img src={PCED_group} className="PCED-GROUP-PIC;" alt="PCED-GROUP pictures" />
   </div>
 
   </div> 
