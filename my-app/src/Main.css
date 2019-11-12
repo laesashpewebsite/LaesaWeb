@@ -1,5 +1,4 @@
 .Main {
-  background-color: #D9C48A;
 }
 
 .Main-title{
@@ -26,13 +25,30 @@
 .PCED-GROUP-PIC {
   /*background-size: 150px 75px;*/
   object-fit: 100%;
-  border: 4px solid #D9C48A;
+  border: 4px solid #D3D3D3;
   border-radius: 30px;
   max-width: 100%;
 }
 
 .hr1 {
   border: 1px solid black;
+}
+
+.header {
+  background-color: #FA8072;
+  border-radius: 11000px;
+  margin: 10px;
+  text-align: center;
+  font-family: Comic Sans Ms cursive;
+}
+
+.paragraph {
+  background-color: #D3D3D3;
+  border-radius: 11000px;
+  margin: 10px;
+  font-family: Comic Sans Ms;
+  font-style: cursive;
+  text-align: center;
 }
 
 @keyframes Main-logo-spin {
