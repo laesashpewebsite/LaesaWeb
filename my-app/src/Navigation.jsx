@@ -23,9 +23,15 @@ const Navigation = ({ history }) => (
           </Nav.Link>
           
           <NavDropdown title="Events" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">PCED</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">SHPE JR.</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">FLL</NavDropdown.Item>         
+            <NavDropdown.Item eventKey={1} onClick={() => history.push("/FLL")}>
+              PCED
+            </NavDropdown.Item>
+            <NavDropdown.Item eventKey={1} onClick={() => history.push("/PCED")}>
+              SHPE JR.
+            </NavDropdown.Item>
+            <NavDropdown.Item eventKey={1} onClick={() => history.push("/shpeJR")}>
+              FLL
+            </NavDropdown.Item>         
           </NavDropdown>
           <Nav.Link eventKey={1} onClick={() => history.push("/Eboard")}>
             Events 
