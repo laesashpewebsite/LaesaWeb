@@ -52,7 +52,6 @@ function PCED() {
 					<li>Raise female ratio by 10%.</li>
 					<li>Introduce the importance of sustainability.</li>
 					<li>Provide a diversity of minority ethnicities for future STEM jobs. </li>
-
 				</ul>
 			</div>
 			</div>
