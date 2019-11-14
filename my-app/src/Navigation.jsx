@@ -21,20 +21,21 @@ const Navigation = ({ history }) => (
           <Nav.Link eventKey={1} onClick={() => history.push("Main/")}>
             Main   
           </Nav.Link>
-          
-          <NavDropdown title="Events" id="collasible-nav-dropdown">
-            <NavDropdown.Item eventKey={1} onClick={() => history.push("/FLL")}>
+          <NavDropdown title="Events" className="eventsDropdown" id="collasible-nav-dropdown">
+          <div className="events-css">
+            <NavDropdown.Item className="eventsDropdownItem" eventKey={1} onClick={() => history.push("/PCED")}>
               PCED
             </NavDropdown.Item>
-            <NavDropdown.Item eventKey={1} onClick={() => history.push("/PCED")}>
+            <NavDropdown.Item className="eventsDropdownItem"eventKey={1} onClick={() => history.push("/SHPE.JR")}>
               SHPE JR.
             </NavDropdown.Item>
-            <NavDropdown.Item eventKey={1} onClick={() => history.push("/shpeJR")}>
+            <NavDropdown.Item className="eventsDropdownItem" eventKey={1} onClick={() => history.push("/FLL")}>
               FLL
-            </NavDropdown.Item>         
+            </NavDropdown.Item>  
+          </div>       
           </NavDropdown>
           <Nav.Link eventKey={1} onClick={() => history.push("/Eboard")}>
-            Events 
+            Eboard 
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
