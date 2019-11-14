@@ -31,6 +31,16 @@ function main() {
 
   </div> 
 
+/*
+    <div className="Main">
+      <header className="Main-header">
+        <img src={logo} className="Main-logo" alt="logo" />
+        <p className='Main-title'>
+          LAESA-SHPE WEBSITE COMING SOON! 
+        </p>
+      </header>
+    </div>
+>>>>>>> navigation*/
   );
 }
 export default main;

@@ -1,11 +1,11 @@
 import React from 'react';
 import construct from './pictures/under-construction.png';
-import './Events.css'
+import './Eboard.css'
 
-function Events() {
+function shpeJR() {
   return (
-    <div className="Events-main">
-      <header className="Events-header">
+    <div className="Eboard-main">
+   		<header className="Eboard-header">
         <img src={construct} className="constructPic" alt="logo" />
         <p className='Main-title'>
         </p>
@@ -13,4 +13,4 @@ function Events() {
     </div>
   );
 }
-export default Events;
+export default shpeJR;

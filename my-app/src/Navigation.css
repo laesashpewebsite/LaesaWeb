@@ -5,3 +5,14 @@ background-color: #6A8FDA;
 .justify-content-end{
 	text-align: right;
 }
+.eventsDropdown{
+	border-radius: 20px;
+}
+
+.eventsDropdownItem{
+
+}
+.events-css{
+	position: relative;
+	align-items: center;
+}

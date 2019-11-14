@@ -8,7 +8,12 @@
 .Main-logo {
   height: 15vmax;
   width: 20vmax;
-  animation: Main-logo-spin infinite 20s linear;
+
+  animation: Main-logo-spin infinite 5s linear; 
+
+}
+.Main-title{
+  margin-top: 80px;
 }
 
 .Main-header {
@@ -53,10 +58,10 @@
 
 @keyframes Main-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 

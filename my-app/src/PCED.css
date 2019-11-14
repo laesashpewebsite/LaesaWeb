@@ -1,0 +1,39 @@
+.PCED-header h2{
+	
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 900;
+}
+.card-color{
+
+	color: #C0C0C0;
+	border-radius: 30px;
+	background-color: #244C96;
+}
+.card-color p{
+	padding: 20px;
+	font-weight: 600;
+}
+
+.PCED-info{
+	width: 85%;
+	margin: auto;
+}
+.PCED-info h2{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.PCED-info h3{
+	text-align: center;
+	font-weight: 700;
+}
+.PCED-Director-Photo{
+	float: left;
+	margin: 10px;
+
+	width: 15%;
+	height: 90%;
+}
+.card-color ul{
+	align-items: center;
+}

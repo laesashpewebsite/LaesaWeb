@@ -6,7 +6,13 @@ import './App.css';
 
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Event from "./Event";
+import Events from "./Event";
+import Eboard from "./Eboard";
+import FLL from "./FLL";
+import PCED from "./PCED";
+import SHPE_JR from "./shpeJR";
+
+
 
 class App extends Component {
   render() {
@@ -16,6 +22,12 @@ class App extends Component {
           <Navigation />
           <Route exact path="/" component={Main} />
           <Route path="/Main" component={Main} />
+          <Route path="/Events" component={Events} />
+          <Route path="/Eboard" component={Eboard} />
+          <Route path="/FLL" component={FLL} />
+          <Route path="/PCED" component={PCED} />
+          <Route path="/SHPE.JR" component={SHPE_JR} />
+
           
         </div>
       </Router>
