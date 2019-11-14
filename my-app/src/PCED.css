@@ -4,13 +4,13 @@
 	text-decoration: underline;
 	font-weight: 900;
 }
-.About{
+.card-color{
 
 	color: #C0C0C0;
 	border-radius: 30px;
 	background-color: #244C96;
 }
-.About p{
+.card-color p{
 	padding: 20px;
 	font-weight: 600;
 }
@@ -33,4 +33,7 @@
 
 	width: 15%;
 	height: 90%;
+}
+.card-color ul{
+	align-items: center;
 }
