@@ -9,7 +9,7 @@ import './Navigation.css';
 
 const Navigation = ({ history }) => (
   <div className= "Navigation">
-    <Navbar className=" custom-nav">
+    <Navbar className=" custom-nav" variant = "dark">
       <Navbar.Brand href="#home">
        <Link to="/">
           <img src={logo} alt="LAESA_LOGO" height="60px" />

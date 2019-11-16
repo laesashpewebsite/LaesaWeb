@@ -1,5 +1,5 @@
 .custom-nav{
-background-color: #6A8FDA;
+background-color: #282c34;
 
 }
 .justify-content-end{
@@ -14,5 +14,6 @@ background-color: #6A8FDA;
 }
 .events-css{
 	position: relative;
-	align-items: center;
+	color: white;
+
 }

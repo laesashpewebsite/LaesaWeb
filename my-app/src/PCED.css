@@ -1,38 +1,61 @@
+.PCED-main{
+}
 .PCED-header h2{
-	
+	color: #D23F26;
+
 	text-align: center;
 	text-decoration: underline;
 	font-weight: 900;
 }
+.card-color2{
+	background-color: #72A9BE;
+	color: rgb(189,56,34);
+	font-weight: 600;
+	padding-left : 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+
+}
+.PCED-info p{
+	font-weight: 750;
+	text-indent: 30px;
+}
+
 .card-color{
 
-	color: #C0C0C0;
-	border-radius: 30px;
-	background-color: #244C96;
-}
-.card-color p{
-	padding: 20px;
+	color: #F26534;
+	background-color: rgb(0,31,91,100);
 	font-weight: 600;
+	padding-left : 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .PCED-info{
-	width: 85%;
-	margin: auto;
+	width: 100%;
 }
 .PCED-info h2{
-	margin-top: 40px;
-	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px; 
 }
 .PCED-info h3{
 	text-align: center;
 	font-weight: 700;
 }
-.PCED-Director-Photo{
-	float: left;
-	margin: 10px;
 
-	width: 15%;
-	height: 90%;
+.PCED-Director-Photo{
+	display: block;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+  	width: 40%;
+  	margin: auto;
+	height: 80%;
 }
+
 .card-color ul{
 }

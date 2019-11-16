@@ -8,7 +8,7 @@ function PCED() {
    		<header className="PCED-header">
    		<div className="PCED-info">
         	<h2>Pre-College Engineering Day</h2>
-        	<div className="card-color">
+        	<div className="card-color2">
         	<h3> About </h3>
         	<p>
         	LAESA–SHPE is the largest and most prominent undergraduate student organization 
@@ -21,7 +21,7 @@ function PCED() {
         	its original mission. With over 150 members, LAESA-SHPE has been able to gather motivated 
         	students from all engineering disciplines and a diverse pool of cultural backgrounds. This
         	dynamic group of students, alongside their highly supportive alumni members, has had many 
-        	achievements at The City College of New York and within the community 
+        	achievements at The City College of New York and within the community.
         	</p>
         	</div>
         	<div className="card-color">
@@ -31,7 +31,7 @@ function PCED() {
         		and developing team-building and leadership skills"
         		</p>
         	</div>
-        	<div className="card-color">
+        	<div className="card-color2">
         		<h3>About the Director</h3>
       			<img src={PCED_Director} className="PCED-Director-Photo" alt="PCED-Director"/>
 	       		<p>
