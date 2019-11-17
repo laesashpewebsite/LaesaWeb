@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
 import PCED_group from './pictures/PCED-GROUP.JPG';
+import column from './pictures/Column.png';
 
 function main() {
   return (
@@ -24,13 +25,27 @@ function main() {
  	  <p className="paragraph"> Our mission is to S.T.E.P into THE FUTURE. This can be accomplished by using four 
       principles. They are the principles of Support, Teamwork, Excellence, and Professionalism!
  	  </p>
-  </body> 
-  </div> 
+  </body>
 
-  /*Starting slide show about 5 pillars here!!*/
-
-  </div> 
-
+  <div className="row">
+    <div className ="column">
+     <img src={column} alt="column #1" style="width:100%" />
+    </div>
+    <div className="column">
+      <img src={column} alt="column #2" style="width:100%" />
+    </div>
+    <div className="column">
+      <img src={column} alt="column #3" style="width:100%" />
+    </div>
+    <div className="column">
+      <img src={column} alt="column #4" style="width:100%" />
+    </div>
+   <div className="column">
+     <img src={column} alt="column #5" style="width:100%" />
+    </div>
+  </div>
+   
+  </div>
   );
 }
 export default main;
