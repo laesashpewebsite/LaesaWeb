@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
-import PCED_group from './pictures/PCED-GROUP.JPG';
+import PCED_group from './pictures/PCED-GROUP1.JPG';
 import column from './pictures/Column.png';
 
 function main() {
@@ -26,41 +26,38 @@ function main() {
       principles. They are the principles of Support, Teamwork, Excellence, and Professionalism!
  	  </p>
   </body>
+  </div>
 
-
-/*
-    <div className="Main">
-      <header className="Main-header">
-        <img src={logo} className="Main-logo" alt="logo" />
-        <p className='Main-title'>
-          LAESA-SHPE WEBSITE COMING SOON! 
-        </p>
-      </header>
-    </div>
-
-
-*/
 
   <div className="row">
     <div className ="column">
-     <img src={column} alt="column #1" style="width:100%" />
+     <img src={column} alt="column #1"  />
     </div>
     <div className="column">
-      <img src={column} alt="column #2" style="width:100%" />
+      <img src={column} alt="column #2" />
     </div>
     <div className="column">
-      <img src={column} alt="column #3" style="width:100%" />
+      <img src={column} alt="column #3" />
     </div>
     <div className="column">
-      <img src={column} alt="column #4" style="width:100%" />
+      <img src={column} alt="column #4"  />
     </div>
    <div className="column">
-     <img src={column} alt="column #5" style="width:100%" />
+     <img src={column} alt="column #5" />
     </div>
   </div>
    
-  </div>
+ </div>
 
   );
 }
 export default main;
+
+//    <div className="Main">
+//      <header className="Main-header">
+//        <img src={logo} className="Main-logo" alt="logo" />
+//        <p className='Main-title'>
+//          LAESA-SHPE WEBSITE COMING SOON! 
+//        </p>
+//      </header>
+//    </div>
