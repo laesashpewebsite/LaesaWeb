@@ -7,9 +7,9 @@ function PCED() {
     <div className="PCED-main">
    		<header className="PCED-header">
    		<div className="PCED-info">
-        	<h2>Pre-College Engineering Day</h2>
+        	<h1> Pre-College Engineering Day </h1> {/*could probably use a banner instead for the event*/}
         	<div className="card-color2">
-        	<h3> About </h3>
+        	<h2> About </h2>
         	<p>
         	LAESA–SHPE is the largest and most prominent undergraduate student organization 
        		at The City College of New York. In 1983, a group of dedicated students, with the 
@@ -25,14 +25,14 @@ function PCED() {
         	</p>
         	</div>
         	<div className="card-color">
-        		<h3>Goal</h3>
+        		<h2>Goal</h2>
         		<p>"The goal of PCED is to expose the younger Latino community to  STEM related careers 
         		(Science, Technology, Engineering and Mathematics) while obtaining real-life project experience, 
         		and developing team-building and leadership skills"
         		</p>
         	</div>
         	<div className="card-color2">
-        		<h3>About the Director</h3>
+        		<h2>About the Director</h2>
       			<img src={PCED_Director} className="PCED-Director-Photo" alt="PCED-Director"/>
 	       		<p>
 				Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE since her freshman year 
@@ -46,13 +46,20 @@ function PCED() {
 				goals are listed below: 
 				</p>
 				<ul>
-					<li>Host event for 350+ students.</li>
-					<li>Provide leadership, team-building, and managing experience to both attendees and volunteers. </li>
-					<li>Establish a stronger relationship with alumni and corporations to be involved in future PCED events.</li>
-					<li>Raise female ratio by 10%.</li>
-					<li>Introduce the importance of sustainability.</li>
-					<li>Provide a diversity of minority ethnicities for future STEM jobs. </li>
+					<li className='events-list'>Host event for 350+ students.</li>
+					<li className='events-list'>Provide leadership, team-building, and managing experience to both attendees and volunteers. </li>
+					<li className='events-list'>Establish a stronger relationship with alumni and corporations to be involved in future PCED events.</li>
+					<li className='events-list'>Raise female ratio by 10%.</li>
+					<li className='events-list'>Introduce the importance of sustainability.</li>
+					<li className='events-list'>Provide a diversity of minority ethnicities for future STEM jobs. </li>
 				</ul>
+        <h4>Director Contact Info</h4>
+        <ul className="Contact">
+          <li className='events-list'>P: 917-392-4710 </li>
+          <li className='events-list'>Email: laesa.pced@gmail.com </li>
+          <li className='events-list'>Personal: arelisfienco@outlook.com </li>
+        </ul>
+
 			</div>
 			</div>
       </header>

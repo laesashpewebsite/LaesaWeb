@@ -1,11 +1,13 @@
-.PCED-main{
-}
-.PCED-header h2{
-	color: #D23F26;
 
+.PCED-header h1{
+	color: #D23F26;
 	text-align: center;
 	text-decoration: underline;
 	font-weight: 900;
+	padding: 20px;
+}
+.PCED-info p{ 
+	font-size: 18px;
 }
 .card-color2{
 	background-color: #72A9BE;
@@ -22,7 +24,6 @@
 	font-weight: 750;
 	text-indent: 30px;
 }
-
 .card-color{
 
 	color: #F26534;
@@ -39,11 +40,12 @@
 	width: 100%;
 }
 .PCED-info h2{
-	padding-top: 20px;
-	padding-bottom: 20px; 
-}
-.PCED-info h3{
+	padding: 5px;
 	text-align: center;
+	font-weight: 700;
+}
+
+.PCED-info h4{
 	font-weight: 700;
 }
 
@@ -57,5 +59,10 @@
 	height: 80%;
 }
 
-.card-color ul{
+.events-list{
+	font-weight: 750;
+	font-size: 18px;
+}
+.Contact {
+	list-style-type: none;
 }
