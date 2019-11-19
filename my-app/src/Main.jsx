@@ -30,22 +30,37 @@ function main() {
 
 
   <div className="row">
-    <div className ="column">
-     <img src={column} alt="column #1"  />
+    <div>
+     <img src={column} className="column" alt="column #1" />
+     <img src={column} className="column-pop" alt="column #1" />
     </div>
-    <div className="column">
-      <img src={column} alt="column #2" />
+    <div>
+      <img src={column} className="column" alt="column #2" />
+      <img src={column} className="column-pop" alt="column #2" />
     </div>
-    <div className="column">
-      <img src={column} alt="column #3" />
+    <div >
+      <img src={column} className="column" alt="column #3" />
+      <img src={column} className="column-pop" alt="column #3" />
     </div>
-    <div className="column">
-      <img src={column} alt="column #4"  />
+    <div >
+      <img src={column} className="column" alt="column #4" />
+      <img src={column} className="column-pop" alt="column #4" />
     </div>
-   <div className="column">
-     <img src={column} alt="column #5" />
+   <div>
+     <img src={column} className="column" alt="column #5" />
+      <img src={column} className="column-pop" alt="column #5" />
     </div>
   </div>
+
+<div className="Main">
+      <header className="Main-header">
+        <img src={logo} className="Main-logo" alt="logo" />
+        <p className='Main-title'>
+          LAESA-SHPE WEBSITE COMING SOON! 
+       </p>
+      </header>
+    </div>
+
    
  </div>
 
