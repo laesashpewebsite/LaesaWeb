@@ -59,9 +59,9 @@
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  /* height: 60%; */
-  width: 19%;
-  padding: 1px;
+  height: 100%;
+  width: 200%;
+  padding: 70px;
 }
 .column-pop {
   position: absolute;

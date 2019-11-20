@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
 import PCED_group from './pictures/PCED-GROUP1.JPG';
-import column from './pictures/Column.png';
+import column from './pictures/Column-crop.png';
 
 function main() {
   return (
@@ -32,23 +32,23 @@ function main() {
   <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
-     <img src={column} className="column-pop" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
     </div>
     <div>
       <img src={column} className="column" alt="column #2" />
-      <img src={column} className="column-pop" alt="column #2" />
+      <img src={logo} className="column-pop" alt="column #2" />
     </div>
     <div >
       <img src={column} className="column" alt="column #3" />
-      <img src={column} className="column-pop" alt="column #3" />
+      <img src={logo} className="column-pop" alt="column #3" />
     </div>
     <div >
       <img src={column} className="column" alt="column #4" />
-      <img src={column} className="column-pop" alt="column #4" />
+      <img src={logo} className="column-pop" alt="column #4" />
     </div>
    <div>
      <img src={column} className="column" alt="column #5" />
-      <img src={column} className="column-pop" alt="column #5" />
+      <img src={logo} className="column-pop" alt="column #5" />
     </div>
   </div>
 
