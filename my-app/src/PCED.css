@@ -25,7 +25,6 @@
 	text-indent: 30px;
 }
 .card-color{
-
 	color: #F26534;
 	background-color: rgb(0,31,91,100);
 	font-weight: 600;
@@ -52,7 +51,7 @@
 .PCED-Director-Photo{
 	display: block;
 	margin: auto;
-	width: 50%;
+	min-width: 50%;
 	padding: 10px;
   	width: 40%;
   	margin: auto;
