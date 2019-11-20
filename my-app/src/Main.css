@@ -60,7 +60,8 @@
 .column {
   float: left;
   height: 100%;
-  width: 200%;
+  width: 150%;
+  margin: 5px;
   padding: 70px;
 }
 .column-pop {
@@ -68,6 +69,7 @@
   width: 0px;
   transition: width 0.3s linear 0s; 
   z-index: 100;
+  align-items: center;
 }
 
 .column:hover + .column-pop{
