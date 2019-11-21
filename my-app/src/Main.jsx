@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
 import PCED_group from './pictures/PCED-GROUP1.JPG';
-import column from './pictures/Column.png';
+
+import column from './pictures/Column-crop.png';
 
 function main() {
   return (
@@ -26,6 +27,7 @@ function main() {
       principles. They are the principles of Support, Teamwork, Excellence, and Professionalism!
  	  </p>
   </body>
+{/*<<<<<<< HEAD
 
 {/*
     <div className="Main">
@@ -38,7 +40,7 @@ function main() {
     </div>
 
 
-*/
+
 }
   <div className="row">
     <div className ="column">
@@ -59,6 +61,55 @@ function main() {
   </div>
   </div>
    </div>
+=======
+
+<div className="Main">
+      <header className="Main-header">
+        <img src={logo} className="Main-logo" alt="logo" />
+        <p className='Main-title'>
+          LAESA-SHPE WEBSITE COMING SOON, stay tune! 
+       </p>
+      </header>
+    </div>
+*/}
+  </div>
+
+
+  <div className="row">
+    <div>
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+    <div>
+      <img src={column} className="column" alt="column #2" />
+      <img src={logo} className="column-pop" alt="column #2" />
+    </div>
+    <div >
+      <img src={column} className="column" alt="column #3" />
+      <img src={logo} className="column-pop" alt="column #3" />
+    </div>
+    <div >
+      <img src={column} className="column" alt="column #4" />
+      <img src={logo} className="column-pop" alt="column #4" />
+    </div>
+   <div>
+     <img src={column} className="column" alt="column #5" />
+      <img src={logo} className="column-pop" alt="column #5" />
+    </div>
+  </div>
+
+
+   
+ </div>
   );
 }
 export default main;
+
+//    <div className="Main">
+//      <header className="Main-header">
+//        <img src={logo} className="Main-logo" alt="logo" />
+//        <p className='Main-title'>
+//          LAESA-SHPE WEBSITE COMING SOON! 
+//        </p>
+//      </header>
+//    </div>
