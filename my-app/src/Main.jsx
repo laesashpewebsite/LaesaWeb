@@ -56,7 +56,7 @@ function main() {
       <header className="Main-header">
         <img src={logo} className="Main-logo" alt="logo" />
         <p className='Main-title'>
-          LAESA-SHPE WEBSITE COMING SOON! 
+          LAESA-SHPE WEBSITE COMING SOON, stay tune! 
        </p>
       </header>
     </div>
