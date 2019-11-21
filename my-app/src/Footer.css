@@ -1,15 +1,26 @@
-.mainFooter{
-	background-color: #282c34;
+.Footer-container{
+	display: flex;
+	flex-direction: row;
+	background-color:rgb(40,44,52,200);
 	color: #FFFF;
-	clear: both;
+	margin: auto;
+	padding: 30px;
+}
+.shpelogo{
+	float: left;
+	padding-top:20px; 
+	padding-left: 20px;
+	width: 40vh;
+	height: 20vh;
+}
+.mainFooter{
 	display: flex;
 	flex-direction: column;
-	position: static;
 	align-items: center;
-	text-align: left;
+	justify-content: center;
+	margin-left: 16%;
 }
-
-.copyright{
-	font-size: 2vmax;
+.mainFooter ul{
+	margin-right: 40px;
 }
  

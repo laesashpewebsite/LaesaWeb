@@ -28,7 +28,7 @@ class App extends Component {
           <Route path="/FLL" component={FLL} />
           <Route path="/PCED" component={PCED} />
           <Route path="/SHPE.JR" component={SHPE_JR} />
-          <Footer/>
+          <Footer className="Footer-css"/>
 
           </div>
       </Router>
