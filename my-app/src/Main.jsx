@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
-import PCED_group from './pictures/PCED-GROUP1.JPG';
+import PCED_group from './pictures/Convention-Group.jpg';
 import column from './pictures/Column-crop.png';
 
 function main() {
   return (
   <div className="Main">
   
-  <div className="PCED-GROUP-PIC">
-      <img src={PCED_group} className="PCED-GROUP-PIC" alt="PCED-GROUP-pictures" />
+  <div className="Convetion-Group">
+      <img src={PCED_group} className="PCED-GROUP-PIC" alt="Convention Group Picture" />
   </div>
 
   <hr className="hr1"/>

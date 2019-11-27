@@ -1,5 +1,6 @@
 import React from 'react';
 import './PCED.css'
+import PCED_group from './pictures/PCED-GROUP1.JPG';
 import PCED_Director from './pictures/Arelis.png';
 
 function PCED() {
@@ -29,8 +30,14 @@ function PCED() {
         		<p>"The goal of PCED is to expose the younger Latino community to  STEM related careers 
         		(Science, Technology, Engineering and Mathematics) while obtaining real-life project experience, 
         		and developing team-building and leadership skills"
-        		</p>
+        	</p>
         	</div>
+
+         <div className="PCED-GROUP-PIC">
+           <img src={PCED_group} className="PCED-GROUP-PIC" alt="PCED-GROUP-pictures" />
+          </div>
+
+
         	<div className="card-color2">
         		<h3>About the Director</h3>
       			<img src={PCED_Director} className="PCED-Director-Photo" alt="PCED-Director"/>
