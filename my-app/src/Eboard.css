@@ -8,8 +8,13 @@
 .dot{
 	height: 200px;
 	width: 200px;
+
 	background-color: #D3D3D3;
 	border-radius: 75%;
 	display: inline-block;
-	align-items: left;
+	align-content: left;
+}
+
+.container{
+	display: flex;
 }

@@ -9,6 +9,11 @@ function PCED() {
    		<header className="PCED-header">
    		<div className="PCED-info">
         	<h2>Pre-College Engineering Day</h2>
+
+          <div className="PCED-GROUP-PIC">
+            <img src={PCED_group} className="PCED-GROUP-PIC" alt="PCED-GROUP-pictures" />
+          </div>
+
         	<div className="card-color2">
         	<h3> About </h3>
         	<p>
@@ -32,11 +37,6 @@ function PCED() {
         		and developing team-building and leadership skills"
         	</p>
         	</div>
-
-         <div className="PCED-GROUP-PIC">
-           <img src={PCED_group} className="PCED-GROUP-PIC" alt="PCED-GROUP-pictures" />
-          </div>
-
 
         	<div className="card-color2">
         		<h3>About the Director</h3>
