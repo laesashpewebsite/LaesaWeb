@@ -11,8 +11,7 @@
 
 	background-color: #D3D3D3;
 	border-radius: 75%;
-	display: inline-block;
-	align-content: left;
+	justify-content: center;
 }
 
 .container{
