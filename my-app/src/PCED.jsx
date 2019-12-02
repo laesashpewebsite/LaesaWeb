@@ -81,11 +81,13 @@ function PCED() {
               Provide a diversity of minority ethnicities for future STEM jobs.{" "}
             </li>
           </ul>
+        </div>
+        <div className="card-color">
           <h4>Director Contact Info</h4>
           <ul className="Contact">
             <li className="events-list">P: 917-392-4710 </li>
             <li className="events-list">Email: laesa.pced@gmail.com </li>
-            <li className="events-list">Personal: arelisfienco@outlook.com </li>
+            <li className="events-list">Personal: arelisfienco@outlook.com</li>
           </ul>
         </div>
       </header>

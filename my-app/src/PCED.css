@@ -1,5 +1,5 @@
 .PCED-header h1 {
-  color: #f26534;
+  color: black;
   text-align: center;
   text-decoration: underline;
   font-weight: 900;
@@ -8,6 +8,7 @@
 }
 .PCED-header p {
   font-size: 18px;
+  text-align: justify;
 }
 
 .PCED-GROUP-PIC {
@@ -18,8 +19,8 @@
   background-size: cover;
   height: 85vh;
 
+  margin-top: -100px;
   margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .card-color2 {
@@ -58,8 +59,8 @@
 
 .PCED-header h4 {
   font-weight: 700;
+  text-align: center;
 }
-
 .PCED-Director-Photo {
   display: block;
   margin: auto;
@@ -69,11 +70,13 @@
   margin: auto;
   height: 80%;
 }
-
 .events-list {
   font-weight: 750;
   font-size: 18px;
 }
 .Contact {
   list-style-type: none;
+}
+.card-color li {
+  text-align: center;
 }

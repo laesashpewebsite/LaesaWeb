@@ -5,7 +5,7 @@ import "./Main.css";
 //import PCED_group from './pictures/PCED-GROUP1.JPG';
 
 //=======
-import PCED_group from "./pictures/Convention-Group.jpg";
+import SHPE_Convention from "./pictures/Convention-Group.jpg";
 //>>>>>>> mainpage2
 import column from "./pictures/Column-crop.png";
 
@@ -14,8 +14,8 @@ function main() {
     <div className="Main">
       <div className="Convetion-Group">
         <img
-          src={PCED_group}
-          className="PCED-GROUP-PIC"
+          src={SHPE_Convention}
+          className="Convention-Pic"
           alt="Convention Group Picture"
         />
       </div>
