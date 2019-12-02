@@ -1,6 +1,20 @@
-.Eboard-header{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.Eboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+
+  background-color: #d3d3d3;
+  border-radius: 75%;
+  display: inline-block;
+  align-content: left;
+}
+
+.container {
+  display: flex;
 }
