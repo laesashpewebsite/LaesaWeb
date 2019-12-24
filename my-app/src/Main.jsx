@@ -3,6 +3,7 @@ import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
 import PCED_group from './pictures/Convention-Group.jpg';
 import column from './pictures/Column-crop.png';
+import logo2 from './pictures/LAESA_LOGO.png';
 
 function main() {
   return (
@@ -52,6 +53,48 @@ function main() {
     </div>
   </div>
 
+  const slideImages = [
+  'Column-crop.png',
+  'LAESA_LOGO.png',
+  'Convention-Group.jpg'
+];
+ 
+const properties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  arrows: true,
+  onChange: (oldIndex, newIndex) => {
+    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+  }
+}
+ 
+const Slideshow = () => {
+    return (
+      <div className="slide-container">
+        <Slide {...properties}>
+          <div className="each-slide">
+            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+              <span>Slide 1</span>
+            </div>
+          </div>
+          <div className="each-slide">
+            <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+              <span>Slide 2</span>
+            </div>
+          </div>
+          <div className="each-slide">
+            <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+              <span>Slide 3</span>
+            </div>
+          </div>
+        </Slide>
+      </div>
+    )
+}
+
+
 <div className="Main">
       <header className="Main-header">
         <img src={logo} className="Main-logo" alt="logo" />
@@ -76,3 +119,4 @@ export default main;
 //        </p>
 //      </header>
 //    </div>
+//
