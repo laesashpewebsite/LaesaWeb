@@ -9,9 +9,7 @@
 .Main-logo {
   height: 15vmax;
   width: 20vmax;
-
-  animation: Main-logo-spin infinite 5s linear; 
-
+  animation: bounce; 
 }
 .Main-title{
   margin-top: 80px;
@@ -78,56 +76,12 @@
   align-items: center;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.imageContainer {
+  display: block;
+  object-fit: 50%;
+  object-position: center;
 }
 
-.slide-container {
-  width: 70%;
-  margin: auto; }
-
-h3 {
-  text-align: center; }
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 300px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
-
-.each-fade {
-  display: flex;
-}
-
-.each-fade .image-container {
-  width: 75%;
-  overflow: hidden;
-}
-
-.each-fade .image-container img {
-  width: 100%;
-}
-
-.each-fade h2 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background: #adceed;
-}
 
 @keyframes Main-logo-spin {
   from {
@@ -138,3 +92,9 @@ h3 {
   }
 }
 
+@keyframes bounce {
+  from {
+    transition-duration: 1000s;}
+  to { transition-duration: 100000s;
+  }
+}
