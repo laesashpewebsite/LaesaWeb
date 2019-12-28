@@ -4,6 +4,12 @@ import './Main.css';
 import PCED_group from './pictures/Convention-Group.jpg';
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
+import column1 from './pictures/#1.png';
+import column2 from './pictures/#2.png';
+import column3 from './pictures/#3.png';
+import column4 from './pictures/#4.png';
+import column5 from './pictures/#5.png';
+
 
 function main() {
   return (
@@ -32,23 +38,23 @@ function main() {
   <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
+     <img src={column1} className="column-pop" alt="column #1" />
     </div>
     <div>
       <img src={column} className="column" alt="column #2" />
-      <img src={logo} className="column-pop" alt="column #2" />
+      <img src={column2} className="column-pop" alt="column #2" />
     </div>
     <div >
       <img src={column} className="column" alt="column #3" />
-      <img src={logo} className="column-pop" alt="column #3" />
+      <img src={column3} className="column-pop" alt="column #3" />
     </div>
     <div >
       <img src={column} className="column" alt="column #4" />
-      <img src={logo} className="column-pop" alt="column #4" />
+      <img src={column4} className="column-pop" alt="column #4" />
     </div>
    <div>
      <img src={column} className="column" alt="column #5" />
-      <img src={logo} className="column-pop" alt="column #5" />
+      <img src={column5} className="column-pop" alt="column #5" />
     </div>
   </div>
     
