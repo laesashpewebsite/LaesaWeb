@@ -1,16 +1,11 @@
 .Main {
-
+  background-color: #72A9BE;
 }
 
 .Main-title{
   margin-top: 80px;
 }
 
-.Main-logo {
-  height: 15vmax;
-  width: 20vmax;
-  animation: bounce; 
-}
 .Main-title{
   margin-top: 80px;
 }
@@ -19,7 +14,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -34,22 +29,25 @@
   max-width: 100%;
 }
 
-.hr1 {
-  border: 1px solid black;
-}
-
 .header {
-  background-color: #4286f4;
+  background-color: rgb(0,31,91,100);
   border-radius: 11000px;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   font-family: Comic Sans Ms cursive;
+  color: white;
 }
 
 .paragraph {
   background-color: #D3D3D3;
   border-radius: 11000px;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-family: Comic Sans Ms;
   font-style: cursive;
   text-align: center;
@@ -81,7 +79,7 @@
 .row {
   display: block;
   object-position: center;
-  /*object-fit: 100%;*/
+  object-fit: 100%;
   height: 100%;
   width: 100%;
   margin-left: 10px;
@@ -102,3 +100,4 @@
   to { transition-duration: 100000s;
   }
 }
+

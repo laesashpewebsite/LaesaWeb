@@ -19,9 +19,7 @@ function main() {
       <img src={PCED_group} className="PCED-GROUP-PIC" alt="Convention Group Picture" />
   </div>
 
-  <hr className="hr1"/>
-
-  <div>
+  <div className="Main">
  	<body> 
   	<h1 className="header"> LAESA SHPE'S MISSION </h1>
   	<p className="paragraph"> Our mission is to be the premier facilitator of student's endeavors in the Science,
@@ -33,10 +31,10 @@ function main() {
       principles. They are the principles of Support, Teamwork, Excellence, and Professionalism!
  	  </p>
   </body>
+
   <body> 
     <h1 className="header"> LAESA SHPE'S 5 Pillars </h1>
-
-    <div className="row">
+  <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
      <img src={column1} className="column-pop" alt="column #1" />
@@ -53,7 +51,7 @@ function main() {
       <img src={column} className="column" alt="column #4" />
       <img src={column4} className="column-pop" alt="column #4" />
     </div>
-   <div>
+    <div>
      <img src={column} className="column" alt="column #5" />
       <img src={column5} className="column-pop" alt="column #5" />
     </div>
