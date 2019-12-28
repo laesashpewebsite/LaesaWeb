@@ -4,11 +4,11 @@ import './Main.css';
 import PCED_group from './pictures/Convention-Group.jpg';
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
-import column1 from './pictures/#1.png';
-import column2 from './pictures/#2.png';
-import column3 from './pictures/#3.png';
-import column4 from './pictures/#4.png';
-import column5 from './pictures/#5.png';
+import column1 from './pictures/#1.jpg';
+import column2 from './pictures/#2.jpg';
+import column3 from './pictures/#3.jpg';
+import column4 from './pictures/#4.jpg';
+import column5 from './pictures/#5.jpg';
 
 
 function main() {
@@ -33,9 +33,10 @@ function main() {
       principles. They are the principles of Support, Teamwork, Excellence, and Professionalism!
  	  </p>
   </body>
-  </div>
+  <body> 
+    <h1 className="header"> LAESA SHPE'S 5 Pillars </h1>
 
-  <div className="row">
+    <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
      <img src={column1} className="column-pop" alt="column #1" />
@@ -57,6 +58,10 @@ function main() {
       <img src={column5} className="column-pop" alt="column #5" />
     </div>
   </div>
+  </body>
+  </div>
+
+  
     
 
  </div>
@@ -72,7 +77,7 @@ export default main;
 //        </p>
 //      </header>
 //    </div>
-// 
+
 /*<div className="imageContainer">
      <img src={column} className="column" alt="column #1" />
      <img src={logo} className="column-pop" alt="column #1" />
