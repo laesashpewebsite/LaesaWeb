@@ -4,7 +4,6 @@ import './Main.css';
 import PCED_group from './pictures/Convention-Group.jpg';
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
-import { bounce } from './animate.css';
 
 function main() {
   return (
@@ -30,7 +29,6 @@ function main() {
   </body>
   </div>
 
-
   <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
@@ -53,40 +51,9 @@ function main() {
       <img src={logo} className="column-pop" alt="column #5" />
     </div>
   </div>
-
-
-      <div class="imageContainer" id="im_1">
-        <img src={PCED_group} />
-        <div class="caption">
-          Windmill
-        </div>
-      </div>
-
-      <div class="imageContainer" id="im_2">
-        <img src={PCED_group} />
-        <div class="caption">
-          Plant
-        </div>
-      </div>
-
-      <div class="imageContainer" id="im_3">
-        <img src={PCED_group} />
-        <div class="caption">
-          Dog
-        </div>
-      </div>
-
-   <div className="Main">
-    <header className="Main-header">
-       <img src={logo} className="Main-logo" alt="logo" />
-      <p className='Main-title'>
-          LAESA-SHPE WEBSITE COMING SOON! 
-        </p>
-     </header>
-    </div>
+    
 
  </div>
-
   );
 }
 export default main;
@@ -99,4 +66,25 @@ export default main;
 //        </p>
 //      </header>
 //    </div>
-//
+// 
+/*<div className="imageContainer">
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+    <div className="imageContainer">
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+    <div className="imageContainer">
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+    <div className="imageContainer">
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+    <div className="imageContainer">
+     <img src={column} className="column" alt="column #1" />
+     <img src={logo} className="column-pop" alt="column #1" />
+    </div>
+*/

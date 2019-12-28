@@ -56,32 +56,36 @@
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
+/*.column {
   float: left;
   height: 100%;
   width: 150%;
-  margin: 5px;
-  padding: 70px;
+  padding: 10px;
 }
+*/
 .column-pop {
   position: absolute;
   width: 0px;
   transition: width 0.3s linear 0s; 
   z-index: 100;
-  align-items: center;
 }
 
 .column:hover + .column-pop{
-  width: 500px;
-  align-items: center;
-}
-
-.imageContainer {
   display: block;
-  object-fit: 50%;
+  object-position: center;
+  width: 600px;
+  
   object-position: center;
 }
 
+.row {
+  display: block;
+  object-position: center;
+  /*object-fit: 100%;*/
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
 
 @keyframes Main-logo-spin {
   from {
