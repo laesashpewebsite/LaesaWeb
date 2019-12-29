@@ -1,0 +1,90 @@
+.SHPE-header h1 {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 340px;
+  }
+  .SHPE-header p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .SHPE-GROUP-PIC {
+    background-image: url(pictures/Shpejr-group.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85vh;
+  
+    margin-top: -100px;
+    margin-bottom: 10px; 
+  }
+  
+  .card-color2{
+    background-color: #72a9be;
+    color: black; /*rgb(210,63,38);*/
+    font-weight: 600;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .SHPE-header p {
+    font-weight: 750;
+    text-indent: 30px;
+  }
+  .card-color {
+    color: #f26534;
+    background-color: rgb(0, 31, 91, 100);
+    font-weight: 600;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .SHPE-header {
+    width: 100%;
+  }
+  .SHPE-header h2 {
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .SHPE-header h4 {
+    font-weight: 700;
+    text-align: center;
+  }
+  .img-responsive{
+    display: block;
+    margin: auto;
+    min-width: 50%;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    height: 80%;
+  }
+  .events-list {
+    font-weight: 750;
+    font-size: 18px;
+  }
+  .Contact {
+    list-style-type: none;
+  }
+  .card-color ul {
+    text-align: center;
+    margin-right: 30px;
+  }
+  .ul {
+    text-align: center;
+    list-style: inside;
+  }
+   /* .card-color li {
+  } 
+   */
