@@ -10,14 +10,16 @@ import column3 from './pictures/#3.jpg';
 import column4 from './pictures/#4.jpg';
 import column5 from './pictures/#5.jpg';
 
-
 function main() {
   return (
-  <div className="Main">
-  
-  <div className="Convetion-Group">
-      <img src={PCED_group} className="PCED-GROUP-PIC" alt="Convention Group Picture" />
-  </div>
+    <div className="Main">
+      <div className="Convetion-Group">
+        <img
+          src={SHPE_Convention}
+          className="Convention-Pic"
+          alt="Convention Group Picture"
+        />
+      </div>
 
   <div className="Main">
  	<body> 
@@ -59,19 +61,25 @@ function main() {
   </body>
   </div>
 
-  
-    
 
- </div>
-  );
+<div className="Main">
+    <header className="Main-header">
+        <img src={logo} className="Main-logo" alt="logo" />
+        <p className='Main-title'>
+        LAESA-SHPE WEBSITE COMING SOON, stay tune! 
+       </p>
+    </header>
+</div>
+
 }
 export default main;
 
+/*
 //    <div className="Main">
 //      <header className="Main-header">
 //        <img src={logo} className="Main-logo" alt="logo" />
 //        <p className='Main-title'>
-//          LAESA-SHPE WEBSITE COMING SOON! 
+//          LAESA-SHPE WEBSITE COMING SOON!
 //        </p>
 //      </header>
 //    </div>

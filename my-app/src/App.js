@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from './pictures/LAESA_LOGO.png';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import  Footer from './Footer.jsx';
 import './App.css';
 
 import Navigation from "./Navigation";
@@ -27,9 +28,9 @@ class App extends Component {
           <Route path="/FLL" component={FLL} />
           <Route path="/PCED" component={PCED} />
           <Route path="/SHPE.JR" component={SHPE_JR} />
+          <Footer className="Footer-css"/>
 
-          
-        </div>
+          </div>
       </Router>
     );
   }
