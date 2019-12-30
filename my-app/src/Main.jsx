@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './pictures/LAESA_LOGO.png';
 import './Main.css';
 import PCED_group from './pictures/Convention-Group.jpg';
+import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
 import column1 from './pictures/#1.jpg';
@@ -61,7 +62,6 @@ function main() {
   </body>
   </div>
 
-
 <div className="Main">
     <header className="Main-header">
         <img src={logo} className="Main-logo" alt="logo" />
@@ -70,38 +70,7 @@ function main() {
        </p>
     </header>
 </div>
-
+</div>
+);
 }
 export default main;
-
-/*
-//    <div className="Main">
-//      <header className="Main-header">
-//        <img src={logo} className="Main-logo" alt="logo" />
-//        <p className='Main-title'>
-//          LAESA-SHPE WEBSITE COMING SOON!
-//        </p>
-//      </header>
-//    </div>
-
-/*<div className="imageContainer">
-     <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
-    </div>
-    <div className="imageContainer">
-     <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
-    </div>
-    <div className="imageContainer">
-     <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
-    </div>
-    <div className="imageContainer">
-     <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
-    </div>
-    <div className="imageContainer">
-     <img src={column} className="column" alt="column #1" />
-     <img src={logo} className="column-pop" alt="column #1" />
-    </div>
-*/
