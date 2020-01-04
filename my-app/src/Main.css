@@ -78,10 +78,8 @@
 }
 
 .column:hover + .column-pop{
-  display: block;
   object-position: center;
   width: 600px;
-  object-position: center;
 }
 
 

@@ -5,7 +5,7 @@ import PCED_group from './pictures/Convention-Group.jpg';
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
-import column1 from './pictures/#1.jpg';
+import column1 from './pictures/#1.jpeg';
 import column2 from './pictures/#2.jpg';
 import column3 from './pictures/#3.jpg';
 import column4 from './pictures/#4.jpg';
