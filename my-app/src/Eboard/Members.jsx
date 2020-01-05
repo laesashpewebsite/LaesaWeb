@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Members.css";
 
 import Logo from "./../pictures/SHPE_logo_FullColor.png";
-import Secretary from "./../pictures/Gloria.jpg";
+import Secretary from "./../pictures/Gloria.jpeg";
 import EVicePresident from "./../pictures/Evan.JPG";
 import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
@@ -14,14 +14,14 @@ const EboardList = [
     Name: "Gloria",
     Picture: Secretary,
     Bio:
-      "My name is Gloria Hernandez Navarrete and I am a fourth-year civil engineering student at the City College of New York. I am on the Executive Board of LAESA-SHPE as secretary for the 2019-2020 academic school year. I can proudly say that thanks to the sacrifices of my parents and those before me, I am pursuing my childhood dreams. Education is a basic human right that no individual should be denied. Without DACA, I would have not been able to become a first-generation Latina. Today, I continue to have a passion for learning and giving back to my community. LAESA-SHPE is 'la Familia' where talented and passionate students are constantly working extra hard to become successful professionals. Without a doubt, this is the community and network that I want to represent as I work on building my long term career goals. A lot is to come this year for our team, but I am looking forward to it all!"
+      "My name is Gloria Hernandez Navarrete and I am a fourth-year civil engineering student at the City College of New York. I am on the Executive Board of LAESA-SHPE as secretary for the 2019-2020 academic school year. I can proudly say that thanks to the sacrifices of my parents and those before me, I am pursuing my childhood dreams. Education is a basic human right that no individual should be denied. A lot is to come this year for our team, but I am looking forward to it all!"
   },
   {
     Title: "Treasurer",
     Name: "Keivon",
     Picture: Treasurer,
     Bio:
-      "Hey everyone, my name is Keivon Yang - Sophomore Electrical Engineer - and your Treasure of LAESA SHPE for the academic year of 2019 - 2020. I have been associated with LAESA SHPE since the very first semester of my freshman year and have been associated with the New York SHPE chapters ever since my junior year of high school. I have had the privilege of being recognized as someone despite the difference in the background but as a member of the amazing Familia of LAESA. Despite my time with LAESA I have committed to multiple positions and found the value of being an active member of this organization. Within my first semester, I have acquired the roles or Office Manager, Social Media & Quality Control, and Pre College Engineering Day Co-Director of Logistics as volunteers and attendees of multiple different social events such as SHPE STEM Career Summit and FLL. I am a firm believer that everyone who I have met or encountered, no matter how brief, has had an impact on my life and helped in my search of the ideal version of myself for better or for worse. My personal experience with LAESA has helped me develop professionally and help build my character as I pursue my career goals. These experiences allowed me to network with the community SHPE has built and as well as aiding in landing my first internship with Bechtel as a freshman. I love to share and help others achieve the same level of success. We hold the key for one another's success and only when we lend a hand will door of opportunities open."
+      "Currently, I am a Sophomore Electrical Engineering major. I have had the privilege of being recognized as someone despite the difference in the background but as a member of the amazing Familia of LAESA. Despite my time with LAESA I have committed to multiple positions and found the value of being an active member of this organization. I am a firm believer that everyone who I have met or encountered, no matter how brief, has had an impact on my life and helped in my search of the ideal version of myself for better or for worse."
   },
   {
     Title: "External Vice-President",
@@ -62,7 +62,8 @@ class Members extends Component {
     return EboardList[num].Title;
   }
   inc() {
-    num--;
+    if (num == 0) num = 4;
+    else num--;
   }
 
   render() {
