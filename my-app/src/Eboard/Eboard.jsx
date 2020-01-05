@@ -1,24 +1,36 @@
 import React from "react";
-import construct from "./../pictures/under-construction.png";
 import "./Eboard.css";
 import Members from "./Members";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Eboard() {
   return (
     <div className="Eboard-main">
       <header className="Eboard-header">
         <div className="members">
-          <div className="row1">
-            <Members> what if i type inside this</Members>
-          </div>
-          <div className="row2">
-            <Members></Members>
-            <Members></Members>
-          </div>
-          <div className="row3">
-            <Members></Members>
-            <Members></Members>
-          </div>
+          <Container>
+            <Row>
+              <Members> what if i type inside this</Members>
+            </Row>
+            <Row>
+              <Col>
+                <Members></Members>
+              </Col>
+              <Col>
+                <Members></Members>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Members></Members>
+              </Col>
+              <Col>
+                <Members></Members>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </header>
     </div>
