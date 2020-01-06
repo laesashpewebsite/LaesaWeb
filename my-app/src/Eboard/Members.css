@@ -3,5 +3,6 @@
 }
 .eboardPic {
   border-radius: 50%;
-  width: 30%;
+  width: 40%;
+  margin: auto;
 }

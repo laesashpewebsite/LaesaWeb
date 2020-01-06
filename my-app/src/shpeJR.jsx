@@ -17,7 +17,6 @@
 import React from "react";
 
 //import "./shpejr.css";
-import PCED_group from "./pictures/PCED-GROUP1.JPG";
 import PCED_Director from "./pictures/LAESA_LOGO.png";
 
 function shpeJR() {

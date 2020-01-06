@@ -12,26 +12,32 @@ function Eboard() {
       <header className="Eboard-header">
         <img src={Eboardpic} alt="Eboard and Alumni" className="eboard-pic" />
         <div className="members">
-          <Container className="width">
-            <Row className="color1">
-              <Members></Members>
-            </Row>
-            <Row className="color2">
-              <Col>
+          <Container className="contWidth">
+            <div>
+              <Row className="color1">
                 <Members></Members>
-              </Col>
-              <Col>
-                <Members></Members>
-              </Col>
-            </Row>
-            <Row className="color1">
-              <Col>
-                <Members></Members>
-              </Col>
-              <Col>
-                <Members></Members>
-              </Col>
-            </Row>
+              </Row>
+            </div>
+            <div>
+              <Row className="color2">
+                <Col>
+                  <Members></Members>
+                </Col>
+                <Col>
+                  <Members></Members>
+                </Col>
+              </Row>
+            </div>
+            <div>
+              <Row className="color1">
+                <Col>
+                  <Members></Members>
+                </Col>
+                <Col>
+                  <Members></Members>
+                </Col>
+              </Row>
+            </div>
           </Container>
         </div>
       </header>

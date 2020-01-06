@@ -3,7 +3,7 @@ import "./Members.css";
 
 import Logo from "./../pictures/SHPE_logo_FullColor.png";
 import Secretary from "./../pictures/Gloria.jpeg";
-import EVicePresident from "./../pictures/Evan.JPG";
+import EVicePresident from "./../pictures/Evan.jpg";
 import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
 
@@ -46,9 +46,6 @@ const EboardList = [
   }
 ];
 class Members extends Component {
-  constructor(props) {
-    super(props);
-  }
   getName() {
     return EboardList[num].Name;
   }
@@ -62,7 +59,7 @@ class Members extends Component {
     return EboardList[num].Title;
   }
   inc() {
-    if (num == 0) num = 4;
+    if (num === 0) num = 4;
     else num--;
   }
 

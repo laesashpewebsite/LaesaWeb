@@ -1,12 +1,8 @@
 import React from "react";
 import logo from "./pictures/LAESA_LOGO.png";
 import "./Main.css";
-///<<<<<<< HEAD
-//import PCED_group from './pictures/PCED-GROUP1.JPG';
 
-//=======
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
-//>>>>>>> mainpage2
 import column from "./pictures/Column-crop.png";
 
 function main() {
@@ -16,7 +12,7 @@ function main() {
         <img
           src={SHPE_Convention}
           className="Convention-Pic"
-          alt="Convention Group Picture"
+          alt="Convention-Group"
         />
       </div>
 
@@ -26,7 +22,6 @@ function main() {
         <body>
           <h1 className="header"> LAESA SHPE'S MISSION </h1>
           <p className="paragraph">
-            {" "}
             Our mission is to be the premier facilitator of student's endeavors
             in the Science, Technology, Engineering, and Mathematics field
             (STEM). Also, to facilitate in other areas as well , as to help to
@@ -34,7 +29,6 @@ function main() {
           </p>
           <h1 className="header"> LAESA SHPE'S VISION </h1>
           <p className="paragraph">
-            {" "}
             Our mission is to S.T.E.P into THE FUTURE. This can be accomplished
             by using four principles. They are the principles of Support,
             Teamwork, Excellence, and Professionalism!
