@@ -1,3 +1,7 @@
+.Main {
+  background-color: #72A9BE;
+}
+
 .Main-title {
   margin-top: 80px;
 }
@@ -8,15 +12,12 @@
 
   animation: Main-logo-spin infinite 5s linear;
 }
-.Main-title {
-  margin-top: 80px;
-}
 
 .Main-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -34,53 +35,58 @@
   margin-top: -100px;
 }
 
-.hr1 {
-  border: 1px solid black;
-}
-
 .header {
-  background-color: #4286f4;
+  background-color: rgb(0,31,91,100);
   border-radius: 11000px;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   font-family: Comic Sans Ms cursive;
+  color: white;
 }
 
 .paragraph {
   background-color: #d3d3d3;
   border-radius: 11000px;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-family: Comic Sans Ms;
   font-style: cursive;
   text-align: center;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
+/*.column {
   float: left;
   height: 100%;
   width: 150%;
-  margin: 5px;
-  padding: 70px;
+  padding: 10px;
 }
+*/
 .column-pop {
   position: absolute;
   width: 0px;
   transition: width 0.3s linear 0s;
   z-index: 100;
-  align-items: center;
 }
 
-.column:hover + .column-pop {
-  width: 500px;
-  align-items: center;
+.column:hover + .column-pop{
+  object-position: center;
+  width: 600px;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.row {
+  display: block;
+  object-position: center;
+  object-fit: 100%;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
 }
 
 @keyframes Main-logo-spin {

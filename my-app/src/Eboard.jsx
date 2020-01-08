@@ -16,25 +16,22 @@ function Eboard() {
     </p>
 
     <Container>
-      <Row> 
-        <img src={construct} className="dot" alt="logo" />
-      </Row>
-      <Row> 
         <Col>
         <img src={construct} className="dot" alt="logo" />
         </Col> 
         <Col>
         <img src={construct} className="dot" alt="logo" />
         </Col>
-      </Row>
-      <Row> 
+        <Col>
+        <img src={construct} className="dot" alt="logo" />
+        </Col>
         <Col>
         <img src={construct} className="dot" alt="logo" />
         </Col> 
         <Col>
         <img src={construct} className="dot" alt="logo" />
         </Col>
-        </Row>
+
     </Container>
         
       </header>
