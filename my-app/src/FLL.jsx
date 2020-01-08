@@ -1,6 +1,6 @@
 import React from 'react';
 import './FLL.css';
-import director from'./pictures/Jean-Luc.jpg'
+import director from './pictures/Jean-Luc.jpg';
 
 function FLL() {
   return (
@@ -13,7 +13,9 @@ function FLL() {
   	engineering, and technology.
  	  </p>
  	  <h1 className="header"> Our Director </h1>
- 	  <img> src={director} </img>
+ 	  <img className="Convention-Pic"
+ 	  src={director} alt="Convention Group Picture"
+ 	  />
  	  <p className="paragraph"> _________________
  	  hey
  	  </p>
