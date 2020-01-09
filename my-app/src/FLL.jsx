@@ -5,14 +5,18 @@ import director from './pictures/Jean-Luc.jpg';
 function FLL() {
   return (
     <div className="Main">
-   		<body> 
+   	
+    <div>
   	<h1 className="header"> About </h1>
   	<p className="paragraph">
   	First Lego League's mission is to inspire young adults to be science and technology innovators
   	, by engaging them in exciting programs that help them build the necessaries skills in science,
   	engineering, and technology.
  	  </p>
+    </div>
+    <div>
  	  <h1 className="header"> Our Director </h1>
+    </div>
  	  <div>
     <img className="Director-Photo"
  	  src={director} alt="Jean-Luc's Profile Picture"/>
@@ -29,6 +33,8 @@ function FLL() {
     communication point with event organizers and ensure that the event goes smoothly, as well 
     as recruit as many volunteers as needed.
  	  </p>
+    </div>
+    <div>
  	  <p className="paragraph">
     _________________
  	  hey
@@ -36,7 +42,6 @@ function FLL() {
     </div>
 
 
-    </body>
 
     </div>
 
