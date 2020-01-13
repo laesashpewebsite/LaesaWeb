@@ -55,7 +55,7 @@
 }
 
 .column:hover + .column-pop{
-  object-position: center;
+  margin: auto;
   width: 600px;
 }
 
