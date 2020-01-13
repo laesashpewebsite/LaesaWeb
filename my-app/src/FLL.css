@@ -2,13 +2,19 @@
   background-color: #72A9BE;
 }
 
+.Main-Picture {
+  height: 80%;
+  width: 99%;
+  margin: 5px;
+}
+
 .header {
   background-color: rgb(0,31,91,100);
-  border-radius: 11000px;
+  border-radius: 100px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   font-family: Comic Sans Ms cursive;
   color: white;
@@ -19,16 +25,17 @@
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: Comic Sans Ms;
   font-style: cursive;
   text-align: center;
 }
 
 .Director-Photo {
-  height: 80%;
-  width: 80%;
-  align-content: center;
-  
+  display: block;
+  margin: auto;
+  padding: 5px;
+  height: 50%;
+  width: 50%;
   }
