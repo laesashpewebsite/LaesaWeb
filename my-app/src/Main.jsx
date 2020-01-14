@@ -4,6 +4,7 @@ import "./Main.css";
 
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import column from "./pictures/Column-crop.png";
+import Pillar from "./pillar";
 
 function main() {
   return (
@@ -78,7 +79,8 @@ function main() {
        </p>
       </header>
     </div>
-*/}
+*/}{" "}
+        {/* <Pillar></Pillar> */}
       </div>
 
       <div className="row">

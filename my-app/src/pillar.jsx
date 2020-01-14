@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import column from "./pictures/Column-crop.png";
-import { number } from "prop-types";
+import "./pillar.css";
+//import pillars from "./pictures/Column.png";
 
+var num = 4;
 const pillarArray = [
   {
     number: 1,
@@ -20,33 +21,43 @@ const pillarArray = [
   },
   {
     number: 4,
-    name: "",
+    name: "title",
     definition: "something"
   },
   {
     number: 5,
-    name: "",
+    name: "title",
     definition: "something"
   }
 ];
 
 class Pillar extends Component {
-  constructor() {
-    super(this);
+  getName() {
+    return pillarArray[num].name;
   }
-  getName(pillarArray) {
-    return this.pillarArray.name;
+  getDefinition() {
+    return pillarArray[num].name;
+  }
+  increment() {
+    if (num === 0) num = 4;
+    else num--;
   }
 
   render() {
     return (
       <div>
         <header className="backgroundPillar">
+          {
+            //<img src={pillars} />
+          }
           <div>
-            <h3>{this.getName}</h3>
+            <h3>{this.getName()}</h3>
+            <p className="info"> {this.getDefinition()}</p>
           </div>
         </header>
       </div>
     );
   }
 }
+
+export default Pillar;

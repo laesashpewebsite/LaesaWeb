@@ -1,0 +1,9 @@
+.backgroundPillar {
+  background: url("pictures/Column.png") no-repeat;
+  height: 20%;
+  padding: 40px;
+  text-align: center;
+  /* border: solid;
+  border-color: brown; */
+  width: 20%;
+}

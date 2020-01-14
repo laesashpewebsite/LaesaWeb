@@ -1,19 +1,14 @@
-.custom-nav{
-background-color: #282c34;
-
+.custom-nav {
+  background-color: #282c34;
 }
-.justify-content-end{
-	text-align: right;
+.justify-content-end {
+  text-align: right;
 }
-.eventsDropdown{
-	border-radius: 20px;
+.eventsDropdown {
+  border-radius: 20px;
 }
 
-.eventsDropdownItem{
-
-}
-.events-css{
-	position: relative;
-	color: white;
-
+.events-css {
+  position: relative;
+  color: white;
 }
