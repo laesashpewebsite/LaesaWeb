@@ -45,8 +45,14 @@ return (
       </body>
   </div>
 
+void getName(pillarArray) {
+        for(int i = 0; i < numbers.length; i++) { 
+            (numbers[i]); 
+        }
+
   <div className="box2">
     <h2> LAESA SHPE'S 5 Pillars </h2>
+    <pillar> 1 </pillar>
     <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
