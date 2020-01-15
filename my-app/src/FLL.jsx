@@ -1,6 +1,7 @@
 import React from 'react';
 import './FLL.css';
 import director from './pictures/Jean-Luc.jpg';
+import example from './pictures/Template for 5 pillars.png';
 
 function FLL() {
   return (
@@ -39,10 +40,10 @@ function FLL() {
     <div className="box1">
       <h2> Pictures </h2>
       <p>
-      First Lego League's mission is to inspire young adults to be science 
-      and technology innovators, by engaging them in exciting programs that 
-      help them build the necessaries skills in science, engineering, and 
-      technology.
+      <img 
+      className="Main-Picture"
+      src={example} 
+      alt="Jean-Luc's Profile Picture"/>
       </p>
     </div>
 
