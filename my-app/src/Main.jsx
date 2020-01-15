@@ -14,32 +14,39 @@ import column5 from './pictures/#5.jpg';
 function main() {
 return (
   <div className="Main">
+  <header className="header">
 
-    <div className="Main">
+    <div>
       <img
         src={SHPE_Convention}
         className="Main-Picture"
         alt="Convention Group Picture"/>
     </div>
-
-  <div>
- 	  <body> 
-  	<h1 className="header"> LAESA SHPE'S MISSION </h1>
-  	   <p className="paragraph"> Our mission is to be the premier facilitator
+  
+    <div className="box1">
+  	<h2> LAESA SHPE'S MISSION </h2>
+      <body>
+      <p>
+        Our mission is to be the premier facilitator
         of student's endeavors in the Science,Technology, Engineering, and 
         Mathematics field (STEM). Also, to facilitate in other areas as well, 
         as to help to fully develop individuals to their highest potential." 
  	    </p>
- 	  <h1 className="header"> LAESA SHPE'S VISION </h1>
- 	    <p className="paragraph"> Our mission is to S.T.E.P into THE FUTURE. 
-        This can be accomplished by using four principles. They are the 
-        principles of Support, Teamwork, Excellence, and Professionalism!
+      </body>
+    </div>
+    <div className="box1">
+ 	  <h2> LAESA SHPE'S VISION </h2>
+ 	    <body>
+      <p> 
+        Our mission is to S.T.E.P into THE FUTURE. This can be accomplished
+        by using four principles. They are the principles of Support, Teamwork, 
+        Excellence, and Professionalism!
  	    </p>
-    </body>
+      </body>
   </div>
 
-  <body> 
-    <h1 className="header"> LAESA SHPE'S 5 Pillars </h1>
+  <div className="box2">
+    <h2> LAESA SHPE'S 5 Pillars </h2>
     <div className="row">
     <div>
      <img src={column} className="column" alt="column #1" />
@@ -62,8 +69,9 @@ return (
       <img src={column5} className="column-pop" alt="column #5" />
     </div>
     </div>
-  </body>
+  </div>
 
+  </header>
   </div>
 );
 }

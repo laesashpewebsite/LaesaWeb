@@ -3,7 +3,7 @@ import "./Members.css";
 
 import Logo from "./../pictures/SHPE_logo_FullColor.png";
 import Secretary from "./../pictures/Gloria.jpeg";
-import EVicePresident from "./../pictures/Evan.jpg";
+import EVicePresident from "./../pictures/Evan.JPG";
 import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
 
