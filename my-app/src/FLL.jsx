@@ -2,6 +2,7 @@ import React from 'react';
 import './FLL.css';
 import director from './pictures/Jean-Luc.jpg';
 import example from './pictures/Template for 5 pillars.png';
+import './pictures/FLL Pictures';
 
 function FLL() {
   return (
@@ -48,12 +49,29 @@ function FLL() {
     </div>
 
     <div className="box2">
-          <h3> Director Contact Info </h3>
-          <ul className="list">
-            <li className="list-requirement">P: 347-954-7628 </li>
-            <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
-          </ul>
-        </div>
+      <img 
+      className="Director-Photo"
+      src= {director}
+      alt="Picture 1"/>
+      <img 
+      className="Director-Photo"
+      src={director} 
+      alt="Picture 1"/>
+      <img 
+      className="Director-Photo"
+      src={director} 
+      alt="Picture 1"/>
+    </div>
+
+    <div className="box2">
+      <h3> Director Contact Info </h3>
+      <ul className="list">
+      <li className="list-requirement">P: 347-954-7628 </li>
+      <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
+      </ul>
+    </div>
+
+
         
     </header>
     </div>
