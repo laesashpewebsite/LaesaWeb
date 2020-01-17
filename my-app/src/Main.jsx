@@ -5,18 +5,14 @@ import PCED_group from './pictures/Convention-Group.jpg';
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import column from './pictures/Column-crop.png';
 import logo2 from './pictures/LAESA_LOGO.png';
-import column1 from './pictures/#1.jpeg';
-import column2 from './pictures/#2.jpg';
-import column3 from './pictures/#3.jpg';
-import column4 from './pictures/#4.jpg';
-import column5 from './pictures/#5.jpg';
+import './pillar.jsx';
 
 function main() {
 return (
   <div className="Main">
   <header className="header">
 
-    <div>
+    <div className="box1">
       <img
         src={SHPE_Convention}
         className="Main-Picture"
@@ -43,14 +39,22 @@ return (
         Excellence, and Professionalism!
  	    </p>
       </body>
+    </div>
+
+    <div className="box2">
+    public class Pillars {
+      
+    }
+    </div>
+
+  </header>
   </div>
+);
+}
+export default main;
 
-void getName(pillarArray) {
-        for(int i = 0; i < numbers.length; i++) { 
-            (numbers[i]); 
-        }
-
-  <div className="box2">
+/*
+ <div className="box2">
     <h2> LAESA SHPE'S 5 Pillars </h2>
     <pillar> 1 </pillar>
     <div className="row">
@@ -76,9 +80,4 @@ void getName(pillarArray) {
     </div>
     </div>
   </div>
-
-  </header>
-  </div>
-);
-}
-export default main;
+*/
