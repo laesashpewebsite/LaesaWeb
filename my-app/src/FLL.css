@@ -25,7 +25,10 @@
   font-weight: 700;
   text-align: center;
 }
+.Position {
+  
 
+}
 .box1 {
   color: #f26534;
   background-color: rgb(0, 31, 91, 100);
@@ -63,7 +66,7 @@
 
 .Director-Photo {
   margin: auto;
-  padding: 5px;
+  padding: 10px;
   height: 50%;
   width: 50%;
   }
