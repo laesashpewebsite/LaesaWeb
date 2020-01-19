@@ -24,8 +24,28 @@ function FLL() {
     </div>
 
     <div className="box2">
+      <h2> Pictures </h2>
+      <img 
+      className="Pictures"
+      src= {FLL_Picture1}
+      alt="Picture 1"/>
+      <img 
+      className="Pictures"
+      src={FLL_Picture2} 
+      alt="Picture 2"/>
+      <img 
+      className="Pictures"
+      src={FLL_Picture3} 
+      alt="Picture 3"/>
+      <img 
+      className="Pictures"
+      src={FLL_Picture4} 
+      alt="Picture 4"/>
+    </div>
+
+    <div className="box1">
  	    <h2> About the Director </h2>
-      <div className="Position">
+      <div>
       <img 
       className="Director-Photo"
  	    src={director} 
@@ -42,26 +62,6 @@ function FLL() {
       communication point with event organizers and ensure that the event goes smoothly, as well 
       as recruit as many volunteers as needed.
  	    </p>
-    </div>
-
-    <div className="box1">
-      <h2> Pictures </h2>
-      <img 
-      className="Director-Photo"
-      src= {FLL_Picture1}
-      alt="Picture 1"/>
-      <img 
-      className="Director-Photo"
-      src={FLL_Picture2} 
-      alt="Picture 2"/>
-      <img 
-      className="Director-Photo"
-      src={FLL_Picture3} 
-      alt="Picture 3"/>
-      <img 
-      className="Director-Photo"
-      src={FLL_Picture4} 
-      alt="Picture 4"/>
     </div>
 
     <div className="box2">

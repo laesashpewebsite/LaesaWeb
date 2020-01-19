@@ -1,13 +1,12 @@
 .Main {
   /*background-color: #72A9BE;*/
 }
-
-.Main-Picture {
-  height: 80%;
-  width: 99%;
+.Pictures {
   margin: auto;
+  padding: 10px;
+  height: 50%;
+  width: 50%;
 }
-
 .header p {
   font-size: 18px;
   text-align: justify;
@@ -25,10 +24,6 @@
   font-weight: 700;
   text-align: center;
 }
-.Position {
-  
-
-}
 .box1 {
   color: #f26534;
   background-color: rgb(0, 31, 91, 100);
@@ -39,7 +34,6 @@
   padding-bottom: 30px;
   /*margin-bottom: 10px;*/
 }
-
 .box2 {
   background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/
@@ -49,24 +43,21 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .box2 ul {
   text-align: center;
   margin-right: 40px;
 }
-
 .list {
   list-style-type: none;
 }
-
 .list-requirement {
   font-weight: 750;
   font-size: 18px;
 }
-
 .Director-Photo {
+  display: block;
   margin: auto;
   padding: 10px;
   height: 50%;
   width: 50%;
-  }
+}
