@@ -16,6 +16,7 @@ return (
   <header className="header">
 
     <div className="box1">
+    <h2> Meet Our Familia! </h2>
       <img
         src={SHPE_Convention}
         className="Main-Picture"
