@@ -1,31 +1,31 @@
-import React, { Component } from "react";
-import column from "./pictures/Column-crop.png";
-import { number } from "prop-types";
+import React, { Component } from 'react';
+import column from './pictures/Column-crop.png';
+import { number } from 'prop-types';
 
 const pillarArray = [
   {
     number: 1,
-    name: "Leadership",
+    name: "Academic Development",
     definition: "something"
   },
   {
     number: 2,
-    name: "Scholarship",
+    name: "Professional Development",
     definition: "something"
   },
   {
     number: 3,
-    name: "Community",
+    name: "Chapter Development",
     definition: "something"
   },
   {
     number: 4,
-    name: "",
+    name: "Leadership Development",
     definition: "something"
   },
   {
     number: 5,
-    name: "",
+    name: "Community Outreach",
     definition: "something"
   }
 ];
@@ -34,6 +34,7 @@ class Pillar extends Component {
   constructor() {
     super(this);
   }
+
   getName(pillarArray) {
     return this.pillarArray.name;
   }

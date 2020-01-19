@@ -45,7 +45,7 @@
   font-style: cursive;
   text-align: center;
 }
-
+/*
 .column-pop {
   position: absolute;
   width: 0px;
@@ -65,4 +65,28 @@
   height: 100%;
   width: 100%;
   margin-left: 10px;
+}
+*/
+.Column2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+}
+
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Column-pictures {
+  height: 60%;
+  margin: auto;
+  padding: 5px;
+}
+
+@media screen and (max-width: 800px){
+  .Column{
+    width: 100%;
+  }
 }
