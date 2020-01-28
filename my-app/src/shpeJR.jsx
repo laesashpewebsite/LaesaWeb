@@ -15,20 +15,21 @@
 // }
 // export default shpeJR;
 import React from "react";
-
-//import "./shpejr.css";
+import './shpejr.css';
 import PCED_Director from "./pictures/LAESA_LOGO.png";
 
 function shpeJR() {
   return (
-    <div className="PCED-main">
-      <header className="SHPE-header">
-        <div className="PCED-info"></div>
-        {/*could probably use a banner instead for the event*/}
+
+    <div className="Main">
+    <header className="SHPE-header">
+
+
         <div className="SHPE-GROUP-PIC">
           <h1 className="title"> SHPE Jr. </h1>
         </div>
-        <div className="card-color2">
+
+        <div className="box1">
           <h2>Noche de Ciencias</h2>
           <p>
             At SHPE, we know early exposure to STEM positively influences the
@@ -52,7 +53,7 @@ function shpeJR() {
             and engineers
           </p>
         </div>
-        <div className="card-color">
+        <div className="box2">
           <h2>Goals</h2>
           <ul class="text-center">
             <li className="events-list">
@@ -68,39 +69,57 @@ function shpeJR() {
             </li>
           </ul>
         </div>
-        <div className="card-color2">
-          <h2 align="center"> About the Director</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                src={PCED_Director}
-                className="SHPE-Director-Photo"
-                class="img-responsive"
-                alt="SHPE-Director"
-              />
-              {}
-              {}{" "}
-            </div>
 
-            <div class="col-md-4">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                ad dolore iste eaque, ullam neque molestias earum porro numquam
-                libero repudiandae modi distinctio itaque commodi cupiditate
-                fugit dolorem inventore? Nisi.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="box1">
+    <div className="Row">
+    <h2> About Our Directors </h2>
+    <div className="Column1">
+      <img 
+      className="Director-Photo"
+      src={PCED_Director} 
+      alt="Jean-Luc's Profile Picture"/>
+      <p className="body">
+      Jean-Luc Antoine is a second-year student at The City College of New York and has been part of 
+      LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For 
+      Inspiration and Recognition of Science and Technology) Lego League which is an organization
+      that creates a platform to support and help keep young elementary kids interested in STEM and
+      robotics. Jean-Luc was a volunteer in The Spring 2019 semester at the FFL event and now he is 
+      the director for the FIRST Lego League program at LA in which he is organizing, coordinating 
+      and planning FLL events. As part of his duties, Jean-Luc is overseeing logistics, act direct 
+      communication point with event organizers and ensure that the event goes smoothly, as well 
+      as recruit as many volunteers as needed.
+      </p>
+    </div>
+    <div className="Column1">
+      <img 
+      className="Director-Photo"
+      src={PCED_Director} 
+      alt="Jean-Luc's Profile Picture"/>
+      <p className="body">
+      Jean-Luc Antoine is a second-year student at The City College of New York and has been part of 
+      LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For 
+      Inspiration and Recognition of Science and Technology) Lego League which is an organization
+      that creates a platform to support and help keep young elementary kids interested in STEM and
+      robotics. Jean-Luc was a volunteer in The Spring 2019 semester at the FFL event and now he is 
+      the director for the FIRST Lego League program at LA in which he is organizing, coordinating 
+      and planning FLL events. As part of his duties, Jean-Luc is overseeing logistics, act direct 
+      communication point with event organizers and ensure that the event goes smoothly, as well 
+      as recruit as many volunteers as needed.
+      </p>
+    </div>
+    </div>
+    </div>
 
-        <div className="card-color">
-          <h4>Director Contact Information</h4>
+        <div className="box2">
+        <h3> Director Contact Info </h3>
           <ul className="Contact">
             <li className="events-list">P: 929-268-9609 </li>
             <li className="events-list">Email: laesa.shpejr@gmail.com </li>
             <li className="events-list">Personal: byronmarcatom@gmail.com</li>
           </ul>
         </div>
+
+
       </header>
     </div>
   );

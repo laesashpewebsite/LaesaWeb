@@ -86,10 +86,18 @@ function FLL() {
 
     <div className="box2">
       <h3> Director Contact Info </h3>
+      <div className="column1">
       <ul className="list">
       <li className="list-requirement">P: 347-954-7628 </li>
       <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
       </ul>
+      </div>
+      <div className="column1">
+      <ul className="list">
+      <li className="list-requirement">P: 347-954-7628 </li>
+      <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
+      </ul>
+      </div>
     </div>
 
 
