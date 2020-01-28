@@ -29,7 +29,7 @@ return (
       LAESA–SHPE is the largest and most prominent undergraduate student
       organization at The City College of New York. In 1983, a group of
       dedicated students, with the goal to unite all Latino and other
-      minority engineering students, share cultural ideas, and promote
+      minority engineering students, share cultural ideas and promote
       leadership, founded LAESA within City College. In 1986, LAESA joined
       forces with the Society of Hispanic Professional Engineers (SHPE) to
       better achieve their goals and connect with a larger body of
@@ -40,7 +40,44 @@ return (
       engineering disciplines and a diverse pool of cultural backgrounds.
       This dynamic group of students, alongside their highly supportive
       alumni members, has had many achievements at The City College of New
-      York and within the community.
+      York and within the community. Some of our accomplishments are listed
+      below: 
+      <ul>
+      <h5> Academic Development & Leadership Yearlty Programs </h5>
+        <li className="list">
+        Developing Excellence in Academics and Leadership DEAL Program since 2000
+        </li>
+        <li className="list">
+        Information Technology Program since 1990
+        </li>
+        <li className="list">
+        Mentorship Program since 2018
+        </li>
+      <h5> Community Outreach Programs & Events </h5>
+        <li className="list">
+        Pre-College Engineering Day since 1994
+        </li>
+        <li className="list">
+        New York Institute of Science, Technology, Engineering, and Mathematics since 2001
+        </li>
+        <li className="list">
+        Noche de Ciencas since 2017
+        </li>
+        <li className="list">
+        First Lego League since 2001
+        </li>
+        <li className="list">
+        SHPE Jr. Chapters at Manhattan Bridges High School and George Washington High 
+        School since 2019
+        </li>
+      <h5> Leadership Representatives within SHPE </h5>
+        <li className="list">
+        Region IV Regional Student Representative 2001, 2003, 2004, 2018
+        </li>
+        <li className="list">
+        Region IV Sub-Regional Student Representative 2000, 2006, 2018, 2019
+        </li>
+        </ul>
       </p>
     </div>
 
