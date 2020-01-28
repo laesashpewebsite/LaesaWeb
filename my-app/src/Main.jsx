@@ -24,6 +24,27 @@ return (
     </div>
   
     <div className="box2">
+    <h2> About LAESA-SHPE </h2>
+      <p className="body">
+      LAESA–SHPE is the largest and most prominent undergraduate student
+      organization at The City College of New York. In 1983, a group of
+      dedicated students, with the goal to unite all Latino and other
+      minority engineering students, share cultural ideas, and promote
+      leadership, founded LAESA within City College. In 1986, LAESA joined
+      forces with the Society of Hispanic Professional Engineers (SHPE) to
+      better achieve their goals and connect with a larger body of
+      professionals. This partnership has flourished over the years and
+      today, LAESA is a firm supporter of the SHPE core values, while
+      remaining true to its original mission. With over 150 members,
+      LAESA-SHPE has been able to gather motivated students from all
+      engineering disciplines and a diverse pool of cultural backgrounds.
+      This dynamic group of students, alongside their highly supportive
+      alumni members, has had many achievements at The City College of New
+      York and within the community.
+      </p>
+    </div>
+
+    <div className="box1">
     <div className="Row">
     <div className="Column1">
   	<h2> LAESA SHPE'S MISSION </h2>
@@ -53,7 +74,7 @@ return (
     </div>
     </div>
 
-   <div className="box1">
+   <div className="box2">
    <div className="Row">
    <h2>  5 Pillars of LAESA-SHPE</h2> 
 

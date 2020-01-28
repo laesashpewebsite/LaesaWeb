@@ -92,12 +92,7 @@ function FLL() {
       <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
       </ul>
       </div>
-      <div className="column1">
-      <ul className="list">
-      <li className="list-requirement">P: 347-954-7628 </li>
-      <li className="list-requirement">Email: jeanlucmantoine@gmail.com </li>
-      </ul>
-      </div>
+      
     </div>
 
 
