@@ -1,6 +1,8 @@
 import React from "react";
 import "./PCED.css";
+
 import PCED_Director from "./pictures/Arelis.png";
+import PCED_Director2 from "./pictures/Derwick.jpg";
 
 function PCED() {
   return (
@@ -41,7 +43,7 @@ function PCED() {
           </p>
         </div>
         <div className="card-color2">
-          <h2>About the Director</h2>
+          <h2>About Our Director</h2>
           <img
             src={PCED_Director}
             className="PCED-Director-Photo"
@@ -61,6 +63,21 @@ function PCED() {
             forms the bridge of communication between chapters across NYC. She
             is also directing Pre-College Engineering Day 2020 where her team's
             goals are listed below:
+          </p>
+          <img
+            src={PCED_Director2}
+            className="PCED-Director-Photo2"
+            alt="PCED-Director2"
+          />
+          <p>
+            I'm a Civil Engineering major at CCNY, some of my contributions for
+            the club are Co-director for the 26th PCED and Office manager, some
+            the reasons I picked these positions are because I like to be
+            organized and also work on self-development. Some hobbies that I'm
+            into are basketball, health ( mental and physical), reading books on
+            personal growth and listening to podcast. Laesa-shpe has opened many
+            doors for new opportunities, adventures and friends. I am grateful
+            for coming across this great organization.
           </p>
           <ul>
             <li className="events-list">Host event for 350+ students.</li>

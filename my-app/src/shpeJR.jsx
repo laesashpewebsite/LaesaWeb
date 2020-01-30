@@ -1,30 +1,12 @@
-// import React from 'react';
-// import construct from './pictures/under-construction.png';
-// import './Eboard.css'
-
-// function shpeJR() {
-//   return (
-//     <div className="Eboard-main">
-//    		<header className="Eboard-header">
-//         <img src={construct} className="constructPic" alt="logo" />
-//         <p className='Main-title'>
-//         </p>
-//       </header>
-//     </div>
-//   );
-// }
-// export default shpeJR;
 import React from "react";
-import './shpejr.css';
-import PCED_Director from "./pictures/LAESA_LOGO.png";
+import "./shpejr.css";
+import shpeJR_Director from "./pictures/Byron.jpg";
+import shpeJR_Director2 from "./pictures/Mariel.jpg";
 
 function shpeJR() {
   return (
-
     <div className="Main">
-    <header className="SHPE-header">
-
-
+      <header className="SHPE-header">
         <div className="SHPE-GROUP-PIC">
           <h1 className="title"> SHPE Jr. </h1>
         </div>
@@ -70,56 +52,52 @@ function shpeJR() {
           </ul>
         </div>
 
-    <div className="box1">
-    <div className="Row">
-    <h2> About Our Directors </h2>
-    <div className="Column1">
-      <img 
-      className="Director-Photo"
-      src={PCED_Director} 
-      alt="Jean-Luc's Profile Picture"/>
-      <p className="body">
-      Jean-Luc Antoine is a second-year student at The City College of New York and has been part of 
-      LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For 
-      Inspiration and Recognition of Science and Technology) Lego League which is an organization
-      that creates a platform to support and help keep young elementary kids interested in STEM and
-      robotics. Jean-Luc was a volunteer in The Spring 2019 semester at the FFL event and now he is 
-      the director for the FIRST Lego League program at LA in which he is organizing, coordinating 
-      and planning FLL events. As part of his duties, Jean-Luc is overseeing logistics, act direct 
-      communication point with event organizers and ensure that the event goes smoothly, as well 
-      as recruit as many volunteers as needed.
-      </p>
-    </div>
-    <div className="Column1">
-      <img 
-      className="Director-Photo"
-      src={PCED_Director} 
-      alt="Jean-Luc's Profile Picture"/>
-      <p className="body">
-      Jean-Luc Antoine is a second-year student at The City College of New York and has been part of 
-      LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For 
-      Inspiration and Recognition of Science and Technology) Lego League which is an organization
-      that creates a platform to support and help keep young elementary kids interested in STEM and
-      robotics. Jean-Luc was a volunteer in The Spring 2019 semester at the FFL event and now he is 
-      the director for the FIRST Lego League program at LA in which he is organizing, coordinating 
-      and planning FLL events. As part of his duties, Jean-Luc is overseeing logistics, act direct 
-      communication point with event organizers and ensure that the event goes smoothly, as well 
-      as recruit as many volunteers as needed.
-      </p>
-    </div>
-    </div>
-    </div>
+        <div className="box1">
+          <div className="Row">
+            <h2> About Our Directors </h2>
+            <div className="Column1">
+              <img
+                className="Director-Photo"
+                src={shpeJR_Director}
+                alt="Jean-Luc's Profile Picture"
+              />
+              <p className="body">
+                Byron Marcatoma is a computer science student. He has been part
+                of LAESA-SHPE since his freshman year in 2018 at The City
+                College of New York. The same year, he became co-director for
+                SHPE Jr and in May 2019, he directed Noches de Ciencias,
+                exposing minority students to STEM through science-based
+                projects and talks from professionals, and officially created a
+                chapter at Manhattan Bridges High school. For the current Year,
+                Byron is the director for SHPE Jr and aims to expose more
+                students to the STEM field and careers.
+              </p>
+            </div>
+            <div className="Column1">
+              <img
+                className="Director-Photo"
+                src={shpeJR_Director2}
+                alt="Jean-Luc's Profile Picture"
+              />
+              <p className="body">
+                Mariel Gonzalez is a mechanical engineering student transferred
+                from the Dominican Republic and co-director of LAESA
+                Shpe-Junior. When not studying, Mariel enjoys reaching out to
+                friends and family, hiking and planning for the next adventure
+                as an engineer
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="box2">
-        <h3> Director Contact Info </h3>
+          <h3> Director Contact Info </h3>
           <ul className="Contact">
             <li className="events-list">P: 929-268-9609 </li>
             <li className="events-list">Email: laesa.shpejr@gmail.com </li>
             <li className="events-list">Personal: byronmarcatom@gmail.com</li>
           </ul>
         </div>
-
-
       </header>
     </div>
   );
