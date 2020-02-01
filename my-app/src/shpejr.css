@@ -18,33 +18,29 @@
   -o-background-size: cover;
   background-size: cover;
   height: 85vh;
-  margin-top: -100px;
-  margin-bottom: 10px;
 }
-
-.card-color2 {
+.box1 {
+  color: #f26534;
+  background-color: rgb(0, 31, 91, 100);
+  font-weight: 600;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*margin-bottom: 10px;*/
+}
+.box2 {
   background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/
   font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 10px;
 }
 .SHPE-header p {
   font-weight: 750;
   text-indent: 30px;
-}
-.card-color {
-  color: #f26534;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 10px;
 }
 
 .SHPE-header {
@@ -55,8 +51,7 @@
   text-align: center;
   font-weight: 700;
 }
-
-.SHPE-header h4 {
+.SHPE-header h3 {
   font-weight: 700;
   text-align: center;
 }

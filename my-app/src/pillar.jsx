@@ -1,32 +1,36 @@
 import React, { Component } from "react";
 import "./pillar.css";
-//import pillars from "./pictures/Column.png";
+
+import column from "./pictures/Column-crop.png";
+import { number } from "prop-types";
 
 var num = 4;
 const pillarArray = [
   {
     number: 1,
-    name: "Leadership",
+    name: "Academic Development",
     definition: "something"
   },
   {
     number: 2,
-    name: "Scholarship",
+    name: "Professional Development",
     definition: "something"
   },
   {
     number: 3,
-    name: "Community",
+    name: "Chapter Development",
     definition: "something"
   },
   {
     number: 4,
     name: "title",
+    name: "Leadership Development",
     definition: "something"
   },
   {
     number: 5,
     name: "title",
+    name: "Community Outreach",
     definition: "something"
   }
 ];
@@ -41,6 +45,9 @@ class Pillar extends Component {
   increment() {
     if (num === 0) num = 4;
     else num--;
+  }
+  getName(pillarArray) {
+    return this.pillarArray.name;
   }
 
   render() {
