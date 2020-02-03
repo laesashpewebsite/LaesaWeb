@@ -59,7 +59,7 @@ function shpeJR() {
               <img
                 className="Director-Photo"
                 src={shpeJR_Director}
-                alt="Jean-Luc's Profile Picture"
+                alt="Byron's Profile Picture"
               />
               <p className="body">
                 Byron Marcatoma is a computer science student. He has been part
@@ -95,7 +95,6 @@ function shpeJR() {
           <ul className="Contact">
             <li className="events-list">P: 929-268-9609 </li>
             <li className="events-list">Email: laesa.shpejr@gmail.com </li>
-            <li className="events-list">Personal: byronmarcatom@gmail.com</li>
           </ul>
         </div>
       </header>

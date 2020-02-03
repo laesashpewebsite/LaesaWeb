@@ -64,6 +64,13 @@
   margin: auto;
   height: 80%;
 }
+.Director-photo{
+display: block;
+  margin: auto;
+  padding: 10px;
+  height: 50%;
+  width: 70%;
+}
 .events-list {
   font-weight: 750;
   font-size: 18px;
