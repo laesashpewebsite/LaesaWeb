@@ -69,7 +69,9 @@ class Director extends Component {
             <h4>
               {this.getTitle()}: {this.getName()}
             </h4>
-            <p className="bio">{this.getBio()}</p>
+            <p className="bio">
+            {this.getBio()}
+            </p>
           </div>
           {this.inc()}
         </header>
