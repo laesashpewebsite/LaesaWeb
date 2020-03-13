@@ -15,7 +15,43 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import PCED_Director from "./pictures/Arelis.png";
 import PCED_Director2 from "./pictures/Derwick.jpg";
-import './Director.jsx';
+
+
+var num = 0;
+const DirectorList = [
+  {
+    Title: "PCED Director",
+    Name: "Arelis Fienco",
+    Picture: PCED_Director,
+    Bio:
+      "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE since her freshman year in 2016 at The City College of New York. She started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High"
+      // School in April 2017. The following academic year, she became part
+      // of the PCED 2018 team by creating a meaningful project along her
+      // team that exposed high school students to leadership and real-life
+      // experiences. Last academic year, Arelis was part of the Executive
+      // Board for LAESA, serving as the External Vice-President. This year
+      // Arelis is the SHPE-NYC Sub-Regional Student Representative where she
+      // forms the bridge of communication between chapters across NYC. She
+      // is also directing Pre-College Engineering Day 2020 where her team's
+      // goals are listed below"
+  },
+  {
+    Title: "PCED CoDirector",
+    Name: "Derwick ",
+    Picture: PCED_Director2,
+    Bio:
+      "I'm a Civil Engineering major at CCNY, some of my contributions for"
+      // the club are Co-director for the 26th PCED and Office manager, some
+      // the reasons I picked these positions are because I like to be
+      // organized and also work on self-development. Some hobbies that I'm
+      // into are basketball, health ( mental and physical), reading books on
+      // personal growth and listening to podcast. Laesa-shpe has opened many
+      // doors for new opportunities, adventures and friends. I am grateful
+      // for coming across this great organization."
+  }
+];
+
+
 
 function Copyright() {
   return (
@@ -66,6 +102,23 @@ const cards = [1, 2,3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   const classes = useStyles();
+  
+ function getName() {
+    return DirectorList[num].Name;
+  }
+  function getBio() {
+    return DirectorList[num].Bio;
+  }
+  function getPic() {
+    return DirectorList[num].Picture;
+  }
+  function getTitle() {
+    return DirectorList[num].Title;
+  }
+  function inc() {
+    if (num === 1) num = 0;
+    else num++;
+  }
 
   return (
     <React.Fragment>
@@ -100,7 +153,7 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={PCED_Director}
+                    image={this.getPic()}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
@@ -122,63 +175,6 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
-
-        <div className={classes.heroContent}>
-          <Grid container spacing={4}>
-            {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={PCED_Director}
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Arelis Fienco
-                    </Typography>
-                    <Typography>
-                      Read more about your 26th PCED Director.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                  </CardActions>
-                </Card>
-
-              </Grid>
-            ))}
-            {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-
-            <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={this.getPic()}
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {this.getTitle()}: {this.getName()}
-                    </Typography>
-                    <Typography>
-                      {this.getBio()}
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                  </CardActions>
-                  {this.inc()}
-                </Card>
-              </Grid>
-            ))}
-            </Grid>
-        </div>
 
       </main>
       {/* Footer */}
