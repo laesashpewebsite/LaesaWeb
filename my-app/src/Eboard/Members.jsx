@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Members.css";
 
 import Logo from "./../pictures/SHPE_logo_FullColor.png";
+import President from "./../pictures/Luis.jpg";
 import Secretary from "./../pictures/Gloria.jpeg";
 import EVicePresident from "./../pictures/Evan.JPG";
 import IVicePresident from "./../pictures/Richard.png";
@@ -40,7 +41,7 @@ const EboardList = [
   {
     Title: "President",
     Name: "Luis",
-    Picture: Logo,
+    Picture: President,
     Bio:
       "Lorem ipsum dolor sit amet, cum eu corrumpit consectetuer. Ea sit falli doming, cu eos vide oblique, ei errem neglegentur nec. Cu has adhuc vivendo phaedrum, an vel lobortis pertinax erroribus, ex sonet oblique evertitur ius. Ius porro graeco vidisse et.    "
   }

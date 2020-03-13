@@ -1,5 +1,6 @@
 import React from "react";
 import "./PCED.css";
+import Album from "./Album";
 
 import PCED_Director from "./pictures/Arelis.png";
 import PCED_Director2 from "./pictures/Derwick.jpg";
@@ -7,9 +8,10 @@ import PCED_Director2 from "./pictures/Derwick.jpg";
 function PCED() {
   return (
     <div className="PCED-main">
-      <header className="PCED-header">
+      <Album></Album>
+      {/* <header className="PCED-header">
         <div className="PCED-info"></div>
-        {/*could probably use a banner instead for the event*/}
+        {/*could probably use a banner instead for the event}
         <div className="PCED-GROUP-PIC">
           <h1> Pre-College Engineering Day </h1>
         </div>
@@ -106,7 +108,7 @@ function PCED() {
             <li className="events-list">Personal: arelisfienco@outlook.com</li>
           </ul>
         </div>
-      </header>
+      </header> */}
     </div>
   );
 }
