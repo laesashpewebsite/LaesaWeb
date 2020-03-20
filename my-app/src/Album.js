@@ -143,12 +143,12 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={DirectorList[1].Picture}
+                    image={DirectorList[num].Picture}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      {DirectorList[1].Name}
+                      {DirectorList[num].Name}
                     </Typography>
                     <Typography>
                       Read more about your 26th PCED Director.
@@ -164,6 +164,10 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
+        {function inc() {
+          if (num == 1) num = 0;
+          else num++;
+        }}
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
