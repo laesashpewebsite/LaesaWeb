@@ -94,20 +94,37 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const cards = [1, 2];
+const cards = [1, 2,3];
 
 export default function Album() {
   const classes = useStyles();
+
+ function getName() {
+    return DirectorList[num].Name;
+  }
+  function getBio() {
+    return DirectorList[num].Bio;
+  }
+  function getPic() {
+    return DirectorList[num].Picture;
+  }
+  function getTitle() {
+    return DirectorList[num].Title;
+  }
+  function inc() {
+    if (num === 1) num = 0;
+    else num++;
+  }
+
 
   return (
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Album layout
-          </Typography>
+          <Typography>
+              Pre College Engineering Day
+            </Typography>
         </Toolbar>
       </AppBar>
       <main>
@@ -137,18 +154,27 @@ export default function Album() {
 
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
+
           <Grid container spacing={4}>
-            {cards.map(card => (
+            {cards.map(card =>(
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
+<<<<<<< HEAD
                     image={DirectorList[num].Picture}
+=======
+                    image={DirectorList[0].Picture}
+>>>>>>> 320705758b86f862df333ab3c3c93bc94997345e
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
+<<<<<<< HEAD
                       {DirectorList[num].Name}
+=======
+                      {DirectorList[0].Name}
+>>>>>>> 320705758b86f862df333ab3c3c93bc94997345e
                     </Typography>
                     <Typography>
                       Read more about your 26th PCED Director.
@@ -161,7 +187,7 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
-            ))}
+           ))}
           </Grid>
         </Container>
         {function inc() {
