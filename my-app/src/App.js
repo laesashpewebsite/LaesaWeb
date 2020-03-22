@@ -9,7 +9,7 @@ import Main from "./Main";
 import Events from "./Event";
 import Eboard from "./Eboard/Eboard";
 import FLL from "./FLL";
-import PCED from "./PCED";
+import PCED from "./Events/PCED";
 import SHPE_JR from "./shpeJR";
 
 class App extends Component {
