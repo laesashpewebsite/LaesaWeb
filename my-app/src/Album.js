@@ -95,7 +95,6 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const cards = [1, 2,3];
 
 export default function Album() {
   const classes = useStyles();
@@ -118,54 +117,133 @@ export default function Album() {
   }
 
 
-  return (
-  <React.Fragment>
-    <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <Typography>
-            Pre College Engineering Day
-          </Typography>
-        </Toolbar>
-      </AppBar>
+return (
+<React.Fragment>
+  <CssBaseline />
+    <AppBar position="relative">
+      <Toolbar>
+        <Typography>
+          Pre College Engineering Day
+        </Typography>
+      </Toolbar>
+    </AppBar>
 
-  <main>
-    {/* Hero unit */}
-    <div className={classes.heroContent}>
-    <Container maxWidth="sm">
-      <Typography
+<main>
+
+  <div className={classes.heroContent}>
+  <Container maxWidth="sm">
+    <Typography
       component="h1"
       variant="h2"
       align="center"
       color="textPrimary"
       gutterBottom>
         Pre College Engineering Day Album
-      </Typography>
-            <Typography
-              variant="h5"
-              align="center"
-              color="textSecondary"
-              paragraph
-            >
-              One of LAESA-SHPE's many big event hosted in City College of New
-              York
-            </Typography>
-          </Container>
-        </div>
+    </Typography>
+    <Typography
+      variant="h5"
+      align="center"
+      color="textSecondary"
+      paragraph>
+        One of LAESA-SHPE's many big event hosted in City College of New York
+    </Typography>
+  </Container>
+  </div>
 
-    <div> 
+  <div className={classes.heroContent}> 
     <Grid container spacing={5}>
-    <Grid container item xs={6} spacing={3}>
-    
-    <Card className={classes.root}>
+    <Grid container item xs={4} spacing={3}>
+      <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="140"
           image={DirectorList[0].Picture}
-          title="Contemplative Reptile"
-        />
+          title=" "/>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {DirectorList[0].Name}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+      </Card>
+    </Grid>
+
+    <Grid container item xs={4} spacing={3}>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={DirectorList[0].Picture}
+          title=" "/>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {DirectorList[0].Name}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+      </Card>
+    </Grid>
+
+    <Grid container item xs={4} spacing={3}>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={DirectorList[0].Picture}
+          title=" "/>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {DirectorList[0].Name}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+      </Card>
+    </Grid>
+    
+    </Grid>
+  </div>
+
+  <div> 
+    <Grid container spacing={5}>
+    <Grid container item xs={6} spacing={3}>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={DirectorList[0].Picture}
+          title="Contemplative Reptile"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[0].Name}
@@ -191,14 +269,13 @@ export default function Album() {
           alt="Contemplative Reptile"
           height="140"
           image={DirectorList[1].Picture}
-          title=""
-        />
+          title=""/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[1].Name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {DirectorList[0].Bio}
+            {DirectorList[1].Bio}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -207,29 +284,30 @@ export default function Album() {
           Learn More
         </Button>
       </CardActions>
-    </Card>
+      </Card>
     </Grid>
     </Grid>
-    </div>
+  </div>
+</main>
 
-      </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Director Contact Info
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          P: 917-392-4710
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Email: laesa.pced@gmail.com
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Personal: arelisfienco@outlook.com
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
-    </React.Fragment>
+
+<footer className={classes.footer}>
+  <Typography variant="h6" align="center" gutterBottom>
+    Director Contact Info
+  </Typography>
+  <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+    P: 917-392-4710
+  </Typography>
+  <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+    Email: laesa.pced@gmail.com
+  </Typography>
+  <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+    Personal: arelisfienco@outlook.com
+  </Typography>
+  <Copyright />
+ </footer>
+
+   
+  </React.Fragment>
   );
 }
