@@ -16,6 +16,7 @@ import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import PCED_Director from "./pictures/Arelis.png";
 import PCED_Director2 from "./pictures/Derwick.jpg";
+import PCED_Group_25 from "./pictures/PCED-GROUP1.JPG";
 
 var num = 0;
 const DirectorList = [
@@ -39,9 +40,7 @@ const DirectorList = [
     Title: "PCED CoDirector",
     Name: "Derwick ",
     Picture: PCED_Director2,
-    Bio: "I'm a Civil Engineering major at CCNY, some of my contributions for"
-    // the club are Co-director for the 26th PCED and Office manager, some
-    // the reasons I picked these positions are because I like to be
+    Bio: "I'm a Civil Engineering major at CCNY, some of my contributions for the club are Co-director for the 26th PCED and Office manager, some the reasons I picked these positions are because I like to be"
     // organized and also work on self-development. Some hobbies that I'm
     // into are basketball, health ( mental and physical), reading books on
     // personal growth and listening to podcast. Laesa-shpe has opened many
@@ -119,15 +118,7 @@ export default function Album() {
 
 return (
 <React.Fragment>
-  <CssBaseline />
-    <AppBar position="relative">
-      <Toolbar>
-        <Typography>
-          Pre College Engineering Day
-        </Typography>
-      </Toolbar>
-    </AppBar>
-
+ 
 <main>
 
   <div className={classes.heroContent}>
@@ -138,7 +129,7 @@ return (
       align="center"
       color="textPrimary"
       gutterBottom>
-        Pre College Engineering Day Album
+      26th Pre College Engineering Day
     </Typography>
     <Typography
       variant="h5"
@@ -150,31 +141,33 @@ return (
   </Container>
   </div>
 
+  <div>
+  <Card>
+    <CardMedia
+      component="img"
+      alt="25th PCED GROUP PIC"
+      height="400"
+      image={PCED_Group_25}
+      title="25th PCED GROUP PIC"/>
+  </Card>
+  </div>
+
   <div className={classes.heroContent}> 
+  <Typography variant="h3" align="center" gutterBottom>
+  25th PCED 
+  </Typography>
+
     <Grid container spacing={5}>
     <Grid container item xs={4} spacing={3}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          alt=" fill out "
+          height="300"
           image={DirectorList[0].Picture}
-          title=" "/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {DirectorList[0].Name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            
-          </Typography>
-        </CardContent>
+          title=" fill out "/>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
       </Card>
     </Grid>
 
@@ -183,67 +176,45 @@ return (
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          alt=" fill out "
+          height="300"
           image={DirectorList[0].Picture}
-          title=" "/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {DirectorList[0].Name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            
-          </Typography>
-        </CardContent>
+          title=" fill out "/>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-      </Card>
-    </Grid>
-
-    <Grid container item xs={4} spacing={3}>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image={DirectorList[0].Picture}
-          title=" "/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {DirectorList[0].Name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
       </Card>
     </Grid>
     
+    <Grid container item xs={4} spacing={3}>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt=" fill out "
+          height="300"
+          image={DirectorList[0].Picture}
+          title=" fill out "/>
+      </CardActionArea>
+      </Card>
+    </Grid>
+
     </Grid>
   </div>
 
   <div> 
+  <Typography variant="h3" align="center" gutterBottom>
+  PCED Directors
+  </Typography>
+
     <Grid container spacing={5}>
     <Grid container item xs={6} spacing={3}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          alt="Arelis' Profile Picture"
+          height="600"
           image={DirectorList[0].Picture}
-          title="Contemplative Reptile"/>
+          title="Arelis' Profile Picture"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[0].Name}
@@ -266,10 +237,10 @@ return (
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          alt="Derwick's Profile Picture"
+          height="600"
           image={DirectorList[1].Picture}
-          title=""/>
+          title="Derwick's Profile Picture"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[1].Name}
