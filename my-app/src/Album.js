@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import CameraIcon from "@material-ui/icons/PhotoCamera";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
+import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -118,28 +119,28 @@ export default function Album() {
 
 
   return (
-    <React.Fragment>
-      <CssBaseline />
+  <React.Fragment>
+    <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
           <Typography>
-              Pre College Engineering Day
-            </Typography>
+            Pre College Engineering Day
+          </Typography>
         </Toolbar>
       </AppBar>
-      <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
-              Pre College Engineering Day Album
-            </Typography>
+
+  <main>
+    {/* Hero unit */}
+    <div className={classes.heroContent}>
+    <Container maxWidth="sm">
+      <Typography
+      component="h1"
+      variant="h2"
+      align="center"
+      color="textPrimary"
+      gutterBottom>
+        Pre College Engineering Day Album
+      </Typography>
             <Typography
               variant="h5"
               align="center"
@@ -152,64 +153,78 @@ export default function Album() {
           </Container>
         </div>
 
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
+    <div> 
+    <Grid container spacing={5}>
+    <Grid container item xs={6} spacing={3}>
+    
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={DirectorList[0].Picture}
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {DirectorList[0].Name}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {DirectorList[0].Bio}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+    </Grid>
 
-          <Grid container spacing={4}>
-            {cards.map(card =>(
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={DirectorList[0].Picture}
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {DirectorList[0].Name}
-                    </Typography>
-                    <Typography>
-                      Read more about your 26th PCED Director.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-           ))}
-          </Grid>
-        </Container>
+    <Grid container item xs={6} spacing={3}>
+    <Card className={classes.root} >
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={DirectorList[1].Picture}
+          title=""
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {DirectorList[1].Name}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {DirectorList[0].Bio}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+    </Grid>
+    </Grid>
+    </div>
+
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
           Director Contact Info
         </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           P: 917-392-4710
         </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Email: laesa.pced@gmail.com
         </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Personal: arelisfienco@outlook.com
         </Typography>
         <Copyright />
