@@ -1,12 +1,12 @@
 import React from "react";
 
-import logo from "./pictures/LAESA_LOGO.png";
+// import logo from "./pictures/LAESA_LOGO.png";
 import "./Main.css";
 import PCED_group from "./pictures/Convention-Group.jpg";
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
-import Pillar from "./pillar";
-import column from "./pictures/Column-crop.png";
-import logo2 from "./pictures/LAESA_LOGO.png";
+// import Pillar from "./pillar";
+// import column from "./pictures/Column-crop.png";
+// import logo2 from "./pictures/LAESA_LOGO.png";
 import FLL_Picture1 from "./pictures/FLL Pictures/IMG_8317.jpg";
 import FLL_Picture2 from "./pictures/FLL Pictures/IMG_8322.jpg";
 import FLL_Picture3 from "./pictures/FLL Pictures/IMG_8311.jpg";
