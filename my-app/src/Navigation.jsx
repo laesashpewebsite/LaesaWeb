@@ -29,7 +29,7 @@ const Navigation = ({ history }) => (
               <NavDropdown.Item
                 className="eventsDropdownItem"
                 eventKey={1}
-                onClick={() => history.push("Events/PCED")}
+                onClick={() => history.push("/PCED")}
               >
                 PCED
               </NavDropdown.Item>

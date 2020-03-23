@@ -6,7 +6,6 @@ import "./App.css";
 
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Events from "./Event";
 import Eboard from "./Eboard/Eboard";
 import FLL from "./FLL";
 import PCED from "./Events/PCED";
@@ -20,7 +19,6 @@ class App extends Component {
           <Navigation />
           <Route exact path="/" component={Main} />
           <Route path="/Main" component={Main} />
-          <Route path="/Events" component={Events} />
           <Route path="/Eboard" component={Eboard} />
           <Route path="/FLL" component={FLL} />
           <Route path="/PCED" component={PCED} />
