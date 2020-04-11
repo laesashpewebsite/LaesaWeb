@@ -144,7 +144,7 @@ return (
   </Container>
   </div>
 
-  <div>
+  
   <Card>
     <CardMedia
       component="img"
@@ -153,7 +153,18 @@ return (
       image={PCED_Group_25}
       title="25th PCED GROUP PIC"/>
   </Card>
-  </div>
+  /br
+  <Card>
+  <Typography variant="h3" align="center" gutterBottom>
+  Our mission
+  </Typography>
+    <Typography>
+    "The goal of PCED is to expose the younger Latino community to
+    STEM related careers (Science, Technology, Engineering and
+    Mathematics) while obtaining real-life project experience, and
+    developing team-building and leadership skills"
+    </ Typography>
+  </Card>
 
   <div className={classes.heroContent}> 
   <Typography variant="h3" align="center" gutterBottom>
@@ -161,7 +172,7 @@ return (
   </Typography>
 
     <Grid container spacing={5}>
-    <Grid container item xs={4} spacing={3}>
+    <Grid container item xs={4} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -174,7 +185,7 @@ return (
       </Card>
     </Grid>
 
-    <Grid container item xs={4} spacing={3}>
+    <Grid container item xs={4} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -187,7 +198,7 @@ return (
       </Card>
     </Grid>
     
-    <Grid container item xs={4} spacing={3}>
+    <Grid container item xs={4} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -203,15 +214,15 @@ return (
   </div>
 
   <div>
-  <G
+  
   </div>
   <div> 
   <Typography variant="h3" align="center" gutterBottom>
-  PCED Directors
+  Our PCED Directors!
   </Typography>
 
-    <Grid container spacing={5}>
-    <Grid container item xs={6} spacing={3}>
+    <Grid container spacing={3}>
+    <Grid container item xs={6} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -232,7 +243,7 @@ return (
     </Card>
     </Grid>
 
-    <Grid container item xs={6} spacing={3}>
+    <Grid container item xs={6} spacing={0}>
     <Card className={classes.root} >
       <CardActionArea>
         <CardMedia
