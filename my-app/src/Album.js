@@ -25,16 +25,19 @@ const DirectorList = [
     Name: "Arelis Fienco",
     Picture: PCED_Director,
     Bio:
-      "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE since her freshman year in 2016 at The City College of New York. She started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High \
-          School in April 2017. The following academic year, she became part\
-          of the PCED 2018 team by creating a meaningful project along her \
-          team that exposed high school students to leadership and real-life\
-          experiences. Last academic year, Arelis was part of the Executive\
-          Board for LAESA, serving as the External Vice-President. This year\
-          Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
-          forms the bridge of communication between chapters across NYC. She\
-          is also directing Pre-College Engineering Day 2020 where her team's\
-          goals are listed below "
+      "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE\
+        since her freshman year in 2016 at The City College of New York. She\
+        started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
+        Noche de Ciencias at Manhattan Bridges High \
+        School in April 2017. The following academic year, she became part\
+        of the PCED 2018 team by creating a meaningful project along her \
+        team that exposed high school students to leadership and real-life\
+        experiences. Last academic year, Arelis was part of the Executive\
+        Board for LAESA, serving as the External Vice-President. This year\
+        Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
+        forms the bridge of communication between chapters across NYC. She\
+        is also directing Pre-College Engineering Day 2020 where her team's\
+        goals are listed below "
   },
   {
     Title: "PCED CoDirector",
@@ -163,7 +166,7 @@ return (
     STEM related careers (Science, Technology, Engineering and
     Mathematics) while obtaining real-life project experience, and
     developing team-building and leadership skills"
-    </ Typography>
+    </Typography>
   </Card>
 
   <div className={classes.heroContent}> 
@@ -222,15 +225,18 @@ return (
   </Typography>
 
     <Grid container spacing={3}>
+
+// co-directos information, such as name, degree, something they would like to share
+   
     <Grid container item xs={6} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Arelis' Profile Picture"
+          alt="PCED Director's Profile Picture"
           height="600"
           image={DirectorList[0].Picture}
-          title="Arelis' Profile Picture"/>
+          title="PCED Director's Profile Picture"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[0].Name}
@@ -243,15 +249,17 @@ return (
     </Card>
     </Grid>
 
+// co-directos information, such as name, degree, something they would like to share
+    
     <Grid container item xs={6} spacing={0}>
     <Card className={classes.root} >
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Derwick's Profile Picture"
+          alt="PCED CoDirector's Profile Picture"
           height="600"
           image={DirectorList[1].Picture}
-          title="Derwick's Profile Picture"/>
+          title="PCED CoDirector's Profile Picture"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {DirectorList[1].Name}
@@ -267,6 +275,7 @@ return (
   </div>
 </main>
 
+// directors footer - their contact information
 
 <footer className={classes.footer}>
   <Typography variant="h6" align="center" gutterBottom>

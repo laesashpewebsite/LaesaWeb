@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from 'react-bootstrap/Carousel'
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import CameraIcon from "@material-ui/icons/PhotoCamera";
@@ -158,86 +159,123 @@ return (
   //     image={PCED_Group_25}
   //     title="25th PCED GROUP PIC"/>
   
-<Container>
-  <Typography variant="h3" align="center" gutterBottom>
-    Our mission
-  </Typography>
-  <Typography>
-    "First Lego League's mission is to inspire young adults to be science\ 
+<Card>
+  <Card.Title> Our mission </Card.Title>
+  <Card.Text>
+      "First Lego League's mission is to inspire young adults to be science\ 
     and technology innovators, by engaging them in exciting programs that\ 
     help them build the necessaries skills in science, engineering, and \\
     technology."
-  </Typography>
-  </Container>
+    </Card.Text>
+  </Card>
 
   <div className={classes.heroContent}> 
   <Typography variant="h3" align="center" gutterBottom>
   xxth First Lego League 
   </Typography>
 
-    <Grid container spacing={5}>
-    <Grid container item xs={4} spacing={0}>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt=" fill out "
-          height="300"
-          image={FLL_Picture1}
-          title=" fill out "/>
-      </CardActionArea>
-      </Card>
-    </Grid>
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={FLL_Picture1}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="{FLL_Picture2}
+      alt="Third slide"
+    />
 
-    <Grid container item xs={4} spacing={0}>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"ß
-          alt=" fill out "
-          height="300"
-          image={FLL_Picture2}
-          title=" fill out "/>
-      </CardActionArea>
-      </Card>
-    </Grid>
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={FLL_Picture3}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+    // <Grid container spacing={5}>
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture1}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
+
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"ß
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture2}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
     
-    <Grid container item xs={4} spacing={0}>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt=" fill out "
-          height="300"
-          image={FLL_Picture3}
-          title=" fill out "/>
-      </CardActionArea>
-      </Card>
-    </Grid>
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture3}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
 
-    <Grid container item xs={4} spacing={0}>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt=" fill out "
-          height="300"
-          image={FLL_Picture4}
-          title=" fill out "/>
-      </CardActionArea>
-      </Card>
-    </Grid>
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture4}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
 
-    </Grid>
+    // </Grid>
   </div>
 
+/// Directors Information
   <div> 
   <Typography variant="h3" align="center" gutterBottom>
     Our FLL Directors!
   </Typography>
 
     <Grid container spacing={3}>
-// co-directos information, such as name, degree, something they would like to share
+// CoDirectos information such as name, degree, something they would like to share
     
     <Grid container item xs={6} spacing={0}>
       <Card className={classes.root}>
