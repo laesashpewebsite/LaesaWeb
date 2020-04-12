@@ -158,16 +158,17 @@ return (
   //     height="400"
   //     image={PCED_Group_25}
   //     title="25th PCED GROUP PIC"/>
+  // </Card>
   
 <Card>
   <Card.Title> Our mission </Card.Title>
   <Card.Text>
-      "First Lego League's mission is to inspire young adults to be science\ 
-    and technology innovators, by engaging them in exciting programs that\ 
-    help them build the necessaries skills in science, engineering, and \\
+      "First Lego League's mission is to inspire young adults to be science\
+    and technology innovators, by engaging them in exciting programs that \
+    help them build the necessaries skills in science, engineering, and \
     technology."
-    </Card.Text>
-  </Card>
+  </Card.Text>
+</Card>
 
   <div className={classes.heroContent}> 
   <Typography variant="h3" align="center" gutterBottom>
@@ -175,108 +176,50 @@ return (
   </Typography>
 
 <Carousel>
+
   <Carousel.Item>
     <img
       className="d-block w-100"
       src={FLL_Picture1}
-      alt="First slide"
+      alt="First picture"
     />
     <Carousel.Caption>
       <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="{FLL_Picture2}
-      alt="Third slide"
-    />
 
+  <Carousel.Item>
+    <img className="d-block w-100" src={FLL_Picture2} alt="Second slide"/>
     <Carousel.Caption>
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
+
   <Carousel.Item>
     <img
       className="d-block w-100"
       src={FLL_Picture3}
       alt="Third slide"
     />
-
     <Carousel.Caption>
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</div>
 
-    // <Grid container spacing={5}>
-    // <Grid container item xs={4} spacing={0}>
-    //   <Card className={classes.root}>
-    //   <CardActionArea>
-    //     <CardMedia
-    //       component="img"
-    //       alt=" fill out "
-    //       height="300"
-    //       image={FLL_Picture1}
-    //       title=" fill out "/>
-    //   </CardActionArea>
-    //   </Card>
-    // </Grid>
 
-    // <Grid container item xs={4} spacing={0}>
-    //   <Card className={classes.root}>
-    //   <CardActionArea>
-    //     <CardMedia
-    //       component="img"ß
-    //       alt=" fill out "
-    //       height="300"
-    //       image={FLL_Picture2}
-    //       title=" fill out "/>
-    //   </CardActionArea>
-    //   </Card>
-    // </Grid>
-    
-    // <Grid container item xs={4} spacing={0}>
-    //   <Card className={classes.root}>
-    //   <CardActionArea>
-    //     <CardMedia
-    //       component="img"
-    //       alt=" fill out "
-    //       height="300"
-    //       image={FLL_Picture3}
-    //       title=" fill out "/>
-    //   </CardActionArea>
-    //   </Card>
-    // </Grid>
 
-    // <Grid container item xs={4} spacing={0}>
-    //   <Card className={classes.root}>
-    //   <CardActionArea>
-    //     <CardMedia
-    //       component="img"
-    //       alt=" fill out "
-    //       height="300"
-    //       image={FLL_Picture4}
-    //       title=" fill out "/>
-    //   </CardActionArea>
-    //   </Card>
-    // </Grid>
 
-    // </Grid>
-  </div>
-
-/// Directors Information
   <div> 
   <Typography variant="h3" align="center" gutterBottom>
     Our FLL Directors!
   </Typography>
 
     <Grid container spacing={3}>
-// CoDirectos information such as name, degree, something they would like to share
-    
     <Grid container item xs={6} spacing={0}>
       <Card className={classes.root}>
       <CardActionArea>
@@ -320,11 +263,12 @@ return (
       </CardActionArea>
       </Card>
     </Grid>
-    </Grid>
+  </Grid>
+
   </div>
 </main>
 
-// directors footer - their contact information
+/// directors footer - their contact information
 
 <footer className={classes.footer}>
   <Typography variant="h6" align="center" gutterBottom>
@@ -451,3 +395,62 @@ return (
 //   );
 // }
 // export default FLL;
+
+
+
+    /// <Grid container spacing={5}>
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture1}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
+
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"ß
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture2}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
+    
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture3}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
+
+    // <Grid container item xs={4} spacing={0}>
+    //   <Card className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia
+    //       component="img"
+    //       alt=" fill out "
+    //       height="300"
+    //       image={FLL_Picture4}
+    //       title=" fill out "/>
+    //   </CardActionArea>
+    //   </Card>
+    // </Grid>
+
+    // </Grid>
+
+// Directors Information
