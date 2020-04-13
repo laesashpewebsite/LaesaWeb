@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import FLL_Director from './pictures/Jean-Luc.jpg';
+import FLL_Director2 from './pictures/Cesar.jpg';
 import FLL_Picture1 from './pictures/FLL Pictures/IMG_8317.jpg';
 import FLL_Picture2 from './pictures/FLL Pictures/IMG_8322.jpg';
 import FLL_Picture3 from './pictures/FLL Pictures/IMG_8311.jpg';
@@ -41,9 +42,19 @@ const DirectorList = [
   {
     Title: "FLL CoDirector",
     Name: "Ceasar",
-    Picture: FLL_Director,
+    Picture: FLL_Director2,
     Bio:
-      "--- TBD ---"
+      "My name is Cesar Tacuri,and I am Civil Engineering major on his junior year. I joined\
+      LAESA in Spring of 2019. Being a transfer student, it was hard adjusting to a new school\
+      and a new community. As I explored my campus and its resources, I came across LAESA.\
+      Throughout the next semester, I decided to become a more active member and experienced\
+      what LAESA was truly about. They’re a group of students inspiring and encouraging other\
+      students through a strong work ethic, accomplishments, and discipline. Personally, I wanted\
+      to give new students the same tools and knowledge LAESA had given me. So, in Fall of 2019,\
+      I became the co-director of Recruitment and Retention, First Lego League (FLL), and\
+       Pre-College Engineering Day (PCED) Logistics. I made sure I was well known by my peers and\
+      that my peers were well known, too. LAESA will forever be my life’s best chapter not only for\
+      the professional development but for the friends I’ve made. I am proud to be a LAESA member."
   }
 ];
 const DirectorContactInfo = [
