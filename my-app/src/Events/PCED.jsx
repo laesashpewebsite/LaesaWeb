@@ -16,7 +16,10 @@ class PCED extends Component {
         Name: "Arelis Fienco",
         Picture: PCED_Director,
         Bio:
-          "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE since her freshman year in 2016 at The City College of New York. She started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High \
+          "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE\
+          since her freshman year in 2016 at The City College of New York. She\
+          started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
+          Noche de Ciencias at Manhattan Bridges High \
           School in April 2017. The following academic year, she became part\
           of the PCED 2018 team by creating a meaningful project along her \
           team that exposed high school students to leadership and real-life\

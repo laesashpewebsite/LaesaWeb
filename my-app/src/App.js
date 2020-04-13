@@ -8,7 +8,7 @@ import Navigation from "./Navigation";
 import Main from "./Main";
 import Eboard from "./Eboard/Eboard";
 import FLL from "./FLL";
-import PCED from "./Events/PCED";
+import PCED from "./Album";
 import SHPE_JR from "./shpeJR";
 
 class App extends Component {
