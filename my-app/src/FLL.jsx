@@ -161,16 +161,8 @@ return (
     </Typography>
   </Container>
   </div>
-
-  // <Card>
-  //   <CardMedia
-  //     component="img"
-  //     alt="25th PCED GROUP PIC"
-  //     height="400"
-  //     image={PCED_Group_25}
-  //     title="25th PCED GROUP PIC"/>
-  // </Card>
   
+
 <Card>
   <Card.Title> Our mission </Card.Title>
   <Card.Text>
