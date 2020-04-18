@@ -1,6 +1,3 @@
-.Main {
-  /*background-color: #72A9BE;*/
-}
 .Pictures {
   margin: auto;
   padding: 10px;
@@ -45,7 +42,7 @@
 }
 .box2 ul {
   text-align: center;
- /* margin-right: 40px;*/
+  /* margin-right: 40px;*/
 }
 .body {
   display: block;
