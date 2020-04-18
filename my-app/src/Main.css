@@ -38,11 +38,11 @@
   padding-bottom: 30px;
 }
 .body {
-  display: block;
-  height: 150px;
+  display: grid;
   background-color: #d3d3d3;
   border-radius: 10px;
   padding: 5px;
+  margin-bottom: 50px;
 }
 .Column1 {
   float: left;
