@@ -43,7 +43,6 @@ function main() {
             York and within the community. Some of our accomplishments are
             listed below:
           </p>
-
           <ul>
             <h5> Academic Development & Leadership Yearlty Programs </h5>
             <li className="list">

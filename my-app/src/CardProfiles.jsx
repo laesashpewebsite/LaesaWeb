@@ -8,6 +8,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { red } from "@material-ui/core/colors";
+import { border } from "@material-ui/system";
+import "./CardProfiles.css";
 
 // import MoreVertIcon from "@material-ui/icons/MoreVert";
 // import Collapse from "@material-ui/core/Collapse";
@@ -22,13 +24,21 @@ import { red } from "@material-ui/core/colors";
 //css styles modification for CardProfiles
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 500
+    maxWidth: 700,
+    margin: "auto",
+    border: "none",
+    solid: "none",
+    marginBottom: "20px",
+    backgroundColor: "#72a9be",
+    textAlign: "center"
   },
   //css for the pictures
   media: {
-    margin: "auto",
-    height: 0,
-    paddingTop: "56.25%" // 16:9
+    objectFit: "contain",
+    paddingTop: "100%",
+    borderRadius: "50%",
+    objectPosition: "auto",
+    marginBottom: "50px"
   },
   expand: {
     transform: "rotate(0deg)",
@@ -58,6 +68,10 @@ export default function CardProfiles(props) {
   // this is calling from the DirectorsList Array
   return props.DirectorListName.map(dl => (
     <Card className={classes.root}>
+      {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}
+      <div className="Pics">
+        <CardMedia className={classes.media} image={dl.Picture} title="hello" />
+      </div>
       <CardHeader
         className="title"
         //adds an "Avatar icon on the side of the "
@@ -69,8 +83,6 @@ export default function CardProfiles(props) {
         // gets the value of "Name" from directorslist
         // subheader="September 14, 2016"
       />
-      {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}
-      <CardMedia className={classes.media} image={dl.Picture} title="hello" />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           {/* INFO FOR BIO IS BEING CALLED HERE */}
