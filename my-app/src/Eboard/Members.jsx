@@ -1,3 +1,4 @@
+// creates a componnet to showcase a 1 member from an arrray.
 import React, { Component } from "react";
 import "./Members.css";
 
@@ -9,6 +10,8 @@ import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
 
 var num = 4;
+// array of size 5 that incldes memebers information
+// information includes Title, Secretary, Name, Picture, Bio
 const EboardList = [
   {
     Title: "Secretary",
@@ -46,6 +49,7 @@ const EboardList = [
       "Lorem ipsum dolor sit amet, cum eu corrumpit consectetuer. Ea sit falli doming, cu eos vide oblique, ei errem neglegentur nec. Cu has adhuc vivendo phaedrum, an vel lobortis pertinax erroribus, ex sonet oblique evertitur ius. Ius porro graeco vidisse et.    "
   }
 ];
+// class calls the values in the array and instantiates them
 class Members extends Component {
   getName() {
     return EboardList[num].Name;
@@ -71,6 +75,7 @@ class Members extends Component {
           <div>
             <img
               src={this.getPic()}
+              // calls value in the array to show members pic
               width="10%"
               height="10%"
               alt="Eboard_member"
@@ -78,10 +83,13 @@ class Members extends Component {
             />
             <h4 className="Title">
               {this.getTitle()}: {this.getName()}
+              {/* // calls value in the array to show members title and name */}
             </h4>
             <p className="bio">{this.getBio()}</p>
+            {/* gets the bio information from the Array. */}
           </div>
           {this.inc()}
+          {/* movies index of the array to the next value to show next member */}
         </header>
       </div>
     );

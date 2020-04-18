@@ -1,6 +1,4 @@
 import React from "react";
-
-// import logo from "./pictures/LAESA_LOGO.png";
 import "./Main.css";
 import PCED_group from "./pictures/Convention-Group.jpg";
 import SHPE_Convention from "./pictures/Convention-Group.jpg";

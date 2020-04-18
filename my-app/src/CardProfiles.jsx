@@ -46,7 +46,11 @@ export default function CardProfiles(props) {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  return props.DirectorList.map(dl => (
+
+  // how can I change the array that is being called here??
+  // dl is the name of the array that is being run through
+  // this is calling from the DirectorsList Array
+  return props.DirectorListName.map(dl => (
     <Card className={classes.root}>
       <CardHeader
         className="title"
@@ -61,6 +65,7 @@ export default function CardProfiles(props) {
         //   </IconButton>
         // }
         title={dl.Name}
+        // gets the value of "Name from directorslist"
         // subheader="September 14, 2016"
       />
       <CardMedia className={classes.media} image={dl.Picture} title="hello" />

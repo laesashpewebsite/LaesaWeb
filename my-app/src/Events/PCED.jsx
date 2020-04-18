@@ -9,6 +9,7 @@ import PCED_Director2 from "../pictures/Derwick.jpg";
 
 class PCED extends Component {
   state = {
+    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
     DirectorList: [
       {
         id: 1,
@@ -48,8 +49,6 @@ class PCED extends Component {
     ]
   };
   render() {
-    // console.log(this.state.DirectorList);
-
     return (
       <div className="PCED-main">
         <header className="PCED-header">
@@ -87,10 +86,10 @@ class PCED extends Component {
               developing team-building and leadership skills"
             </p>
           </div>
-          <div className="card-color2">
-            <CardProfiles DirectorList={this.state.DirectorList} />
+          <CardProfiles DirectorListName={this.state.DirectorList} />
 
-            {/* <div className="card-color2">
+          <div className="card-color2">
+            {/*
             <h2>About Our Director</h2>
             <img
               src={PCED_Director}

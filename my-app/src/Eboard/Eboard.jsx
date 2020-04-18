@@ -16,6 +16,7 @@ function Eboard() {
             <div>
               <Row className="color1">
                 <Members></Members>
+                {/* This calls a member and adds eboard memeber profile. */}
               </Row>
             </div>
             <div>
