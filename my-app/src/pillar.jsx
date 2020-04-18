@@ -1,3 +1,4 @@
+// where is this being used??
 import React, { Component } from "react";
 import "./pillar.css";
 

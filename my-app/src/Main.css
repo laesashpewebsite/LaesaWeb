@@ -1,6 +1,3 @@
-.Main {
-  
-}
 .Main-Picture {
   height: 80%;
   width: 100%;
@@ -83,13 +80,13 @@
   font-size: 18px;
   text-align: left;
 }
-@media screen and (max-width: 1125px){
-  .Column1{
+@media screen and (max-width: 1125px) {
+  .Column1 {
     width: 100%;
   }
 }
-@media screen and (max-width: 1125px){
-  .Column2{
+@media screen and (max-width: 1125px) {
+  .Column2 {
     width: 100%;
   }
 }

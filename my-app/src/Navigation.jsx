@@ -1,3 +1,4 @@
+//used for the navigation bar on top of each page
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";

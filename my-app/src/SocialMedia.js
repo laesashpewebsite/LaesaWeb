@@ -1,3 +1,5 @@
+//This is for the social media Icons that can be added anywhere throughout the website
+
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import "./SocialMedia.css";
@@ -7,6 +9,7 @@ function SocialMedia() {
     <div className="Main-socialIcons">
       <div className="social-links">
         <SocialIcon
+          // automatically changes to a default social media icon based on the url.
           className="pos-social"
           url="https://www.instagram.com/laesa_shpe/"
           bgColor="#D23F26"
