@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./PCED.css";
 import CardProfiles from "../CardProfiles";
-import EventItem from "./EventItem.jsx";
+// import EventItem from "./EventItem.jsx";
 
 import PCED_Director from "../pictures/Arelis.png";
 import PCED_Director2 from "../pictures/Derwick.jpg";

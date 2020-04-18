@@ -10,38 +10,31 @@ class shpeJR extends Component {
     DirectorList: [
       {
         id: 1,
-        Title: "PCED Director",
-        Name: "Arelis Fienco",
-        Picture: shpeJR_Director,
+        Title: "SHPE Jr Director",
+        Name: "Mariel Gonzalez",
+        Picture: shpeJR_Director2,
         Bio:
-          "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE\
-          since her freshman year in 2016 at The City College of New York. She\
-          started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
-          Noche de Ciencias at Manhattan Bridges High \
-          School in April 2017. The following academic year, she became part\
-          of the PCED 2018 team by creating a meaningful project along her \
-          team that exposed high school students to leadership and real-life\
-          experiences. Last academic year, Arelis was part of the Executive\
-          Board for LAESA, serving as the External Vice-President. This year\
-          Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
-          forms the bridge of communication between chapters across NYC. She\
-          is also directing Pre-College Engineering Day 2020 where her team's\
-          goals are listed below "
+          "Mariel Gonzalez is a mechanical engineering student transferred\
+          from the Dominican Republic and co-director of LAESA\
+          Shpe-Junior. When not studying, Mariel enjoys reaching out to\
+          friends and family, hiking and planning for the next adventure\
+          as an engineer"
       },
       {
         id: 2,
-        Title: "PCED CoDirector",
-        Name: "Derwick ",
-        Picture: shpeJR_Director2,
+        Title: "SHPE Jr CoDirector",
+        Name: "Byron Marcatoma",
+        Picture: shpeJR_Director,
         Bio:
-          "I'm a Civil Engineering major at CCNY, some of my contributions for\
-        the club are Co-director for the 26th PCED and Office manager, some\
-        the reasons I picked these positions are because I like to be\
-        organized and also work on self-development. Some hobbies that I'm\
-        into are basketball, health ( mental and physical), reading books on\
-        personal growth and listening to podcast. Laesa-shpe has opened many\
-        doors for new opportunities, adventures and friends. I am grateful\
-        for coming across this great organization."
+          " Byron Marcatoma is a computer science student. He has been part\
+        of LAESA-SHPE since his freshman year in 2018 at The City\
+        College of New York. The same year, he became co-director for\
+        SHPE Jr and in May 2019, he directed Noches de Ciencias,\
+        exposing minority students to STEM through science-based\
+        projects and talks from professionals, and officially created a\
+        chapter at Manhattan Bridges High school. For the current Year,\
+        Byron is the director for SHPE Jr and aims to expose more\
+        students to the STEM field and careers."
       }
     ]
   };
@@ -77,6 +70,7 @@ class shpeJR extends Component {
               and engineers
             </p>
           </div>
+
           <div className="box2">
             <h2>Goals</h2>
             <ul class="text-center">
@@ -94,42 +88,6 @@ class shpeJR extends Component {
             </ul>
           </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
-          {/* <div className="Row">
-            <h2> About Our Directors </h2>
-            <div className="Column1">
-              <img
-                className="Director-Photo"
-                src={shpeJR_Director}
-                alt="Byron's Profile Picture"
-              />
-              <p className="body">
-                Byron Marcatoma is a computer science student. He has been part
-                of LAESA-SHPE since his freshman year in 2018 at The City
-                College of New York. The same year, he became co-director for
-                SHPE Jr and in May 2019, he directed Noches de Ciencias,
-                exposing minority students to STEM through science-based
-                projects and talks from professionals, and officially created a
-                chapter at Manhattan Bridges High school. For the current Year,
-                Byron is the director for SHPE Jr and aims to expose more
-                students to the STEM field and careers.
-              </p>
-            </div>
-            <div className="Column1">
-              <img
-                className="Director-Photo"
-                src={shpeJR_Director2}
-                alt="Jean-Luc's Profile Picture"
-              />
-              <p className="body">
-                Mariel Gonzalez is a mechanical engineering student transferred
-                from the Dominican Republic and co-director of LAESA
-                Shpe-Junior. When not studying, Mariel enjoys reaching out to
-                friends and family, hiking and planning for the next adventure
-                as an engineer
-              </p>
-            </div>
-          </div>
-        </div> */}
 
           <div className="box2">
             <h3> Director Contact Info </h3>
