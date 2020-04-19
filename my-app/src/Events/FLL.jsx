@@ -17,10 +17,9 @@ import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import FLL_Director from "../pictures/Jean-Luc.jpg";
 import FLL_Director2 from "../pictures/Cesar.jpg";
-import FLL_Picture1 from "../pictures/FLL Pictures/IMG_8317.jpg";
-import FLL_Picture2 from "../pictures/FLL Pictures/IMG_8322.jpg";
-import FLL_Picture3 from "../pictures/FLL Pictures/IMG_8311.jpg";
-import FLL_Picture4 from "../pictures/FLL Pictures/IMG_8316.jpg";
+import FLL_Picture1 from "../pictures/FLL_Pictures/IMG_8317.jpg";
+import FLL_Picture2 from "../pictures/FLL_Pictures/IMG_8322.jpg";
+import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
 import CardProfiles from "./CardProfiles";
 
 import "./Events.css";
@@ -72,7 +71,7 @@ class FLL extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           <div className="FLL-GROUP-PIC">
-            <h1>First LEGO League</h1>
+            <h1 id="FLL-Title">First LEGO League</h1>
           </div>
           <div className="card-color2">
             <h2> About </h2>
@@ -102,7 +101,7 @@ class FLL extends Component {
 
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color">
-            <h3> Director Contact Info </h3>
+            <h4> Director Contact Info </h4>
             <ul className="Contact">
               <li className="events-list">P: 347-954-7628 </li>
               <li className="events-list">Email: jeanlucmantoine@gmail.com</li>

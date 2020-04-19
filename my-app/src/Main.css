@@ -28,6 +28,9 @@
   padding-bottom: 30px;
   /*margin-bottom: 10px;*/
 }
+.box1 p {
+  height: 130px;
+}
 .box2 {
   background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/

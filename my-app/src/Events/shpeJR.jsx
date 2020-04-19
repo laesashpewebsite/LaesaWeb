@@ -43,7 +43,7 @@ class shpeJR extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           <div className="SHPEJR-GROUP-PIC">
-            <h1> SHPE Jr. </h1>
+            <h1 id="SHPEJR-Title"> SHPE Jr. </h1>
           </div>
           <div className="card-color2">
             <h2>Noche de Ciencias</h2>
@@ -73,7 +73,7 @@ class shpeJR extends Component {
           </div>
 
           <CardProfiles DirectorListName={this.state.DirectorList} />
-          <div className="card-color">
+          <div className="card-color2">
             <ul class="lists">
               <li className="events-list">
                 Increase awareness of STEM fields and careers

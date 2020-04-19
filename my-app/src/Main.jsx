@@ -5,10 +5,10 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 // import Pillar from "./pillar";
 // import column from "./pictures/Column-crop.png";
 // import logo2 from "./pictures/LAESA_LOGO.png";
-import FLL_Picture1 from "./pictures/FLL Pictures/IMG_8317.jpg";
-import FLL_Picture2 from "./pictures/FLL Pictures/IMG_8322.jpg";
-import FLL_Picture3 from "./pictures/FLL Pictures/IMG_8311.jpg";
-import FLL_Picture4 from "./pictures/FLL Pictures/IMG_8316.jpg";
+import FLL_Picture1 from "./pictures/FLL_Pictures/IMG_8317.jpg";
+import FLL_Picture2 from "./pictures/FLL_Pictures/IMG_8322.jpg";
+import FLL_Picture3 from "./pictures/FLL_Pictures/IMG_8311.jpg";
+import FLL_Picture4 from "./pictures/FLL_Pictures/IMG_8316.jpg";
 
 function main() {
   return (

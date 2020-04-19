@@ -6,6 +6,22 @@
   background-size: cover;
   height: 85vh;
 }
+#SHPEJR-Title {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 380px;
+}
+#FLL-Title {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 380px;
+}
 .PCED-GROUP-PIC {
   background-image: url(../pictures/PCED-GROUP1.JPG);
   -webkit-background-size: cover;
