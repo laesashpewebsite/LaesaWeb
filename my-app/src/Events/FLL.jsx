@@ -72,10 +72,10 @@ class FLL extends Component {
     return (
       <div className="Events-main">
         <header className="Events-header">
-          <div className="Events-GROUP-PIC">
+          <div className="FLL-GROUP-PIC">
             <h1>First Lego League</h1>
           </div>
-          <div className="card-color">
+          <div className="card-color2">
             <h2> About </h2>
             <p>
               First Lego League's mission is to inspire young adults to be
@@ -84,15 +84,21 @@ class FLL extends Component {
               engineering, and technology.
             </p>
           </div>
-
-          <div className="box2">
-            {/* <h2> Pictures </h2> */}
-            {/* these pictures here need to be modified using css to fix the size */}
-            {/* <img className="Pictures" src={FLL_Picture1} alt="Picture 1" />
+          <div className="card-color">
+            <h2> Our mission </h2>
+            <p>
+              "First Lego League's mission is to inspire young adults to be
+              science\ and technology innovators, by engaging them in exciting
+              programs that \ help them build the necessaries skills in science,
+              engineering, and \ technology."
+            </p>
+          </div>
+          {/* <h2> Pictures </h2> */}
+          {/* these pictures here need to be modified using css to fix the size */}
+          {/* <img className="Pictures" src={FLL_Picture1} alt="Picture 1" />
             <img className="Pictures" src={FLL_Picture2} alt="Picture 2" />
             <img className="Pictures" src={FLL_Picture3} alt="Picture 3" />
             <img className="Pictures" src={FLL_Picture4} alt="Picture 4" /> */}
-          </div>
 
           <CardProfiles DirectorListName={this.state.DirectorList} />
 

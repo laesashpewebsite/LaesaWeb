@@ -53,7 +53,7 @@ class PCED extends Component {
       <div className="Events-main">
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
-          <div className="Events-GROUP-PIC">
+          <div className="PCED-GROUP-PIC">
             <h1> Pre-College Engineering Day </h1>
           </div>
           <div className="card-color2">

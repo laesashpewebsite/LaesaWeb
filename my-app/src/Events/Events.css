@@ -1,3 +1,11 @@
+.SHPEJR-GROUP-PIC {
+  background-image: url(../pictures/Shpejr-group.JPG);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85vh;
+}
 .Events-header h1 {
   color: black;
   text-align: center;
@@ -12,7 +20,7 @@
   text-align: justify;
 }
 
-.Events-GROUP-PIC {
+.PCED-GROUP-PIC {
   background-image: url(../pictures/PCED-GROUP1.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
