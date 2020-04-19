@@ -50,7 +50,7 @@ class PCED extends Component {
   };
   render() {
     return (
-      <div className="Events-main">
+      <div className="Events-Main">
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
           <div className="PCED-GROUP-PIC">

@@ -6,6 +6,24 @@
   background-size: cover;
   height: 85vh;
 }
+.PCED-GROUP-PIC {
+  background-image: url(../pictures/PCED-GROUP1.JPG);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85vh;
+  margin-top: -100px;
+}
+.FLL-GROUP-PIC {
+  background-image: url(../pictures/FLL-Pictures/IMG_8311.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85vh;
+  margin-top: -100px;
+}
 .Events-header h1 {
   color: black;
   text-align: center;
@@ -18,16 +36,6 @@
 .Events-header p {
   font-size: 18px;
   text-align: justify;
-}
-
-.PCED-GROUP-PIC {
-  background-image: url(../pictures/PCED-GROUP1.JPG);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 85vh;
-  margin-top: -100px;
 }
 
 .card-color2 {
