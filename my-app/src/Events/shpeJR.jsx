@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./shpejr.css";
-import shpeJR_Director from "./pictures/Byron.jpg";
-import shpeJR_Director2 from "./pictures/Mariel.jpg";
+import "./Events.css";
+import shpeJR_Director from "../pictures/Byron.jpg";
+import shpeJR_Director2 from "../pictures/Mariel.jpg";
 import CardProfiles from "./CardProfiles";
 
 class shpeJR extends Component {
@@ -40,13 +40,12 @@ class shpeJR extends Component {
   };
   render() {
     return (
-      <div className="Main">
-        <header className="SHPE-header">
-          <div className="SHPE-GROUP-PIC">
-            <h1 className="title"> SHPE Jr. </h1>
+      <div className="Events-Main">
+        <header className="Events-header">
+          <div className="Events-GROUP-PIC">
+            <h1> SHPE Jr. </h1>
           </div>
-
-          <div className="box1">
+          <div className="card-color2">
             <h2>Noche de Ciencias</h2>
             <p>
               At SHPE, we know early exposure to STEM positively influences the
@@ -57,13 +56,15 @@ class shpeJR extends Component {
               youth (and their parents) to pursue STEM degrees and careers and
               ultimately advance SHPE’s mission and vision.
             </p>
-            <h4>Mission</h4>
+          </div>
+          <div className="card-color">
+            <h2>Mission</h2>
             <p>
               SHPE’s mission is to empower the Hispanic community to realize its
               fullest potential and to impact the world through STEM awareness,
               access, support, and development.
             </p>
-            <h4>Vision</h4>
+            <h2>Vision</h2>
             <p>
               SHPE’s vision is a world where Hispanics are highly valued and
               influential as the leading innovators, scientists, mathematicians,
@@ -71,9 +72,9 @@ class shpeJR extends Component {
             </p>
           </div>
 
-          <div className="box2">
-            <h2>Goals</h2>
-            <ul class="text-center">
+          <CardProfiles DirectorListName={this.state.DirectorList} />
+          <div className="card-color2">
+            <ul class="lists">
               <li className="events-list">
                 Increase awareness of STEM fields and careers
               </li>
@@ -87,10 +88,8 @@ class shpeJR extends Component {
               </li>
             </ul>
           </div>
-          <CardProfiles DirectorListName={this.state.DirectorList} />
-
-          <div className="box2">
-            <h3> Director Contact Info </h3>
+          <div className="card-color">
+            <h4> Director Contact Info </h4>
             <ul className="Contact">
               <li className="events-list">P: 929-268-9609 </li>
               <li className="events-list">Email: laesa.shpejr@gmail.com </li>

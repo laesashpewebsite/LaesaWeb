@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./PCED.css";
-import CardProfiles from "../CardProfiles";
+import "./Events.css";
+import CardProfiles from "./CardProfiles";
 // import EventItem from "./EventItem.jsx";
 
 import PCED_Director from "../pictures/Arelis.png";
@@ -50,11 +50,10 @@ class PCED extends Component {
   };
   render() {
     return (
-      <div className="PCED-main">
-        <header className="PCED-header">
-          <div className="PCED-info"></div>
+      <div className="Events-main">
+        <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
-          <div className="PCED-GROUP-PIC">
+          <div className="Events-GROUP-PIC">
             <h1> Pre-College Engineering Day </h1>
           </div>
           <div className="card-color2">
@@ -87,46 +86,8 @@ class PCED extends Component {
             </p>
           </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
-
           <div className="card-color2">
-            {/*
-            <h2>About Our Director</h2>
-            <img
-              src={PCED_Director}
-              className="PCED-Director-Photo"
-              alt="PCED-Director"
-            />
-            <p>
-              Born and raised in Guayaquil, Ecuador. Arelis has been part of
-              LAESA-SHPE since her freshman year in 2016 at The City College of
-              New York. She started fulfilling SHPE's mission by starting with
-              SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High
-              School in April 2017. The following academic year, she became part
-              of the PCED 2018 team by creating a meaningful project along her
-              team that exposed high school students to leadership and real-life
-              experiences. Last academic year, Arelis was part of the Executive
-              Board for LAESA, serving as the External Vice-President. This year
-              Arelis is the SHPE-NYC Sub-Regional Student Representative where
-              she forms the bridge of communication between chapters across NYC.
-              She is also directing Pre-College Engineering Day 2020 where her
-              team's goals are listed below:
-            </p>
-            <img
-              src={PCED_Director2}
-              className="PCED-Director-Photo2"
-              alt="PCED-Director2"
-            />
-            <p>
-              I'm a Civil Engineering major at CCNY, some of my contributions
-              for the club are Co-director for the 26th PCED and Office manager,
-              some the reasons I picked these positions are because I like to be
-              organized and also work on self-development. Some hobbies that I'm
-              into are basketball, health ( mental and physical), reading books
-              on personal growth and listening to podcast. Laesa-shpe has opened
-              many doors for new opportunities, adventures and friends. I am
-              grateful for coming across this great organization.
-            </p> */}
-            <ul>
+            <ul className="lists">
               <li className="events-list">Host event for 350+ students.</li>
               <li className="events-list">
                 Provide leadership, team-building, and managing experience to
@@ -146,6 +107,7 @@ class PCED extends Component {
               </li>
             </ul>
           </div>
+
           <div className="card-color">
             <h4>Director Contact Info</h4>
             <ul className="Contact">

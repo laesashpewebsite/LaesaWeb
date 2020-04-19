@@ -24,13 +24,16 @@ import "./CardProfiles.css";
 //css styles modification for CardProfiles
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 700,
+    spaciing: "0px",
+    borderRadius: 0,
+    maxWidth: 720,
     margin: "auto",
-    border: "none",
-    solid: "none",
-    marginBottom: "20px",
     backgroundColor: "#72a9be",
-    textAlign: "center"
+    textAlign: "center",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    float: "left",
+    height: "760px"
   },
   //css for the pictures
   media: {
@@ -38,7 +41,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: "100%",
     borderRadius: "50%",
     objectPosition: "auto",
-    marginBottom: "50px"
+    margin: "auto",
+    marginTop: "30px"
   },
   expand: {
     transform: "rotate(0deg)",

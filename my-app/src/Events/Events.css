@@ -1,61 +1,65 @@
-.SHPE-header h1 {
-  color: #ffffff;
+.Events-header h1 {
+  color: black;
   text-align: center;
   text-decoration: underline;
   font-weight: 900;
   text-align: center;
-  padding-top: 380px;
+  padding-top: 340px;
 }
-.SHPE-header p {
+
+.Events-header p {
   font-size: 18px;
   text-align: justify;
 }
 
-.SHPE-GROUP-PIC {
-  background-image: url(pictures/Shpejr-group.JPG);
+.Events-GROUP-PIC {
+  background-image: url(../pictures/PCED-GROUP1.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 85vh;
+  margin-top: -100px;
 }
-.box1 {
-  color: #f26534;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /*margin-bottom: 10px;*/
-}
-.box2 {
+
+.card-color2 {
   background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/
   font-weight: 600;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 30px;
+  padding-top: 30px;
+  clear: both;
 }
-.SHPE-header p {
+.Events-header p {
   font-weight: 750;
   text-indent: 30px;
 }
+.card-color {
+  color: #f26534;
+  background-color: rgb(0, 31, 91, 100);
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-.SHPE-header {
+.Events-header {
   width: 100%;
 }
-.SHPE-header h2 {
+.Events-header h2 {
   padding: 5px;
   text-align: center;
   font-weight: 700;
 }
-.SHPE-header h3 {
+
+.Events-header h4 {
   font-weight: 700;
   text-align: center;
 }
-.img-responsive {
+.Events-Director-Photo {
   display: block;
   margin: auto;
   min-width: 50%;
@@ -63,13 +67,6 @@
   width: 40%;
   margin: auto;
   height: 80%;
-}
-.Director-photo{
-display: block;
-  margin: auto;
-  padding: 10px;
-  height: 50%;
-  width: 70%;
 }
 .events-list {
   font-weight: 750;
@@ -81,12 +78,4 @@ display: block;
 .card-color ul {
   text-align: center;
   margin-right: 30px;
-  list-style-type: none;
 }
-.ul {
-  text-align: center;
-  list-style: inside;
-}
-/* .card-color li {
-  } 
-   */
