@@ -76,7 +76,7 @@ class EboardMembers extends Component {
       <div className="Eboard-main">
         <header className="Eboard-header">
           <div className="Eboard-Banner">
-            <h2> Meet Our Eboard from 2019-2020! </h2>
+            <h1 className="Text-Banner"> Meet Our Eboard from 2019-2020! </h1>
             <img
               src={Eboardpic}
               alt="Eboard and Alumni"
