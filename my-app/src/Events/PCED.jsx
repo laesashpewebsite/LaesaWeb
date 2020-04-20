@@ -13,7 +13,7 @@ class PCED extends Component {
     DirectorList: [
       {
         id: 1,
-        Title: "PCED Director",
+        Title: "PCED Co-Director",
         Name: "Arelis Fienco",
         Picture: PCED_Director,
         Bio:
@@ -37,7 +37,7 @@ class PCED extends Component {
       },
       {
         id: 2,
-        Title: "PCED CoDirector",
+        Title: "PCED Co-Director",
         Name: "Derwick Hernandez",
         Picture: PCED_Director2,
         Bio:
@@ -93,6 +93,7 @@ class PCED extends Component {
               team-building and leadership skills"
             </p>
           </div>
+          {/* instantiates CardProfiles with items in array Directorlists */}
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2">
             <h2>Goals</h2>

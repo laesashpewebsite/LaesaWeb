@@ -10,7 +10,7 @@ class shpeJR extends Component {
     DirectorList: [
       {
         id: 1,
-        Title: "SHPE Jr Director",
+        Title: "SHPE Jr. Co-Director",
         Name: "Mariel Gonzalez",
         Picture: shpeJR_Director2,
         Bio:
@@ -26,7 +26,7 @@ class shpeJR extends Component {
       },
       {
         id: 2,
-        Title: "SHPE Jr CoDirector",
+        Title: "SHPE Jr. Co-Director",
         Name: "Byron Marcatoma",
         Picture: shpeJR_Director,
         Bio:
@@ -99,7 +99,7 @@ class shpeJR extends Component {
             </ul>
           </div>
           <div className="card-color">
-            <h4> Director Contact Info </h4>
+            <h2> Director Contact Info </h2>
             <ul className="Contact">
               <li className="events-list">P: 929-268-9609 </li>
               <li className="events-list">Email: laesa.shpejr@gmail.com </li>

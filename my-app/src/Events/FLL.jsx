@@ -13,10 +13,11 @@ class FLL extends Component {
   state = {
     DirectorList: [
       {
-        Title: "FLL Director",
+        Title: "FLL Co-irector",
         Name: "Jean-Luc Antoine",
         Picture: FLL_Director,
         Alts: "Jean-Luc Director",
+
         Bio:
           "Jean-Luc Antoine is a second-year student at The City College of New York and has been part of\
       LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For\
@@ -28,11 +29,12 @@ class FLL extends Component {
       communication point with event organizers and ensure that the event goes smoothly, as well\
       as recruit as many volunteers as needed.",
         styles: {
-          backgroundColor: "#72a9be"
+          backgroundColor: "#72a9be",
+          color: "black"
         }
       },
       {
-        Title: "FLL CoDirector",
+        Title: "FLL Co-Director",
         Name: "Ceasar Tacuri",
         Picture: FLL_Director2,
         Alts: "Ceasar Tacuri",

@@ -91,7 +91,7 @@ export default function CardProfiles(props) {
           component="h3"
           titleTypographyProps={{ variant: "h2" }}
           title={dl.Name}
-          subheader="Co-Director" ///add to array "subheaders"
+          subheader={dl.Title} ///add to array "subheaders"
           subheaderTypographyProps={{ variant: "h6", color: "white" }}
         />
       </div>
