@@ -18,7 +18,11 @@ class shpeJR extends Component {
           from the Dominican Republic and co-director of LAESA\
           Shpe-Junior. When not studying, Mariel enjoys reaching out to\
           friends and family, hiking and planning for the next adventure\
-          as an engineer"
+          as an engineer",
+        styles: {
+          backgroundColor: "#72a9be",
+          color: "black"
+        }
       },
       {
         id: 2,
@@ -34,7 +38,11 @@ class shpeJR extends Component {
         projects and talks from professionals, and officially created a\
         chapter at Manhattan Bridges High school. For the current Year,\
         Byron is the director for SHPE Jr and aims to expose more\
-        students to the STEM field and careers."
+        students to the STEM field and careers.",
+        styles: {
+          backgroundColor: "rgb(0, 31, 91, 100)",
+          color: "#f26534"
+        }
       }
     ]
   };
@@ -74,6 +82,8 @@ class shpeJR extends Component {
 
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2">
+            <h2>Goals</h2>
+
             <ul class="lists">
               <li className="events-list">
                 Increase awareness of STEM fields and careers

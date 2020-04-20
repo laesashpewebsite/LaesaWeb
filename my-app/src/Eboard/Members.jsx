@@ -1,8 +1,6 @@
 // creates a componnet to showcase a 1 member from an arrray.
 import React, { Component } from "react";
 import "./Members.css";
-
-import Logo from "./../pictures/SHPE_logo_FullColor.png";
 import President from "./../pictures/Luis.png";
 import Secretary from "./../pictures/Gloria.jpeg";
 import EVicePresident from "./../pictures/Evan.JPG";

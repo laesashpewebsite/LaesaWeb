@@ -29,12 +29,16 @@ class PCED extends Component {
           Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
           forms the bridge of communication between chapters across NYC. She\
           is also directing Pre-College Engineering Day 2020 where her team's\
-          goals are listed below "
+          goals are listed below ",
+        styles: {
+          backgroundColor: "#72a9be",
+          color: "black"
+        }
       },
       {
         id: 2,
         Title: "PCED CoDirector",
-        Name: "Derwick ",
+        Name: "Derwick Hernandez",
         Picture: PCED_Director2,
         Bio:
           "I'm a Civil Engineering major at CCNY, some of my contributions for\
@@ -44,7 +48,11 @@ class PCED extends Component {
         into are basketball, health ( mental and physical), reading books on\
         personal growth and listening to podcast. Laesa-shpe has opened many\
         doors for new opportunities, adventures and friends. I am grateful\
-        for coming across this great organization."
+        for coming across this great organization.",
+        styles: {
+          backgroundColor: "rgb(0, 31, 91, 100)",
+          color: "#f26534"
+        }
       }
     ]
   };
@@ -77,16 +85,17 @@ class PCED extends Component {
             </p>
           </div>
           <div className="card-color">
-            <h2>Goal</h2>
+            <h2>Mission</h2>
             <p>
-              "The goal of PCED is to expose the younger Latino community to
-              STEM related careers (Science, Technology, Engineering and
-              Mathematics) while obtaining real-life project experience, and
-              developing team-building and leadership skills"
+              "PCED's Mission is to expose the younger Latino community to STEM
+              related careers (Science, Technology, Engineering and Mathematics)
+              while obtaining real-life project experience, and developing
+              team-building and leadership skills"
             </p>
           </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2">
+            <h2>Goals</h2>
             <ul className="lists">
               <li className="events-list">Host event for 350+ students.</li>
               <li className="events-list">
@@ -109,7 +118,7 @@ class PCED extends Component {
           </div>
 
           <div className="card-color">
-            <h4>Director Contact Info</h4>
+            <h2>Director Contact Info</h2>
             <ul className="Contact">
               <li className="events-list">P: 917-392-4710 </li>
               <li className="events-list">Email: laesa.pced@gmail.com </li>

@@ -1,4 +1,10 @@
+/* this CSS file "Events.css" is a template for any event that is to be added  so as to have a standard template for all of the 
+events at LAESA-SHPE
+
+Specfied targetted css code for a certain Jsx file is named starting with the name of the event
+*/
 .SHPEJR-GROUP-PIC {
+  /* only for SHPEJR files */
   background-image: url(../pictures/Shpejr-group.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,6 +13,8 @@
   height: 85vh;
 }
 #SHPEJR-Title {
+  /* only for SHPEJR files */
+
   color: #ffffff;
   text-align: center;
   text-decoration: underline;
@@ -15,6 +23,8 @@
   padding-top: 380px;
 }
 #FLL-Title {
+  /* only for FLL files */
+
   color: #ffffff;
   text-align: center;
   text-decoration: underline;
@@ -22,16 +32,9 @@
   text-align: center;
   padding-top: 380px;
 }
-.PCED-GROUP-PIC {
-  background-image: url(../pictures/PCED-GROUP1.JPG);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 85vh;
-  margin-top: -100px;
-}
 .FLL-GROUP-PIC {
+  /* only for FLL files */
+
   background-image: url(../pictures/FLL_Pictures/IMG_8311.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,6 +43,18 @@
   height: 85vh;
   margin-top: -100px;
 }
+.PCED-GROUP-PIC {
+  /* only for PCED files */
+
+  background-image: url(../pictures/PCED-GROUP1.JPG);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85vh;
+  margin-top: -100px;
+}
+
 .Events-header h1 {
   color: black;
   text-align: center;

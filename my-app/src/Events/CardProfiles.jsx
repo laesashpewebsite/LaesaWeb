@@ -7,10 +7,12 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { red } from "@material-ui/core/colors";
-import { border } from "@material-ui/system";
+import { red, purple } from "@material-ui/core/colors";
 import "./CardProfiles.css";
+import { fontSize } from "@material-ui/system";
+import color from "@material-ui/core/colors/amber";
 
+// import { border } from "@material-ui/system";
 // import MoreVertIcon from "@material-ui/icons/MoreVert";
 // import Collapse from "@material-ui/core/Collapse";
 // import Avatar from "@material-ui/core/Avatar";
@@ -20,19 +22,18 @@ import "./CardProfiles.css";
 // import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 // import CardActions from "@material-ui/core/CardActions";
 // import clsx from "clsx";
-
 //css styles modification for CardProfiles
 const useStyles = makeStyles(theme => ({
   root: {
     spaciing: "0px",
     borderRadius: 0,
-    maxWidth: 720,
+    Width: "100%",
     margin: "auto",
     backgroundColor: "#72a9be",
     textAlign: "center",
-    paddingLeft: "20px",
-    paddingRight: "20px",
-    float: "left",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    paddingTop: "30px",
     height: "760px"
   },
   //css for the pictures
@@ -56,6 +57,10 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     backgroundColor: red[500]
+  },
+  text: {
+    paddingLeft: "60px",
+    paddingRight: "60px"
   }
 }));
 
@@ -71,24 +76,27 @@ export default function CardProfiles(props) {
   // dl is the name of the array that is being run through
   // this is calling from the DirectorsList Array
   return props.DirectorListName.map(dl => (
-    <Card className={classes.root}>
+    <Card className={classes.root} style={dl.styles}>
       {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}
       <div className="Pics">
-        <CardMedia className={classes.media} image={dl.Picture} title="hello" />
+        <CardMedia
+          className={classes.media}
+          image={dl.Picture}
+          title={dl.alts}
+        />
       </div>
-      <CardHeader
-        className="title"
-        //adds an "Avatar icon on the side of the "
-        // avatar={ }
-        // action={}
-
-        title={dl.Name}
-        // COMMENT
-        // gets the value of "Name" from directorslist
-        // subheader="September 14, 2016"
-      />
+      <div className="titles">
+        <CardHeader
+          // color="textPrimary"
+          component="h3"
+          titleTypographyProps={{ variant: "h2" }}
+          title={dl.Name}
+          subheader="Co-Director" ///add to array "subheaders"
+          subheaderTypographyProps={{ variant: "h6", color: "white" }}
+        />
+      </div>
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography className={classes.text} variant="body2" component="p">
           {/* INFO FOR BIO IS BEING CALLED HERE */}
           {dl.Bio}
         </Typography>
