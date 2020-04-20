@@ -71,8 +71,8 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 }
 
 .card-color2 {
-  background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/
+  background-color: #72a9be;
   font-weight: 600;
   padding-left: 60px;
   padding-right: 60px;
@@ -133,4 +133,8 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   padding-top: 0px;
   padding-bottom: 0px;
   /* text-decoration: underline; */
+}
+.Gallery {
+  background-color: #72a9be;
+  color: black;
 }

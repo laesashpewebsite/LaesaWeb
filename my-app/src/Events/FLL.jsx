@@ -7,13 +7,14 @@ import FLL_Picture2 from "../pictures/FLL_Pictures/IMG_8322.jpg";
 import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
 
 import CardProfiles from "./CardProfiles";
+import GalleryPic from "../Gallery";
 import "./Events.css";
 
 class FLL extends Component {
   state = {
     DirectorList: [
       {
-        Title: "FLL Co-irector",
+        Title: "FLL Co-Director",
         Name: "Jean-Luc Antoine",
         Picture: FLL_Director,
         Alts: "Jean-Luc Director",
@@ -55,6 +56,26 @@ class FLL extends Component {
           color: "#f26534"
         }
       }
+    ],
+    FLLPictures: [
+      {
+        img: FLL_Picture1,
+        title: "Image",
+        author: "author",
+        cols: 1
+      },
+      {
+        img: FLL_Picture2,
+        title: "Image",
+        author: "author",
+        cols: 2
+      },
+      {
+        img: FLL_Picture4,
+        title: "Image",
+        author: "author",
+        cols: 3
+      }
     ]
   };
   render() {
@@ -84,15 +105,18 @@ class FLL extends Component {
               engineering, and technology."
             </p>
           </div>
-          {/* <h2> Pictures </h2> */}
-          {/* these pictures here need to be modified using css to fix the size */}
-          {/* <img className="Pictures" src={FLL_Picture1} alt="Picture 1" />
-            <img className="Pictures" src={FLL_Picture2} alt="Picture 2" />
-            <img className="Pictures" src={FLL_Picture3} alt="Picture 3" />
-            <img className="Pictures" src={FLL_Picture4} alt="Picture 4" /> */}
-          <div className="card-color2">
+          <div className="Gallery">
+            <h2>Gallery</h2>
+
+            {/* this here displays the picture that are in the array FFLPictures
+            by inputing it into Component GalleryPic */}
+            <GalleryPic tileData={this.state.FLLPictures} />
+          </div>
+
+          <div className="card-color">
             <h2>Meet Our Directors!</h2>
           </div>
+
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2"></div>
           <div className="card-color">
