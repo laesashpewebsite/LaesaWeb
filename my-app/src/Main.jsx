@@ -5,6 +5,7 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 // import Pillar from "./pillar";
 // import column from "./pictures/Column-crop.png";
 // import logo2 from "./pictures/LAESA_LOGO.png";
+import Pillars from "./pillar.jsx";
 import FLL_Picture1 from "./pictures/FLL_Pictures/IMG_8317.jpg";
 import FLL_Picture2 from "./pictures/FLL_Pictures/IMG_8322.jpg";
 import FLL_Picture3 from "./pictures/FLL_Pictures/IMG_8311.jpg";
@@ -108,10 +109,26 @@ function main() {
         </div>
 
         <div className="box2">
-          <div className="Row">
-            <h2> 5 Pillars of LAESA-SHPE</h2>
-
-            <div className="Column2">
+          <div style={{ paddingBottom: "130px" }}>
+            <div className="Row">
+              <h2> 5 Pillars of LAESA-SHPE</h2>
+              <div className="Column2">
+                <Pillars />
+              </div>
+              <div className="Column2">
+                <Pillars />
+              </div>
+              <div className="Column2">
+                <Pillars />
+              </div>
+              <div className="Column2">
+                <Pillars />
+              </div>
+              <div className="Column2">
+                <Pillars />
+              </div>
+            </div>
+            {/* <div className="Column2">
               <h2>Academic Development</h2>
               <img className="Column-pic" src={FLL_Picture1} alt="Picture 1" />
             </div>
@@ -134,7 +151,7 @@ function main() {
             <div className="Column2">
               <h2>Community Outreach</h2>
               <img className="Column-pic" src={FLL_Picture4} alt="Picture 4" />
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

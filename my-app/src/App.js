@@ -7,7 +7,7 @@ import "./App.css";
 
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Eboard from "./Eboard/Eboard";
+import Eboard from "./Eboard/CurrentEboard";
 import FLL from "./Events/FLL";
 import PCED from "./Events/PCED.jsx"; // to see difference change to App.js
 import SHPE_JR from "./Events/shpeJR";

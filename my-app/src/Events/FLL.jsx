@@ -90,12 +90,14 @@ class FLL extends Component {
             <img className="Pictures" src={FLL_Picture2} alt="Picture 2" />
             <img className="Pictures" src={FLL_Picture3} alt="Picture 3" />
             <img className="Pictures" src={FLL_Picture4} alt="Picture 4" /> */}
-
+          <div className="card-color2">
+            <h2>Meet Our Directors!</h2>
+          </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2"></div>
           <div className="card-color">
             <h2> Director Contact Info </h2>
-            <ul className="Contact">
+            <ul className="lists">
               <li className="events-list">P: 347-954-7628 </li>
               <li className="events-list">Email: jeanlucmantoine@gmail.com</li>
             </ul>

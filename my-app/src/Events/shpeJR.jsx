@@ -79,7 +79,9 @@ class shpeJR extends Component {
               and engineers
             </p>
           </div>
-
+          <div className="card-color2">
+            <h2>Meet Our Directors!</h2>
+          </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2">
             <h2>Goals</h2>
@@ -100,7 +102,7 @@ class shpeJR extends Component {
           </div>
           <div className="card-color">
             <h2> Director Contact Info </h2>
-            <ul className="Contact">
+            <ul className="lists">
               <li className="events-list">P: 929-268-9609 </li>
               <li className="events-list">Email: laesa.shpejr@gmail.com </li>
             </ul>

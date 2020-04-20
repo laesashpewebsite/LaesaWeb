@@ -39,6 +39,7 @@
   padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+  clear: both;
 }
 .body {
   display: grid;
@@ -63,6 +64,8 @@
   content: "";
   display: table;
   clear: both;
+  padding-bottom: 30px;
+  max-height: 180px;
 }
 .Column-pictures1 {
   display: block;

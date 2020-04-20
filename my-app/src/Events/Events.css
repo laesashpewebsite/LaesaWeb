@@ -56,6 +56,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 }
 
 .Events-header h1 {
+  /* for PCED */
   color: black;
   text-align: center;
   text-decoration: underline;
@@ -119,10 +120,17 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   font-weight: 750;
   font-size: 18px;
 }
-.Contact {
-  list-style-type: none;
+.lists {
+  text-align: center;
+  /* border: solid; */
+  list-style: none;
 }
 .card-color ul {
   text-align: center;
   margin-right: 30px;
+}
+.card-color2 h2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* text-decoration: underline; */
 }

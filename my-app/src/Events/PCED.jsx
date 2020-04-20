@@ -65,7 +65,7 @@ class PCED extends Component {
             <h1> Pre-College Engineering Day </h1>
           </div>
           <div className="card-color2">
-            <h2> About </h2>
+            <h2> About needs a new about</h2>
             <p>
               LAESA–SHPE is the largest and most prominent undergraduate student
               organization at The City College of New York. In 1983, a group of
@@ -93,7 +93,11 @@ class PCED extends Component {
               team-building and leadership skills"
             </p>
           </div>
+          <div className="card-color2">
+            <h2>Meet Our Directors!</h2>
+          </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
+
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2">
             <h2>Goals</h2>
@@ -120,7 +124,7 @@ class PCED extends Component {
 
           <div className="card-color">
             <h2>Director Contact Info</h2>
-            <ul className="Contact">
+            <ul className="lists">
               <li className="events-list">P: 917-392-4710 </li>
               <li className="events-list">Email: laesa.pced@gmail.com </li>
               <li className="events-list">
