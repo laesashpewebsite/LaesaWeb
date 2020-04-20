@@ -6,7 +6,7 @@ import GridListTileBar from "@material-ui/core/GridListTileBar";
 import { getThemeProps } from "@material-ui/styles";
 import IconButton from "@material-ui/core/IconButton";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
-import { height } from "@material-ui/system";
+import { height, fontSize, width } from "@material-ui/system";
 
 // const useStyles = makeStyles(theme => ({
 //   root: {
@@ -68,7 +68,8 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: " #72a9be",
-    height: "200px"
+    height: "200px",
+    width: "100%"
   },
   gridList: {
     flexWrap: "nowrap",
@@ -76,7 +77,9 @@ const useStyles = makeStyles(theme => ({
     transform: "translateZ(0)"
   },
   title: {
-    color: theme.palette.primary.light
+    color: "#D23F26",
+    fontSize: 20,
+    fontWeight: 700
   },
   titleBar: {
     background:

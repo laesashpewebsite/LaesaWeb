@@ -12,13 +12,13 @@ import "./Events.css";
 
 class FLL extends Component {
   state = {
+    // directorList Array of all FLL members
     DirectorList: [
       {
         Title: "FLL Co-Director",
         Name: "Jean-Luc Antoine",
         Picture: FLL_Director,
         Alts: "Jean-Luc Director",
-
         Bio:
           "Jean-Luc Antoine is a second-year student at The City College of New York and has been part of\
       LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For\
@@ -57,22 +57,23 @@ class FLL extends Component {
         }
       }
     ],
+    // this array is a list of all the pictures taken from FLL Event
     FLLPictures: [
       {
         img: FLL_Picture1,
-        title: "Image",
+        title: "FLL Image1",
         author: "author",
         cols: 1
       },
       {
         img: FLL_Picture2,
-        title: "Image",
+        title: "FLL Image2",
         author: "author",
         cols: 2
       },
       {
         img: FLL_Picture4,
-        title: "Image",
+        title: "FLL Image3",
         author: "author",
         cols: 3
       }
@@ -116,7 +117,8 @@ class FLL extends Component {
           <div className="card-color">
             <h2>Meet Our Directors!</h2>
           </div>
-
+          {/* information taken from DirectorList array is put into CardProfiles to map out all the information needed 
+          from each memberr  */}
           <CardProfiles DirectorListName={this.state.DirectorList} />
           <div className="card-color2"></div>
           <div className="card-color">
