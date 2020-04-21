@@ -11,6 +11,7 @@ import Eboard from "./Eboard/CurrentEboard";
 import FLL from "./Events/FLL";
 import PCED from "./Events/PCED.jsx"; // to see difference change to App.js
 import SHPE_JR from "./Events/shpeJR";
+import Events from "./Calendar";
 
 class App extends Component {
   render() {
@@ -26,6 +27,8 @@ class App extends Component {
           <Route path="/FLL" component={FLL} />
           <Route path="/PCED" component={PCED} />
           <Route path="/SHPE.JR" component={SHPE_JR} />
+          <Route path="/Events" component={Events} />
+
           {/* adds these routes so the website can connect to these pages by clicking on links */}
 
           <Footer className="Footer-css" />

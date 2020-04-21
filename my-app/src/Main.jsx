@@ -7,10 +7,6 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 // import logo2 from "./pictures/LAESA_LOGO.png";
 import Pillars from "./pillar.jsx";
 import FLL_Picture1 from "./pictures/FLL_Pictures/IMG_8317.jpg";
-import FLL_Picture2 from "./pictures/FLL_Pictures/IMG_8322.jpg";
-import FLL_Picture3 from "./pictures/FLL_Pictures/IMG_8311.jpg";
-import FLL_Picture4 from "./pictures/FLL_Pictures/IMG_8316.jpg";
-
 function main() {
   return (
     <div className="Main">
