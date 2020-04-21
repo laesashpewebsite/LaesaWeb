@@ -9,18 +9,6 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { red } from "@material-ui/core/colors";
 import "./CardProfiles.css";
-
-// import { border } from "@material-ui/system";
-// import MoreVertIcon from "@material-ui/icons/MoreVert";
-// import Collapse from "@material-ui/core/Collapse";
-// import Avatar from "@material-ui/core/Avatar";
-// import IconButton from "@material-ui/core/IconButton";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
-// import ShareIcon from "@material-ui/icons/Share";
-// import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-// import CardActions from "@material-ui/core/CardActions";
-// import clsx from "clsx";
-//css styles modification for CardProfiles
 const useStyles = makeStyles(theme => ({
   root: {
     border: "none",
@@ -81,6 +69,7 @@ export default function CardProfiles(props) {
           className={classes.media}
           image={dl.Picture}
           title={dl.alts}
+          alts={dl.alts}
         />
       </div>
       <CardHeader

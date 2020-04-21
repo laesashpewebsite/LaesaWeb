@@ -1,21 +1,14 @@
 .pillar-header {
   clear: both;
-  max-height: max-content;
   /* border: solid; */
 }
 .background-Pillar {
-  background-image: url("pictures/Column.jpeg");
-  background-repeat: no-repeat;
-  background-color: #72a9be;
-  background-size: 165px;
-  background-position: center;
   width: 200px;
-  height: 300px;
+  height: 200px;
   margin: auto;
 }
 .Name {
-  width: 200;
-  padding-top: 100px;
+  padding-top: 10px;
   text-align: center;
 }
 .info {
@@ -24,6 +17,7 @@
   max-width: 100%;
   font-weight: 700;
   /* border: solid; */
+  clear: both;
 
   text-align: center;
 }
