@@ -15,6 +15,7 @@ class FLL extends Component {
     // directorList Array of all FLL members
     DirectorList: [
       {
+        id: 1,
         Title: "FLL Co-Director",
         Name: "Jean-Luc Antoine",
         Picture: FLL_Director,
@@ -35,6 +36,7 @@ class FLL extends Component {
         }
       },
       {
+        id: 2,
         Title: "FLL Co-Director",
         Name: "Ceasar Tacuri",
         Picture: FLL_Director2,

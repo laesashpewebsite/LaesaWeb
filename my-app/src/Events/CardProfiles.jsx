@@ -62,7 +62,7 @@ export default function CardProfiles(props) {
   // dl is the name of the array that is being run through
   // this is calling from the DirectorsList Array
   return props.DirectorListName.map(dl => (
-    <Card className={classes.root} style={dl.styles}>
+    <Card className={classes.root} style={dl.styles} key={dl.id}>
       {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}
       <div className="Pics">
         <CardMedia
@@ -78,7 +78,7 @@ export default function CardProfiles(props) {
         titleTypographyProps={{ variant: "h2" }}
         title={dl.Name}
         subheader={dl.Title} ///add to array "subheaders"
-        subheaderTypographyProps={{ variant: "h6", color: "white" }}
+        subheaderTypographyProps={{ variant: "h6" }}
       />
       <CardContent>
         <Typography className={classes.text} variant="body2" component="p">

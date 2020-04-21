@@ -1,3 +1,6 @@
+// Gallery.Jsx is used for the gallery pictures that is displayed
+// on all the events pictures
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
@@ -7,59 +10,6 @@ import { getThemeProps } from "@material-ui/styles";
 import IconButton from "@material-ui/core/IconButton";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { height, fontSize, width } from "@material-ui/system";
-
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     display: "flex",
-//     flexWrap: "wrap",
-//     justifyContent: "space-around",
-//     overflow: "hidden",
-//     backgroundColor: "#72a9be"
-//   },
-//   gridList: {
-//     width: 500,
-//     height: 450
-//   }
-// }));
-
-// /**
-//  * The example data is structured as follows:
-//  *
-//  * import image from 'path/to/image.jpg';
-//  * [etc...]
-//  *
-//  * const tileData = [
-//  *   {
-//  *     img: image,
-//  *     title: 'Image',
-//  *     author: 'author',
-//  *     cols: 2,
-//  *   },
-//  *   {
-//  *     [etc...]
-//  *   },
-//  * ];
-//  */
-// export default function ImageGridList(props) {
-//   const classes = useStyles();
-
-//   return (
-//     <div className={classes.root}>
-//       <GridList
-//         cellHeight={160}
-//         cellWidth={}
-//         className={classes.gridList}
-//         cols={3}
-//       >
-//         {props.tileData.map(tile => (
-//           <GridListTile key={tile.img} cols={tile.cols || 1}>
-//             <img src={tile.img} alt={tile.title} />
-//           </GridListTile>
-//         ))}
-//       </GridList>
-//     </div>
-//   );
-// }
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -86,24 +36,6 @@ const useStyles = makeStyles(theme => ({
       "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)"
   }
 }));
-
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function SingleLineGridList(props) {
   const classes = useStyles();
 

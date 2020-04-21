@@ -1,7 +1,15 @@
-import React from "react";
+// https://www.npmjs.com/package/react-big-calendar
+import React, { Component } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import shpelogo from "./pictures/SHPE_logo_FullColor.png";
+import color from "@material-ui/core/colors/amber";
+import { red } from "@material-ui/core/colors";
+import { compose } from "@material-ui/system";
+import "./Calendar.css";
+
+import PCED from "./Events/PCED.jsx";
 
 // let allViews = Object.keys(Calendar.Views).map(k => Calendar.Views[k]);
 const today = new Date();
@@ -10,167 +18,99 @@ const newDate = new Date();
 const myEvents = [
   {
     id: 0,
-    title: "The Politics of International Trade (II)",
+    title: "Spring club fair",
+
     allDay: false,
-    start: new Date(2019, 3, 2, 14, 0, 0),
-    end: new Date(2019, 3, 2, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 1, 6, 14, 0, 0),
+    end: new Date(2020, 1, 6, 15, 15, 0),
+    hexColor: "D23F26"
   },
   {
     id: 1,
-    title: "Globalization and Technology",
+    title: "First General Body Meeting",
     allDay: false,
-    start: new Date(2019, 3, 4, 14, 0, 0),
-    end: new Date(2019, 3, 4, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 1, 13, 14, 0, 0),
+    end: new Date(2020, 1, 13, 15, 15, 0),
+    hexColor: "D23F26"
   },
   {
     id: 2,
-    title: "The Politics of Immigration (I)",
+    title: "RLDC Region 4",
     allDay: false,
-    start: new Date(2019, 3, 9, 14, 0, 0),
-    end: new Date(2019, 3, 9, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 2, 5, 14, 0, 0),
+    end: new Date(2020, 2, 7, 15, 15, 0),
+    hexColor: "f26534"
   },
   {
     id: 3,
-    title: "The Politics of Immigration (II)",
+    title: "Pre-College Engineering Day",
+    link: PCED,
     allDay: false,
-    start: new Date(2019, 3, 11, 14, 0, 0),
-    end: new Date(2019, 3, 11, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 2, 13, 14, 0, 0),
+    end: new Date(2020, 2, 13, 15, 15, 0),
+    hexColor: "D23F26"
   },
   {
     id: 4,
-    title: "The Politics of International Development (I)",
+    title: "2nd General Body Meeting",
     allDay: false,
-    start: new Date(2019, 3, 16, 14, 0, 0),
-    end: new Date(2019, 3, 16, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 2, 26, 14, 0, 0),
+    end: new Date(2020, 2, 26, 15, 15, 0),
+    hexColor: "D23F26"
   },
 
   {
-    // CHANGE TO A DIFFERENT COLOR THEN DEFAULT
     id: 5,
-    title: "READING RESPONSE #3 DUE",
+    title: "Third General Body Meeting",
     allDay: false,
-    start: new Date(2019, 3, 18, 14, 0, 0),
-    end: new Date(2019, 3, 18, 15, 15, 0),
-    hexColor: "0808d1"
+    start: new Date(2020, 3, 23, 14, 0, 0),
+    end: new Date(2020, 3, 23, 15, 15, 0),
+    hexColor: "D23F26"
   },
   {
     id: 6,
-    title: "The Politics of International Development (I)",
+    title: " Noche de Ciencias",
     allDay: false,
-    start: new Date(2019, 3, 18, 14, 0, 0),
-    end: new Date(2019, 3, 18, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 4, 2, 14, 0, 0),
+    end: new Date(2020, 4, 2, 15, 15, 0),
+    hexColor: "D23F26" // Red for LAESA Events
   },
   {
-    id: 7,
-    title: "Climate Change and the Environment (II)",
-    allDay: false,
-    start: new Date(2019, 3, 30, 14, 0, 0),
-    end: new Date(2019, 3, 30, 15, 15, 0),
-    hexColor: "e842f4"
-  },
-  {
-    //change color
     id: 8,
-    title: "SHORT PAPERS DUE",
+    title: "End of Spring Term",
     allDay: false,
-    start: new Date(2019, 4, 2, 14, 0, 0),
-    end: new Date(2019, 4, 2, 15, 15, 0),
-    hexColor: "0808d1"
+    start: new Date(2020, 4, 22, 14, 0, 0),
+    end: new Date(2020, 4, 22, 15, 15, 0),
+    hexColor: "1070B8"
   },
   {
     id: 9,
-    title: "Human Rights",
+    title: "Spring Break",
     allDay: false,
-    start: new Date(2019, 4, 7, 14, 0, 0),
-    end: new Date(2019, 4, 7, 15, 15, 0),
-    hexColor: "e842f4"
+    start: new Date(2020, 3, 8, 14, 0, 0),
+    end: new Date(2020, 3, 10, 15, 15, 0),
+    hexColor: "1070B8" // dark blue for school events
   },
   {
     id: 10,
-    title: "Final review session",
+    title: "SHPE Virtual Career Fair",
     allDay: false,
-    start: new Date(2019, 4, 9, 14, 0, 0),
-    end: new Date(2019, 4, 9, 15, 15, 0),
-    hexColor: "e842f4"
-  },
-  {
-    //change color
-    id: 11,
-    title: "FINAL EXAM",
-    allDay: false,
-    start: new Date(2019, 4, 16, 14, 0, 0),
-    end: new Date(2019, 4, 16, 15, 15, 0),
-    hexColor: "d80839"
-  },
-
-  {
-    id: 12,
-    title: "Study for: The Politics of Immigration (II)",
-    allDay: false,
-    start: new Date(2019, 3, 12, 14, 0, 0),
-    end: new Date(2019, 3, 12, 15, 15, 0),
-    hexColor: "42f1f4"
-  },
-  {
-    id: 13,
-    title: "Study for: The Politics of International Development (I)",
-    allDay: false,
-    start: new Date(2019, 3, 17, 14, 0, 0),
-    end: new Date(2019, 3, 17, 15, 15, 0),
-    hexColor: "42f1f4"
-  },
-
-  {
-    id: 14,
-    title: "Study for: The Politics of International Development (I)",
-    allDay: false,
-    start: new Date(2019, 3, 19, 14, 0, 0),
-    end: new Date(2019, 3, 19, 15, 15, 0),
-    hexColor: "42f1f4"
-  },
-  {
-    id: 15,
-    title: "Study for: Climate Change and the Environment (II)",
-    allDay: false,
-    start: new Date(2019, 4, 1, 14, 0, 0),
-    end: new Date(2019, 4, 1, 15, 15, 0),
-    hexColor: "42f1f4"
-  },
-  {
-    id: 17,
-    title: "Study for: Human Rights",
-    allDay: false,
-    start: new Date(2019, 4, 8, 14, 0, 0),
-    end: new Date(2019, 4, 8, 15, 15, 0),
-    hexColor: "42f1f4"
-  },
-  {
-    //change color
-    id: 16,
-    title: "Study for: FINAL EXAM",
-    allDay: false,
-    start: new Date(2019, 4, 10, 14, 0, 0),
-    end: new Date(2019, 4, 10, 17, 15, 0),
-    hexColor: "42f1f4"
+    start: new Date(2020, 3, 18, 12, 0, 0),
+    end: new Date(2020, 3, 18, 16, 0, 0),
+    hexColor: "f26534" // oragne for SHPE Events
   }
 ];
-
 const eventStyleGetter = (event, start, end, isSelected) => {
-  console.log(event);
+  //   console.log(event);
   var backgroundColor = "#" + event.hexColor;
   var style = {
     backgroundColor: backgroundColor,
     borderRadius: "0px",
-    opacity: 0.8,
+    // opacity: 0.8,
     color: "black",
     border: "0px",
-    display: "block"
+    display: "block",
+    fontWeight: "500"
   };
   return {
     style: style
@@ -180,12 +120,17 @@ const eventStyleGetter = (event, start, end, isSelected) => {
 // Setup the localizer by providing the moment (or globalize) Object
 // to the correct localizer.
 const localizer = momentLocalizer(moment); // or globalizeLocalizer
-
 const MyCalendar = props => (
-  <div style={{ height: "100vh", width: "90%", margin: "auto" }}>
+  <div
+    style={{
+      height: "100vh",
+      width: "90%",
+      margin: "auto",
+      padding: "30px"
+    }}
+  >
     <Calendar
       events={myEvents}
-      //   views={allViews}
       step={60}
       showMultiDayTimes
       defaultDate={today}
@@ -195,10 +140,21 @@ const MyCalendar = props => (
   </div>
 );
 
-const CalendarOut = () => (
-  <div>
-    <MyCalendar />
-  </div>
-);
+class LAESACalendar extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div className="calendar-main">
+        <MyCalendar
+          style={{
+            backgroundColor: "red"
+          }}
+        />
+      </div>
+    );
+  }
+}
 
-export default CalendarOut;
+export default LAESACalendar;

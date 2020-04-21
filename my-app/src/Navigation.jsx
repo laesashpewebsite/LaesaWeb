@@ -25,7 +25,7 @@ class Navigation extends React.Component {
     const history = this.props.history;
     return (
       <Navbar className=" custom-nav" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
           <Link to="/">
             <img src={logo} alt="LAESA_LOGO" height="90px" />
           </Link>
@@ -43,10 +43,15 @@ class Navigation extends React.Component {
               onMouseLeave={this.handleClose} //if not hovering over invoke handleClose function
               show={this.state.isOpen} // if isOpen is true show if false do not show
               id="collasible-nav-dropdown"
-              eventKey={1}
-              onClick={() => history.replace("/Events")}
             >
               <div className="events-css">
+                <NavDropdown.Item
+                  className="eventsDropdownItem"
+                  eventKey={1}
+                  onClick={() => history.replace("/Events")}
+                >
+                  All Events
+                </NavDropdown.Item>
                 <NavDropdown.Item
                   className="eventsDropdownItem"
                   eventKey={1}

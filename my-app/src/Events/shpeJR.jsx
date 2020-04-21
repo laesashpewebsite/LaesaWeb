@@ -86,7 +86,7 @@ class shpeJR extends Component {
           <div className="card-color2">
             <h2>Goals</h2>
 
-            <ul class="lists">
+            <ul className="lists">
               <li className="events-list">
                 Increase awareness of STEM fields and careers
               </li>

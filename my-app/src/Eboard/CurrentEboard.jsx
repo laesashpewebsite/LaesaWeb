@@ -15,6 +15,7 @@ class EboardMembers extends Component {
   state = {
     EboardList: [
       {
+        id: 1,
         Title: "President",
         Name: "Luis Rodriguez",
         Picture: President,
@@ -26,6 +27,7 @@ class EboardMembers extends Component {
         }
       },
       {
+        id: 2,
         Title: "Internal Vice-President",
         Name: "Richard Martinez",
         Picture: IVicePresident,
@@ -37,6 +39,7 @@ class EboardMembers extends Component {
         }
       },
       {
+        id: 3,
         Title: "External Vice-President",
         Name: "Evan Vazquez",
         Picture: EVicePresident,
@@ -48,6 +51,7 @@ class EboardMembers extends Component {
         }
       },
       {
+        id: 4,
         Title: "Treasurer",
         Name: "Keivon Yang",
         Picture: Treasurer,
@@ -59,6 +63,7 @@ class EboardMembers extends Component {
         }
       },
       {
+        id: 5,
         Title: "Secretary",
         Name: "Gloria Hernandez",
         Picture: Secretary,
