@@ -5,3 +5,10 @@
   background-position: center;
   margin: auto;
 }
+.calendar-main h2 {
+  text-align: center;
+  background-color: rgb(0, 31, 91, 100);
+  color: #f26534;
+  font-weight: 900;
+  padding: 10px;
+}

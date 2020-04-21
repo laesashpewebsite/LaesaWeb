@@ -98,6 +98,22 @@ const myEvents = [
     start: new Date(2020, 3, 18, 12, 0, 0),
     end: new Date(2020, 3, 18, 16, 0, 0),
     hexColor: "f26534" // oragne for SHPE Events
+  },
+  {
+    id: 11,
+    title: "Wednesday Schedule",
+    allDay: false,
+    start: new Date(2020, 3, 7, 12, 0, 0),
+    end: new Date(2020, 3, 7, 16, 0, 0),
+    hexColor: "f26534" // oragne for SHPE Events
+  },
+  {
+    id: 12,
+    title: "LMS Scholarship Due Date",
+    allDay: false,
+    start: new Date(2020, 3, 10, 12, 0, 0),
+    end: new Date(2020, 3, 10, 16, 0, 0),
+    hexColor: "72a9be" // oragne for SHPE Events
   }
 ];
 const eventStyleGetter = (event, start, end, isSelected) => {
@@ -147,6 +163,7 @@ class LAESACalendar extends Component {
   render() {
     return (
       <div className="calendar-main">
+        <h2> Save The Dates</h2>
         <MyCalendar
           style={{
             backgroundColor: "red"
