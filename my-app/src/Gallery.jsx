@@ -17,9 +17,7 @@ const useStyles = makeStyles(theme => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    backgroundColor: " #72a9be",
-    height: "200px",
-    width: "100%"
+    backgroundColor: " #72a9be"
   },
   gridList: {
     flexWrap: "nowrap",
@@ -41,7 +39,7 @@ export default function SingleLineGridList(props) {
 
   return (
     <div className={classes.root}>
-      <GridList className={classes.gridList} cols={2.5}>
+      <GridList className={classes.gridList} cols={3.5}>
         {props.tileData.map(tile => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />

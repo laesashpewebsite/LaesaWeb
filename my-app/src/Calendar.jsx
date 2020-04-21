@@ -3,10 +3,11 @@ import React, { Component } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import shpelogo from "./pictures/SHPE_logo_FullColor.png";
-import color from "@material-ui/core/colors/amber";
-import { red } from "@material-ui/core/colors";
-import { compose } from "@material-ui/system";
+// @import 'react-big-calendar/lib/sass/styles';
+
+import Typography from "@material-ui/core/Typography";
+
+// import "react-big-calendar/lib/sass/styles";
 import "./Calendar.css";
 
 import PCED from "./Events/PCED.jsx";
@@ -19,7 +20,6 @@ const myEvents = [
   {
     id: 0,
     title: "Spring club fair",
-
     allDay: false,
     start: new Date(2020, 1, 6, 14, 0, 0),
     end: new Date(2020, 1, 6, 15, 15, 0),
@@ -105,7 +105,7 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 7, 12, 0, 0),
     end: new Date(2020, 3, 7, 16, 0, 0),
-    hexColor: "f26534" // oragne for SHPE Events
+    hexColor: "1070B8" // oragne for SHPE Events
   },
   {
     id: 12,
@@ -116,6 +116,7 @@ const myEvents = [
     hexColor: "72a9be" // oragne for SHPE Events
   }
 ];
+
 const eventStyleGetter = (event, start, end, isSelected) => {
   //   console.log(event);
   var backgroundColor = "#" + event.hexColor;
@@ -163,7 +164,7 @@ class LAESACalendar extends Component {
   render() {
     return (
       <div className="calendar-main">
-        <h2> Save The Dates</h2>
+        <h2>Save The Dates!</h2>
         <MyCalendar
           style={{
             backgroundColor: "red"

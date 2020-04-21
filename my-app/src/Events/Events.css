@@ -46,7 +46,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 .PCED-GROUP-PIC {
   /* only for PCED files */
 
-  background-image: url(../pictures/PCED-GROUP1.JPG);
+  background-image: url(../pictures/PCED_Pictures/Group.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

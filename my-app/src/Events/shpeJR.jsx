@@ -45,6 +45,63 @@ class shpeJR extends Component {
         }
       }
     ]
+    // ,
+    // PCEDPictures: [
+    //   {
+    //     img: PCEDPicture1,
+    //     title: "PCED Image1",
+    //     author: "N/A",
+    //     cols: 1
+    //   },
+    //   {
+    //     img: PCEDPicture2,
+    //     title: "PCED Image2",
+    //     author: "N/A",
+    //     cols: 2
+    //   },
+    //   {
+    //     img: PCEDPicture3,
+    //     title: "PCED Image3",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture4,
+    //     title: "PCED Image4",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture5,
+    //     title: "PCED Image5",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture6,
+    //     title: "PCED Image6",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture7,
+    //     title: "PCED Image7",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture8,
+    //     title: "PCED Image8",
+    //     author: "N/A",
+    //     cols: 3
+    //   },
+    //   {
+    //     img: PCEDPicture9,
+    //     title: "PCED Image9",
+    //     author: "N/A",
+    //     cols: 3
+    //   }
+    // ]
   };
   render() {
     return (

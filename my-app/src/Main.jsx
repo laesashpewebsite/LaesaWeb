@@ -6,7 +6,9 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 // import column from "./pictures/Column-crop.png";
 // import logo2 from "./pictures/LAESA_LOGO.png";
 import Pillars from "./pillar.jsx";
-import FLL_Picture1 from "./pictures/FLL_Pictures/IMG_8317.jpg";
+import Mission from "./pictures/SHPEMission.jpg";
+import Vision from "./pictures/SHPEVision.jpg";
+
 function main() {
   return (
     <div className="Main">
@@ -82,11 +84,7 @@ function main() {
                 well, as to help to fully develop individuals to their highest
                 potential."
               </p>
-              <img
-                className="Column-pictures1"
-                src={FLL_Picture1}
-                alt="Picture 1"
-              />
+              <img className="Column-pictures1" src={Mission} alt="Picture 1" />
             </div>
             <div className="Column1">
               <h2> LAESA SHPE'S VISION </h2>
@@ -95,11 +93,7 @@ function main() {
                 accomplished by using four principles. They are the principles
                 of Support, Teamwork, Excellence, and Professionalism!
               </p>
-              <img
-                className="Column-pictures1"
-                src={FLL_Picture1}
-                alt="Picture 1"
-              />
+              <img className="Column-pictures1" src={Vision} alt="Picture 1" />
             </div>
           </div>
         </div>

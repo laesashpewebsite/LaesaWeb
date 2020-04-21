@@ -4,7 +4,10 @@ import FLL_Director from "../pictures/Jean-Luc.jpg";
 import FLL_Director2 from "../pictures/Cesar.jpg";
 import FLL_Picture1 from "../pictures/FLL_Pictures/IMG_8317.jpg";
 import FLL_Picture2 from "../pictures/FLL_Pictures/IMG_8322.jpg";
+import FLL_Picture3 from "../pictures/FLL_Pictures/IMG_8315.jpg";
 import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
+import FLL_Picture5 from "../pictures/FLL_Pictures/IMG_8309.jpg";
+import FLL_Picture6 from "../pictures/FLL_Pictures/IMG_8313.jpg";
 
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
@@ -64,19 +67,31 @@ class FLL extends Component {
       {
         img: FLL_Picture1,
         title: "FLL Image1",
-        author: "author",
+        author: "N/A",
         cols: 1
       },
       {
         img: FLL_Picture2,
         title: "FLL Image2",
-        author: "author",
+        author: "N/A",
         cols: 2
       },
       {
-        img: FLL_Picture4,
+        img: FLL_Picture3,
         title: "FLL Image3",
-        author: "author",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: FLL_Picture4,
+        title: "FLL Image4",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: FLL_Picture5,
+        title: "FLL Image5",
+        author: "N/A",
         cols: 3
       }
     ]

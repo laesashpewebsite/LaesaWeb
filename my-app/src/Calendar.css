@@ -1,9 +1,13 @@
 .calendar-main {
   background-image: url(./pictures/SHPE-logo.png);
+  background-color: rgb(0, 31, 91, 100);
+
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
   margin: auto;
+  font-weight: 900;
+  color: aliceblue;
 }
 .calendar-main h2 {
   text-align: center;
@@ -11,4 +15,15 @@
   color: #f26534;
   font-weight: 900;
   padding: 10px;
+}
+.rbc-today {
+  background-color: #282c34;
+}
+.rbc-toolbar button {
+  color: #f26534;
+  font-weight: 900;
+  font-size: medium;
+}
+.rbc-toolbar {
+  font-size: 150%;
 }

@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import "./Events.css";
-import CardProfiles from "./CardProfiles";
-// import EventItem from "./EventItem.jsx";
 
 import PCED_Director from "../pictures/Arelis.png";
 import PCED_Director2 from "../pictures/Derwick.jpg";
-// import { compose } from "@material-ui/system";
+import PCEDPicture1 from "../pictures/PCED_Pictures/Students.jpg";
+import PCEDPicture2 from "../pictures/PCED_Pictures/Directors2019.jpg";
+import PCEDPicture3 from "../pictures/PCED_Pictures/Workshop.jpg";
+import PCEDPicture4 from "../pictures/PCED_Pictures/Volunteers.jpg";
+import PCEDPicture5 from "../pictures/PCED_Pictures/Volunteers2.jpg";
+import PCEDPicture6 from "../pictures/PCED_Pictures/Volunteers3.jpg";
+import PCEDPicture7 from "../pictures/PCED_Pictures/Winners.jpg";
+import PCEDPicture8 from "../pictures/PCED_Pictures/Teams.jpg";
+import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
 
+import CardProfiles from "./CardProfiles";
+import GalleryPic from "../Gallery";
 class PCED extends Component {
   state = {
     // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
@@ -54,6 +62,62 @@ class PCED extends Component {
           color: "#f26534"
         }
       }
+    ],
+    PCEDPictures: [
+      {
+        img: PCEDPicture1,
+        title: "PCED Image1",
+        author: "N/A",
+        cols: 1
+      },
+      {
+        img: PCEDPicture2,
+        title: "PCED Image2",
+        author: "N/A",
+        cols: 2
+      },
+      {
+        img: PCEDPicture3,
+        title: "PCED Image3",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture4,
+        title: "PCED Image4",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture5,
+        title: "PCED Image5",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture6,
+        title: "PCED Image6",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture7,
+        title: "PCED Image7",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture8,
+        title: "PCED Image8",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture9,
+        title: "PCED Image9",
+        author: "N/A",
+        cols: 3
+      }
     ]
   };
   render() {
@@ -93,12 +157,22 @@ class PCED extends Component {
               team-building and leadership skills"
             </p>
           </div>
+          <div className="Gallery">
+            <h2>Gallery</h2>
+
+            {/* this here displays the picture that are in the array FFLPictures
+            by inputing it into Component GalleryPic */}
+            <GalleryPic tileData={this.state.PCEDPictures} />
+          </div>
           <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
 
-          <CardProfiles DirectorListName={this.state.DirectorList} />
+          <CardProfiles
+            DirectorListName={this.state.DirectorList}
+            key={this.state.DirectorList.id}
+          />
           <div className="card-color2">
             <h2>Goals</h2>
             <ul className="lists">
