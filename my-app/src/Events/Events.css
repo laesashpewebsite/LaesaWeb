@@ -12,6 +12,20 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   background-size: cover;
   height: 85vh;
 }
+.CareerSummit-GROUP-PIC {
+  /* only for SHPEJR files */
+  background-image: url(../pictures/SHPE_logo_FullColor.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 60vh;
+  width: 97%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #SHPEJR-Title {
   /* only for SHPEJR files */
 

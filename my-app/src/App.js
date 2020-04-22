@@ -12,6 +12,7 @@ import FLL from "./Events/FLL";
 import PCED from "./Events/PCED.jsx"; // to see difference change to App.js
 import SHPE_JR from "./Events/shpeJR";
 import Events from "./Calendar";
+import CareerSummit from "./Events/CareerSummit";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
           <Route path="/PCED" component={PCED} />
           <Route path="/SHPE.JR" component={SHPE_JR} />
           <Route path="/Events" component={Events} />
+          <Route path="/Careersummit" component={CareerSummit} />
 
           {/* adds these routes so the website can connect to these pages by clicking on links */}
 

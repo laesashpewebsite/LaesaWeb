@@ -73,6 +73,13 @@ class Navigation extends React.Component {
                 >
                   FLL
                 </NavDropdown.Item>
+                <NavDropdown.Item
+                  className="eventsDropdownItem"
+                  eventKey={1}
+                  onClick={() => history.replace("/Careersummit")}
+                >
+                  Career Summit
+                </NavDropdown.Item>
               </div>
             </NavDropdown>
             <Nav.Link eventKey={1} onClick={() => history.replace("/Eboard")}>
@@ -85,58 +92,3 @@ class Navigation extends React.Component {
   }
 }
 export default withRouter(Navigation);
-// }
-// const Navigation = ({ history }) => (
-//   <div className="Navigation">
-//     <Navbar className=" custom-nav" variant="dark">
-//       <Navbar.Brand href="#home">
-//         <Link to="/">
-//           <img src={logo} alt="LAESA_LOGO" height="90px" />
-//         </Link>
-//       </Navbar.Brand>
-//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-//         <Nav className="justify-content-end">
-//           <Nav.Link eventKey={1} onClick={() => history.push("Main/")}>
-//             Main
-//           </Nav.Link>
-//           <NavDropdown
-//             title="Events"
-//             className="eventsDropdown"
-//             onMouseEnter={this.handleOpen}
-//             onMouseLeave={this.handleClose}
-//             open={this.state.isOpen}
-//             id="collasible-nav-dropdown"
-//           >
-//             <div className="events-css">
-//               <NavDropdown.Item
-//                 className="eventsDropdownItem"
-//                 eventKey={1}
-//                 onClick={() => history.push("/PCED")}
-//               >
-//                 PCED
-//               </NavDropdown.Item>
-//               <NavDropdown.Item
-//                 className="eventsDropdownItem"
-//                 eventKey={1}
-//                 onClick={() => history.push("/SHPE.JR")}
-//               >
-//                 SHPE JR.
-//               </NavDropdown.Item>
-//               <NavDropdown.Item
-//                 className="eventsDropdownItem"
-//                 eventKey={1}
-//                 onClick={() => history.push("/FLL")}
-//               >
-//                 FLL
-//               </NavDropdown.Item>
-//             </div>
-//           </NavDropdown>
-//           <Nav.Link eventKey={1} onClick={() => history.push("/Eboard")}>
-//             Eboard
-//           </Nav.Link>
-//         </Nav>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   </div>
-// );
