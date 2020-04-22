@@ -13,6 +13,7 @@ import PCEDPicture7 from "../pictures/PCED_Pictures/Winners.jpg";
 import PCEDPicture8 from "../pictures/PCED_Pictures/Teams.jpg";
 import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
 
+import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
 class PCED extends Component {
@@ -125,27 +126,23 @@ class PCED extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
-          <div className="PCED-GROUP-PIC">
-            <h1> Pre-College Engineering Day </h1>
+          <div className="Events-Banner">
+            <h2> Pre-College Engineering Day </h2>
+            <img
+              src={PCED_Group}
+              className="Events-Picture"
+              alt="PCED Group Picture"
+            />
           </div>
           <div className="card-color2">
-            <h2> About needs a new about</h2>
+            <h2>About</h2>
             <p>
-              LAESA–SHPE is the largest and most prominent undergraduate student
-              organization at The City College of New York. In 1983, a group of
-              dedicated students, with the goal to unite all Latino and other
-              minority engineering students, share cultural ideas, and promote
-              leadership, founded LAESA within City College. In 1986, LAESA
-              joined forces with the Society of Hispanic Professional Engineers
-              (SHPE) to better achieve their goals and connect with a larger
-              body of professionals. This partnership has flourished over the
-              years and today, LAESA is a firm supporter of the SHPE core
-              values, while remaining true to its original mission. With over
-              150 members, LAESA-SHPE has been able to gather motivated students
-              from all engineering disciplines and a diverse pool of cultural
-              backgrounds. This dynamic group of students, alongside their
-              highly supportive alumni members, has had many achievements at The
-              City College of New York and within the community.
+              PCED is one of our largest and most memorable events that we host
+              every year. We reach out to our community and invite High School
+              students to our City College campus. we give them the opportunity
+              to engage and learn about Engineering fields by providing them
+              with workshops, speakers, and a friendly competition that has them
+              build their own project and compete with it.
             </p>
           </div>
           <div className="card-color">

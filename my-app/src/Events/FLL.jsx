@@ -9,6 +9,8 @@ import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
 import FLL_Picture5 from "../pictures/FLL_Pictures/IMG_8309.jpg";
 import FLL_Picture6 from "../pictures/FLL_Pictures/IMG_8313.jpg";
 
+import FLL_Group from "../pictures/FLL_Pictures/IMG_8311.jpg";
+
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
 import "./Events.css";
@@ -100,12 +102,16 @@ class FLL extends Component {
     return (
       <div className="Events-Main">
         <header className="Events-header">
-          <div className="FLL-GROUP-PIC">
-            <h1 id="FLL-Title">First LEGO League</h1>
+          <div className="Events-Banner">
+            <h2>First LEGO League</h2>
+            <img
+              src={FLL_Group}
+              className="Events-Picture"
+              alt="FLL Group Picture"
+            />
           </div>
           <div className="card-color2">
             <h2> About </h2>
-
             <p>
               First Lego League's mission is to inspire young adults to be
               science and technology innovators, by engaging them in exciting

@@ -3,6 +3,7 @@ import "./Events.css";
 import shpeJR_Director from "../pictures/Byron.jpg";
 import shpeJR_Director2 from "../pictures/Mariel.jpg";
 import CardProfiles from "./CardProfiles";
+import SHPEJR_Group from "./../pictures/Shpejr-group.JPG";
 
 class shpeJR extends Component {
   state = {
@@ -107,8 +108,13 @@ class shpeJR extends Component {
     return (
       <div className="Events-Main">
         <header className="Events-header">
-          <div className="SHPEJR-GROUP-PIC">
-            <h1 id="SHPEJR-Title"> SHPE Jr. </h1>
+          <div className="Events-Banner">
+            <h2> SHPE JR. </h2>
+            <img
+              src={SHPEJR_Group}
+              className="Events-Picture"
+              alt="PCED Group Picture"
+            />
           </div>
           <div className="card-color2">
             <h2>Noche de Ciencias</h2>
