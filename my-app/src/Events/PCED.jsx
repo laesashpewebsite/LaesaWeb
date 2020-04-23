@@ -139,10 +139,11 @@ class PCED extends Component {
             <p>
               PCED is one of our largest and most memorable events that we host
               every year. We reach out to our community and invite High School
-              students to our City College campus. we give them the opportunity
-              to engage and learn about Engineering fields by providing them
-              with workshops, speakers, and a friendly competition that has them
-              build their own project and compete with it.
+              students thorughout New York City to our City College campus. We
+              give them the opportunity to engage and learn about Engineering
+              fields by providing them with workshops, speakers, and a friendly
+              competition that has them build their own project and compete with
+              it.
             </p>
           </div>
           <div className="card-color">

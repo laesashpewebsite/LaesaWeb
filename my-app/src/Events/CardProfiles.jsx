@@ -32,15 +32,18 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: "10px",
     paddingRight: "10px",
     paddingTop: "20px",
-    paddingBottom: "30px",
-    maxheight: "760px"
+    paddingBottom: "30px"
+    // maxheight: "760px"
   },
   //css for the pictures
   media: {
-    objectFit: "contain",
-    paddingTop: "100%",
+    objectFit: "cover",
+    height: "350px",
+    width: "290px",
+    paddingBottom: "30px",
+    // paddingTop: "30px",
     borderRadius: "50%",
-    objectPosition: "auto",
+    objectPosition: "10px 30%",
     margin: "auto",
     marginTop: "30px"
   },

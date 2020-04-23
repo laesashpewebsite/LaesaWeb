@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Events.css";
 
-import PCED_Director from "../pictures/Arelis.png";
+import CS_Director from "../pictures/Kayley.jpg";
 import PCED_Director2 from "../pictures/Derwick.jpg";
 // import PCEDPicture1 from "../pictures/PCED_Pictures/Students.jpg";
 // import PCEDPicture2 from "../pictures/PCED_Pictures/Directors2019.jpg";
@@ -12,6 +12,7 @@ import PCED_Director2 from "../pictures/Derwick.jpg";
 // import PCEDPicture7 from "../pictures/PCED_Pictures/Winners.jpg";
 // import PCEDPicture8 from "../pictures/PCED_Pictures/Teams.jpg";
 // import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
+import SHPELogo from "../pictures/SHPE-logo.png";
 
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
@@ -23,7 +24,7 @@ class CareerSummit extends Component {
         id: 1,
         Title: "Career Summit Co-Director",
         Name: "Kayley Arias",
-        Picture: PCED_Director,
+        Picture: CS_Director,
         Bio:
           "Hi my name is Kayley Arias and I am a senior majoring in chemical engineering. I joined LAESA-SHPE in my second year in college. Upon joining this organization, I volunteered at numerous events and obtained various leadership positions. I was the secretary for the 2018-2019 academic year. I had the opportunity to speak to high school students, middle school students, and their parents about SHPE, college, and what a career in engineering entails. This organization has provided me with mentors, scholarships, and has helped me acquire the professional skills to land internships and full-time opportunities. LAESA-SHPE has taught me so much which is why I continue to be actively involved to make sure that others acquire the resources and skills they need to become successful professionals. I will continue to be actively involved even after I graduate.",
         styles: {
@@ -114,29 +115,45 @@ class CareerSummit extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
-          <div className="CareerSummit-GROUP-PIC">
-            <h1> Career Summit </h1>
+          <div className="Events-Banner">
+            <h2> Career Summit </h2>
+            <img
+              src={SHPELogo}
+              className="Events-Picture"
+              alt="FLL Group Picture"
+            />
           </div>
           <div className="card-color2">
-            <h2> About Career Summit</h2>
-            <p>Career Summit stufff</p>
+            <h2> About </h2>
+            <p>
+              {" "}
+              The Career Summit is a mock conference for many of our members and
+              other students at CCNY we host this event so our members can get
+              practice talking to recruiters and getting their resume's
+              critiqued by real recruiters in the industry that we bring over
+              for thie event.
+            </p>
           </div>
           <div className="card-color">
             <h2>Mission</h2>
-            <p>Mission Career Smmmit</p>
+            <p>
+              "Our mission is to prepare our members for the real world and
+              become better candidates when applying for jobs/internships by
+              helping them improve on their public speaking, resume, or
+              interview skills"
+            </p>
           </div>
           <div className="Gallery">
-            <h2>Gallery</h2>
+            {/* <h2>Gallery</h2>
 
             {/* this here displays the picture that are in the array FFLPictures
             by inputing it into Component GalleryPic */}
             {/* /   <GalleryPic tileData={this.state.PCEDPictures} /> */}
-          </div>
+          </div>{" "}
           <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
-
           <CardProfiles
             DirectorListName={this.state.DirectorList}
             key={this.state.DirectorList.id}
@@ -163,7 +180,6 @@ class CareerSummit extends Component {
               </li>
             </ul>
           </div>
-
           <div className="card-color">
             <h2>Director Contact Info</h2>
             <ul className="lists">

@@ -29,7 +29,7 @@ const myEvents = [
     start: new Date(2020, 1, 6, 14, 0, 0),
     end: new Date(2020, 1, 6, 15, 15, 0),
     hexColor: "D23F26",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 1,
@@ -38,7 +38,7 @@ const myEvents = [
     start: new Date(2020, 1, 13, 14, 0, 0),
     end: new Date(2020, 1, 13, 15, 15, 0),
     hexColor: "D23F26",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const myEvents = [
     start: new Date(2020, 2, 5, 14, 0, 0),
     end: new Date(2020, 2, 7, 15, 15, 0),
     hexColor: "f26534",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ const myEvents = [
     start: new Date(2020, 2, 13, 14, 0, 0),
     end: new Date(2020, 2, 13, 15, 15, 0),
     hexColor: "D23F26",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ const myEvents = [
     start: new Date(2020, 2, 26, 14, 0, 0),
     end: new Date(2020, 2, 26, 15, 15, 0),
     hexColor: "D23F26",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
 
   {
@@ -77,7 +77,7 @@ const myEvents = [
     end: new Date(2020, 3, 23, 15, 15, 0),
     hexColor: "D23F26",
     isSelected: "./PCED",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ const myEvents = [
     start: new Date(2020, 4, 2, 14, 0, 0),
     end: new Date(2020, 4, 2, 15, 15, 0),
     hexColor: "D23F26", // Red for LAESA Events
-    isSelected: true
+    isSelect: "/PCED"
   },
   {
     id: 7,
@@ -95,7 +95,7 @@ const myEvents = [
     start: new Date(2020, 4, 22, 14, 0, 0),
     end: new Date(2020, 4, 22, 15, 15, 0),
     hexColor: "1070B8",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
   },
   {
     id: 8,
@@ -104,7 +104,7 @@ const myEvents = [
     start: new Date(2020, 3, 8, 14, 0, 0),
     end: new Date(2020, 3, 10, 15, 15, 0),
     hexColor: "1070B8",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // dark blue for school events
   },
   {
@@ -114,7 +114,7 @@ const myEvents = [
     start: new Date(2020, 3, 18, 12, 0, 0),
     end: new Date(2020, 3, 18, 16, 0, 0),
     hexColor: "f26534",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -124,7 +124,7 @@ const myEvents = [
     start: new Date(2020, 3, 7, 12, 0, 0),
     end: new Date(2020, 3, 7, 16, 0, 0),
     hexColor: "1070B8",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -134,7 +134,7 @@ const myEvents = [
     start: new Date(2020, 3, 10, 12, 0, 0),
     end: new Date(2020, 3, 10, 16, 0, 0),
     hexColor: "72a9be",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // light blue for due dates
   },
   {
@@ -144,7 +144,7 @@ const myEvents = [
     start: new Date(2020, 3, 22, 12, 0, 0),
     end: new Date(2020, 3, 22, 16, 0, 0),
     hexColor: "72a9be",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -154,16 +154,19 @@ const myEvents = [
     start: new Date(2020, 4, 8, 12, 0, 0),
     end: new Date(2020, 4, 8, 16, 0, 0),
     hexColor: "D23F26",
-    isSelected: "/PCED"
+    isSelect: "/PCED"
     // oragne for SHPE Events
   }
 ];
+const handleSelectEvent = (event, start, end, isSelected) => {
+  console.log(myEvents);
+  var link = myEvents.isSelect;
 
+  return {};
+};
 const eventStyleGetter = (event, start, end, isSelected) => {
-  // console.log(event.isSelected);
-
+  // console.log(event);
   var backgroundColor = "#" + event.hexColor;
-
   var style = {
     backgroundColor: backgroundColor,
     borderRadius: "0px",
@@ -178,15 +181,18 @@ const eventStyleGetter = (event, start, end, isSelected) => {
     style: style
   };
 };
-
 // Setup the localizer by providing the moment (or globalize) Object
 // to the correct localizer.
 const localizer = momentLocalizer(moment); // or globalizeLocalizer
 
 // console.log(myEvents[3].isSelected);
-
-const gotoPage = (event, start, end, isSelected) => {};
-// const history = this.props.history;
+// const handleSelectEvent = () => {
+//   return (
+//     <div>
+//       <Link to="/"></Link>
+//     </div>
+//   );
+// };
 
 const MyCalendar = props => (
   <Router>
@@ -205,19 +211,16 @@ const MyCalendar = props => (
         defaultDate={today}
         localizer={localizer}
         eventPropGetter={eventStyleGetter}
-        // onSelectEvent={gotoPage()}
       ></Calendar>
     </div>
   </Router>
 );
 
-class LAESACalendar extends Component {
+class LAESACalendar extends Router {
   constructor(props) {
     super(props);
   }
-  handleSelectEvent = () => {
-    return <Link to="/"></Link>;
-  };
+
   render() {
     return (
       <div className="calendar-main">

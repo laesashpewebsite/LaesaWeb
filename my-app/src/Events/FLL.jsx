@@ -113,10 +113,11 @@ class FLL extends Component {
           <div className="card-color2">
             <h2> About </h2>
             <p>
-              First Lego League's mission is to inspire young adults to be
-              science and technology innovators, by engaging them in exciting
-              programs that help them build the necessaries skills in science,
-              engineering, and technology.
+              First Lego League's is one of our way's of motivating young adults
+              to pursue STEM Many of the kids that participate are tasked with a
+              group project that they get to research and present in this
+              competition. There are many opportunities here for young adults to
+              get involved and learn about topics relating to there project.
             </p>
           </div>
 
