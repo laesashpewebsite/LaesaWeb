@@ -1,11 +1,13 @@
-.pillar-header {
+.pillar-main {
   clear: both;
+  /* border: solid; */
   /* border: solid; */
 }
 .background-Pillar {
-  width: 200px;
+  width: 100%;
   height: 200px;
   margin: auto;
+  /* border: solid; */
 }
 .Name {
   padding-top: 10px;
@@ -14,10 +16,8 @@
 .info {
   /* letter-spacing: 1px; */
   margin-top: 20px;
-  max-width: 100%;
   font-weight: 700;
   /* border: solid; */
-  clear: both;
 
   text-align: center;
 }

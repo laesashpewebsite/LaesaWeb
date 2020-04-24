@@ -1,6 +1,5 @@
 // renders and adds things to the website
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Footer from "./Footer.jsx";
 import "./App.css";

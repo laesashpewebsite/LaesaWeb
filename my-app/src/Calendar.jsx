@@ -3,19 +3,11 @@ import React, { Component } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { Route, Switch } from "react-router-dom";
-
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
 
 // @import 'react-big-calendar/lib/sass/styles';
 
-import Typography from "@material-ui/core/Typography";
-
 // import "react-big-calendar/lib/sass/styles";
 import "./Calendar.css";
-
-import PCED from "./Events/PCED.jsx";
 
 // let allViews = Object.keys(Calendar.Views).map(k => Calendar.Views[k]);
 const today = new Date();
@@ -192,17 +184,6 @@ const eventStyleGetter = (event, start, end, isSelected) => {
     style: style
   };
 };
-const eventLinkGetter = (event, e) => {
-  function handleClick() {
-    return <Link to="/">{console.log("here")}</Link>;
-  }
-  return (
-    <div>
-      {/* {console.log(event)} */}
-      {handleClick()}
-    </div>
-  );
-};
 
 const localizer = momentLocalizer(moment); // or globalizeLocalizer
 
@@ -232,12 +213,9 @@ const MyCalendar = props => (
 );
 
 class LAESACalendar extends Component {
-  constructor(props) {
-    super(props);
-  }
   handleClick = props => {
     // return console.log(props.isSelect);
-    if (props.eventLink == true) {
+    if (props.eventLink === true) {
       return this.props.history.replace(props.isSelect);
     }
   };

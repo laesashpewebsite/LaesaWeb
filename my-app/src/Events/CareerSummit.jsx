@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Events.css";
 
 import CS_Director from "../pictures/Kayley.jpg";
-import PCED_Director2 from "../pictures/Derwick.jpg";
+import CS_DIrector2 from "../pictures/Valentin.jpg";
 // import PCEDPicture1 from "../pictures/PCED_Pictures/Students.jpg";
 // import PCEDPicture2 from "../pictures/PCED_Pictures/Directors2019.jpg";
 // import PCEDPicture3 from "../pictures/PCED_Pictures/Workshop.jpg";
@@ -15,7 +15,6 @@ import PCED_Director2 from "../pictures/Derwick.jpg";
 import SHPELogo from "../pictures/SHPE-logo.png";
 
 import CardProfiles from "./CardProfiles";
-import GalleryPic from "../Gallery";
 class CareerSummit extends Component {
   state = {
     // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
@@ -36,16 +35,9 @@ class CareerSummit extends Component {
         id: 2,
         Title: "Career Summit Co-Director",
         Name: "Valentin Martinez",
-        Picture: PCED_Director2,
+        Picture: CS_DIrector2,
         Bio:
-          "I'm a Civil Engineering major at CCNY, some of my contributions for\
-        the club are Co-director for the 26th PCED and Office manager, some\
-        the reasons I picked these positions are because I like to be\
-        organized and also work on self-development. Some hobbies that I'm\
-        into are basketball, health ( mental and physical), reading books on\
-        personal growth and listening to podcast. Laesa-shpe has opened many\
-        doors for new opportunities, adventures and friends. I am grateful\
-        for coming across this great organization.",
+          "My name is Valentin Martinez a Civil Engineering Graduate 19’ with a focus on Structural Engineering. I’ve been involved with LAESA-SHPE since my sophomore year and have held multiple positions within the organization: FIRST Lego League Director 17’, SHPE Jr. Director 17’, Internal Vice President 18’, and the Career Summit Director 19’.  LAESA-SHPE changes lives by impacting and influencing the Hispanic community, and building you up to become a professional leader. And, I’ve had the privilege to be part of this movement #SHPE4LIFE",
         styles: {
           backgroundColor: "rgb(0, 31, 91, 100)",
           color: "#f26534"
@@ -120,7 +112,7 @@ class CareerSummit extends Component {
             <img
               src={SHPELogo}
               className="Events-Picture"
-              alt="FLL Group Picture"
+              alt="Career Summit Group "
             />
           </div>
           <div className="card-color2">

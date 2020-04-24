@@ -7,7 +7,7 @@ import FLL_Picture2 from "../pictures/FLL_Pictures/IMG_8322.jpg";
 import FLL_Picture3 from "../pictures/FLL_Pictures/IMG_8315.jpg";
 import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
 import FLL_Picture5 from "../pictures/FLL_Pictures/IMG_8309.jpg";
-import FLL_Picture6 from "../pictures/FLL_Pictures/IMG_8313.jpg";
+// import FLL_Picture6 from "../pictures/FLL_Pictures/IMG_8313.jpg";
 
 import FLL_Group from "../pictures/FLL_Pictures/IMG_8311.jpg";
 
@@ -104,11 +104,7 @@ class FLL extends Component {
         <header className="Events-header">
           <div className="Events-Banner">
             <h2>First LEGO League</h2>
-            <img
-              src={FLL_Group}
-              className="Events-Picture"
-              alt="FLL Group Picture"
-            />
+            <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
           </div>
           <div className="card-color2">
             <h2> About </h2>

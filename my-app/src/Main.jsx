@@ -1,10 +1,7 @@
 import React from "react";
 import "./Main.css";
-import PCED_group from "./pictures/Convention-Group.jpg";
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
-// import Pillar from "./pillar";
-// import column from "./pictures/Column-crop.png";
-// import logo2 from "./pictures/LAESA_LOGO.png";
+
 import Pillars from "./pillar.jsx";
 import Mission from "./pictures/SHPEMission.jpg";
 import Vision from "./pictures/SHPEVision.jpg";
@@ -18,7 +15,7 @@ function main() {
           <img
             src={SHPE_Convention}
             className="Main-Picture"
-            alt="Convention Group Picture"
+            alt="Convention Group"
           />
         </div>
 
@@ -77,71 +74,45 @@ function main() {
           <div className="Row">
             <div className="Column1">
               <h2> LAESA SHPE'S MISSION </h2>
-              <p className="body">
+              <p>
                 Our mission is to be the premier facilitator of student's
                 endeavors in the Science,Technology, Engineering, and
                 Mathematics field (STEM). Also, to facilitate in other areas as
                 well, as to help to fully develop individuals to their highest
                 potential."
               </p>
-              <img className="Column-pictures1" src={Mission} alt="Picture 1" />
+              <img className="Column-pictures1" src={Mission} alt="Mission" />
             </div>
             <div className="Column1">
               <h2> LAESA SHPE'S VISION </h2>
-              <p className="body">
+              <p>
                 Our mission is to S.T.E.P into THE FUTURE. This can be
                 accomplished by using four principles. They are the principles
                 of Support, Teamwork, Excellence, and Professionalism!
               </p>
-              <img className="Column-pictures1" src={Vision} alt="Picture 1" />
+              <img className="Column-pictures1" src={Vision} alt="Vision" />
             </div>
           </div>
         </div>
 
         <div className="box2">
-          <div style={{ paddingBottom: "130px" }}>
-            <div className="Row">
-              <h2> 5 Pillars of LAESA-SHPE</h2>
-              <div className="Column2">
-                <Pillars />
-              </div>
-              <div className="Column2">
-                <Pillars />
-              </div>
-              <div className="Column2">
-                <Pillars />
-              </div>
-              <div className="Column2">
-                <Pillars />
-              </div>
-              <div className="Column2">
-                <Pillars />
-              </div>
-            </div>
-            {/* <div className="Column2">
-              <h2>Academic Development</h2>
-              <img className="Column-pic" src={FLL_Picture1} alt="Picture 1" />
-            </div>
-
+          <div className="Row">
+            <h2> 5 Pillars of LAESA-SHPE</h2>
             <div className="Column2">
-              <h2>Professional Development</h2>
-              <img className="Column-pic" src={FLL_Picture2} alt="Picture 2" />
+              <Pillars />
             </div>
-
             <div className="Column2">
-              <h2>Chapter Development</h2>
-              <img className="Column-pic" src={FLL_Picture3} alt="Picture 3" />
+              <Pillars />
             </div>
-
             <div className="Column2">
-              <h2>Leadership Development</h2>
-              <img className="Column-pic" src={FLL_Picture3} alt="Picture 3" />
+              <Pillars />
             </div>
-
             <div className="Column2">
-              <h2>Community Outreach</h2>
-              <img className="Column-pic" src={FLL_Picture4} alt="Picture 4" />
-            </div> */}
+              <Pillars />
+            </div>
+            <div className="Column2">
+              <Pillars />
+            </div>
           </div>
         </div>
       </header>
