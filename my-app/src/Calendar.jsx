@@ -6,7 +6,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // @import 'react-big-calendar/lib/sass/styles';
 
@@ -28,8 +28,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 1, 6, 14, 0, 0),
     end: new Date(2020, 1, 6, 15, 15, 0),
-    hexColor: "D23F26",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelect:w "/PCED"
   },
   {
     id: 1,
@@ -37,8 +37,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 1, 13, 14, 0, 0),
     end: new Date(2020, 1, 13, 15, 15, 0),
-    hexColor: "D23F26",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelect: "/PCED"
   },
   {
     id: 2,
@@ -46,8 +46,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 2, 5, 14, 0, 0),
     end: new Date(2020, 2, 7, 15, 15, 0),
-    hexColor: "f26534",
-    isSelect: "/PCED"
+    hexColor: "f26534"
+    // isSelect: "/PCED"
   },
   {
     id: 3,
@@ -56,8 +56,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 2, 13, 14, 0, 0),
     end: new Date(2020, 2, 13, 15, 15, 0),
-    hexColor: "D23F26",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelect: "/PCED"
   },
   {
     id: 4,
@@ -65,8 +65,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 2, 26, 14, 0, 0),
     end: new Date(2020, 2, 26, 15, 15, 0),
-    hexColor: "D23F26",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelect: "/PCED"
   },
 
   {
@@ -75,9 +75,12 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 23, 14, 0, 0),
     end: new Date(2020, 3, 23, 15, 15, 0),
-    hexColor: "D23F26",
-    isSelected: "./PCED",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelected: "./PCED",
+    // resources: {
+    //   id: 1,
+    //   title: "./PCED"
+    // }
   },
   {
     id: 6,
@@ -85,8 +88,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 4, 2, 14, 0, 0),
     end: new Date(2020, 4, 2, 15, 15, 0),
-    hexColor: "D23F26", // Red for LAESA Events
-    isSelect: "/PCED"
+    hexColor: "D23F26" // Red for LAESA Events
+    // isSelect: "/PCED"
   },
   {
     id: 7,
@@ -94,8 +97,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 4, 22, 14, 0, 0),
     end: new Date(2020, 4, 22, 15, 15, 0),
-    hexColor: "1070B8",
-    isSelect: "/PCED"
+    hexColor: "1070B8"
+    // isSelect: "/PCED"
   },
   {
     id: 8,
@@ -103,8 +106,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 8, 14, 0, 0),
     end: new Date(2020, 3, 10, 15, 15, 0),
-    hexColor: "1070B8",
-    isSelect: "/PCED"
+    hexColor: "1070B8"
+    // isSelect: "/PCED"
     // dark blue for school events
   },
   {
@@ -113,8 +116,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 18, 12, 0, 0),
     end: new Date(2020, 3, 18, 16, 0, 0),
-    hexColor: "f26534",
-    isSelect: "/PCED"
+    hexColor: "f26534"
+    // isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -123,8 +126,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 7, 12, 0, 0),
     end: new Date(2020, 3, 7, 16, 0, 0),
-    hexColor: "1070B8",
-    isSelect: "/PCED"
+    hexColor: "1070B8"
+    // isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -133,8 +136,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 10, 12, 0, 0),
     end: new Date(2020, 3, 10, 16, 0, 0),
-    hexColor: "72a9be",
-    isSelect: "/PCED"
+    hexColor: "72a9be"
+    // isSelect: "/PCED"
     // light blue for due dates
   },
   {
@@ -143,8 +146,8 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 3, 22, 12, 0, 0),
     end: new Date(2020, 3, 22, 16, 0, 0),
-    hexColor: "72a9be",
-    isSelect: "/PCED"
+    hexColor: "72a9be"
+    // isSelect: "/PCED"
     // oragne for SHPE Events
   },
   {
@@ -153,19 +156,14 @@ const myEvents = [
     allDay: false,
     start: new Date(2020, 4, 8, 12, 0, 0),
     end: new Date(2020, 4, 8, 16, 0, 0),
-    hexColor: "D23F26",
-    isSelect: "/PCED"
+    hexColor: "D23F26"
+    // isSelect: "/PCED"
     // oragne for SHPE Events
   }
 ];
-const handleSelectEvent = (event, start, end, isSelected) => {
-  console.log(myEvents);
-  var link = myEvents.isSelect;
-
-  return {};
-};
 const eventStyleGetter = (event, start, end, isSelected) => {
   // console.log(event);
+
   var backgroundColor = "#" + event.hexColor;
   var style = {
     backgroundColor: backgroundColor,
@@ -181,39 +179,48 @@ const eventStyleGetter = (event, start, end, isSelected) => {
     style: style
   };
 };
-// Setup the localizer by providing the moment (or globalize) Object
-// to the correct localizer.
+const eventLinkGetter = (event, e) => {
+  // var eventRoute = event.isSelect;
+  return (
+    <Link to="/" replace>
+      {console.log(event)}
+      <Button>hi</Button>
+    </Link>
+  );
+  // var style = {
+  //   backgroundColor: backgroundColor,
+  //   borderRadius: "0px",
+  //   // opacity: 0.8,
+  //   color: "black",
+  //   border: "0px",
+  //   display: "block",
+  //   fontWeight: "500"
+  // };
+};
+
 const localizer = momentLocalizer(moment); // or globalizeLocalizer
 
-// console.log(myEvents[3].isSelected);
-// const handleSelectEvent = () => {
-//   return (
-//     <div>
-//       <Link to="/"></Link>
-//     </div>
-//   );
-// };
-
 const MyCalendar = props => (
-  <Router>
-    <div
-      style={{
-        height: "100vh",
-        width: "90%",
-        margin: "auto",
-        padding: "30px"
-      }}
-    >
-      <Calendar
-        events={myEvents}
-        step={60}
-        showMultiDayTimes
-        defaultDate={today}
-        localizer={localizer}
-        eventPropGetter={eventStyleGetter}
-      ></Calendar>
-    </div>
-  </Router>
+  <div
+    style={{
+      height: "100vh",
+      width: "90%",
+      margin: "auto",
+      padding: "30px"
+    }}
+  >
+    <Calendar
+      events={myEvents}
+      step={60}
+      showMultiDayTimes
+      defaultDate={today}
+      localizer={localizer}
+      eventPropGetter={eventStyleGetter}
+      // onSelectEvent={eventLinkGetter}
+
+      // onDrillDown={eventLinkGetter}
+    ></Calendar>
+  </div>
 );
 
 class LAESACalendar extends Router {
@@ -224,8 +231,9 @@ class LAESACalendar extends Router {
   render() {
     return (
       <div className="calendar-main">
+        {/* <Link to="/">hiiii</Link> */}
         <h2>Save The Dates!</h2>
-        <MyCalendar />
+        <MyCalendar style={{ opacity: ".8" }} />
       </div>
     );
   }
