@@ -21,7 +21,7 @@ class Navigation extends React.Component {
     this.setState({ isOpen: false }); //sets isOpen to false
   };
 
-  render(props) {
+  render() {
     const history = this.props.history;
     return (
       <Navbar className=" custom-nav" variant="dark">
@@ -33,7 +33,7 @@ class Navigation extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="justify-content-end">
-            <Nav.Link eventKey={1} onClick={() => history.replace("Main/")}>
+            <Nav.Link eventKey={1} onClick={() => history.replace("/Main")}>
               Main
             </Nav.Link>
             <NavDropdown
