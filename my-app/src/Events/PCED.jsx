@@ -142,33 +142,41 @@ class PCED extends Component {
             <h2> Pre-College Engineering Day </h2>
             <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
           </div>
-          <div className="card-color2">
-            <h2>About</h2>
-            <p>
-              PCED is one of our largest and most memorable events that we host
+          
+    <div className="box2">
+          <div className="Row">
+            <div className="Column1">
+              <h2> PCED </h2>
+              <p>
+                PCED is one of our largest and most memorable events that we host
               every year. We reach out to our community and invite High School
               students thorughout New York City to our City College campus. We
               give them the opportunity to engage and learn about Engineering
               fields by providing them with workshops, speakers, and a friendly
               competition that has them build their own project and compete with
               it.
-            </p>
-          </div>
-          <div className="card-color">
-            <h2>Mission</h2>
-            <p>
-              "PCED's Mission is to expose the younger Latino community to STEM
+              </p>
+            </div>
+
+            <div className="Column1">
+              <h2> Mission </h2>
+              <p>
+              PCED's Mission is to expose the younger Latino community to STEM
               related careers (Science, Technology, Engineering and Mathematics)
               while obtaining real-life project experience, and developing
-              team-building and leadership skills"
-            </p>
+              team-building and leadership skills
+              </p>
+              
+            </div>
           </div>
+        </div>
+
 
           <div className="Gallery">
-          {/* Slide show starts here */}
+{/* Slide show starts here */}
 {/* To change images in slide show just change its origin url. everything else is automatic! */}
     
-    <div className="box2">
+    <div className="box1">
     <div className="slide-container">
 
 {/* Title */}
