@@ -6,10 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
-import { getThemeProps } from "@material-ui/styles";
-import IconButton from "@material-ui/core/IconButton";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
-import { height, fontSize, width } from "@material-ui/system";
 
 const useStyles = makeStyles(theme => ({
   root: {

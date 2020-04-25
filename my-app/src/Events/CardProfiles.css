@@ -1,6 +1,5 @@
 .Pics {
-  border-radius: 50%;
-  width: 20%;
+  display: block;
   margin: auto;
   /* object-position: 10px 30%; */
 }

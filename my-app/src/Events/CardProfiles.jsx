@@ -11,17 +11,6 @@ import { red } from "@material-ui/core/colors";
 
 import "./CardProfiles.css";
 
-// import { border } from "@material-ui/system";
-// import MoreVertIcon from "@material-ui/icons/MoreVert";
-// import Collapse from "@material-ui/core/Collapse";
-// import Avatar from "@material-ui/core/Avatar";
-// import IconButton from "@material-ui/core/IconButton";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
-// import ShareIcon from "@material-ui/icons/Share";
-// import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-// import CardActions from "@material-ui/core/CardActions";
-// import clsx from "clsx";
-//css styles modification for CardProfiles
 const useStyles = makeStyles(theme => ({
   root: {
     border: "none",
@@ -33,6 +22,7 @@ const useStyles = makeStyles(theme => ({
     paddingRight: "10px",
     paddingTop: "20px",
     paddingBottom: "30px"
+    // border: "solid"
     // maxheight: "760px"
   },
   //css for the pictures
@@ -44,8 +34,7 @@ const useStyles = makeStyles(theme => ({
     // paddingTop: "30px",
     borderRadius: "50%",
     objectPosition: "10px 30%",
-    margin: "auto",
-    marginTop: "30px"
+    margin: "auto"
   },
   expand: {
     transform: "rotate(0deg)",
@@ -68,11 +57,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function CardProfiles(props) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
   // COMMENTS
   // how can I change the array that is being called here??
   // dl is the name of the array that is being run through

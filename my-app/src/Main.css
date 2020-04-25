@@ -29,7 +29,12 @@
   /*margin-bottom: 10px;*/
 }
 .box1 p {
-  height: 130px;
+  font-weight: 750;
+  height: 8vh;
+  display: grid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 .box2 {
   background-color: #72a9be;
@@ -39,33 +44,29 @@
   padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
-  clear: both;
 }
 .body {
   display: grid;
   background-color: #d3d3d3;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 50px;
+  /* border: solid; */
 }
 .Column1 {
   float: left;
   width: 50%;
-  padding: 10px;
-  height: 600px;
 }
 .Column2 {
   float: left;
   width: 20%;
   padding: 10px;
-  height: 300px;
+  /* clear: both; */
 }
 .Row:after {
   content: "";
   display: table;
   clear: both;
-  padding-bottom: 30px;
-  max-height: 180px;
 }
 .Column-pictures1 {
   display: block;

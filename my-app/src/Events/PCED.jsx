@@ -128,11 +128,7 @@ class PCED extends Component {
           {/*could probably use a banner instead for the event*/}
           <div className="Events-Banner">
             <h2> Pre-College Engineering Day </h2>
-            <img
-              src={PCED_Group}
-              className="Events-Picture"
-              alt="PCED Group Picture"
-            />
+            <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
           </div>
           <div className="card-color2">
             <h2>About</h2>

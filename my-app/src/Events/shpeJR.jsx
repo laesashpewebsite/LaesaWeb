@@ -113,7 +113,7 @@ class shpeJR extends Component {
             <img
               src={SHPEJR_Group}
               className="Events-Picture"
-              alt="PCED Group Picture"
+              alt="SHPE.Jr Group"
             />
           </div>
           <div className="card-color2">

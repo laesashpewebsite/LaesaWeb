@@ -1,9 +1,6 @@
 // where is this being used??
 import React, { Component } from "react";
 import "./pillar.css";
-
-import column from "./pictures/Column.jpeg";
-import { number } from "prop-types";
 import AcademicDevelopment from "./pictures/PillarsFolder/AcademicDevelopment.jpg";
 import ProfessionalDevelopment from "./pictures/PillarsFolder/ProfessionalDevelopment.jpg";
 import ChapterDevelopment from "./pictures/PillarsFolder/ChapterDevelopment.jpg";
@@ -71,19 +68,24 @@ class Pillar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="pillar-main">
         <header className="pillar-header">
           <div className="background-Pillar">
-            {<img src={this.getPic()} className="background-Pillar" />}
-            <div>
-              <div className="Name">
-                <h3>{this.getName()}</h3>
-              </div>
-            </div>
-            <h6 className="info" style={{ textIndent: "0" }}>
-              {this.getDefinition()}
-            </h6>
+            {
+              <img
+                src={this.getPic()}
+                className="background-Pillar"
+                alt={this.getName()}
+              />
+            }
           </div>
+          <div>
+            <div className="Name">
+              <h3>{this.getName()}</h3>
+            </div>
+          </div>
+          <h6 className="info">{this.getDefinition()}</h6>
+
           {this.increment()}
         </header>
       </div>
