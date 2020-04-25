@@ -1,10 +1,35 @@
 import React from "react";
 import "./Main.css";
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
-
 import Pillars from "./pillar.jsx";
 import Mission from "./pictures/SHPEMission.jpg";
 import Vision from "./pictures/SHPEVision.jpg";
+import { Fade } from 'react-slideshow-image';
+import fadeImages from './pictures/PillarsFolder/AcademicDevelopment.jpg';
+import fadeImages1 from './pictures/PillarsFolder/ProfessionalDevelopment.jpg';
+import fadeImages2 from './pictures/PillarsFolder/ChapterDevelopment.jpg';
+import fadeImages3 from './pictures/PillarsFolder/LeadershipDevelopment.jpg';
+import fadeImages4 from './pictures/PillarsFolder/CommunityOutreach.jpg';
+
+
+// const importfadeImages = [
+//   './pictures/PillarsFolder/AcademicDevelopment.jpg',
+//   './pictures/PillarsFolder/ProfessionalDevelopment.jpg',
+//   './pictures/PillarsFolder/ChapterDevelopment.jpg',
+//   './pictures/PillarsFolder/LeadershipDevelopment.jpg',
+//   './pictures/PillarsFolder/CommunityOutreach.jpg'
+// ];
+
+const fadeProperties = {
+      duration: 5000,
+      transitionDuration: 500,
+      indicators: true,
+      infinite: false,
+      pauseOnHover: true,
+      onChange: (oldIndex, newIndex) => {
+        console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
+      }
+    };
 
 function main() {
   return (
@@ -115,8 +140,58 @@ function main() {
             </div>
           </div>
         </div>
+
+    <div className="box2">
+    <div className="slide-container">
+    <h2> 5 Pillars of LAESA-SHPE</h2>
+      <Fade {...fadeProperties}>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={fadeImages} />
+          </div>
+          <h2> Academic Development </h2>
+        </div>
+
+        <div className="each-fade">
+          <h2> Professional Development </h2>
+          <div className="image-container">
+            <img src={fadeImages1} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={fadeImages2} />
+          </div>
+          <h2> Chapter Development </h2>
+        </div>
+
+        <div className="each-fade">
+          <h2> Leadership Development </h2>
+          <div className="image-container">
+            <img src={fadeImages3} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={fadeImages4} />
+          </div>
+          <h2> Community Outreach </h2>
+        </div>
+
+      </Fade>
+
+    </div>
+    </div>
+
+ 
       </header>
     </div>
+
   );
 }
 export default main;
+
+
