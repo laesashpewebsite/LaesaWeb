@@ -16,6 +16,7 @@ import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
 import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
+
 class PCED extends Component {
   state = {
     // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling

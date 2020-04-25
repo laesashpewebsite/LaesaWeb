@@ -119,31 +119,19 @@ function main() {
             </div>
           </div>
         </div>
-
-        <div className="box2">
-          <div className="Row">
-            <h2> 5 Pillars of LAESA-SHPE</h2>
-            <div className="Column2">
-              <Pillars />
-            </div>
-            <div className="Column2">
-              <Pillars />
-            </div>
-            <div className="Column2">
-              <Pillars />
-            </div>
-            <div className="Column2">
-              <Pillars />
-            </div>
-            <div className="Column2">
-              <Pillars />
-            </div>
-          </div>
-        </div>
-
+    
+{/* Slide show starts here */}
+{/* To change images in slide show just change its origin url. everything else is automatic! */}
+    
     <div className="box2">
     <div className="slide-container">
+
+{/* Title */}
+
     <h2> 5 Pillars of LAESA-SHPE</h2>
+
+{/* Slide Show Properties*/}
+
       <Fade {...fadeProperties}>
 
         <div className="each-fade">
@@ -186,6 +174,7 @@ function main() {
     </div>
     </div>
 
+{/* Slide show ends here */}
  
       </header>
     </div>

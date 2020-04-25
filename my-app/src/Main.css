@@ -99,7 +99,7 @@
 }
 
 .slide-container {
-  width: 70%;
+  width: 100%;
   margin: auto; }
 
 h3 {
@@ -110,7 +110,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 400px;
+  height: 100px;
 }
 
 .each-fade {
@@ -118,7 +118,7 @@ h3 {
 }
 
 .each-fade .image-container {
-  width: 75%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -127,7 +127,6 @@ h3 {
 }
 
 .each-fade h2 {
-  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
