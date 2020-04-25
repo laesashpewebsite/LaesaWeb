@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Events.css";
-
+import { Fade } from 'react-slideshow-image';
 import PCED_Director from "../pictures/Arelis.png";
 import PCED_Director2 from "../pictures/Derwick.jpg";
 import PCEDPicture1 from "../pictures/PCED_Pictures/Students.jpg";
@@ -16,6 +16,17 @@ import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
 import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import CardProfiles from "./CardProfiles";
 import GalleryPic from "../Gallery";
+
+const fadeProperties = {
+      duration: 5000,
+      transitionDuration: 500,
+      indicators: true,
+      infinite: false,
+      pauseOnHover: true,
+      onChange: (oldIndex, newIndex) => {
+        console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
+      }
+    };
 
 class PCED extends Component {
   state = {
@@ -39,7 +50,7 @@ class PCED extends Component {
           Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
           forms the bridge of communication between chapters across NYC. She\
           is also directing Pre-College Engineering Day 2020 where her team's\
-          goals are listed below ",
+          goals are listed below",
         styles: {
           backgroundColor: "#72a9be",
           color: "black"
@@ -152,13 +163,85 @@ class PCED extends Component {
               team-building and leadership skills"
             </p>
           </div>
-          <div className="Gallery">
-            <h2>Gallery</h2>
 
-            {/* this here displays the picture that are in the array FFLPictures
-            by inputing it into Component GalleryPic */}
-            <GalleryPic tileData={this.state.PCEDPictures} />
+          <div className="Gallery">
+          {/* Slide show starts here */}
+{/* To change images in slide show just change its origin url. everything else is automatic! */}
+    
+    <div className="box2">
+    <div className="slide-container">
+
+{/* Title */}
+
+    <h2> PCED'S Gallery </h2>
+
+{/* Slide Show Properties*/}
+
+      <Fade {...fadeProperties}>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture1} />
           </div>
+          
+        </div>
+
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture2} />
+          </div>
+          
+        </div>
+
+        <div className="each-fade">
+         
+          <div className="image-container">
+            <img src={PCEDPicture3} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture4} />
+          </div>
+        
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture5} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture6} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture7} />
+          </div>
+        </div>
+
+      </Fade>
+
+    </div>
+    </div>
+{/* CSS is in Event.css */}
+{/* Slide show ends here */}
+          </div>
+
+          {/* <div className="Gallery">
+          <h2>Gallery</h2>
+
+          /{ this here displays the picture that are in the array FFLPictures
+          by inputing it into Component GalleryPic }
+          <GalleryPic tileData={this.state.PCEDPictures} />
+          </div>*/}
+
           <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>
