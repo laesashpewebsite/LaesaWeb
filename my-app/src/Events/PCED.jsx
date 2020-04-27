@@ -24,59 +24,60 @@ const fadeProperties = {
       infinite: false,
       pauseOnHover: true,
       onChange: (oldIndex, newIndex) => {
-        console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
-      }
-    };
+  console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
+}
+};
 
 class PCED extends Component {
   state = {
-    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
-    DirectorList: [
-      {
-        id: 1,
-        Title: "PCED Co-Director",
-        Name: "Arelis Fienco",
-        Picture: PCED_Director,
-        Bio:
-          "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE\
-          since her freshman year in 2016 at The City College of New York. She\
-          started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
-          Noche de Ciencias at Manhattan Bridges High \
-          School in April 2017. The following academic year, she became part\
-          of the PCED 2018 team by creating a meaningful project along her \
-          team that exposed high school students to leadership and real-life\
-          experiences. Last academic year, Arelis was part of the Executive\
-          Board for LAESA, serving as the External Vice-President. This year\
-          Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
-          forms the bridge of communication between chapters across NYC. She\
-          is also directing Pre-College Engineering Day 2020 where her team's\
-          goals are listed below",
-        styles: {
-          backgroundColor: "#72a9be",
-          color: "black"
-        }
-      },
-      {
-        id: 2,
-        Title: "PCED Co-Director",
-        Name: "Derwick Hernandez",
-        Picture: PCED_Director2,
-        Bio:
-          "I'm a Civil Engineering major at CCNY, some of my contributions for\
-        the club are Co-director for the 26th PCED and Office manager, some\
-        the reasons I picked these positions are because I like to be\
-        organized and also work on self-development. Some hobbies that I'm\
-        into are basketball, health ( mental and physical), reading books on\
-        personal growth and listening to podcast. Laesa-shpe has opened many\
-        doors for new opportunities, adventures and friends. I am grateful\
-        for coming across this great organization.",
-        styles: {
-          backgroundColor: "rgb(0, 31, 91, 100)",
-          color: "#f26534"
+// state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
+  DirectorList: [
+    {
+    id: 1,
+    Title: "PCED Co-Director",
+    Name: "Arelis Fienco",
+    Picture: PCED_Director,
+    Bio:
+      "Born and raised in Guayaquil, Ecuador. Arelis has been part of LAESA-SHPE\
+       since her freshman year in 2016 at The City College of New York. She\
+       started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
+        Noche de Ciencias at Manhattan Bridges High \
+        School in April 2017. The following academic year, she became part\
+        of the PCED 2018 team by creating a meaningful project along her \
+        team that exposed high school students to leadership and real-life\
+        experiences. Last academic year, Arelis was part of the Executive\
+        Board for LAESA, serving as the External Vice-President. This year\
+        Arelis is the SHPE-NYC Sub-Regional Student Representative where she\
+        forms the bridge of communication between chapters across NYC. She\
+        is also directing Pre-College Engineering Day 2020 where her team's\
+        goals are listed below",
+    styles: {
+      backgroundColor: "#72a9be",
+      color: "black"
+      }
+    },
+    {
+    id: 2,
+    Title: "PCED Co-Director",
+    Name: "Derwick Hernandez",
+    Picture: PCED_Director2,
+    Bio:
+      "I'm a Civil Engineering major at CCNY, some of my contributions for\
+      the club are Co-director for the 26th PCED and Office manager, some\
+      the reasons I picked these positions are because I like to be\
+      organized and also work on self-development. Some hobbies that I'm\
+      into are basketball, health ( mental and physical), reading books on\
+      personal growth and listening to podcast. Laesa-shpe has opened many\
+      doors for new opportunities, adventures and friends. I am grateful\
+      for coming across this great organization.",
+    styles: {
+      backgroundColor: "rgb(0, 31, 91, 100)",
+      color: "#f26534"
         }
       }
     ],
-    PCEDPictures: [
+
+  PCEDPictures: [
       {
         img: PCEDPicture1,
         title: "PCED Image1",
@@ -133,43 +134,44 @@ class PCED extends Component {
       }
     ]
   };
-  render() {
-    return (
-      <div className="Events-Main">
-        <header className="Events-header">
-          {/*could probably use a banner instead for the event*/}
-          <div className="Events-Banner">
-            <h2> Pre-College Engineering Day </h2>
-            <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
-          </div>
-          
-    <div className="box2">
-          <div className="Row">
-            <div className="Column1">
-              <h2> PCED </h2>
-              <p>
-                PCED is one of our largest and most memorable events that we host
-              every year. We reach out to our community and invite High School
-              students thorughout New York City to our City College campus. We
-              give them the opportunity to engage and learn about Engineering
-              fields by providing them with workshops, speakers, and a friendly
-              competition that has them build their own project and compete with
-              it.
-              </p>
-            </div>
 
-            <div className="Column1">
-              <h2> Mission </h2>
-              <p>
-              PCED's Mission is to expose the younger Latino community to STEM
-              related careers (Science, Technology, Engineering and Mathematics)
-              while obtaining real-life project experience, and developing
-              team-building and leadership skills
-              </p>
-              
-            </div>
-          </div>
-        </div>
+render() {
+return (
+  <div className="Events-Main">
+    <header className="Events-header">
+{/*could probably use a banner instead for the event*/}
+    <div className="Events-Banner">
+      <h2> Pre-College Engineering Day </h2>
+        <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
+    </div>
+          
+  <div className="box2">
+    <div className="Row">
+
+    <div className="Column1">
+      <h2> PCED </h2>
+        <p>
+          PCED is one of our largest and most memorable events that we host
+          every year. We reach out to our community and invite High School
+          students throughout New York City to our City College campus. We
+          allow them the opportunity to engage and learn about Engineering
+          fields by providing them with workshops, speakers, and a friendly
+          competition that has them build their own project and compete with it.
+        </p>
+    </div>
+
+    <div className="Column1">
+      <h2> Mission </h2>
+        <p>
+          PCED's Mission is to expose the younger Latino community to STEM
+          related careers (Science, Technology, Engineering and Mathematics)
+          while obtaining real-life project experience, and developing
+          team-building and leadership skills
+        </p>
+    </div>
+
+    </div>
+  </div>
 
 
           <div className="Gallery">
