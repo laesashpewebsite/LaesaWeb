@@ -1,16 +1,16 @@
+// https://www.npmjs.com/package/react-slideshow-image
 import React from "react";
 import "./Main.css";
 import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import Pillars from "./pillar.jsx";
 import Mission from "./pictures/SHPEMission.jpg";
 import Vision from "./pictures/SHPEVision.jpg";
-import { Fade } from 'react-slideshow-image';
-import fadeImages from './pictures/PillarsFolder/AcademicDevelopment.jpg';
-import fadeImages1 from './pictures/PillarsFolder/ProfessionalDevelopment.jpg';
-import fadeImages2 from './pictures/PillarsFolder/ChapterDevelopment.jpg';
-import fadeImages3 from './pictures/PillarsFolder/LeadershipDevelopment.jpg';
-import fadeImages4 from './pictures/PillarsFolder/CommunityOutreach.jpg';
-
+import { Fade } from "react-slideshow-image";
+import fadeImages from "./pictures/PillarsFolder/AcademicDevelopment.jpg";
+import fadeImages1 from "./pictures/PillarsFolder/ProfessionalDevelopment.jpg";
+import fadeImages2 from "./pictures/PillarsFolder/ChapterDevelopment.jpg";
+import fadeImages3 from "./pictures/PillarsFolder/LeadershipDevelopment.jpg";
+import fadeImages4 from "./pictures/PillarsFolder/CommunityOutreach.jpg";
 
 // const importfadeImages = [
 //   './pictures/PillarsFolder/AcademicDevelopment.jpg',
@@ -21,15 +21,15 @@ import fadeImages4 from './pictures/PillarsFolder/CommunityOutreach.jpg';
 // ];
 
 const fadeProperties = {
-      duration: 5000,
-      transitionDuration: 500,
-      indicators: true,
-      infinite: false,
-      pauseOnHover: true,
-      onChange: (oldIndex, newIndex) => {
-        console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
-      }
-    };
+  duration: 5000,
+  transitionDuration: 500,
+  indicators: true,
+  infinite: false,
+  pauseOnHover: true,
+  onChange: (oldIndex, newIndex) => {
+    console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
+  }
+};
 
 function main() {
   return (
@@ -119,68 +119,60 @@ function main() {
             </div>
           </div>
         </div>
-    
-{/* Slide show starts here */}
-{/* To change images in slide show just change its origin url. everything else is automatic! */}
-    
-    <div className="box2">
-    <div className="slide-container">
 
-{/* Title */}
+        {/* Slide show starts here */}
+        {/* To change images in slide show just change its origin url. everything else is automatic! */}
 
-    <h2> 5 Pillars of LAESA-SHPE</h2>
+        <div className="box2">
+          <div className="slide-container">
+            {/* Title */}
 
-{/* Slide Show Properties*/}
+            <h2> 5 Pillars of LAESA-SHPE</h2>
 
-      <Fade {...fadeProperties}>
+            {/* Slide Show Properties*/}
 
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={fadeImages} />
+            <Fade {...fadeProperties}>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages} />
+                </div>
+                <h2> Academic Development </h2>
+              </div>
+
+              <div className="each-fade">
+                <h2> Professional Development </h2>
+                <div className="image-container">
+                  <img src={fadeImages1} />
+                </div>
+              </div>
+
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages2} />
+                </div>
+                <h2> Chapter Development </h2>
+              </div>
+
+              <div className="each-fade">
+                <h2> Leadership Development </h2>
+                <div className="image-container">
+                  <img src={fadeImages3} />
+                </div>
+              </div>
+
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages4} />
+                </div>
+                <h2> Community Outreach </h2>
+              </div>
+            </Fade>
           </div>
-          <h2> Academic Development </h2>
         </div>
 
-        <div className="each-fade">
-          <h2> Professional Development </h2>
-          <div className="image-container">
-            <img src={fadeImages1} />
-          </div>
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={fadeImages2} />
-          </div>
-          <h2> Chapter Development </h2>
-        </div>
-
-        <div className="each-fade">
-          <h2> Leadership Development </h2>
-          <div className="image-container">
-            <img src={fadeImages3} />
-          </div>
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={fadeImages4} />
-          </div>
-          <h2> Community Outreach </h2>
-        </div>
-
-      </Fade>
-
-    </div>
-    </div>
-
-{/* Slide show ends here */}
- 
+        {/* Slide show ends here */}
       </header>
     </div>
-
   );
 }
 export default main;
-
-
