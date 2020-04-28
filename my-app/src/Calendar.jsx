@@ -184,6 +184,17 @@ const eventStyleGetter = (event, start, end, isSelected) => {
     style: style
   };
 };
+const dayStyleGetter = (event, start, end, isSelected) => {
+  // console.log(event);
+
+  var style = {
+    opacity: ".5"
+  };
+
+  return {
+    style: style
+  };
+};
 
 const localizer = momentLocalizer(moment); // or globalizeLocalizer
 
@@ -204,6 +215,7 @@ const MyCalendar = props => (
       defaultDate={today}
       localizer={localizer}
       eventPropGetter={eventStyleGetter}
+      dayPropGetter={dayStyleGetter}
       // onSelectEvent={() => console.log("hello")}
       onSelectEvent={props.onClick}
 

@@ -75,13 +75,9 @@
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10%;
 }
-.Column-pic {
-  display: block;
-  height: 60%;
-  margin: auto;
-  padding: 8px;
-}
+
 .list {
   font-weight: 750;
   font-size: 18px;
