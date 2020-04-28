@@ -20,7 +20,7 @@ class EboardMembers extends Component {
         Name: "Luis Rodriguez",
         Picture: President,
         Bio:
-          "Lorem ipsum dolor sit amet, cum eu corrumpit consectetuer. Ea sit falli doming, cu eos vide oblique, ei errem neglegentur nec. Cu has adhuc vivendo phaedrum, an vel lobortis pertinax erroribus, ex sonet oblique evertitur ius. Ius porro graeco vidisse et.    ",
+          "Hello my name is Luis Rodriguez, I am the acting President for LAESA-SHPE here at CCNY. I study electrical engineering along with mathematics and Portuguese. I have been involved in LAESA for the last two years, during which I have grown at a personal, professional and academic level. A lot of really bright-minded people gravitate towards LAESA, many of whom have taught me lessons I would not have otherwise found within the classroom. If I were to start giving shoutouts to the people that have helped develop this would pan out into an essay and not a small paragraph. I would say that my two favorite things to do after school are biking and playing music. Can’t wait to see how LAESA keeps growing as an organization and how It’ll continue to bring people from all types of background into the fold.",
         styles: {
           backgroundColor: "#72a9be",
           color: "black"
