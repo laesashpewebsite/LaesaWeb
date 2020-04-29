@@ -47,7 +47,7 @@ class FLL extends Component {
         Picture: FLL_Director2,
         Alts: "Ceasar Tacuri",
         Bio:
-          "My name is Cesar Tacuri,and I am Civil Engineering major on his junior year. I joined\
+          "My name is Cesar Tacuri, and I am Civil Engineering major on his junior year. I joined\
       LAESA in Spring of 2019. Being a transfer student, it was hard adjusting to a new school\
       and a new community. As I explored my campus and its resources, I came across LAESA.\
       Throughout the next semester, I decided to become a more active member and experienced\
@@ -55,7 +55,7 @@ class FLL extends Component {
       students through a strong work ethic, accomplishments, and discipline. Personally, I wanted\
       to give new students the same tools and knowledge LAESA had given me. So, in Fall of 2019,\
       I became the co-director of Recruitment and Retention, First Lego League (FLL), and\
-       Pre-College Engineering Day (PCED) Logistics. I made sure I was well known by my peers and\
+      Pre-College Engineering Day (PCED) Logistics. I made sure I was well known by my peers and\
       that my peers were well known, too. LAESA will forever be my life’s best chapter not only for\
       the professional development but for the friends I’ve made. I am proud to be a LAESA member.",
         styles: {
@@ -106,7 +106,12 @@ class FLL extends Component {
             <h2>First LEGO League</h2>
             <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
           </div>
-          <div className="card-color2">
+          
+
+    <div className="box2">
+    <div className="Row">
+
+    <div className="Column1">
             <h2> About </h2>
             <p>
               First Lego League's is one of our way's of motivating young adults
@@ -117,8 +122,8 @@ class FLL extends Component {
             </p>
           </div>
 
-          <div className="card-color">
-            <h2>Our mission </h2>
+          <div className="Column1">
+            <h2> Mission </h2>
             <p>
               "First Lego League's mission is to inspire young adults to be
               science and technology innovators, by engaging them in exciting
@@ -126,7 +131,10 @@ class FLL extends Component {
               engineering, and technology."
             </p>
           </div>
-          <div className="Gallery">
+          </div>
+          </div>
+
+          <div className="card-color">
             <h2>Gallery</h2>
 
             {/* this here displays the picture that are in the array FFLPictures
@@ -134,7 +142,7 @@ class FLL extends Component {
             <GalleryPic tileData={this.state.FLLPictures} />
           </div>
 
-          <div className="card-color">
+          <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* information taken from DirectorList array is put into CardProfiles to map out all the information needed 

@@ -16,10 +16,10 @@ class shpeJR extends Component {
         Picture: shpeJR_Director2,
         Bio:
           "Mariel Gonzalez is a mechanical engineering student transferred\
-          from the Dominican Republic and co-director of LAESA\
-          Shpe-Junior. When not studying, Mariel enjoys reaching out to\
+          from the Dominican Republic and co-director of\
+          SHPE Jr. When not studying, Mariel enjoys reaching out to\
           friends and family, hiking and planning for the next adventure\
-          as an engineer",
+          as an engineer.",
         styles: {
           backgroundColor: "#72a9be",
           color: "black"
@@ -123,25 +123,35 @@ class shpeJR extends Component {
               likelihood of a student choosing it for their career path. The
               Noche de Ciencias™ program is designed to introduce the profound
               possibilities of STEM to high schoolers and their families. Noche
-              de Ciencias events are intented to engage and inspire Hispanic
+              de Ciencias events are intended to engage and inspire Hispanic
               youth (and their parents) to pursue STEM degrees and careers and
               ultimately advance SHPE’s mission and vision.
             </p>
           </div>
-          <div className="card-color">
-            <h2>Mission</h2>
-            <p>
-              SHPE’s mission is to empower the Hispanic community to realize its
-              fullest potential and to impact the world through STEM awareness,
-              access, support, and development.
-            </p>
-            <h2>Vision</h2>
-            <p>
-              SHPE’s vision is a world where Hispanics are highly valued and
-              influential as the leading innovators, scientists, mathematicians,
-              and engineers
-            </p>
-          </div>
+
+  <div className="box1">
+    <div className="Row">
+    <div className="Column1">
+      <h2> Mission </h2>
+        <p>
+          PCED's Mission is to expose the younger Latino community to STEM
+          related careers (Science, Technology, Engineering and Mathematics)
+          while obtaining real-life project experience, and developing
+          team-building and leadership skills.
+        </p>
+    </div>
+
+    <div className="Column1">
+      <h2>Vision</h2>
+        <p>
+          SHPE’s vision is a world where Hispanics are highly valued and
+          influential as the leading innovators, scientists, mathematicians,
+          and engineers.
+        </p>
+    </div>
+  </div>
+  </div>
+
           <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>

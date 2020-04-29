@@ -12,7 +12,7 @@ import CS_DIrector2 from "../pictures/Valentin.jpg";
 // import PCEDPicture7 from "../pictures/PCED_Pictures/Winners.jpg";
 // import PCEDPicture8 from "../pictures/PCED_Pictures/Teams.jpg";
 // import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
-import SHPELogo from "../pictures/SHPE-logo.png";
+import Main from "../pictures/PillarsFolder/ProfessionalDevelopment.jpg";
 
 import CardProfiles from "./CardProfiles";
 class CareerSummit extends Component {
@@ -110,12 +110,17 @@ class CareerSummit extends Component {
           <div className="Events-Banner">
             <h2> Career Summit </h2>
             <img
-              src={SHPELogo}
+              src={Main}
               className="Events-Picture"
               alt="Career Summit Group "
             />
           </div>
-          <div className="card-color2">
+
+
+          <div className="box2">
+    <div className="Row">
+
+    <div className="Column1">
             <h2> About </h2>
             <p>
               {" "}
@@ -126,7 +131,7 @@ class CareerSummit extends Component {
               for thie event.
             </p>
           </div>
-          <div className="card-color">
+          <div className="Column1">
             <h2>Mission</h2>
             <p>
               "Our mission is to prepare our members for the real world and
@@ -135,14 +140,18 @@ class CareerSummit extends Component {
               interview skills"
             </p>
           </div>
-          <div className="Gallery">
+          </div>
+          </div>
+
+
+          <div className="card-color2">
             {/* <h2>Gallery</h2>
 
             {/* this here displays the picture that are in the array FFLPictures
             by inputing it into Component GalleryPic */}
             {/* /   <GalleryPic tileData={this.state.PCEDPictures} /> */}
           </div>{" "}
-          <div className="card-color2">
+          <div className="card-color">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
@@ -150,29 +159,8 @@ class CareerSummit extends Component {
             DirectorListName={this.state.DirectorList}
             key={this.state.DirectorList.id}
           />
+          
           <div className="card-color2">
-            <h2>Goals</h2>
-            <ul className="lists">
-              <li className="events-list">Host event for 350+ students.</li>
-              <li className="events-list">
-                Provide leadership, team-building, and managing experience to
-                both attendees and volunteers.{" "}
-              </li>
-              <li className="events-list">
-                Establish a stronger relationship with alumni and corporations
-                to be involved in future PCED events.
-              </li>
-              <li className="events-list">Raise female ratio by 10%.</li>
-              <li className="events-list">
-                Introduce the importance of sustainability.
-              </li>
-              <li className="events-list">
-                Provide a diversity of minority ethnicities for future STEM
-                jobs.{" "}
-              </li>
-            </ul>
-          </div>
-          <div className="card-color">
             <h2>Director Contact Info</h2>
             <ul className="lists">
               <li className="events-list">P: 917-392-4710 </li>

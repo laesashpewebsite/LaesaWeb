@@ -43,13 +43,13 @@ class PCED extends Component {
        started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
         Noche de Ciencias at Manhattan Bridges High \
         School in April 2017. The following academic year, I became part\
-        of the PCED 2018 team by creating a meaningful project along her \
+        of the PCED 2018 team by creating a meaningful project along with my \
         team that exposed high school students to leadership and real-life\
         experiences. Last academic year, I was part of the Executive\
         Board for LAESA, serving as the External Vice-President. This year\
         I'm the SHPE-NYC Sub-Regional Student Representative where I\
         form the bridge of communication between chapters across NYC. I'm\
-        also directing Pre-College Engineering Day 2020 where her team's\
+        also directing Pre-College Engineering Day 2020 where our team's\
         goals are listed below",
     styles: {
       backgroundColor: "#72a9be",
@@ -149,7 +149,7 @@ return (
     <div className="Row">
 
     <div className="Column1">
-      <h2> PCED </h2>
+      <h2> About </h2>
         <p>
           PCED is one of our largest and most memorable events that we host
           every year. We reach out to our community and invite High School
