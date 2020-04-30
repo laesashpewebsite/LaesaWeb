@@ -199,7 +199,16 @@ class PCED extends Component {
           <div className="card-color2">
             <h2>Goals</h2>
             <ul className="lists">
+              <li className="events-list">Raise female ratio by 10%.</li>
+
               <li className="events-list">Host event for 350+ students.</li>
+              <li className="events-list">
+                Introduce the importance of sustainability.
+              </li>
+              <li className="events-list">
+                Provide a diversity of minority ethnicities for future STEM
+                jobs.{" "}
+              </li>
               <li className="events-list">
                 Provide leadership, team-building, and managing experience to
                 both attendees and volunteers.{" "}
@@ -207,14 +216,6 @@ class PCED extends Component {
               <li className="events-list">
                 Establish a stronger relationship with alumni and corporations
                 to be involved in future PCED events.
-              </li>
-              <li className="events-list">Raise female ratio by 10%.</li>
-              <li className="events-list">
-                Introduce the importance of sustainability.
-              </li>
-              <li className="events-list">
-                Provide a diversity of minority ethnicities for future STEM
-                jobs.{" "}
               </li>
             </ul>
           </div>

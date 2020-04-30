@@ -133,8 +133,8 @@ class CareerSummit extends Component {
             DirectorListName={this.state.DirectorList}
             key={this.state.DirectorList.id}
           />
-
-          <div className="card-color2">
+          <div className="card-color2"></div>
+          <div className="card-color">
             <h2>Director Contact Info</h2>
             <ul className="lists">
               <li className="events-list">

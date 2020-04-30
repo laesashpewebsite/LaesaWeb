@@ -51,8 +51,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: red[500]
   },
   text: {
-    paddingLeft: "60px",
-    paddingRight: "60px"
+    minWidth: "50%"
   }
 }));
 

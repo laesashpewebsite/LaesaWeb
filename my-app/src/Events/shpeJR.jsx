@@ -170,15 +170,14 @@ class shpeJR extends Component {
 
             <ul className="lists">
               <li className="events-list">
-                Increase awareness of STEM fields and careers
+                Increase awareness of STEM fields and careers.
               </li>
               <li className="events-list">
-                Strengthen participant's beliefs about their ability to succeed
+                Deepen participant's understanding of STEM identity.
+              </li>
+              <li className="events-list">
+                Strengthen participant's beliefs about their ability to succeed.
                 in STEM
-              </li>
-              <li className="events-list">
-                {" "}
-                Deepen participant's understanding of STEM identity
               </li>
             </ul>
           </div>

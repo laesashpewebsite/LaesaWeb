@@ -13,7 +13,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 }
 .Events-Picture {
   width: 100%;
-  height: 90vh;
+  max-height: 130vh;
   object-fit: cover;
   clear: both;
 }
@@ -43,7 +43,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   clear: both;
 }
 .Events-header p {
-  font-weight: 750;
+  font-weight: 650;
   text-indent: 30px;
 }
 .card-color {
@@ -78,11 +78,9 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   margin: auto;
   height: 80%;
 }
-.events-list {
-  font-weight: 750;
-  font-size: 18px;
-}
 .lists {
+  font-weight: 700;
+  font-size: 2vh;
   text-align: center;
   list-style: none;
 }
@@ -106,24 +104,12 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 .Row:after {
   display: table;
 }
-
-.box2 {
-  background-color: #72a9be;
-  color: black; /*rgb(210,63,38);*/
-  font-weight: 600;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .Column1 {
   float: left;
-  max-width: 50%;
+  width: 50%;
+  /* border: solid; */
   padding: 10px;
 }
-.Column2 {
-  float: left;
-  max-width: 20%;
-  padding: 10px;
-  margin: 10px;
+.Column1 p {
+  font-size: 2vw;
 }
