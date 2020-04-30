@@ -15,7 +15,7 @@
 }
 .eboard-pic {
   width: 100%;
-  height: 130vh;
+  max-height: 130vh;
 }
 
 .Eboard-header p {

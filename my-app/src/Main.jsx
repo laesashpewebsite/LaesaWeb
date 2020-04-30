@@ -84,7 +84,7 @@ function main() {
                 potential."
               </p>
 
-              <img className="Column-pictures1" src={Mission} alt="Mission" />
+              {/* <img className="Column-pictures1" src={Mission} alt="Mission" /> */}
             </div>
             <div className="Column1">
               <h2> LAESA SHPE'S VISION </h2>
@@ -93,6 +93,14 @@ function main() {
                 accomplished by using four principles. They are the principles
                 of Support, Teamwork, Excellence, and Professionalism!
               </p>
+              {/* <img className="Column-pictures1" src={Vision} alt="Vision" /> */}
+            </div>
+          </div>
+          <div className="Row">
+            <div className="Column1">
+              <img className="Column-pictures1" src={Mission} alt="Mission" />
+            </div>
+            <div className="Column1">
               <img className="Column-pictures1" src={Vision} alt="Vision" />
             </div>
           </div>

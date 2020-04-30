@@ -4,9 +4,6 @@ import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-// @import 'react-big-calendar/lib/sass/styles';
-
-// import "react-big-calendar/lib/sass/styles";
 import "./Calendar.css";
 
 // let allViews = Object.keys(Calendar.Views).map(k => Calendar.Views[k]);

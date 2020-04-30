@@ -106,21 +106,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 .Row:after {
   display: table;
 }
-.box1 {
-  color: #f26534;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.box1 p {
-  font-weight: 750;
-  height: 8vh;
-  display: grid;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 50px;
-}
+
 .box2 {
   background-color: #72a9be;
   color: black; /*rgb(210,63,38);*/
@@ -132,12 +118,12 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 }
 .Column1 {
   float: left;
-  width: 50%;
+  max-width: 50%;
   padding: 10px;
 }
 .Column2 {
   float: left;
-  width: 20%;
+  max-width: 20%;
   padding: 10px;
   margin: 10px;
 }

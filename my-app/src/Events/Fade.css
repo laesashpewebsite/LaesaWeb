@@ -1,7 +1,3 @@
-.each-fade {
-  display: flex;
-}
-
 .each-fade .image-container {
   width: 100%;
   overflow: hidden;
@@ -9,5 +5,9 @@
 
 .each-fade .image-container img {
   width: 100%;
-  height: 90.25vh;
+  max-height: 110vh;
+  min-height: 30vh;
+}
+.each-fade h2 {
+  font-size: small;
 }

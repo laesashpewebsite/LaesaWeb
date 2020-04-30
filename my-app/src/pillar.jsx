@@ -1,4 +1,3 @@
-// where is this being used??
 import React, { Component } from "react";
 import AcademicDevelopment from "./pictures/PillarsFolder/AcademicDevelopment.jpg";
 import ProfessionalDevelopment from "./pictures/PillarsFolder/ProfessionalDevelopment.jpg";
