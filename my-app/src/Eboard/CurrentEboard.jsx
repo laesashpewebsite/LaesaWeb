@@ -7,9 +7,7 @@ import Secretary from "./../pictures/Gloria.jpeg";
 import EVicePresident from "./../pictures/Evan.JPG";
 import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
-// import CardProfiles from "./Eboardprofiles";
 import CardProfiles from "../Events/CardProfiles";
-// import "../Events/CardProfiles.css";
 import "./Eboard.css";
 class EboardMembers extends Component {
   state = {
@@ -88,8 +86,6 @@ class EboardMembers extends Component {
               className="eboard-pic"
             />
           </div>
-          <img src={Eboardpic} alt="Eboard and Alumni" className="eboard-pic" />{" "}
-          */}
           <div className="members">
             <CardProfiles DirectorListName={this.state.EboardList} />
           </div>
