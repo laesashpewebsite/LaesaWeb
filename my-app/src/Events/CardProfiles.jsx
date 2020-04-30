@@ -78,11 +78,10 @@ export default function CardProfiles(props) {
         />
       </div>
       <CardHeader
-        // color="textPrimary"
         component="h2"
         titleTypographyProps={{ variant: "h2" }}
         title={dl.Name}
-        subheader={dl.Title} ///add to array "subheaders"
+        subheader={dl.Title}
         subheaderTypographyProps={{ variant: "h6", color: "inherit" }}
       />
       <CardContent>

@@ -116,12 +116,10 @@ class CareerSummit extends Component {
             </div>
           </div>
 
-          <div className="Gallery">
-            {/* Slide show starts here */}
+          <div className="Career Summit Gallery">
             {/* To change images in slide show just change its origin url. everything else is automatic! */}
             <div className="box1">
               <div className="slide-container">
-                {/* Title */}
                 <h2> Career Summit's Gallery </h2>
                 <Slides tileData={this.state.CSpictures} />
               </div>

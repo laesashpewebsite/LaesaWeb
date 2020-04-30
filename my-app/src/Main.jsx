@@ -107,8 +107,6 @@ function main() {
             <Pillars style={{ borderRadius: "10px", bakgroundColor: "red" }} />
           </div>
         </div>
-
-        {/* Slide show ends here */}
       </header>
     </div>
   );

@@ -178,7 +178,7 @@ class shpeJR extends Component {
               </li>
               <li className="events-list">
                 {" "}
-                Deepen participant's understanding of STEM iden,tity
+                Deepen participant's understanding of STEM identity
               </li>
             </ul>
           </div>

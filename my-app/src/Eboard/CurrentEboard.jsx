@@ -88,8 +88,8 @@ class EboardMembers extends Component {
               className="eboard-pic"
             />
           </div>
-          {/* <h2>Meet our Eboard from 2019-2020</h2>
-          <img src={Eboardpic} alt="Eboard and Alumni" className="eboard-pic" /> */}
+          <img src={Eboardpic} alt="Eboard and Alumni" className="eboard-pic" />{" "}
+          */}
           <div className="members">
             <CardProfiles DirectorListName={this.state.EboardList} />
           </div>
