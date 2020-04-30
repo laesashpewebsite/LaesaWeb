@@ -23,7 +23,7 @@ export default function Slideshow(props) {
         {props.tileData.map(tile => (
           <div className="each-fade" key={tile.id}>
             <div className="image-container">
-              <img src={tile.img} />
+              <img src={tile.img} alt={tile.alt} />
             </div>
             {sideBar(tile.Name)}
           </div>

@@ -71,35 +71,35 @@ class FLL extends Component {
         id: 1,
         img: FLL_Picture1,
         title: "FLL Image1",
-        author: "N/A",
+        alt: "N/A",
         cols: 1
       },
       {
         id: 2,
         img: FLL_Picture2,
         title: "FLL Image2",
-        author: "N/A",
+        alt: "N/A",
         cols: 2
       },
       {
         id: 3,
         img: FLL_Picture3,
         title: "FLL Image3",
-        author: "N/A",
+        alt: "N/A",
         cols: 3
       },
       {
         id: 4,
         img: FLL_Picture4,
         title: "FLL Image4",
-        author: "N/A",
+        alt: "N/A",
         cols: 3
       },
       {
         id: 5,
         img: FLL_Picture5,
         title: "FLL Image5",
-        author: "N/A",
+        alt: "N/A",
         cols: 3
       }
     ]

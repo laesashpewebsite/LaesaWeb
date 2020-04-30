@@ -72,63 +72,63 @@ class PCED extends Component {
         id: 1,
         img: PCEDPicture1,
         title: "PCED Image1",
-        author: "N/A",
+        alt: "PCED 1",
         cols: 1
       },
       {
         id: 2,
         img: PCEDPicture2,
         title: "PCED Image2",
-        author: "N/A",
+        alt: "PCED 2",
         cols: 2
       },
       {
         id: 3,
         img: PCEDPicture3,
         title: "PCED Image3",
-        author: "N/A",
+        alt: "PCED 3",
         cols: 3
       },
       {
         id: 4,
         img: PCEDPicture4,
         title: "PCED Image4",
-        author: "N/A",
+        alt: "PCED 4",
         cols: 3
       },
       {
         id: 5,
         img: PCEDPicture5,
         title: "PCED Image5",
-        author: "N/A",
+        alt: "PCED 5",
         cols: 3
       },
       {
         id: 1,
         img: PCEDPicture6,
         title: "PCED Image6",
-        author: "N/A",
+        alt: "PCED 6",
         cols: 3
       },
       {
         id: 6,
         img: PCEDPicture7,
         title: "PCED Image7",
-        author: "N/A",
+        alt: "PCED 7",
         cols: 3
       },
       {
         id: 7,
         img: PCEDPicture8,
         title: "PCED Image8",
-        author: "N/A",
+        alt: "PCED 8",
         cols: 3
       },
       {
         id: 8,
         img: PCEDPicture9,
         title: "PCED Image9",
-        author: "N/A",
+        alt: "PCED 9",
         cols: 3
       }
     ]

@@ -20,7 +20,7 @@ class shpeJR extends Component {
     DirectorList: [
       {
         id: 1,
-        Title: "SHPE Jr. Co-Director",
+        Title: "SHPEJr Jr. Co-Director",
         Name: "Mariel Gonzalez",
         Picture: shpeJR_Director2,
         Bio:
@@ -36,7 +36,7 @@ class shpeJR extends Component {
       },
       {
         id: 2,
-        Title: "SHPE Jr. Co-Director",
+        Title: "SHPEJr Jr. Co-Director",
         Name: "Byron Marcatoma",
         Picture: shpeJR_Director,
         Bio:
@@ -59,43 +59,43 @@ class shpeJR extends Component {
       {
         id: 1,
         img: SHPEJr_Picture,
-        title: "PCED Image1",
-        author: "N/A",
+        title: "SHPEJr Image1",
+        alt: "SHPEJr 1",
         cols: 1
       },
       {
         id: 2,
         img: SHPEJr_Picture2,
-        title: "PCED Image2",
-        author: "N/A",
+        title: "SHPEJr Image2",
+        alt: "SHPEJr 1",
         cols: 2
       },
       {
         id: 3,
         img: SHPEJr_Picture3,
-        title: "PCED Image3",
-        author: "N/A",
+        title: "SHPEJr Image3",
+        alt: "SHPEJr 1",
         cols: 3
       },
       {
         id: 4,
         img: SHPEJr_Picture4,
-        title: "PCED Image4",
-        author: "N/A",
+        title: "SHPEJr Image4",
+        alt: "SHPEJr 1",
         cols: 3
       },
       {
         id: 5,
         img: SHPEJr_Picture5,
-        title: "PCED Image5",
-        author: "N/A",
+        title: "SHPEJr Image5",
+        alt: "SHPEJr 1",
         cols: 3
       },
       {
         id: 6,
         img: SHPEJr_Picture6,
-        title: "PCED Image6",
-        author: "N/A",
+        title: "SHPEJr Image6",
+        alt: "SHPEJr 1",
         cols: 3
       }
     ]
@@ -151,8 +151,7 @@ class shpeJR extends Component {
             {/* Slide ,show starts here */}
             {/* To change images in slide ,show just change its origin url. everything else is automatic! */}
             <div className="box1">
-              <div className="slide-,container">
-                {/* Title */}
+              <div className="slide-container">
                 <h2> Noche De Sciencias Gallery </h2>
                 <Slides
                   tileData={this.state.SHPEJr_Pictures}

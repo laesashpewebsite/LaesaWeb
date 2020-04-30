@@ -48,31 +48,31 @@ class CareerSummit extends Component {
       {
         img: CS_Picture1,
         title: "Career Summit Image1",
-        author: "N/A",
+        alt: "Career Summit 1",
         cols: 1
       },
       {
         img: CS_Picture2,
         title: "Career Summit Image2",
-        author: "N/A",
+        alt: "Career Summit 2",
         cols: 2
       },
       {
         img: CS_Picture3,
         title: "Career Summit Image3",
-        author: "N/A",
+        alt: "Career Summit 3",
         cols: 3
       },
       {
         img: CS_Picture4,
         title: "Career Summit Image4",
-        author: "N/A",
+        alt: "Career Summit 4",
         cols: 3
       },
       {
         img: CS_Picture5,
         title: "Career Summit Image5",
-        author: "N/A",
+        alt: "Career Summit 5",
         cols: 3
       }
     ]

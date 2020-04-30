@@ -104,43 +104,7 @@ function main() {
             <h2> 5 Pillars of LAESA-SHPE</h2>
 
             {/* Slide Show Properties*/}
-            <Pillars />
-            {/* <Fade {...fadeProperties}>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages} />
-                </div>
-                <h2> Academic Development </h2>
-              </div>
-
-              <div className="each-fade">
-                <h2> Professional Development </h2>
-                <div className="image-container">
-                  <img src={fadeImages1} />
-                </div>
-              </div>
-
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages2} />
-                </div>
-                <h2> Chapter Development </h2>
-              </div>
-
-              <div className="each-fade">
-                <h2> Leadership Development </h2>
-                <div className="image-container">
-                  <img src={fadeImages3} />
-                </div>
-              </div>
-
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages4} />
-                </div>
-                <h2> Community Outreach </h2>
-              </div>
-            </Fade> */}
+            <Pillars style={{ borderRadius: "10px", bakgroundColor: "red" }} />
           </div>
         </div>
 

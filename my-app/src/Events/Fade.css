@@ -1,5 +1,6 @@
 .each-fade {
   display: flex;
+  /* border: solid; */
 }
 
 .each-fade .image-container {
