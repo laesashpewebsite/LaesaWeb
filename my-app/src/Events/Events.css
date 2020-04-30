@@ -132,27 +132,6 @@ h3 {
   text-align: center;
 }
 
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 100px;
-}
-
-.each-fade {
-  display: flex;
-}
-
-.each-fade .image-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.each-fade .image-container img {
-  width: 100%;
-}
-
 .Row:after {
   display: table;
 }

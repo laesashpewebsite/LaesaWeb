@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Events.css";
-import { Fade } from 'react-slideshow-image';
+import Slides from "./Fade.jsx";
 import PCED_Director from "../pictures/Arelis.png";
 import PCED_Director2 from "../pictures/Derwick.jpg";
 import PCEDPicture1 from "../pictures/PCED_Pictures/Students.jpg";
@@ -15,30 +15,20 @@ import PCEDPicture9 from "../pictures/PCED_Pictures/Competition.jpg";
 
 import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import CardProfiles from "./CardProfiles";
-import GalleryPic from "../Gallery";
-
-const fadeProperties = {
-      duration: 5000,
-      transitionDuration: 500,
-      indicators: true,
-      infinite: false,
-      pauseOnHover: true,
-      onChange: (oldIndex, newIndex) => {
-  console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
-}
-};
+// import GalleryPic from "../Gallery";
+// import { Slide } from "@material-ui/core";
 
 class PCED extends Component {
   state = {
-// state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
-  DirectorList: [
-    {
-    id: 1,
-    Title: "PCED Co-Director",
-    Name: "Arelis Fienco",
-    Picture: PCED_Director,
-    Bio:
-      "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE\
+    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
+    DirectorList: [
+      {
+        id: 1,
+        Title: "PCED Co-Director",
+        Name: "Arelis Fienco",
+        Picture: PCED_Director,
+        Bio:
+          "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE\
        since my freshman year in 2016 at The City College of New York. I\
        started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
         Noche de Ciencias at Manhattan Bridges High \
@@ -51,18 +41,18 @@ class PCED extends Component {
         form the bridge of communication between chapters across NYC. I'm\
         also directing Pre-College Engineering Day 2020 where our team's\
         goals are listed below",
-    styles: {
-      backgroundColor: "#72a9be",
-      color: "black"
-      }
-    },
-    {
-    id: 2,
-    Title: "PCED Co-Director",
-    Name: "Derwick Hernandez",
-    Picture: PCED_Director2,
-    Bio:
-      "I'm a Civil Engineering major at CCNY, some of my contributions for\
+        styles: {
+          backgroundColor: "#72a9be",
+          color: "black"
+        }
+      },
+      {
+        id: 2,
+        Title: "PCED Co-Director",
+        Name: "Derwick Hernandez",
+        Picture: PCED_Director2,
+        Bio:
+          "I'm a Civil Engineering major at CCNY, some of my contributions for\
       the club are Co-director for the 26th PCED and Office manager, some\
       the reasons I picked these positions are because I like to be\
       organized and also work on self-development. Some hobbies that I'm\
@@ -70,63 +60,72 @@ class PCED extends Component {
       personal growth and listening to podcast. Laesa-shpe has opened many\
       doors for new opportunities, adventures and friends. I am grateful\
       for coming across this great organization.",
-    styles: {
-      backgroundColor: "rgb(0, 31, 91, 100)",
-      color: "#f26534"
+        styles: {
+          backgroundColor: "rgb(0, 31, 91, 100)",
+          color: "#f26534"
         }
       }
     ],
 
-  PCEDPictures: [
+    PCEDPictures: [
       {
+        id: 1,
         img: PCEDPicture1,
         title: "PCED Image1",
         author: "N/A",
         cols: 1
       },
       {
+        id: 2,
         img: PCEDPicture2,
         title: "PCED Image2",
         author: "N/A",
         cols: 2
       },
       {
+        id: 3,
         img: PCEDPicture3,
         title: "PCED Image3",
         author: "N/A",
         cols: 3
       },
       {
+        id: 4,
         img: PCEDPicture4,
         title: "PCED Image4",
         author: "N/A",
         cols: 3
       },
       {
+        id: 5,
         img: PCEDPicture5,
         title: "PCED Image5",
         author: "N/A",
         cols: 3
       },
       {
+        id: 1,
         img: PCEDPicture6,
         title: "PCED Image6",
         author: "N/A",
         cols: 3
       },
       {
+        id: 6,
         img: PCEDPicture7,
         title: "PCED Image7",
         author: "N/A",
         cols: 3
       },
       {
+        id: 7,
         img: PCEDPicture8,
         title: "PCED Image8",
         author: "N/A",
         cols: 3
       },
       {
+        id: 8,
         img: PCEDPicture9,
         title: "PCED Image9",
         author: "N/A",
@@ -135,122 +134,57 @@ class PCED extends Component {
     ]
   };
 
-render() {
-return (
-  <div className="Events-Main">
-    <header className="Events-header">
-{/*could probably use a banner instead for the event*/}
-    <div className="Events-Banner">
-      <h2> Pre-College Engineering Day </h2>
-        <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
-    </div>
-          
-  <div className="box2">
-    <div className="Row">
+  render() {
+    return (
+      <div className="Events-Main">
+        <header className="Events-header">
+          {/*could probably use a banner instead for the event*/}
+          <div className="Events-Banner">
+            <h2> Pre-College Engineering Day </h2>
+            <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
+          </div>
 
-    <div className="Column1">
-      <h2> About </h2>
-        <p>
-          PCED is one of our largest and most memorable events that we host
-          every year. We reach out to our community and invite High School
-          students throughout New York City to our City College campus. We
-          allow them the opportunity to engage and learn about Engineering
-          fields by providing them with workshops, speakers, and a friendly
-          competition that has them build their own project and compete with it.
-        </p>
-    </div>
+          <div className="box2">
+            <div className="Row">
+              <div className="Column1">
+                <h2> About </h2>
+                <p>
+                  PCED is one of our largest and most memorable events that we
+                  host every year. We reach out to our community and invite High
+                  School students throughout New York City to our City College
+                  campus. We allow them the opportunity to engage and learn
+                  about Engineering fields by providing them with workshops,
+                  speakers, and a friendly competition that has them build their
+                  own project and compete with it.
+                </p>
+              </div>
 
-    <div className="Column1">
-      <h2> Mission </h2>
-        <p>
-          PCED's Mission is to expose the younger Latino community to STEM
-          related careers (Science, Technology, Engineering and Mathematics)
-          while obtaining real-life project experience, and developing
-          team-building and leadership skills
-        </p>
-    </div>
-
-    </div>
-  </div>
-
+              <div className="Column1">
+                <h2> Mission </h2>
+                <p>
+                  PCED's Mission is to expose the younger Latino community to
+                  STEM related careers (Science, Technology, Engineering and
+                  Mathematics) while obtaining real-life project experience, and
+                  developing team-building and leadership skills
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className="Gallery">
-{/* Slide show starts here */}
-{/* To change images in slide show just change its origin url. everything else is automatic! */}
-    
-    <div className="box1">
-    <div className="slide-container">
-
-{/* Title */}
-
-    <h2> PCED'S Gallery </h2>
-
-{/* Slide Show Properties*/}
-
-      <Fade {...fadeProperties}>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture1} />
+            {/* Slide show starts here */}
+            {/* To change images in slide show just change its origin url. everything else is automatic! */}
+            <div className="box1">
+              <div className="slide-container">
+                {/* Title */}
+                <h2> PCED'S Gallery </h2>
+                <Slides
+                  tileData={this.state.PCEDPictures}
+                  key={this.state.PCEDPictures.id}
+                />
+              </div>
+            </div>
           </div>
-          
-        </div>
-
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture2} />
-          </div>
-          
-        </div>
-
-        <div className="each-fade">
-         
-          <div className="image-container">
-            <img src={PCEDPicture3} />
-          </div>
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture4} />
-          </div>
-        
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture5} />
-          </div>
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture6} />
-          </div>
-        </div>
-
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={PCEDPicture7} />
-          </div>
-        </div>
-
-      </Fade>
-
-    </div>
-    </div>
-{/* CSS is in Event.css */}
-{/* Slide show ends here */}
-          </div>
-
-          {/* <div className="Gallery">
-          <h2>Gallery</h2>
-
-          /{ this here displays the picture that are in the array FFLPictures
-          by inputing it into Component GalleryPic }
-          <GalleryPic tileData={this.state.PCEDPictures} />
-          </div>*/}
 
           <div className="card-color2">
             <h2>Meet Our Directors!</h2>
@@ -261,6 +195,7 @@ return (
             DirectorListName={this.state.DirectorList}
             key={this.state.DirectorList.id}
           />
+
           <div className="card-color2">
             <h2>Goals</h2>
             <ul className="lists">

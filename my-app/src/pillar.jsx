@@ -6,89 +6,54 @@ import ProfessionalDevelopment from "./pictures/PillarsFolder/ProfessionalDevelo
 import ChapterDevelopment from "./pictures/PillarsFolder/ChapterDevelopment.jpg";
 import LeadershipDevelopment from "./pictures/PillarsFolder/LeadershipDevelopment.jpg";
 import CommunityOutreach from "./pictures/PillarsFolder/CommunityOutreach.jpg";
-
-var num = 0;
-const pillarArray = [
-  {
-    number: 1,
-    Name: "Academic Development",
-    Definition:
-      "At LAESA we strive and encourage each and everyone of our members to be the best students that they can be and support each other academically by providing tutoring our resources.",
-    Pic: AcademicDevelopment
-  },
-  {
-    number: 2,
-    Name: "Professional Development",
-    Definition:
-      "We help each other grow by providing support in areas where\
-      Academia cannot help you like: public speaking, resume \
-      building, and interview prep.",
-    Pic: ProfessionalDevelopment
-  },
-  {
-    number: 3,
-    Name: "Chapter Development",
-    Definition: "something",
-    Pic: ChapterDevelopment
-  },
-  {
-    number: 4,
-    Name: "Leadership Development",
-    Definition:
-      "We provide many opportunities for our members to be leaders with in or outside the club that helps them grow and prepare them for challenges that they may face in the future.",
-    Pic: LeadershipDevelopment
-  },
-  {
-    number: 5,
-    Name: "Community Outreach",
-    Definition:
-      "We are always pushing and reaching out to our communities to spread our values and awareness of engineering ",
-    Pic: CommunityOutreach
-  }
-];
+import Slides from "./Events/Fade.jsx";
 
 class Pillar extends Component {
-  getName() {
-    return pillarArray[num].Name;
-  }
-  getDefinition() {
-    return pillarArray[num].Definition;
-  }
-  getPic() {
-    return pillarArray[num].Pic;
-  }
-  increment() {
-    if (num === 4) num = 0;
-    else num++;
-  }
-
-  // getName(pillarArray) {
-  //   return this.pillarArray.name;
-  // }
-
+  state = {
+    pillarArray: [
+      {
+        number: 1,
+        Name: "Academic Development",
+        Definition:
+          "At LAESA we strive and encourage each and everyone of our members to be the best students that they can be and support each other academically by providing tutoring our resources.",
+        img: AcademicDevelopment
+      },
+      {
+        number: 2,
+        Name: "Professional Development",
+        Definition:
+          "We help each other grow by providing support in areas where\
+          Academia cannot help you like: public speaking, resume \
+          building, and interview prep.",
+        img: ProfessionalDevelopment
+      },
+      {
+        number: 3,
+        Name: "Chapter Development",
+        Definition: "something",
+        img: ChapterDevelopment
+      },
+      {
+        number: 4,
+        Name: "Leadership Development",
+        Definition:
+          "We provide many opportunities for our members to be leaders with in or outside the club that helps them grow and prepare them for challenges that they may face in the future.",
+        img: LeadershipDevelopment
+      },
+      {
+        number: 5,
+        Name: "Community Outreach",
+        Definition:
+          "We are always pushing and reaching out to our communities to spread our values and awareness of engineering ",
+        img: CommunityOutreach
+      }
+    ]
+  };
   render() {
     return (
-      <div className="pillar-main">
-        <header className="pillar-header">
-          <div className="background-Pillar">
-            {
-              <img
-                src={this.getPic()}
-                className="background-Pillar"
-                alt={this.getName()}
-              />
-            }
-          </div>
-          <div>
-            <div className="Name">
-              <h3>{this.getName()}</h3>
-            </div>
-          </div>
-          <h6 className="info">{this.getDefinition()}</h6>
-
-          {this.increment()}
-        </header>
-      </div>
+      <React.Fragment>
+        <Slides tileData={this.state.pillarArray} />
+      </React.Fragment>
     );
   }
 }

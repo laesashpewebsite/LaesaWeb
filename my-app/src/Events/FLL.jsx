@@ -9,6 +9,8 @@ import FLL_Picture4 from "../pictures/FLL_Pictures/IMG_8316.jpg";
 import FLL_Picture5 from "../pictures/FLL_Pictures/IMG_8309.jpg";
 // import FLL_Picture6 from "../pictures/FLL_Pictures/IMG_8313.jpg";
 
+import Slides from "./Fade.jsx";
+
 import FLL_Group from "../pictures/FLL_Pictures/IMG_8311.jpg";
 
 import CardProfiles from "./CardProfiles";
@@ -67,30 +69,35 @@ class FLL extends Component {
     // this array is a list of all the pictures taken from FLL Event
     FLLPictures: [
       {
+        id: 1,
         img: FLL_Picture1,
         title: "FLL Image1",
         author: "N/A",
         cols: 1
       },
       {
+        id: 2,
         img: FLL_Picture2,
         title: "FLL Image2",
         author: "N/A",
         cols: 2
       },
       {
+        id: 3,
         img: FLL_Picture3,
         title: "FLL Image3",
         author: "N/A",
         cols: 3
       },
       {
+        id: 4,
         img: FLL_Picture4,
         title: "FLL Image4",
         author: "N/A",
         cols: 3
       },
       {
+        id: 5,
         img: FLL_Picture5,
         title: "FLL Image5",
         author: "N/A",
@@ -106,40 +113,44 @@ class FLL extends Component {
             <h2>First LEGO League</h2>
             <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
           </div>
-          
 
-    <div className="box2">
-    <div className="Row">
+          <div className="box2">
+            <div className="Row">
+              <div className="Column1">
+                <h2> About </h2>
+                <p>
+                  First Lego League's is one of our way's of motivating young
+                  adults to pursue STEM Many of the kids that participate are
+                  tasked with a group project that they get to research and
+                  present in this competition. There are many opportunities here
+                  for young adults to get involved and learn about topics
+                  relating to there project.
+                </p>
+              </div>
 
-    <div className="Column1">
-            <h2> About </h2>
-            <p>
-              First Lego League's is one of our way's of motivating young adults
-              to pursue STEM Many of the kids that participate are tasked with a
-              group project that they get to research and present in this
-              competition. There are many opportunities here for young adults to
-              get involved and learn about topics relating to there project.
-            </p>
+              <div className="Column1">
+                <h2> Mission </h2>
+                <p>
+                  "First Lego League's mission is to inspire young adults to be
+                  science and technology innovators, by engaging them in
+                  exciting programs that help them build the necessaries skills
+                  in science, engineering, and technology."
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="Column1">
-            <h2> Mission </h2>
-            <p>
-              "First Lego League's mission is to inspire young adults to be
-              science and technology innovators, by engaging them in exciting
-              programs that help them build the necessaries skills in science,
-              engineering, and technology."
-            </p>
-          </div>
-          </div>
-          </div>
-
-          <div className="card-color">
-            <h2>Gallery</h2>
-
-            {/* this here displays the picture that are in the array FFLPictures
-            by inputing it into Component GalleryPic */}
-            <GalleryPic tileData={this.state.FLLPictures} />
+          <div className="Gallery">
+            <div className="box1">
+              <div className="slide-container">
+                {/* Title */}
+                <h2> FLL Gallery </h2>
+                <Slides
+                  tileData={this.state.FLLPictures}
+                  key={this.state.FLLPictures.id}
+                />
+              </div>
+            </div>
           </div>
 
           <div className="card-color2">

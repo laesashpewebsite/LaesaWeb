@@ -114,7 +114,7 @@ function main() {
                 well, as to help to fully develop individuals to their highest
                 potential."
               </p>
-              
+
               <img className="Column-pictures1" src={Mission} alt="Mission" />
             </div>
             <div className="Column1">
@@ -135,8 +135,8 @@ function main() {
             <h2> 5 Pillars of LAESA-SHPE</h2>
 
             {/* Slide Show Properties*/}
-
-            <Fade {...fadeProperties}>
+            <Pillars />
+            {/* <Fade {...fadeProperties}>
               <div className="each-fade">
                 <div className="image-container">
                   <img src={fadeImages} />
@@ -171,7 +171,7 @@ function main() {
                 </div>
                 <h2> Community Outreach </h2>
               </div>
-            </Fade>
+            </Fade> */}
           </div>
         </div>
 
