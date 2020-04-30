@@ -27,11 +27,6 @@ function Footer() {
             <Col></Col>
           </Row>
         </Container>
-        {/* 
-        <div className="mainFooter">
-          
-          {/* adds social meida icons to the footer}
-        </div> */}
       </header>
     </React.Fragment>
   );

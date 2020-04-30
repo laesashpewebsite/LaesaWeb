@@ -71,35 +71,35 @@ class FLL extends Component {
         id: 1,
         img: FLL_Picture1,
         title: "FLL Image1",
-        alt: "N/A",
+        alt: "FLL 1",
         cols: 1
       },
       {
         id: 2,
         img: FLL_Picture2,
         title: "FLL Image2",
-        alt: "N/A",
+        alt: "FLL 2",
         cols: 2
       },
       {
         id: 3,
         img: FLL_Picture3,
         title: "FLL Image3",
-        alt: "N/A",
+        alt: "FLL 3",
         cols: 3
       },
       {
         id: 4,
         img: FLL_Picture4,
         title: "FLL Image4",
-        alt: "N/A",
+        alt: "FLL 4",
         cols: 3
       },
       {
         id: 5,
         img: FLL_Picture5,
         title: "FLL Image5",
-        alt: "N/A",
+        alt: "FLL 5",
         cols: 3
       }
     ]
@@ -130,10 +130,10 @@ class FLL extends Component {
               <div className="Column1">
                 <h2> Mission </h2>
                 <p>
-                  "First Lego League's mission is to inspire young adults to be
+                  First Lego League's mission is to inspire young adults to be
                   science and technology innovators, by engaging them in
                   exciting programs that help them build the necessaries skills
-                  in science, engineering, and technology."
+                  in science, engineering, and technology.
                 </p>
               </div>
             </div>

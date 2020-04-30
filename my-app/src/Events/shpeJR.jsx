@@ -186,7 +186,7 @@ class shpeJR extends Component {
             <h2> Director Contact Info </h2>
             <ul className="lists">
               <li className="events-list">P: 929-268-9609 </li>
-              <li className="events-list">Email: laesa.shpejr_Pgmail.com </li>
+              <li className="events-list">Email: laesa.shpejr_@gmail.com </li>
             </ul>
           </div>
         </header>
