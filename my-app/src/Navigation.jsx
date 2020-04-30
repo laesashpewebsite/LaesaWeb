@@ -50,7 +50,7 @@ class Navigation extends React.Component {
                   eventKey={1}
                   onClick={() => history.replace("/Events")}
                 >
-                  All Events
+                  Calendar
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="eventsDropdownItem"

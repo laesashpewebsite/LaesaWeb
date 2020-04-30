@@ -11,7 +11,7 @@ import "./Calendar.css";
 
 // let allViews = Object.keys(Calendar.Views).map(k => Calendar.Views[k]);
 const today = new Date();
-const newDate = new Date();
+// const newDate = new Date();
 
 const myEvents = [
   {
@@ -21,8 +21,7 @@ const myEvents = [
     start: new Date(2020, 1, 6, 14, 0, 0),
     end: new Date(2020, 1, 6, 15, 15, 0),
     hexColor: "D23F26",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
   },
   {
     id: 1,
@@ -31,8 +30,7 @@ const myEvents = [
     start: new Date(2020, 1, 13, 14, 0, 0),
     end: new Date(2020, 1, 13, 15, 15, 0),
     hexColor: "D23F26",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
   },
   {
     id: 2,
@@ -41,8 +39,7 @@ const myEvents = [
     start: new Date(2020, 2, 5, 14, 0, 0),
     end: new Date(2020, 2, 7, 15, 15, 0),
     hexColor: "f26534",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
   },
   {
     id: 3,
@@ -52,8 +49,7 @@ const myEvents = [
     start: new Date(2020, 2, 13, 14, 0, 0),
     end: new Date(2020, 2, 13, 15, 15, 0),
     hexColor: "D23F26",
-    isSelect: "/PCED",
-    eventLink: true
+    isSelect: "/PCED"
   },
   {
     id: 4,
@@ -62,8 +58,7 @@ const myEvents = [
     start: new Date(2020, 2, 26, 14, 0, 0),
     end: new Date(2020, 2, 26, 15, 15, 0),
     hexColor: "D23F26",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
   },
 
   {
@@ -73,8 +68,8 @@ const myEvents = [
     start: new Date(2020, 3, 23, 14, 0, 0),
     end: new Date(2020, 3, 23, 15, 15, 0),
     hexColor: "D23F26",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // resources: {
     //   id: 1,
     //   title: "./PCED"
@@ -87,8 +82,7 @@ const myEvents = [
     start: new Date(2020, 4, 2, 14, 0, 0),
     end: new Date(2020, 4, 2, 15, 15, 0),
     hexColor: "D23F26", // Red for LAESA Events
-    isSelect: "/SHPE.JR",
-    eventLink: true
+    isSelect: "/SHPE.JR"
   },
   {
     id: 7,
@@ -97,8 +91,7 @@ const myEvents = [
     start: new Date(2020, 4, 22, 14, 0, 0),
     end: new Date(2020, 4, 22, 15, 15, 0),
     hexColor: "1070B8",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
   },
   {
     id: 8,
@@ -107,8 +100,8 @@ const myEvents = [
     start: new Date(2020, 3, 8, 14, 0, 0),
     end: new Date(2020, 3, 10, 15, 15, 0),
     hexColor: "1070B8",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // dark blue for school events
   },
   {
@@ -118,8 +111,8 @@ const myEvents = [
     start: new Date(2020, 3, 18, 12, 0, 0),
     end: new Date(2020, 3, 18, 16, 0, 0),
     hexColor: "f26534",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // oragne for SHPE Events
   },
   {
@@ -129,8 +122,8 @@ const myEvents = [
     start: new Date(2020, 3, 7, 12, 0, 0),
     end: new Date(2020, 3, 7, 16, 0, 0),
     hexColor: "1070B8",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // oragne for SHPE Events
   },
   {
@@ -140,8 +133,8 @@ const myEvents = [
     start: new Date(2020, 3, 10, 12, 0, 0),
     end: new Date(2020, 3, 10, 16, 0, 0),
     hexColor: "72a9be",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // light blue for due dates
   },
   {
@@ -151,8 +144,9 @@ const myEvents = [
     start: new Date(2020, 3, 22, 12, 0, 0),
     end: new Date(2020, 3, 22, 16, 0, 0),
     hexColor: "72a9be",
-    isSelect: "",
-    eventLink: false
+    isSelect:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdLQFfNEiLaGwQwbyaQdvTjLVUFspG6HjHI0oG4x7fVURaMfA/viewform"
+
     // oragne for SHPE Events
   },
   {
@@ -162,8 +156,8 @@ const myEvents = [
     start: new Date(2020, 4, 8, 12, 0, 0),
     end: new Date(2020, 4, 8, 16, 0, 0),
     hexColor: "D23F26",
-    isSelect: "",
-    eventLink: false
+    isSelect: ""
+
     // oragne for SHPE Events
   }
 ];
@@ -216,19 +210,20 @@ const MyCalendar = props => (
       localizer={localizer}
       eventPropGetter={eventStyleGetter}
       dayPropGetter={dayStyleGetter}
-      // onSelectEvent={() => console.log("hello")}
       onSelectEvent={props.onClick}
 
-      // onDrillDown={eventLinkGetter}
+      // onDrillDown={
     ></Calendar>
   </div>
 );
 
 class LAESACalendar extends Component {
   handleClick = props => {
-    // return console.log(props.isSelect);
-    if (props.eventLink === true) {
-      return this.props.history.replace(props.isSelect);
+    if (props.isSelect !== "") {
+      console.log(props.isSelect[0]);
+      if (props.isSelect[0] === "/")
+        return this.props.history.replace(props.isSelect);
+      else return window.open(props.isSelect, "_blank");
     }
   };
 
@@ -237,7 +232,11 @@ class LAESACalendar extends Component {
       <div className="calendar-main">
         {/* <Link to="/">hiiii</Link> */}
         <h2>Save The Dates!</h2>
-        <MyCalendar style={{ opacity: ".8" }} onClick={this.handleClick} />
+        <MyCalendar
+          style={{ opacity: ".8" }}
+          onClick={this.handleClick}
+          // href="https://docs.google.com/forms/d/e/1FAIpQLSdLQFfNEiLaGwQwbyaQdvTjLVUFspG6HjHI0oG4x7fVURaMfA/viewform"
+        />
       </div>
     );
   }

@@ -46,7 +46,7 @@ class shpeJR extends Component {
         SHPE Jr and in May 2019, he directed Noches de Ciencias,\
         exposing minority students to STEM through science-based\
         projects and talks from professionals, and officially created a\
-        chapter at Manhattan Bridges High school. For the current Year,\
+        chapter at Manhattan Bridge,s High school. For the current Year,\
         Byron is the director for SHPE Jr and aims to expose more\
         students to the STEM field and careers.",
         styles: {
@@ -57,36 +57,42 @@ class shpeJR extends Component {
     ],
     SHPEJr_Pictures: [
       {
+        id: 1,
         img: SHPEJr_Picture,
         title: "PCED Image1",
         author: "N/A",
         cols: 1
       },
       {
+        id: 2,
         img: SHPEJr_Picture2,
         title: "PCED Image2",
         author: "N/A",
         cols: 2
       },
       {
+        id: 3,
         img: SHPEJr_Picture3,
         title: "PCED Image3",
         author: "N/A",
         cols: 3
       },
       {
+        id: 4,
         img: SHPEJr_Picture4,
         title: "PCED Image4",
         author: "N/A",
         cols: 3
       },
       {
+        id: 5,
         img: SHPEJr_Picture5,
         title: "PCED Image5",
         author: "N/A",
         cols: 3
       },
       {
+        id: 6,
         img: SHPEJr_Picture6,
         title: "PCED Image6",
         author: "N/A",
@@ -142,13 +148,16 @@ class shpeJR extends Component {
             </div>
           </div>
           <div className="Gallery">
-            {/* Slide show starts here */}
-            {/* To change images in slide show just change its origin url. everything else is automatic! */}
+            {/* Slide ,show starts here */}
+            {/* To change images in slide ,show just change its origin url. everything else is automatic! */}
             <div className="box1">
-              <div className="slide-container">
+              <div className="slide-,container">
                 {/* Title */}
                 <h2> Noche De Sciencias Gallery </h2>
-                <Slides tileData={this.state.SHPEJr_Pictures} />
+                <Slides
+                  tileData={this.state.SHPEJr_Pictures}
+                  key={this.state.SHPEJr_Pictures.id}
+                />
               </div>
             </div>
           </div>
@@ -170,7 +179,7 @@ class shpeJR extends Component {
               </li>
               <li className="events-list">
                 {" "}
-                Deepen participant's understanding of STEM identity
+                Deepen participant's understanding of STEM iden,tity
               </li>
             </ul>
           </div>

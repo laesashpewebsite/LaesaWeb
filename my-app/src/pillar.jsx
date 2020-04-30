@@ -1,6 +1,5 @@
 // where is this being used??
 import React, { Component } from "react";
-import "./pillar.css";
 import AcademicDevelopment from "./pictures/PillarsFolder/AcademicDevelopment.jpg";
 import ProfessionalDevelopment from "./pictures/PillarsFolder/ProfessionalDevelopment.jpg";
 import ChapterDevelopment from "./pictures/PillarsFolder/ChapterDevelopment.jpg";
