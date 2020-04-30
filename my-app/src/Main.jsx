@@ -5,38 +5,7 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import Pillars from "./pillar.jsx";
 import Mission from "./pictures/SHPEMission.jpg";
 import Vision from "./pictures/SHPEVision.jpg";
-import { Fade } from "react-slideshow-image";
-import fadeImages from "./pictures/PillarsFolder/AcademicDevelopment.jpg";
-import fadeImages1 from "./pictures/PillarsFolder/ProfessionalDevelopment.jpg";
-import fadeImages2 from "./pictures/PillarsFolder/ChapterDevelopment.jpg";
-import fadeImages3 from "./pictures/PillarsFolder/LeadershipDevelopment.jpg";
-import fadeImages4 from "./pictures/PillarsFolder/CommunityOutreach.jpg";
 
-// const importfadeImages = [
-//   './pictures/PillarsFolder/AcademicDevelopment.jpg',
-//   './pictures/PillarsFolder/ProfessionalDevelopment.jpg',
-//   './pictures/PillarsFolder/ChapterDevelopment.jpg',
-//   './pictures/PillarsFolder/LeadershipDevelopment.jpg',
-//   './pictures/PillarsFolder/CommunityOutreach.jpg'
-// ];
-
-{
-  /*Properties for the slide show are here*/
-}
-const fadeProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  indicators: true,
-  infinite: false,
-  pauseOnHover: true,
-  onChange: (oldIndex, newIndex) => {
-    console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
-  }
-};
-
-{
-  /* Main Code starts here */
-}
 function main() {
   return (
     <div className="Main">

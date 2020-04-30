@@ -4,11 +4,13 @@ import "./Events.css";
 import CS_Director from "../pictures/Kayley.jpg";
 import CS_Director2 from "../pictures/Valentin.jpg";
 
-import CS_Picture1 from "../pictures/CS_Pictures/members.jpg";
-import CS_Picture2 from "../pictures/CS_Pictures/members2.jpg";
-import CS_Picture3 from "../pictures/CS_Pictures/Rep.jpg";
-import CS_Picture4 from "../pictures/CS_Pictures/Sponsor.jpg";
-import CS_Picture5 from "../pictures/CS_Pictures/Sponsor2.jpg";
+import CS_Picture1 from "../pictures/CS_pictures/members.jpg";
+import CS_Picture2 from "../pictures/CS_pictures/members2.jpg";
+import CS_Picture3 from "../pictures/CS_pictures/Rep.jpg";
+import CS_Picture4 from "../pictures/CS_pictures/Sponsor.jpg";
+import CS_Picture5 from "../pictures/CS_pictures/Sponsor2.jpg";
+
+import Slides from "./Fade.jsx";
 
 import Main from "../pictures/CS_pictures/DSC_0350.JPG";
 
@@ -42,7 +44,7 @@ class CareerSummit extends Component {
         }
       }
     ],
-    CS_Pictures: [
+    CSpictures: [
       {
         img: CS_Picture1,
         title: "Career Summit Image1",
@@ -114,8 +116,18 @@ class CareerSummit extends Component {
             </div>
           </div>
 
-          <div className="card-color2"></div>
-          <div className="card-color">
+          <div className="Gallery">
+            {/* Slide show starts here */}
+            {/* To change images in slide show just change its origin url. everything else is automatic! */}
+            <div className="box1">
+              <div className="slide-container">
+                {/* Title */}
+                <h2> Career Summit's Gallery </h2>
+                <Slides tileData={this.state.CSpictures} />
+              </div>
+            </div>
+          </div>
+          <div className="card-color2">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
@@ -127,12 +139,8 @@ class CareerSummit extends Component {
           <div className="card-color2">
             <h2>Director Contact Info</h2>
             <ul className="lists">
-              <li className="events-list">P: 917-392-4710 </li>
               <li className="events-list">
-                Email: laesa.Career Summit@gmail.com{" "}
-              </li>
-              <li className="events-list">
-                Personal: arelisfienco@outlook.com
+                Email: laesa.CareerSummit@gmail.com
               </li>
             </ul>
           </div>

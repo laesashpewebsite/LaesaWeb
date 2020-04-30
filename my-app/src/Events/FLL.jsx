@@ -14,7 +14,6 @@ import Slides from "./Fade.jsx";
 import FLL_Group from "../pictures/FLL_Pictures/IMG_8311.jpg";
 
 import CardProfiles from "./CardProfiles";
-import GalleryPic from "../Gallery";
 import "./Events.css";
 
 class FLL extends Component {
