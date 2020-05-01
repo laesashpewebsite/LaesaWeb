@@ -44,9 +44,9 @@ class FLL extends Component {
       {
         id: 2,
         Title: "FLL Co-Director",
-        Name: "Ceasar Tacuri",
+        Name: "Cesar Tacuri",
         Picture: FLL_Director2,
-        Alts: "Ceasar Tacuri",
+        Alts: "Cesar Tacuri",
         Bio:
           "My name is Cesar Tacuri, and I am Civil Engineering major on his junior year. I joined\
       LAESA in Spring of 2019. Being a transfer student, it was hard adjusting to a new school\

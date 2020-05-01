@@ -96,7 +96,6 @@ class CareerSummit extends Component {
               <div className="Column1">
                 <h2> About </h2>
                 <p>
-                  {" "}
                   The Career Summit is a mock conference for many of our members
                   and other students at CCNY we host this event so our members
                   can get practice talking to recruiters and getting their

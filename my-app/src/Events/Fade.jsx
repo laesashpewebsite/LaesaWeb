@@ -6,11 +6,9 @@ const fadeProperties = {
   duration: 5000,
   transitionDuration: 500,
   indicators: true,
-  infinite: false,
+  infinite: true,
   pauseOnHover: true,
-  onChange: (oldIndex, newIndex) => {
-    console.log(`Fade transition finished from ${oldIndex} to ${newIndex}`);
-  }
+  onChange: (oldIndex, newIndex) => {}
 };
 function sideBar(title) {
   if (title != null) return <h2>{title}</h2>;

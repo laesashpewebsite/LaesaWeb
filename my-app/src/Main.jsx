@@ -112,7 +112,10 @@ function main() {
             <h2> 5 Pillars of LAESA-SHPE</h2>
 
             {/* Slide Show Properties*/}
-            <Pillars style={{ borderRadius: "10px", bakgroundColor: "red" }} />
+            <Pillars
+              style={{ borderRadius: "10px", bakgroundColor: "red" }}
+              key={1}
+            />
           </div>
         </div>
       </header>

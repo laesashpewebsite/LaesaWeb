@@ -1,12 +1,12 @@
 .custom-nav {
   background-color: #282c34;
-}
-
-.eventsDropdown {
-  border-radius: 20px;
+  color: red;
 }
 
 .events-css {
   position: relative;
   color: white;
+}
+.nav-dropdown {
+  color: #d23f26;
 }

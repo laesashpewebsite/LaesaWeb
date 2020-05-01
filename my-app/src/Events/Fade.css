@@ -9,5 +9,7 @@
   min-height: 30vh;
 }
 .each-fade h2 {
-  font-size: small;
+  font-size: medium;
+  background: #72a9be;
+  border: black;
 }

@@ -10,7 +10,7 @@ class Pillar extends Component {
   state = {
     pillarArray: [
       {
-        number: 1,
+        id: 1,
         Name: "Academic Development",
         Definition:
           "At LAESA we strive and encourage each and everyone of our members to be the best students that they can be and support each other academically by providing tutoring our resources.",
@@ -18,7 +18,7 @@ class Pillar extends Component {
         img: AcademicDevelopment
       },
       {
-        number: 2,
+        id: 2,
         Name: "Professional Development",
         Definition:
           "We help each other grow by providing support in areas where Academia cannot help you like: public speaking, resume   building, and interview prep.",
@@ -26,14 +26,14 @@ class Pillar extends Component {
         img: ProfessionalDevelopment
       },
       {
-        number: 3,
+        id: 3,
         Name: "Chapter Development",
         Definition: "something",
         alt: "Pillar 3",
         img: ChapterDevelopment
       },
       {
-        number: 4,
+        id: 4,
         Name: "Leadership Development",
         Definition:
           "We provide many opportunities for our members to be leaders with in or outside the club that helps them grow and prepare them for challenges that they may face in the future.",
@@ -41,7 +41,7 @@ class Pillar extends Component {
         img: LeadershipDevelopment
       },
       {
-        number: 5,
+        id: 5,
         Name: "Community Outreach",
         Definition:
           "We are always pushing and reaching out to our communities to spread our values and awareness of engineering ",
@@ -53,7 +53,10 @@ class Pillar extends Component {
   render() {
     return (
       <React.Fragment>
-        <Slides tileData={this.state.pillarArray} />
+        <Slides
+          tileData={this.state.pillarArray}
+          key={this.state.pillarArray.id}
+        />
       </React.Fragment>
     );
   }
