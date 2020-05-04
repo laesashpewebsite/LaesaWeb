@@ -1,7 +1,6 @@
 .calendar-main {
   background-image: url(./pictures/SHPE-logo.png);
   background-color: rgb(0, 31, 91, 100);
-
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -9,6 +8,9 @@
   font-weight: 900;
   color: aliceblue;
 }
+/* h2:hover {
+  color: aliceblue;
+} */
 .calendar-main h2 {
   text-align: center;
   background-color: rgb(0, 31, 91, 100);
@@ -26,4 +28,8 @@
 }
 .rbc-toolbar {
   font-size: 150%;
+}
+.hovers:hover {
+  border: solid;
+  border-color: aliceblue;
 }

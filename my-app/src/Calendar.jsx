@@ -164,15 +164,13 @@ const eventStyleGetter = (event, start, end, isSelected) => {
   var backgroundColor = "#" + event.hexColor;
   var style = {
     backgroundColor: backgroundColor,
-    borderRadius: "0px",
     color: "black",
-    border: "0px",
-    display: "block",
     fontWeight: "500"
   };
 
   return {
-    style: style
+    style: style,
+    className: "hovers"
   };
 };
 const dayStyleGetter = (event, start, end, isSelected) => {
@@ -208,16 +206,31 @@ const MyCalendar = props => (
       eventPropGetter={eventStyleGetter}
       dayPropGetter={dayStyleGetter}
       onSelectEvent={props.onClick}
-
+      // onMouseEnter={props.hooverOpen} //if hovering over invoke handleOpen function
+      // onMouseLeave={props.hooverClose} //if not hovering over invoke handleClose function
+      // show={props.glow}
       // onDrillDown={
     ></Calendar>
   </div>
 );
 
 class LAESACalendar extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { isOpen: false };
+  // }
+  // handleOpen = () => {
+  //   this.setState({ isOpen: true }); //sets isOpen to true
+  // };
+
+  // handleClose = () => {
+  //   this.setState({ isOpen: false }); //sets isOpen to false
+
+  // };
+
   handleClick = props => {
     if (props.isSelect !== "") {
-      console.log(props.isSelect[0]);
+      // console.log(props.isSelect[0]);
       if (props.isSelect[0] === "/")
         return this.props.history.replace(props.isSelect);
       else return window.open(props.isSelect, "_blank");
@@ -227,11 +240,15 @@ class LAESACalendar extends Component {
   render() {
     return (
       <div className="calendar-main">
-        {/* <Link to="/">hiiii</Link> */}
         <h2>Save The Dates!</h2>
         <MyCalendar
           style={{ opacity: ".8" }}
           onClick={this.handleClick}
+          className="extra-style"
+          // hooverOpen={this.handleOpen}
+          // hooverClose={this.handleClose} //if not hovering over invoke handleClose function
+          // glow={this.state.isOpen}
+
           // href="https://docs.google.com/forms/d/e/1FAIpQLSdLQFfNEiLaGwQwbyaQdvTjLVUFspG6HjHI0oG4x7fVURaMfA/viewform"
         />
       </div>

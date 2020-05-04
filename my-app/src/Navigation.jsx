@@ -39,6 +39,7 @@ class Navigation extends React.Component {
               style={{ color: "#D23F26" }}
               eventKey={1}
               onClick={() => history.replace("/Main")}
+              className="test"
             >
               Main
             </Nav.Link>
