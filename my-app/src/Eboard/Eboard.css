@@ -31,7 +31,7 @@
 }
 .buttons {
   margin: auto;
-  width: 100px;
+  width: 130px;
   /* border: solid; */
 }
 
@@ -42,5 +42,6 @@
   border-radius: 15px;
   text-align: center;
   font-size: 12px;
-  line-height: 1.42857;
+  margin: 5px 5px;
+  /* line-height: 1.42857; */
 }

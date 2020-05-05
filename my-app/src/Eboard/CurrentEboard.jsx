@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 
 import Eboardpic from "../pictures/Eboard_Alumni.png";
-
 import President from "./../pictures/Luis.png";
 import Secretary from "./../pictures/Gloria.jpeg";
 import EVicePresident from "./../pictures/Evan.JPG";
 import IVicePresident from "./../pictures/Richard.png";
 import Treasurer from "./../pictures/Keivon.jpg";
 import CardProfiles from "../Events/CardProfiles";
-
 import profilePlaceHolder from "../pictures/SHPE-logo.png";
-import Pagination from "react-bootstrap/Pagination";
-import PageItem from "react-bootstrap/PageItem";
+
+import easterEgg1 from "../pictures/Big-Bird.jpeg";
+import easterEgg2 from "../pictures/Bert.jpeg";
+import easterEgg3 from "../pictures/Cookie-Monster.jpeg";
+import easterEgg4 from "../pictures/Kermit.jpeg";
+import easterEgg5 from "../pictures/Abby.jpeg";
 
 import "./Eboard.css";
 import Button from "react-bootstrap/Button";
@@ -19,7 +21,8 @@ class EboardMembers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      thisPage: 1,
+      thisPage: 2,
+      count: 1,
       EboardList: [
         {
           id: 1,
@@ -138,15 +141,94 @@ class EboardMembers extends Component {
             color: "black"
           }
         }
+      ],
+      EboardList3: [
+        {
+          id: 1,
+          Title: "President",
+          Name: "Richard Martinez",
+          Picture: profilePlaceHolder,
+          Bio: "",
+          styles: {
+            backgroundColor: "#72a9be",
+            color: "black"
+          }
+        },
+        {
+          id: 2,
+          Title: "Internal Vice-President",
+          Name: "Alex Guerrero",
+          Picture: profilePlaceHolder,
+          Bio: "",
+          styles: {
+            backgroundColor: "rgb(0, 31, 91, 100)",
+            color: "#f26534"
+          }
+        },
+        {
+          id: 3,
+          Title: "External Vice-President",
+          Name: "Mauricio Almonte",
+          Picture: profilePlaceHolder,
+          Bio: "",
+          styles: {
+            backgroundColor: "#72a9be",
+            color: "black"
+          }
+        },
+        {
+          id: 4,
+          Title: "Treasurer",
+          Name: "Kyle Persuad",
+          Picture: profilePlaceHolder,
+          Bio: "",
+          styles: {
+            backgroundColor: "rgb(0, 31, 91, 100)",
+            color: "#f26534"
+          }
+        },
+        {
+          id: 5,
+          Title: "Secretary",
+          Name: "Estefany Gomez",
+          Picture: profilePlaceHolder,
+          Bio: "",
+          styles: {
+            backgroundColor: "#72a9be",
+            color: "black"
+          }
+        }
       ]
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.pageOutput = this.pageOutput.bind(this);
   }
   handleClick = pageNum => {
-    // console.log(props);
     this.setState({ thisPage: pageNum });
+    var temp = this.state.count;
+    temp++;
+    if (pageNum === 2) this.setState({ count: temp });
+    else this.setState({ count: 1 });
+    if (this.state.count % 4 === 0) {
+      var subArr = [...this.state.EboardList];
+      subArr[0] = { ...subArr[0], Picture: easterEgg1 };
+      subArr[1] = { ...subArr[1], Picture: easterEgg2 };
+      subArr[2] = { ...subArr[2], Picture: easterEgg3 };
+      subArr[3] = { ...subArr[3], Picture: easterEgg4 };
+      subArr[4] = { ...subArr[4], Picture: easterEgg5 };
+      this.setState({ EboardList: subArr });
+    } else {
+      var subArr = [...this.state.EboardList];
+      subArr[0] = { ...subArr[0], Picture: President };
+      subArr[1] = { ...subArr[1], Picture: IVicePresident };
+      subArr[2] = { ...subArr[2], Picture: EVicePresident };
+      subArr[3] = { ...subArr[3], Picture: Treasurer };
+      subArr[4] = { ...subArr[4], Picture: Secretary };
+      this.setState({ EboardList: subArr });
+    }
   };
   pageOutput() {
-    if (this.state.thisPage === 1) {
+    if (this.state.thisPage === 2) {
       return (
         <React.Fragment>
           <h2 className="eboard-title">
@@ -156,7 +238,7 @@ class EboardMembers extends Component {
           <CardProfiles DirectorListName={this.state.EboardList} />
         </React.Fragment>
       );
-    } else if (this.state.thisPage === 2) {
+    } else if (this.state.thisPage === 3) {
       return (
         <React.Fragment>
           <h2 className="eboard-title">
@@ -166,13 +248,14 @@ class EboardMembers extends Component {
           <CardProfiles DirectorListName={this.state.EboardList2} />
         </React.Fragment>
       );
-    } else if (this.state.thisPage === 3) {
+    } else if (this.state.thisPage === 1) {
       return (
         <React.Fragment>
           <h2 className="eboard-title">
             Our Eboard from <br />
             2020-2021
           </h2>
+          <CardProfiles DirectorListName={this.state.EboardList3} />
         </React.Fragment>
       );
     }
@@ -192,7 +275,7 @@ class EboardMembers extends Component {
           <div style={{ background: "#72a9be" }}>
             <div className="buttons">
               <Button
-                size="sm"
+                size="lg"
                 className=" btn btn-default btn-circle"
                 onClick={() => this.handleClick(1)}
                 style={{
@@ -202,7 +285,7 @@ class EboardMembers extends Component {
                 <span className="itemNums">1</span>
               </Button>
               <Button
-                size="sm"
+                size="lg"
                 className=" btn btn-default btn-circle"
                 onClick={() => this.handleClick(2)}
                 style={{ backgroundColor: "rgb(0, 31, 91, 100)" }}
@@ -210,7 +293,7 @@ class EboardMembers extends Component {
                 <span className="itemNums">2</span>
               </Button>
               <Button
-                size="sm"
+                size="lg"
                 className=" btn btn-default btn-circle"
                 onClick={() => this.handleClick(3)}
                 style={{ backgroundColor: "rgb(0, 31, 91, 100)" }}
