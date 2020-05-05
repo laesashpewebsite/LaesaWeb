@@ -219,7 +219,7 @@ class LAESACalendar extends Component {
     if (props.isSelect !== "") {
       // console.log(props.isSelect[0]);
       if (props.isSelect[0] === "/")
-        return this.props.history.replace(props.isSelect);
+        return this.props.history.push(props.isSelect);
       else return window.open(props.isSelect, "_blank");
     }
   };
@@ -232,11 +232,6 @@ class LAESACalendar extends Component {
           style={{ opacity: ".8" }}
           onClick={this.handleClick}
           className="extra-style"
-          // hooverOpen={this.handleOpen}
-          // hooverClose={this.handleClose} //if not hovering over invoke handleClose function
-          // glow={this.state.isOpen}
-
-          // href="https://docs.google.com/forms/d/e/1FAIpQLSdLQFfNEiLaGwQwbyaQdvTjLVUFspG6HjHI0oG4x7fVURaMfA/viewform"
         />
       </div>
     );

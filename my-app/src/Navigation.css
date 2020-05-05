@@ -1,7 +1,6 @@
 .custom-nav {
   background-color: #282c34;
-  max-width: 100%;
-  /* min-width: 50%; */
+  min-width: 50%;
 }
 .nav-dropdown {
   color: #d23f26;
@@ -14,8 +13,3 @@
   transition: 0.1s;
   transition-delay: 0s;
 }
-/* }
-.some {
-  height: 50px;
-  border: solid;
-} */

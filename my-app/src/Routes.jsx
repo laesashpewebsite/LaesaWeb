@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 // import Navigation from "./Navigation";
 import Main from "./Main";
-import Eboard from "./Eboard/CurrentEboard";
+import Eboard from "./Eboard/Eboard";
 import FLL from "./Events/FLL";
 import PCED from "./Events/PCED.jsx"; // to see difference change to App.js
 import SHPE_JR from "./Events/shpeJR";
