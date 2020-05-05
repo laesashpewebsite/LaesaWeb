@@ -57,15 +57,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function CardProfiles(props) {
   const classes = useStyles();
-  // const [expanded, setExpanded] = React.useState(false);
-
-  // const handleExpandClick = () => {
-  //   setExpanded(!expanded);
-  // };
-  // COMMENTS
-  // how can I change the array that is being called here??
-  // dl is the name of the array that is being run through
-  // this is calling from the DirectorsList Array
   return props.DirectorListName.map(dl => (
     <Card className={classes.root} style={dl.styles} key={dl.id}>
       {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}

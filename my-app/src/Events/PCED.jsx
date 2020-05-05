@@ -144,7 +144,7 @@ class PCED extends Component {
             <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
           </div>
 
-          <div className="box2">
+          <div className="card-color2">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -174,7 +174,7 @@ class PCED extends Component {
           <div className="Gallery">
             {/* Slide show starts here */}
             {/* To change images in slide show just change its origin url. everything else is automatic! */}
-            <div className="box1">
+            <div className="card-color">
               <div className="slide-container">
                 {/* Title */}
                 <h2> PCED'S Gallery </h2>

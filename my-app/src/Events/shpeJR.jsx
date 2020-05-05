@@ -150,7 +150,7 @@ class shpeJR extends Component {
           <div className="Gallery">
             {/* Slide ,show starts here */}
             {/* To change images in slide ,show just change its origin url. everything else is automatic! */}
-            <div className="box1">
+            <div className="card-color">
               <div className="slide-container">
                 <h2> Noche De Sciencias Gallery </h2>
                 <Slides

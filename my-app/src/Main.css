@@ -5,7 +5,6 @@
   margin-bottom: 30px;
 }
 .header p {
-  font-size: 2.1vw;
   text-align: justify;
 }
 .header p {
@@ -31,7 +30,7 @@
   min-height: 18vh;
   padding: 10px;
   /* border: solid; */
-  font-size: medium;
+  /* font-size: medium; */
 }
 .box2 {
   background-color: #72a9be;
@@ -71,7 +70,7 @@
 
 .list {
   font-weight: 700;
-  font-size: 2vh;
+  /* font-size: 2vh; */
   text-align: left;
 }
 

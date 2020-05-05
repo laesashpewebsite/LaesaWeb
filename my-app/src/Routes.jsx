@@ -9,6 +9,7 @@ import PCED from "./Events/PCED.jsx"; // to see difference change to App.js
 import SHPE_JR from "./Events/shpeJR";
 import Events from "./Calendar";
 import CareerSummit from "./Events/CareerSummit";
+import Members from "./Members/members";
 
 export default () => (
   <Switch>
@@ -20,5 +21,6 @@ export default () => (
     <Route path="/SHPE.JR" component={SHPE_JR} />
     <Route path="/Events" component={Events} />
     <Route path="/Careersummit" component={CareerSummit} />
+    <Route path="/Members" component={Members} />
   </Switch>
 );

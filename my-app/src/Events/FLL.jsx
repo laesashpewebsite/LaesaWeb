@@ -104,7 +104,7 @@ class FLL extends Component {
       }
     ]
   };
-  render() {
+  render(props) {
     return (
       <div className="Events-Main">
         <header className="Events-header">
@@ -113,7 +113,7 @@ class FLL extends Component {
             <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
           </div>
 
-          <div className="box2">
+          <div className="card-color2">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -140,7 +140,7 @@ class FLL extends Component {
           </div>
 
           <div className="Gallery">
-            <div className="box1">
+            <div className="card-color">
               <div className="slide-container">
                 {/* Title */}
                 <h2> FLL Gallery </h2>
@@ -157,7 +157,9 @@ class FLL extends Component {
           </div>
           {/* information taken from DirectorList array is put into CardProfiles to map out all the information needed 
           from each memberr  */}
-          <CardProfiles DirectorListName={this.state.DirectorList} />
+          <CardProfiles
+            DirectorListName={this.state.DirectorList}
+          ></CardProfiles>
           <div className="card-color2"></div>
           <div className="card-color">
             <h2> Director Contact Info </h2>

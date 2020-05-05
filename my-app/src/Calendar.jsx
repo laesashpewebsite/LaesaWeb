@@ -215,19 +215,6 @@ const MyCalendar = props => (
 );
 
 class LAESACalendar extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { isOpen: false };
-  // }
-  // handleOpen = () => {
-  //   this.setState({ isOpen: true }); //sets isOpen to true
-  // };
-
-  // handleClose = () => {
-  //   this.setState({ isOpen: false }); //sets isOpen to false
-
-  // };
-
   handleClick = props => {
     if (props.isSelect !== "") {
       // console.log(props.isSelect[0]);

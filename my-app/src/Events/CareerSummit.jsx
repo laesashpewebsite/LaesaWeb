@@ -91,7 +91,7 @@ class CareerSummit extends Component {
             />
           </div>
 
-          <div className="box2">
+          <div className="card-color2">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -117,7 +117,7 @@ class CareerSummit extends Component {
 
           <div className="Career Summit Gallery">
             {/* To change images in slide show just change its origin url. everything else is automatic! */}
-            <div className="box1">
+            <div className="card-color">
               <div className="slide-container">
                 <h2> Career Summit's Gallery </h2>
                 <Slides tileData={this.state.CSpictures} />
