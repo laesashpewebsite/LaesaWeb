@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 const fadeProperties = {
-  duration: 5000,
+  duration: 500000,
   transitionDuration: 500,
   indicators: true,
   infinite: true,

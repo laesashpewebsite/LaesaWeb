@@ -1,6 +1,3 @@
-.members {
-  width: 100%;
-}
 .Eboard-Banner {
   width: 100%;
   text-align: center;
@@ -20,8 +17,30 @@
 
 .Eboard-header p {
   text-align: justify;
-
   font-size: large;
   font-weight: 750;
   text-indent: 30px;
+}
+.buttons {
+  background-color: #72a9be;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  /* border: solid; */
+}
+.counter {
+  width: 80px;
+  margin: auto;
+  /* border: solid; */
+}
+.eboard-title {
+  margin: auto;
+  text-align: center;
+  background-color: #72a9be;
+}
+.itemNums {
+  color: #d23f26;
+  /* border: solid; */
+}
+.btn {
+  background-color: red;
 }
