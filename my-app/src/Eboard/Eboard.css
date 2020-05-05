@@ -21,17 +21,6 @@
   font-weight: 750;
   text-indent: 30px;
 }
-.buttons {
-  background-color: #72a9be;
-  border-radius: 0px;
-  margin-bottom: 0px;
-  /* border: solid; */
-}
-.counter {
-  width: 80px;
-  margin: auto;
-  /* border: solid; */
-}
 .eboard-title {
   margin: auto;
   text-align: center;
@@ -39,8 +28,19 @@
 }
 .itemNums {
   color: #d23f26;
+}
+.buttons {
+  margin: auto;
+  width: 100px;
   /* border: solid; */
 }
-.btn {
-  background-color: red;
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
 }

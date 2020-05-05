@@ -15,91 +15,82 @@ import SHPEJr_Picture6 from "../pictures/SHPEJr_Pictures/jr6.jpg";
 import Slides from "./Fade.jsx";
 
 class shpeJR extends Component {
-  state = {
-    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
-    DirectorList: [
-      {
-        id: 1,
-        Title: "SHPEJr Jr. Co-Director",
-        Name: "Mariel Gonzalez",
-        Picture: shpeJR_Director2,
-        Bio:
-          "Mariel Gonzalez is a mechanical engineering student transferred\
-          from the Dominican Republic and co-director of\
-          SHPE Jr. When not studying, Mariel enjoys reaching out to\
-          friends and family, hiking and planning for the next adventure\
-          as an engineer.",
-        styles: {
-          backgroundColor: "#72a9be",
-          color: "black"
+  constructor(props) {
+    super(props);
+    this.state = {
+      // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
+      DirectorList: [
+        {
+          id: 1,
+          Title: "SHPEJr Jr. Co-Director",
+          Name: "Mariel Gonzalez",
+          Picture: shpeJR_Director2,
+          Bio:
+            "Mariel Gonzalez is a mechanical engineering student transferred            from the Dominican Republic and co-director of            SHPE Jr. When not studying, Mariel enjoys reaching out to            friends and family, hiking and planning for the next adventure            as an engineer.",
+          styles: {
+            backgroundColor: "#72a9be",
+            color: "black"
+          }
+        },
+        {
+          id: 2,
+          Title: "SHPEJr Jr. Co-Director",
+          Name: "Byron Marcatoma",
+          Picture: shpeJR_Director,
+          Bio:
+            " Byron Marcatoma is a computer science student. He has been part          of LAESA-SHPE since his freshman year in 2018 at The City          College of New York. The same year, he became co-director for          SHPE Jr and in May 2019, he directed Noches de Ciencias,          exposing minority students to STEM through science-based          projects and talks from professionals, and officially created a          chapter at Manhattan Bridge,s High school. For the current Year,          Byron is the director for SHPE Jr and aims to expose more          students to the STEM field and careers.",
+          styles: {
+            backgroundColor: "rgb(0, 31, 91, 100)",
+            color: "#f26534"
+          }
         }
-      },
-      {
-        id: 2,
-        Title: "SHPEJr Jr. Co-Director",
-        Name: "Byron Marcatoma",
-        Picture: shpeJR_Director,
-        Bio:
-          " Byron Marcatoma is a computer science student. He has been part\
-        of LAESA-SHPE since his freshman year in 2018 at The City\
-        College of New York. The same year, he became co-director for\
-        SHPE Jr and in May 2019, he directed Noches de Ciencias,\
-        exposing minority students to STEM through science-based\
-        projects and talks from professionals, and officially created a\
-        chapter at Manhattan Bridge,s High school. For the current Year,\
-        Byron is the director for SHPE Jr and aims to expose more\
-        students to the STEM field and careers.",
-        styles: {
-          backgroundColor: "rgb(0, 31, 91, 100)",
-          color: "#f26534"
+      ],
+      SHPEJr_Pictures: [
+        {
+          id: 1,
+          img: SHPEJr_Picture,
+          title: "SHPEJr Image1",
+          alt: "SHPEJr 1",
+          cols: 1
+        },
+        {
+          id: 2,
+          img: SHPEJr_Picture2,
+          title: "SHPEJr Image2",
+          alt: "SHPEJr 1",
+          cols: 2
+        },
+        {
+          id: 3,
+          img: SHPEJr_Picture3,
+          title: "SHPEJr Image3",
+          alt: "SHPEJr 1",
+          cols: 3
+        },
+        {
+          id: 4,
+          img: SHPEJr_Picture4,
+          title: "SHPEJr Image4",
+          alt: "SHPEJr 1",
+          cols: 3
+        },
+        {
+          id: 5,
+          img: SHPEJr_Picture5,
+          title: "SHPEJr Image5",
+          alt: "SHPEJr 1",
+          cols: 3
+        },
+        {
+          id: 6,
+          img: SHPEJr_Picture6,
+          title: "SHPEJr Image6",
+          alt: "SHPEJr 1",
+          cols: 3
         }
-      }
-    ],
-    SHPEJr_Pictures: [
-      {
-        id: 1,
-        img: SHPEJr_Picture,
-        title: "SHPEJr Image1",
-        alt: "SHPEJr 1",
-        cols: 1
-      },
-      {
-        id: 2,
-        img: SHPEJr_Picture2,
-        title: "SHPEJr Image2",
-        alt: "SHPEJr 1",
-        cols: 2
-      },
-      {
-        id: 3,
-        img: SHPEJr_Picture3,
-        title: "SHPEJr Image3",
-        alt: "SHPEJr 1",
-        cols: 3
-      },
-      {
-        id: 4,
-        img: SHPEJr_Picture4,
-        title: "SHPEJr Image4",
-        alt: "SHPEJr 1",
-        cols: 3
-      },
-      {
-        id: 5,
-        img: SHPEJr_Picture5,
-        title: "SHPEJr Image5",
-        alt: "SHPEJr 1",
-        cols: 3
-      },
-      {
-        id: 6,
-        img: SHPEJr_Picture6,
-        title: "SHPEJr Image6",
-        alt: "SHPEJr 1",
-        cols: 3
-      }
-    ]
-  };
+      ]
+    };
+  }
   render() {
     return (
       <div className="Events-Main">

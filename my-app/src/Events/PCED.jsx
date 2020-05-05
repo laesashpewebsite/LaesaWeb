@@ -19,120 +19,104 @@ import CardProfiles from "./CardProfiles";
 // import { Slide } from "@material-ui/core";
 
 class PCED extends Component {
-  state = {
-    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
-    DirectorList: [
-      {
-        id: 1,
-        Title: "PCED Co-Director",
-        Name: "Arelis Fienco",
-        Picture: PCED_Director,
-        Bio:
-          "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE\
-       since my freshman year in 2016 at The City College of New York. I\
-       started fulfilling SHPE's mission by starting with SHPE Jr. and directing\
-        Noche de Ciencias at Manhattan Bridges High \
-        School in April 2017. The following academic year, I became part\
-        of the PCED 2018 team by creating a meaningful project along with my \
-        team that exposed high school students to leadership and real-life\
-        experiences. Last academic year, I was part of the Executive\
-        Board for LAESA, serving as the External Vice-President. This year\
-        I'm the SHPE-NYC Sub-Regional Student Representative where I\
-        form the bridge of communication between chapters across NYC. I'm\
-        also directing Pre-College Engineering Day 2020 where our team's\
-        goals are listed below",
-        styles: {
-          backgroundColor: "#72a9be",
-          color: "black"
+  constructor(props) {
+    super(props);
+    this.state = {
+      // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
+      DirectorList: [
+        {
+          id: 1,
+          Title: "PCED Co-Director",
+          Name: "Arelis Fienco",
+          Picture: PCED_Director,
+          Bio:
+            "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE since my freshman year in 2016 at The City College of New York. I started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High School in April 2017. The following academic year, I became part of the PCED 2018 team by creating a meaningful project along with my  team that exposed high school students to leadership and real-life experiences. Last academic year, I was part of the Executive Board for LAESA, serving as the External Vice-President. This year I'm the SHPE-NYC Sub-Regional Student Representative where I form the bridge of communication between chapters across NYC. I'm also directing Pre-College Engineering Day 2020 where our team's goals are listed below ",
+          styles: {
+            backgroundColor: "#72a9be",
+            color: "black"
+          }
+        },
+        {
+          id: 2,
+          Title: "PCED Co-Director",
+          Name: "Derwick Hernandez",
+          Picture: PCED_Director2,
+          Bio:
+            "I'm a Civil Engineering major at CCNY, some of my contributions for        the club are Co-director for the 26th PCED and Office manager, some        the reasons I picked these positions are because I like to be        organized and also work on self-development. Some hobbies that I'm        into are basketball, health ( mental and physical), reading books on        personal growth and listening to podcast. Laesa-shpe has opened many        doors for new opportunities, adventures and friends. I am grateful        for coming across this great organization.",
+          styles: {
+            backgroundColor: "rgb(0, 31, 91, 100)",
+            color: "#f26534"
+          }
         }
-      },
-      {
-        id: 2,
-        Title: "PCED Co-Director",
-        Name: "Derwick Hernandez",
-        Picture: PCED_Director2,
-        Bio:
-          "I'm a Civil Engineering major at CCNY, some of my contributions for\
-      the club are Co-director for the 26th PCED and Office manager, some\
-      the reasons I picked these positions are because I like to be\
-      organized and also work on self-development. Some hobbies that I'm\
-      into are basketball, health ( mental and physical), reading books on\
-      personal growth and listening to podcast. Laesa-shpe has opened many\
-      doors for new opportunities, adventures and friends. I am grateful\
-      for coming across this great organization.",
-        styles: {
-          backgroundColor: "rgb(0, 31, 91, 100)",
-          color: "#f26534"
-        }
-      }
-    ],
+      ],
 
-    PCEDPictures: [
-      {
-        id: 1,
-        img: PCEDPicture1,
-        title: "PCED Image1",
-        alt: "PCED 1",
-        cols: 1
-      },
-      {
-        id: 2,
-        img: PCEDPicture2,
-        title: "PCED Image2",
-        alt: "PCED 2",
-        cols: 2
-      },
-      {
-        id: 3,
-        img: PCEDPicture3,
-        title: "PCED Image3",
-        alt: "PCED 3",
-        cols: 3
-      },
-      {
-        id: 4,
-        img: PCEDPicture4,
-        title: "PCED Image4",
-        alt: "PCED 4",
-        cols: 3
-      },
-      {
-        id: 5,
-        img: PCEDPicture5,
-        title: "PCED Image5",
-        alt: "PCED 5",
-        cols: 3
-      },
-      {
-        id: 1,
-        img: PCEDPicture6,
-        title: "PCED Image6",
-        alt: "PCED 6",
-        cols: 3
-      },
-      {
-        id: 6,
-        img: PCEDPicture7,
-        title: "PCED Image7",
-        alt: "PCED 7",
-        cols: 3
-      },
-      {
-        id: 7,
-        img: PCEDPicture8,
-        title: "PCED Image8",
-        alt: "PCED 8",
-        cols: 3
-      },
-      {
-        id: 8,
-        img: PCEDPicture9,
-        title: "PCED Image9",
-        alt: "PCED 9",
-        cols: 3
-      }
-    ]
-  };
+      PCEDPictures: [
+        {
+          id: 1,
+          img: PCEDPicture1,
+          title: "PCED Image1",
+          alt: "PCED 1",
+          cols: 1
+        },
+        {
+          id: 2,
+          img: PCEDPicture2,
+          title: "PCED Image2",
+          alt: "PCED 2",
+          cols: 2
+        },
+        {
+          id: 3,
+          img: PCEDPicture3,
+          title: "PCED Image3",
+          alt: "PCED 3",
+          cols: 3
+        },
+        {
+          id: 4,
+          img: PCEDPicture4,
+          title: "PCED Image4",
+          alt: "PCED 4",
+          cols: 3
+        },
+        {
+          id: 5,
+          img: PCEDPicture5,
+          title: "PCED Image5",
+          alt: "PCED 5",
+          cols: 3
+        },
+        {
+          id: 1,
+          img: PCEDPicture6,
+          title: "PCED Image6",
+          alt: "PCED 6",
+          cols: 3
+        },
+        {
+          id: 6,
+          img: PCEDPicture7,
+          title: "PCED Image7",
+          alt: "PCED 7",
+          cols: 3
+        },
+        {
+          id: 7,
+          img: PCEDPicture8,
+          title: "PCED Image8",
+          alt: "PCED 8",
+          cols: 3
+        },
+        {
+          id: 8,
+          img: PCEDPicture9,
+          title: "PCED Image9",
+          alt: "PCED 9",
+          cols: 3
+        }
+      ]
+    };
+  }
 
   render() {
     return (

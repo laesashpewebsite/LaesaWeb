@@ -14,6 +14,7 @@ import Pagination from "react-bootstrap/Pagination";
 import PageItem from "react-bootstrap/PageItem";
 
 import "./Eboard.css";
+import Button from "react-bootstrap/Button";
 class EboardMembers extends Component {
   constructor(props) {
     super(props);
@@ -177,11 +178,8 @@ class EboardMembers extends Component {
     }
   }
   render() {
-    const props = {
-      backgroundcolor: "red"
-    };
     return (
-      <div className="Eboard-main">
+      <React.Fragment>
         <header className="Eboard-header">
           <div className="Eboard-Banner">
             <h1 className="Text-Banner"> Meet Our Eboard Members </h1>
@@ -191,40 +189,39 @@ class EboardMembers extends Component {
               className="eboard-pic"
             />
           </div>
-
-          <div className="members">
+          <div style={{ background: "#72a9be" }}>
             <div className="buttons">
-              <Pagination
-                // {...props}
+              <Button
                 size="sm"
-                className="counter"
-                // style={{ backgroundColor: "blue" }}
+                className=" btn btn-default btn-circle"
+                onClick={() => this.handleClick(1)}
+                style={{
+                  backgroundColor: "rgb(0, 31, 91, 100)"
+                }}
               >
-                <PageItem
-                  className="item-size"
-                  onClick={() => this.handleClick(1)}
-                  // style={{ backgroundColor: "red" }}
-                >
-                  <span className="itemNums">1</span>
-                </PageItem>
-                <PageItem
-                  className="item-size"
-                  onClick={() => this.handleClick(2)}
-                >
-                  <span className="itemNums">2</span>
-                </PageItem>
-                <PageItem
-                  className="item-size"
-                  onClick={() => this.handleClick(3)}
-                >
-                  <span className="itemNums">3</span>
-                </PageItem>
-              </Pagination>
+                <span className="itemNums">1</span>
+              </Button>
+              <Button
+                size="sm"
+                className=" btn btn-default btn-circle"
+                onClick={() => this.handleClick(2)}
+                style={{ backgroundColor: "rgb(0, 31, 91, 100)" }}
+              >
+                <span className="itemNums">2</span>
+              </Button>
+              <Button
+                size="sm"
+                className=" btn btn-default btn-circle"
+                onClick={() => this.handleClick(3)}
+                style={{ backgroundColor: "rgb(0, 31, 91, 100)" }}
+              >
+                <span className="itemNums">3</span>
+              </Button>
             </div>
-            {this.pageOutput()}
           </div>
+          {this.pageOutput()}
         </header>
-      </div>
+      </React.Fragment>
     );
   }
 }
