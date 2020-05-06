@@ -108,7 +108,7 @@ class FLL extends Component {
           </div>
           
 
-    <div className="box2">
+    <div className="card-color2">
     <div className="Row">
 
     <div className="Column1">

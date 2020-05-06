@@ -102,22 +102,23 @@ class CareerSummit extends Component {
     //   }
     // ]
   };
-  render() {
-    return (
-      <div className="Events-Main">
-        <header className="Events-header">
-          {/*could probably use a banner instead for the event*/}
-          <div className="Events-Banner">
-            <h2> Career Summit </h2>
-            <img
-              src={Main}
-              className="Events-Picture"
-              alt="Career Summit Group "
-            />
-          </div>
+
+render() {
+  return (
+    <div className="Events-Main">
+      <header className="Events-header">
+        {/*could probably use a banner instead for the event*/}
+        <div className="Events-Banner">
+          <h2> Career Summit </h2>
+          <img
+            src={Main}
+            className="Events-Picture"
+            alt="Career Summit Group "
+          />
+        </div>
 
 
-          <div className="box2">
+  <div className="card-color">
     <div className="Row">
 
     <div className="Column1">

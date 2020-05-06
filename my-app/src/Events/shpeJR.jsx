@@ -129,7 +129,7 @@ class shpeJR extends Component {
             </p>
           </div>
 
-  <div className="box1">
+  <div className="card-color">
     <div className="Row">
     <div className="Column1">
       <h2> Mission </h2>

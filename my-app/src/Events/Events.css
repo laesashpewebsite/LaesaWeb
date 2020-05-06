@@ -53,31 +53,10 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   font-size: 18px;
   text-align: justify;
 }
-
-.card-color2 {
-  color: black; /*rgb(210,63,38);*/
-  background-color: #72a9be;
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  clear: both;
-}
 .Events-header p {
   font-weight: 750;
   text-indent: 30px;
 }
-.card-color {
-  color: #f26534;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .Events-header {
   width: 100%;
 }
@@ -86,7 +65,6 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   text-align: center;
   font-weight: 700;
 }
-
 .Events-header h4 {
   font-weight: 700;
   text-align: center;
@@ -108,6 +86,25 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   text-align: center;
   /* border: solid; */
   list-style: none;
+}
+.card-color2 {
+  color: black; /*rgb(210,63,38);*/
+  background-color: #72a9be;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  clear: both;
+}
+.card-color {
+  color: #f26534;
+  background-color: rgb(0, 31, 91, 100);
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .card-color ul {
   text-align: center;
@@ -156,31 +153,7 @@ h3 {
 .Row:after {
   display: table;
 }
-.box1 {
-  color: #f26534;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /*margin-bottom: 10px;*/
-}
-.box1 p {
-  font-weight: 750;
-  height: 8vh;
-  display: grid;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 50px;
-}
-.box2 {
-  background-color: #72a9be;
-  color: black; /*rgb(210,63,38);*/
-  font-weight: 600;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+
 .Column1 {
   float: left;
   width: 50%;
