@@ -53,72 +53,62 @@ class PCED extends Component {
 
       PCEDPictures: [
         {
-          id: 1,
           img: PCEDPicture1,
           title: "PCED Image1",
-          alt: "PCED 1",
+          author: "N/A",
           cols: 1
         },
         {
-          id: 2,
           img: PCEDPicture2,
           title: "PCED Image2",
-          alt: "PCED 2",
+          author: "N/A",
           cols: 2
         },
         {
-          id: 3,
           img: PCEDPicture3,
           title: "PCED Image3",
-          alt: "PCED 3",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 4,
           img: PCEDPicture4,
           title: "PCED Image4",
-          alt: "PCED 4",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 5,
           img: PCEDPicture5,
           title: "PCED Image5",
-          alt: "PCED 5",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 1,
           img: PCEDPicture6,
           title: "PCED Image6",
-          alt: "PCED 6",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 6,
           img: PCEDPicture7,
           title: "PCED Image7",
-          alt: "PCED 7",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 7,
           img: PCEDPicture8,
           title: "PCED Image8",
-          alt: "PCED 8",
+          author: "N/A",
           cols: 3
         },
         {
-          id: 8,
           img: PCEDPicture9,
           title: "PCED Image9",
-          alt: "PCED 9",
+          author: "N/A",
           cols: 3
         }
       ]
     };
   }
-
   render() {
     return (
       <div className="Events-Main">
