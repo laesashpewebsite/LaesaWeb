@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 
+// Eboard 2019 - 2020
 import Luis from "./../pictures/Luis.png";
 import Gloria from "./../pictures/Gloria.jpeg";
 import Evan from "./../pictures/Evan.JPG";
 import Richard from "./../pictures/Richard.png";
 import Keivon from "./../pictures/Keivon.jpg";
 
+// Eboard 2018-2019
 // import Rafa from "./../pictures/Luis.png";
 import Kayley from "./../pictures/Kayley.jpg";
 import Arelis from "./../pictures/Arelis.png";
 import Valentin from "./../pictures/Valentin.jpg";
 import Brenda from "./../pictures/Brenda.jpg";
+
+// Eboard 2020 - 2021
+import Alex from "./../pictures/Alex.jpg";
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -181,7 +186,21 @@ class EboardMembers extends Component {
           Title: "Internal Vice-President",
           Name: "Alex Guerrero",
           Picture: profilePlaceHolder,
-          Bio: "",
+          Bio: "Hello Familia,    My name is Alex Guerrero and I am LAESA-SHPE’s Internal-Vice President\
+           for the academic year 2020-2021. I am 2nd year Electrical Engineering student with a minor in\
+          Economics. I am very excited and grateful for the opportunity to give back and help out the\
+          chapter which has helped me out throughout the year professionally and academically. Across\
+          the year I have learned how to write a resume, how to write a cover letter, participated in\
+          multiple mock interviews, met amazing people all thanks to this club. LAESA-SHPE has touched\
+          everyone's heart in its own way, that’s the best thing about the club. A fun fact about me\
+          is that I like to play soccer, no matter the time I am always down for a game of soccer.\
+          At last, some goals I have for this year are the following:  1) I plan on helping out with\
+          the construction of our website and deploying it. Throughout the year a team of members is\
+          working on the website that will display LAESA-SHPE history across all platforms, such as\
+          Macs, Windows, Tablets, and phone. 2) I am  also looking forward to working with directors\
+          to try to establish a solid mentorship program for members. We going to keep working on\
+          professional-development and  self-development.   This year is going to be an exciting one,\
+          hopefully everything gets back to normal soon. Stay safe everyone!",
           styles: {
             backgroundColor: "rgb(0, 31, 91, 100)",
             color: "#f26534"
