@@ -175,7 +175,16 @@ class EboardMembers extends Component {
           Title: "President",
           Name: "Richard Martinez",
           Picture: Richard,
-          Bio: "",
+          Bio: "Hello Everyone, Hopefully your having a great day and staying safe from this virus.\
+           My name is Richard Martinez and I am the new President of LAESA-SHPE, I am currently a\
+            sophomore in Electrical Engineering and am looking forward to meeting those who view this.\
+             One of the many things that influenced me to run for the president position was the goal\
+              to grow LAESA and expands its connections so that it can help people in need of information.\
+               LAESA-SHPE has impacted me in many ways, one of the ways it has impacted me was the events\
+                building up to the SHPE convention. Another was the career summit but what both of these\
+                 events did was teach me skills to be able to talk to recruiters, learn how to network and\
+                  finally how to build a solid resume. So I greatly appreciate this skills and thank LAESA\
+                   and those I have met on the way. Warm Regards, Richard Martinez",
           styles: {
             backgroundColor: "#72a9be",
             color: "black"
@@ -185,7 +194,7 @@ class EboardMembers extends Component {
           id: 2,
           Title: "Internal Vice-President",
           Name: "Alex Guerrero",
-          Picture: profilePlaceHolder,
+          Picture: Alex,
           Bio: "Hello Familia,    My name is Alex Guerrero and I am LAESA-SHPE’s Internal-Vice President\
            for the academic year 2020-2021. I am 2nd year Electrical Engineering student with a minor in\
           Economics. I am very excited and grateful for the opportunity to give back and help out the\
