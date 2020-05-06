@@ -49,75 +49,157 @@ class PCED extends Component {
           },
           newColor: { color: "aliceblue" }
         }
-      ],
 
-      PCEDPictures: [
-        {
-          id: 1,
-          img: PCEDPicture1,
-          title: "PCED Image1",
-          alt: "PCED 1",
-          cols: 1
-        },
-        {
-          id: 2,
-          img: PCEDPicture2,
-          title: "PCED Image2",
-          alt: "PCED 2",
-          cols: 2
-        },
-        {
-          id: 3,
-          img: PCEDPicture3,
-          title: "PCED Image3",
-          alt: "PCED 3",
-          cols: 3
-        },
-        {
-          id: 4,
-          img: PCEDPicture4,
-          title: "PCED Image4",
-          alt: "PCED 4",
-          cols: 3
-        },
-        {
-          id: 5,
-          img: PCEDPicture5,
-          title: "PCED Image5",
-          alt: "PCED 5",
-          cols: 3
-        },
-        {
-          id: 1,
-          img: PCEDPicture6,
-          title: "PCED Image6",
-          alt: "PCED 6",
-          cols: 3
-        },
-        {
-          id: 6,
-          img: PCEDPicture7,
-          title: "PCED Image7",
-          alt: "PCED 7",
-          cols: 3
-        },
-        {
-          id: 7,
-          img: PCEDPicture8,
-          title: "PCED Image8",
-          alt: "PCED 8",
-          cols: 3
-        },
-        {
-          id: 8,
-          img: PCEDPicture9,
-          title: "PCED Image9",
-          alt: "PCED 9",
-          cols: 3
-        }
-      ]
-    };
-  }
+      }
+    ],
+
+  PCEDPictures: [
+      {
+        img: PCEDPicture1,
+        title: "PCED Image1",
+        author: "N/A",
+        cols: 1
+      },
+      {
+        img: PCEDPicture2,
+        title: "PCED Image2",
+        author: "N/A",
+        cols: 2
+      },
+      {
+        img: PCEDPicture3,
+        title: "PCED Image3",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture4,
+        title: "PCED Image4",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture5,
+        title: "PCED Image5",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture6,
+        title: "PCED Image6",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture7,
+        title: "PCED Image7",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture8,
+        title: "PCED Image8",
+        author: "N/A",
+        cols: 3
+      },
+      {
+        img: PCEDPicture9,
+        title: "PCED Image9",
+        author: "N/A",
+        cols: 3
+      }
+    ]
+  };
+
+render() {
+return (
+  <div className="Events-Main">
+    <header className="Events-header">
+{/*could probably use a banner instead for the event*/}
+    <div className="Events-Banner">
+      <h2> Pre-College Engineering Day </h2>
+        <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
+    </div>
+          
+  <div className="card-color2">
+    <div className="Row">
+
+    <div className="Column1">
+      <h2> About </h2>
+        <p>
+          PCED is one of our largest and most memorable events that we host
+          every year. We reach out to our community and invite High School
+          students throughout New York City to our City College campus. We
+          allow them the opportunity to engage and learn about Engineering
+          fields by providing them with workshops, speakers, and a friendly
+          competition that has them build their own project and compete with it.
+        </p>
+    </div>
+
+    <div className="Column1">
+      <h2> Mission </h2>
+        <p>
+          PCED's Mission is to expose the younger Latino community to STEM
+          related careers (Science, Technology, Engineering and Mathematics)
+          while obtaining real-life project experience, and developing
+          team-building and leadership skills
+        </p>
+    </div>
+
+    </div>
+  </div>
+
+
+          <div className="Gallery">
+{/* Slide show starts here */}
+{/* To change images in slide show just change its origin url. everything else is automatic! */}
+    
+    <div className="card-color">
+    <div className="slide-container">
+
+{/* Title */}
+
+    <h2> PCED'S Gallery </h2>
+
+{/* Slide Show Properties*/}
+
+      <Fade {...fadeProperties}>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture1} />
+          </div>
+          
+        </div>
+
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture2} />
+          </div>
+          
+        </div>
+
+        <div className="each-fade">
+         
+          <div className="image-container">
+            <img src={PCEDPicture3} />
+          </div>
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture4} />
+          </div>
+        
+        </div>
+
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={PCEDPicture5} />
+          </div>
+        </div>
+
 
   render() {
     return (

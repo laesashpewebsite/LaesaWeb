@@ -11,7 +11,7 @@ function main() {
     <div className="Main">
       <header className="header">
         {/* Main Picture */}
-        <div className="box1">
+        <div className="card-color">
           <h2> Meet Our Familia! </h2>
           <img
             src={SHPE_Convention}
@@ -21,7 +21,7 @@ function main() {
         </div>
 
         {/* About LASA-SHPE Information */}
-        <div className="box2">
+        <div className="card-color2">
           <h2> About LAESA-SHPE </h2>
           <p className="body">
             LAESA–SHPE is the largest and most prominent undergraduate student
@@ -105,7 +105,7 @@ function main() {
             </div>
           </div>
         </div>
-        <div className="box2">
+        <div className="card-color2">
           <div className="slide-container">
             {/* Title */}
 

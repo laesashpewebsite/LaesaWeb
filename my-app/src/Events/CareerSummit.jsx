@@ -78,42 +78,46 @@ class CareerSummit extends Component {
       }
     ]
   };
-  render() {
-    return (
-      <div className="Events-Main">
-        <header className="Events-header">
-          {/*could probably use a banner instead for the event*/}
-          <div className="Events-Banner">
-            <h2> Career Summit </h2>
-            <img
-              src={Main}
-              className="Events-Picture"
-              alt="Career Summit Group "
-            />
+
+render() {
+  return (
+    <div className="Events-Main">
+      <header className="Events-header">
+        {/*could probably use a banner instead for the event*/}
+        <div className="Events-Banner">
+          <h2> Career Summit </h2>
+          <img
+            src={Main}
+            className="Events-Picture"
+            alt="Career Summit Group "
+          />
+        </div>
+
+  <div className="card-color">
+    <div className="Row">
+
+    <div className="Column1">
+            <h2> About </h2>
+            <p>
+              {" "}
+              The Career Summit is a mock conference for many of our members and
+              other students at CCNY we host this event so our members can get
+              practice talking to recruiters and getting their resume's
+              critiqued by real recruiters in the industry that we bring over
+              for thie event.
+            </p>
+          </div>
+          <div className="Column1">
+            <h2>Mission</h2>
+            <p>
+              "Our mission is to prepare our members for the real world and
+              become better candidates when applying for jobs/internships by
+              helping them improve on their public speaking, resume, or
+              interview skills"
+            </p>
+          </div>
           </div>
 
-          <div className="card-color2">
-            <div className="Row">
-              <div className="Column1">
-                <h2> About </h2>
-                <p>
-                  The Career Summit is a mock conference for many of our members
-                  and other students at CCNY we host this event so our members
-                  can get practice talking to recruiters and getting their
-                  resume's critiqued by real recruiters in the industry that we
-                  bring over for thie event.
-                </p>
-              </div>
-              <div className="Column1">
-                <h2>Mission</h2>
-                <p>
-                  "Our mission is to prepare our members for the real world and
-                  become better candidates when applying for jobs/internships by
-                  helping them improve on their public speaking, resume, or
-                  interview skills"
-                </p>
-              </div>
-            </div>
           </div>
 
           <div className="Career Summit Gallery">

@@ -24,34 +24,10 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   font-size: 18px;
   text-align: justify;
 }
-
-.card-color2 {
-  color: black; /*rgb(210,63,38);*/
-  background-color: #72a9be;
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  clear: both;
-}
 .Events-header p {
   font-weight: 650;
   text-indent: 30px;
 }
-.card-color {
-  color: aliceblue;
-  background-color: rgb(0, 31, 91, 100);
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.card-color h2 {
-  color: #f26534;
-}
-
 .Events-header {
   width: 100%;
 }
@@ -60,7 +36,6 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   text-align: center;
   font-weight: 700;
 }
-
 .Events-header h4 {
   font-weight: 700;
   text-align: center;
@@ -79,6 +54,25 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   font-size: 2vh;
   text-align: center;
   list-style: none;
+}
+.card-color2 {
+  color: black; /*rgb(210,63,38);*/
+  background-color: #72a9be;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  clear: both;
+}
+.card-color {
+  color: #f26534;
+  background-color: rgb(0, 31, 91, 100);
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .card-color ul {
   text-align: center;
@@ -100,6 +94,7 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
 .Row:after {
   display: table;
 }
+
 .Column1 {
   float: left;
   width: 50%;

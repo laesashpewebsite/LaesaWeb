@@ -117,17 +117,18 @@ class shpeJR extends Component {
             </p>
           </div>
 
-          <div className="card-color2">
-            <div className="Row">
-              <div className="Column1">
-                <h2> Mission </h2>
-                <p>
-                  PCED's Mission is to expose the younger Latino community to
-                  STEM related careers (Science, Technology, Engineering and
-                  Mathematics) while obtaining real-life project experience, and
-                  developing team-building and leadership skills.
-                </p>
-              </div>
+
+  <div className="card-color">
+    <div className="Row">
+    <div className="Column1">
+      <h2> Mission </h2>
+        <p>
+          PCED's Mission is to expose the younger Latino community to STEM
+          related careers (Science, Technology, Engineering and Mathematics)
+          while obtaining real-life project experience, and developing
+          team-building and leadership skills.
+        </p>
+    </div>
 
               <div className="Column1">
                 <h2>Vision</h2>
