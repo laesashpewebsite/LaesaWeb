@@ -41,7 +41,8 @@ class CareerSummit extends Component {
         styles: {
           backgroundColor: "rgb(0, 31, 91, 100)",
           color: "#f26534"
-        }
+        },
+        newColor: { color: "aliceblue" }
       }
     ],
     CSpictures: [

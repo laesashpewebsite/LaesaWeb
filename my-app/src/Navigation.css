@@ -1,15 +1,21 @@
 .custom-nav {
   background-color: #282c34;
-  min-width: 50%;
 }
-.nav-dropdown {
+.nav-dropdown-text {
   color: #d23f26;
+  /* background-color: white; */
+}
+.navdropdown {
+  /* border: solid; */
+  right: 0%;
+  left: auto;
+  display: block;
+  position: left;
+  width: 30%;
+  margin-right: 70px;
 }
 .eventsDropdownItem:hover {
   background-color: #d23f26;
   transition-delay: 0s;
-}
-.eventsDropdownItem {
-  transition: 0.1s;
-  transition-delay: 0s;
+  right: 0%;
 }

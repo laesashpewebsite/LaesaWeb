@@ -6,7 +6,6 @@ import { NavDropdown } from "react-bootstrap";
 
 import logo from "./pictures/LAESA_LOGO.png";
 import "./Navigation.css";
-// import { makeStyles } from "@material-ui/core/styles";
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -26,7 +25,7 @@ class Navigation extends React.Component {
 
     const history = this.props.history;
     return (
-      <Navbar className="custom-nav" variant="dark" expand="lg">
+      <Navbar className="custom-nav" variant="dark" expand="sm">
         <Navbar.Brand>
           <Link to="/">
             <img src={logo} alt="LAESA_LOGO" height="90px" />
@@ -42,58 +41,13 @@ class Navigation extends React.Component {
             >
               Main
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               style={{ color: "#D23F26" }}
               eventKey={1}
               onClick={() => history.push("/Members")}
             >
               Members
-            </Nav.Link>
-
-            <NavDropdown
-              title={<span className="nav-dropdown">Events</span>}
-              onMouseEnter={this.handleOpen} //if hovering over invoke handleOpen function
-              onMouseLeave={this.handleClose} //if not hovering over invoke handleClose function
-              show={this.state.isOpen} // if isOpen is true show if false do not show
-            >
-              <div className="menu-pos">
-                <NavDropdown.Item
-                  className="eventsDropdownItem"
-                  eventKey={1}
-                  onClick={() => history.push("/Events")}
-                >
-                  Calendar
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  className="eventsDropdownItem"
-                  eventKey={1}
-                  onClick={() => history.push("/Careersummit")}
-                >
-                  Career Summit
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  className="eventsDropdownItem"
-                  eventKey={1}
-                  onClick={() => history.push("/FLL")}
-                >
-                  FLL
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  className="eventsDropdownItem"
-                  eventKey={1}
-                  onClick={() => history.push("/PCED")}
-                >
-                  PCED
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  className="eventsDropdownItem"
-                  eventKey={1}
-                  onClick={() => history.push("/SHPE.JR")}
-                >
-                  SHPE JR.
-                </NavDropdown.Item>
-              </div>
-            </NavDropdown>
+            </Nav.Link> */}
             <Nav.Link
               style={{ color: "#D23F26" }}
               eventKey={1}
@@ -101,6 +55,49 @@ class Navigation extends React.Component {
             >
               Eboard
             </Nav.Link>
+            <NavDropdown
+              title={<span className="nav-dropdown-text">Events</span>}
+              onMouseEnter={this.handleOpen} //if hovering over invoke handleOpen function
+              onMouseLeave={this.handleClose} //if not hovering over invoke handleClose function
+              show={this.state.isOpen} // if isOpen is true show if false do not show
+              className="navdropdown"
+            >
+              <NavDropdown.Item
+                className="eventsDropdownItem"
+                eventKey={1}
+                onClick={() => history.push("/Events")}
+              >
+                Calendar
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className="eventsDropdownItem"
+                eventKey={1}
+                onClick={() => history.push("/Careersummit")}
+              >
+                Career Summit
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className="eventsDropdownItem"
+                eventKey={1}
+                onClick={() => history.push("/FLL")}
+              >
+                FLL
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className="eventsDropdownItem"
+                eventKey={1}
+                onClick={() => history.push("/PCED")}
+              >
+                PCED
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className="eventsDropdownItem"
+                eventKey={1}
+                onClick={() => history.push("/SHPE.JR")}
+              >
+                SHPE JR.
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

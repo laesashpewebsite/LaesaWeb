@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-// import Slides from "../Events/Fade.jsx";
 import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
-// import CardProfiles from "../Events/CardProfiles";
-// import GalleryPic from "../Gallery";
-// import { Slide } from "@material-ui/core";
 import GraduatesFiles from "./gradLists.jsx";
 
 class Members extends Component {
@@ -59,6 +55,14 @@ class Members extends Component {
           <div className="Gallery">
             <div className="card-color">
               <h2>Graduating Class of Spring 2020</h2>
+              <p>
+                We want to congratulate our Graduating Seniors of Spring 2020
+                for all the hard work they put into their education. You are,
+                and will forever be apart of this Familia. LAESA will continue
+                to grow bigger and keep on becoming a better organization for
+                improving each and everyone academically and professionally!!
+                Congrats to the stars that couldn't shine at graduation.
+              </p>
               <GraduatesFiles
                 tileData={this.state.GradList}
                 key={this.state.GradList.id}

@@ -51,7 +51,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: red[500]
   },
   text: {
-    minWidth: "50%"
+    minWidth: "50%",
+    color: "black"
   }
 }));
 
@@ -67,22 +68,27 @@ export default function CardProfiles(props) {
           title={dl.alts}
         />
       </div>
-      <CardHeader
-        component="h2"
-        titleTypographyProps={{ variant: "h2" }}
-        title={dl.Name}
-        subheader={dl.Title}
-        subheaderTypographyProps={{ variant: "h6", color: "inherit" }}
-      />
-      <CardContent>
-        <Typography className={classes.text} variant="body2" component="p">
-          {/* INFO FOR BIO IS BEING CALLED HERE */}
-          {dl.Bio}
-        </Typography>
-      </CardContent>
+      <div className="text-header">
+        <CardHeader
+          // component="h2"
+          titleTypographyProps={{ variant: "h2", MuiTypographyh2: "red" }}
+          title={dl.Name}
+          subheader={dl.Title}
+          subheaderTypographyProps={{ variant: "h6", color: "inherit" }}
+        />
+        <CardContent>
+          <Typography
+            className={classes.text}
+            style={dl.newColor}
+            variant="body2"
+          >
+            {/* INFO FOR BIO IS BEING CALLED HERE */}
+            {dl.Bio}
+          </Typography>
+        </CardContent>
 
-      {/* COLLAPSE NOT NEEDED RIGH NOW BUT IT HELPS TO ADD MORE CONTENT */}
-      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
+        {/* COLLAPSE NOT NEEDED RIGH NOW BUT IT HELPS TO ADD MORE CONTENT */}
+        {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         {/* <CardContent>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
@@ -90,6 +96,7 @@ export default function CardProfiles(props) {
         </CardContent> }
       </Collapse> 
       */}
+      </div>
     </Card>
   ));
 }

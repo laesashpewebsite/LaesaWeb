@@ -46,7 +46,8 @@ class FLL extends Component {
           styles: {
             backgroundColor: "rgb(0, 31, 91, 100)",
             color: "#f26534"
-          }
+          },
+          newColor: { color: "aliceblue" }
         }
       ],
       // this array is a list of all the pictures taken from FLL Event

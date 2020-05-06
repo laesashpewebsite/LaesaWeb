@@ -27,12 +27,11 @@
   background-color: #72a9be;
 }
 .itemNums {
-  color: #d23f26;
+  color: aliceblue;
 }
 .buttons {
   margin: auto;
   width: 130px;
-  /* border: solid; */
 }
 
 .btn-circle {
@@ -43,5 +42,8 @@
   text-align: center;
   font-size: 12px;
   margin: 5px 5px;
+  color: #f26534;
+  border: solid;
+  /* border: thin; */
   /* line-height: 1.42857; */
 }

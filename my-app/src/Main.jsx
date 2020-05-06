@@ -72,7 +72,7 @@ function main() {
         </div>
 
         {/* LAESA'S Mission and Vision Section */}
-        <div className="box1">
+        <div className="card-color">
           <div className="Row">
             <div className="Column1">
               <h2> LAESA SHPE'S MISSION </h2>
