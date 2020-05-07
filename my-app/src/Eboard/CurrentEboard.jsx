@@ -1,16 +1,22 @@
 import React, { Component } from "react";
 
+// Eboard 2019 - 2020
 import Luis from "./../pictures/Luis.png";
 import Gloria from "./../pictures/Gloria.jpeg";
 import Evan from "./../pictures/Evan.JPG";
 import Richard from "./../pictures/Richard.png";
 import Keivon from "./../pictures/Keivon.jpg";
 
+// Eboard 2018-2019
 // import Rafa from "./../pictures/Luis.png";
 import Kayley from "./../pictures/Kayley.jpg";
 import Arelis from "./../pictures/Arelis.png";
 import Valentin from "./../pictures/Valentin.jpg";
 import Brenda from "./../pictures/Brenda.jpg";
+
+// Eboard 2020 - 2021
+import Alex from "./../pictures/Alex.jpg";
+import Estefany from "./../pictures/Estefany_Gomez.jpg"
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -170,7 +176,17 @@ class EboardMembers extends Component {
           Title: "President",
           Name: "Richard Martinez",
           Picture: Richard,
-          Bio: "",
+          Bio:
+            "Hello Everyone, Hopefully your having a great day and staying safe from this virus.\
+           My name is Richard Martinez and I am the new President of LAESA-SHPE, I am currently a\
+          sophomore in Electrical Engineering and am looking forward to meeting those who view this.\
+          One of the many things that influenced me to run for the president position was the goal\
+          to grow LAESA and expands its connections so that it can help people in need of information.\
+          LAESA-SHPE has impacted me in many ways, one of the ways it has impacted me was the events\
+          building up to the SHPE convention. Another was the career summit but what both of these\
+          events did was teach me skills to be able to talk to recruiters, learn how to network and\
+          finally how to build a solid resume. So I greatly appreciate this skills and thank LAESA\
+          and those I have met on the way. Warm Regards, Richard Martinez",
           styles: {
             backgroundColor: "#72a9be",
             color: "black"
@@ -180,8 +196,23 @@ class EboardMembers extends Component {
           id: 2,
           Title: "Internal Vice-President",
           Name: "Alex Guerrero",
-          Picture: profilePlaceHolder,
-          Bio: "",
+          Picture: Alex,
+          Bio:
+            "Hello Familia,  My name is Alex Guerrero and I am LAESA-SHPE’s Internal-Vice President\
+           for the academic year 2020-2021. I am 2nd year Electrical Engineering student with a minor in\
+          Economics. I am very excited and grateful for the opportunity to give back and help out the\
+          chapter which has helped me out throughout the year professionally and academically. Across\
+          the year I have learned how to write a resume, how to write a cover letter, participated in\
+          multiple mock interviews, met amazing people all thanks to this club. LAESA-SHPE has touched\
+          everyone's heart in its own way, that’s the best thing about the club. A fun fact about me\
+          is that I like to play soccer, no matter the time I am always down for a game of soccer.\
+          At last, some goals I have for this year are the following: 1) I plan on helping out with\
+          the construction of our website and deploying it. Throughout the year a team of members is\
+          working on the website that will display LAESA-SHPE history across all platforms, such as\
+          Macs, Windows, Tablets, and phone. 2) I am  also looking forward to working with directors\
+          to try to establish a solid mentorship program for members. We going to keep working on\
+          professional-development and  self-development. This year is going to be an exciting one,\
+          hopefully everything gets back to normal soon. Stay safe everyone!",
           styles: {
             backgroundColor: "rgb(0, 31, 91, 100)",
             color: "#f26534"
@@ -215,8 +246,16 @@ class EboardMembers extends Component {
           id: 5,
           Title: "Secretary",
           Name: "Estefany Gomez",
-          Picture: profilePlaceHolder,
-          Bio: "",
+          Picture: Estefany,
+          Bio: "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
+           currently a fourth-year Multidisciplinary Civil Engineering student, with a minor in Mathematics.\
+            LAESA-SHPE has provided me with the resources I need to succeed professionally and academically.\
+             As a member of LAESA-SHPE, I gained the confidence to submit my resume, cover letter, and network.\
+              I learned how to present myself and the skills I gained through experience, and continue to gain\
+               as a member. I am glad to have met everyone because I found a family who is always rooting me\
+                and helping me grow. As secretary, I want to create more events and programs that will allow\
+                 members to strengthen or develop skills that they can add to their resume.\
+                 Thank you, Estefany Gomez",
           styles: {
             backgroundColor: "#72a9be",
             color: "black"
