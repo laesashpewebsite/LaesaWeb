@@ -15,7 +15,7 @@ import Valentin from "./../pictures/Valentin.jpg";
 import Brenda from "./../pictures/Brenda.jpg";
 
 // Eboard 2020 - 2021
-import Alex from "./../pictures/Alex.jpg";
+import Alex from "./../pictures/Alex_Guerrero.jpg";
 import Estefany from "./../pictures/Estefany_Gomez.jpg"
 
 // import President3 from "./../pictures/Luis.png";
