@@ -149,7 +149,7 @@ class PCED extends Component {
           <div className="Gallery">
             {/* Slide show starts here */}
             {/* To change images in slide show just change its origin url. everything else is automatic! */}
-            <div className="card-color">
+            <div className="card-color fitting">
               <div className="slide-container">
                 {/* Title */}
                 <h2> PCED'S Gallery </h2>
@@ -171,7 +171,7 @@ class PCED extends Component {
             key={this.state.DirectorList.id}
           />
 
-          <div className="card-color2">
+          <div className="card-color2 ">
             <h2>Goals</h2>
             <ul className="lists">
               <li className="events-list">Raise female ratio by 10%.</li>
@@ -195,7 +195,7 @@ class PCED extends Component {
             </ul>
           </div>
 
-          <div className="card-color">
+          <div className="card-color fitting">
             <h2>Director Contact Info</h2>
             <ul className="lists">
               <li className="events-list">P: 917-392-4710 </li>

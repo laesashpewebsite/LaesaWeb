@@ -5,6 +5,7 @@ import SHPE_Convention from "./pictures/Convention-Group.jpg";
 import Pillars from "./pillar.jsx";
 import Mission from "./pictures/SHPEMission.jpg";
 import Vision from "./pictures/SHPEVision.jpg";
+import Projects from "./Projects";
 
 function main() {
   return (
@@ -19,7 +20,6 @@ function main() {
             alt="Convention Group"
           />
         </div>
-
         {/* About LASA-SHPE Information */}
         <div className="card-color2">
           <h2> About LAESA-SHPE </h2>
@@ -70,7 +70,6 @@ function main() {
             </li>
           </ul>
         </div>
-
         {/* LAESA'S Mission and Vision Section */}
         <div className="card-color">
           <div className="Row">
@@ -110,7 +109,6 @@ function main() {
             {/* Title */}
 
             <h2> 5 Pillars of LAESA-SHPE</h2>
-
             {/* Slide Show Properties*/}
             <Pillars
               style={{ borderRadius: "10px", bakgroundColor: "red" }}
@@ -118,6 +116,9 @@ function main() {
             />
           </div>
         </div>
+        {/* <div className="card-color fitting">
+          <Projects />
+        </div> */}
       </header>
     </div>
   );

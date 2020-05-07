@@ -100,19 +100,19 @@ class FLL extends Component {
             <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
           </div>
 
-    <div className="card-color2">
-    <div className="Row">
-
-    <div className="Column1">
-            <h2> About </h2>
-            <p>
-              First Lego League's is one of our way's of motivating young adults
-              to pursue STEM Many of the kids that participate are tasked with a
-              group project that they get to research and present in this
-              competition. There are many opportunities here for young adults to
-              get involved and learn about topics relating to there project.
-            </p>
-          </div>
+          <div className="card-color2">
+            <div className="Row">
+              <div className="Column1">
+                <h2> About </h2>
+                <p>
+                  First Lego League's is one of our way's of motivating young
+                  adults to pursue STEM Many of the kids that participate are
+                  tasked with a group project that they get to research and
+                  present in this competition. There are many opportunities here
+                  for young adults to get involved and learn about topics
+                  relating to there project.
+                </p>
+              </div>
 
               <div className="Column1">
                 <h2> Mission </h2>
@@ -127,7 +127,7 @@ class FLL extends Component {
           </div>
 
           <div className="Gallery">
-            <div className="card-color">
+            <div className="card-color fitting">
               <div className="slide-container">
                 {/* Title */}
                 <h2> FLL Gallery </h2>
@@ -147,8 +147,8 @@ class FLL extends Component {
           <CardProfiles
             DirectorListName={this.state.DirectorList}
           ></CardProfiles>
-          <div className="card-color2"></div>
-          <div className="card-color">
+          <div className="card-color2 "></div>
+          <div className="card-color fitting">
             <h2> Director Contact Info </h2>
             <ul className="lists">
               <li className="events-list">P: 347-954-7628 </li>

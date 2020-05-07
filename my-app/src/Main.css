@@ -41,7 +41,7 @@
   /* text-decoration: underline; */
 }
 .body {
-  display: grid;
+  /* display: grid; */
   background-color: #d3d3d3;
   border-radius: 10px;
   padding: 30px;

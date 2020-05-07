@@ -117,18 +117,17 @@ class shpeJR extends Component {
             </p>
           </div>
 
-
-  <div className="card-color">
-    <div className="Row">
-    <div className="Column1">
-      <h2> Mission </h2>
-        <p>
-          PCED's Mission is to expose the younger Latino community to STEM
-          related careers (Science, Technology, Engineering and Mathematics)
-          while obtaining real-life project experience, and developing
-          team-building and leadership skills.
-        </p>
-    </div>
+          <div className="card-color2 fitting ">
+            <div className="Row">
+              <div className="Column1">
+                <h2> Mission </h2>
+                <p>
+                  PCED's Mission is to expose the younger Latino community to
+                  STEM related careers (Science, Technology, Engineering and
+                  Mathematics) while obtaining real-life project experience, and
+                  developing team-building and leadership skills.
+                </p>
+              </div>
 
               <div className="Column1">
                 <h2>Vision</h2>
@@ -143,7 +142,7 @@ class shpeJR extends Component {
           <div className="Gallery">
             {/* Slide ,show starts here */}
             {/* To change images in slide ,show just change its origin url. everything else is automatic! */}
-            <div className="card-color">
+            <div className="card-color fitting">
               <div className="slide-container">
                 <h2> Noche De Sciencias Gallery </h2>
                 <Slides
@@ -174,7 +173,7 @@ class shpeJR extends Component {
               </li>
             </ul>
           </div>
-          <div className="card-color">
+          <div className="card-color fitting">
             <h2> Director Contact Info </h2>
             <ul className="lists">
               <li className="events-list">P: 929-268-9609 </li>
