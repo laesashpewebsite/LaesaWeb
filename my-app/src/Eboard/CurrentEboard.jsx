@@ -16,6 +16,7 @@ import Brenda from "./../pictures/Brenda.jpg";
 
 // Eboard 2020 - 2021
 import Alex from "./../pictures/Alex.jpg";
+import Estefany from "./../pictures/Estefany_Gomez.jpg"
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -243,8 +244,16 @@ class EboardMembers extends Component {
           id: 5,
           Title: "Secretary",
           Name: "Estefany Gomez",
-          Picture: profilePlaceHolder,
-          Bio: "",
+          Picture: Estefany,
+          Bio: "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
+           currently a fourth-year Multidisciplinary Civil Engineering student, with a minor in Mathematics.\
+            LAESA-SHPE has provided me with the resources I need to succeed professionally and academically.\
+             As a member of LAESA-SHPE, I gained the confidence to submit my resume, cover letter, and network.\
+              I learned how to present myself and the skills I gained through experience, and continue to gain\
+               as a member. I am glad to have met everyone because I found a family who is always rooting me\
+                and helping me grow. As secretary, I want to create more events and programs that will allow\
+                 members to strengthen or develop skills that they can add to their resume.\
+                 Thank you, Estefany Gomez",
           styles: {
             backgroundColor: "#72a9be",
             color: "black"
