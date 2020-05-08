@@ -41,14 +41,14 @@ function main() {
             community. Some of our accomplishments are listed below:
           </p>
           <ul>
-            <h5> Academic Development & Leadership Yearlty Programs </h5>
+            <h3> Academic Development & Leadership Yearly Programs </h3>
             <li className="list">
               Developing Excellence in Academics and Leadership DEAL Program
               since 2000
             </li>
             <li className="list">Information Technology Program since 1990</li>
             <li className="list">Mentorship Program since 2018</li>
-            <h5> Community Outreach Programs & Events </h5>
+            <h3> Community Outreach Programs & Events </h3>
             <li className="list">Pre-College Engineering Day since 1994</li>
             <li className="list">
               New York Institute of Science, Technology, Engineering, and
@@ -60,7 +60,7 @@ function main() {
               SHPE Jr. Chapters at Manhattan Bridges High School and George
               Washington High School since 2019
             </li>
-            <h5> Leadership Representatives within SHPE </h5>
+            <h3> Leadership Representatives within SHPE </h3>
             <li className="list">
               Region IV Regional Student Representative 2001, 2003, 2004, 2018
             </li>
@@ -116,9 +116,9 @@ function main() {
             />
           </div>
         </div>
-        {/* <div className="card-color fitting">
+        <div className="card-color fitting">
           <Projects />
-        </div> */}
+        </div>
       </header>
     </div>
   );

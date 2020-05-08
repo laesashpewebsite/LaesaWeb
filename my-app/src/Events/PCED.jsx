@@ -33,8 +33,9 @@ class PCED extends Component {
             "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE since my freshman year in 2016 at The City College of New York. I started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High School in April 2017. The following academic year, I became part of the PCED 2018 team by creating a meaningful project along with my  team that exposed high school students to leadership and real-life experiences. Last academic year, I was part of the Executive Board for LAESA, serving as the External Vice-President. This year I'm the SHPE-NYC Sub-Regional Student Representative where I form the bridge of communication between chapters across NYC. I'm also directing Pre-College Engineering Day 2020 where our team's goals are listed below ",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 2,

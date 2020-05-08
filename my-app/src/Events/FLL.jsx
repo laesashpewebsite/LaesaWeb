@@ -32,8 +32,9 @@ class FLL extends Component {
             "Jean-Luc Antoine is a second-year student at The City College of New York and has been part of        LAESA-SHPE since the Spring 2019 semester. He has been particularly involved with FIRST(For        Inspiration and Recognition of Science and Technology) Lego League which is an organization        that creates a platform to support and help keep young elementary kids interested in STEM and        robotics. Jean-Luc was a volunteer in The Spring 2019 semester at the FFL event and now he is        the director for the FIRST Lego League program at LA in which he is organizing, coordinating        and planning FLL events. As part of his duties, Jean-Luc is overseeing logistics, act direct        communication point with event organizers and ensure that the event goes smoothly, as well        as recruit as many volunteers as needed.",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 2,

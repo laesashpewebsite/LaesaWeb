@@ -28,8 +28,9 @@ class CareerSummit extends Component {
           "Hi my name is Kayley Arias and I am a senior majoring in chemical engineering. I joined LAESA-SHPE in my second year in college. Upon joining this organization, I volunteered at numerous events and obtained various leadership positions. I was the secretary for the 2018-2019 academic year. I had the opportunity to speak to high school students, middle school students, and their parents about SHPE, college, and what a career in engineering entails. This organization has provided me with mentors, scholarships, and has helped me acquire the professional skills to land internships and full-time opportunities. LAESA-SHPE has taught me so much which is why I continue to be actively involved to make sure that others acquire the resources and skills they need to become successful professionals. I will continue to be actively involved even after I graduate.",
         styles: {
           backgroundColor: "#72a9be",
-          color: "black"
-        }
+          color: "#282c34"
+        },
+        newColor: { color: "black" }
       },
       {
         id: 2,

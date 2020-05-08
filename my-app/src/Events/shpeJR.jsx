@@ -29,9 +29,11 @@ class shpeJR extends Component {
             "Mariel Gonzalez is a mechanical engineering student transferred            from the Dominican Republic and co-director of            SHPE Jr. When not studying, Mariel enjoys reaching out to            friends and family, hiking and planning for the next adventure            as an engineer.",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
+
         {
           id: 2,
           Title: "SHPEJr Jr. Co-Director",

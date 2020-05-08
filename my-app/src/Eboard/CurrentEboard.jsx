@@ -16,7 +16,7 @@ import Brenda from "./../pictures/Brenda.jpg";
 
 // Eboard 2020 - 2021
 import Alex from "./../pictures/Alex_Guerrero.jpg";
-import Estefany from "./../pictures/Estefany_Gomez.jpg"
+import Estefany from "./../pictures/Estefany_Gomez.jpg";
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -51,8 +51,9 @@ class EboardMembers extends Component {
             "Hello my name is Luis Rodriguez, I am the acting President for LAESA-SHPE here at CCNY. I study electrical engineering along with mathematics and Portuguese. I have been involved in LAESA for the last two years, during which I have grown at a personal, professional and academic level. A lot of really bright-minded people gravitate towards LAESA, many of whom have taught me lessons I would not have otherwise found within the classroom. If I were to start giving shoutouts to the people that have helped develop this would pan out into an essay and not a small paragraph. I would say that my two favorite things to do after school are biking and playing music. Can’t wait to see how LAESA keeps growing as an organization and how It’ll continue to bring people from all types of background into the fold.",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 2,
@@ -76,8 +77,9 @@ class EboardMembers extends Component {
             "Hello everyone, my name is Evan Vasquez and I am this year’s External Vice President. I am a Senior studying Computer Science with a minor in Mathematics, I am excited to have this opportunity and finally give back to the chapter that gave me so much throughout my years as a member. Fun fact about me , I am the undefeated chess champion of LAESA.",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 4,
@@ -101,8 +103,9 @@ class EboardMembers extends Component {
             "My name is Gloria Hernandez Navarrete and I am a fourth-year civil engineering student at the City College of New York. I am on the Executive Board of LAESA-SHPE as secretary for the 2019-2020 academic school year. I can proudly say that thanks to the sacrifices of my parents and those before me, I am pursuing my childhood dreams. Education is a basic human right that no individual should be denied. A lot is to come this year for our team, but I am looking forward to it all!",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         }
       ],
       EboardList2: [
@@ -114,8 +117,9 @@ class EboardMembers extends Component {
           Bio: "",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 2,
@@ -140,8 +144,9 @@ class EboardMembers extends Component {
             "I was born and raised in Guayaquil, Ecuador. I have been part of LAESA-SHPE since my freshman year in 2016 at The City College of New York. I started fulfilling SHPE's mission by starting with SHPE Jr. and directing Noche de Ciencias at Manhattan Bridges High School in April 2017. The following academic year, I became part of the PCED 2018 team by creating a meaningful project along with my  team that exposed high school students to leadership and real-life experiences.",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 4,
@@ -166,8 +171,9 @@ class EboardMembers extends Component {
 
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         }
       ],
       EboardList3: [
@@ -189,8 +195,9 @@ class EboardMembers extends Component {
           and those I have met on the way. Warm Regards, Richard Martinez",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 2,
@@ -227,8 +234,9 @@ class EboardMembers extends Component {
           Bio: "",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         },
         {
           id: 4,
@@ -247,7 +255,8 @@ class EboardMembers extends Component {
           Title: "Secretary",
           Name: "Estefany Gomez",
           Picture: Estefany,
-          Bio: "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
+          Bio:
+            "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
            currently a fourth-year Multidisciplinary Civil Engineering student, with a minor in Mathematics.\
             LAESA-SHPE has provided me with the resources I need to succeed professionally and academically.\
              As a member of LAESA-SHPE, I gained the confidence to submit my resume, cover letter, and network.\
@@ -258,8 +267,9 @@ class EboardMembers extends Component {
                  Thank you, Estefany Gomez",
           styles: {
             backgroundColor: "#72a9be",
-            color: "black"
-          }
+            color: "#282c34"
+          },
+          newColor: { color: "black" }
         }
       ]
     };

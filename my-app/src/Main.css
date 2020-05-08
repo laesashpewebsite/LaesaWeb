@@ -16,6 +16,10 @@
   text-align: center;
   font-weight: 700;
 }
+.card-color2 h3 {
+  font-weight: 800;
+  color: #282c34;
+}
 
 .card-color2 {
   color: black; /*rgb(210,63,38);*/
@@ -26,6 +30,9 @@
   padding-bottom: 30px;
   padding-top: 30px;
   clear: both;
+}
+.card-color2 h2 {
+  color: #282c34;
 }
 .card-color {
   color: #f26534;
@@ -105,4 +112,7 @@
   align-items: center;
   margin: 0;
   background: #adceed;
+}
+.names {
+  font-style: italic;
 }
