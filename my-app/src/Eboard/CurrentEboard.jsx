@@ -8,7 +8,7 @@ import Richard from "./../pictures/Richard.png";
 import Keivon from "./../pictures/Keivon.jpg";
 
 // Eboard 2018-2019
-// import Rafa from "./../pictures/Luis.png";
+import Rafa from "./../pictures/Rafa.png";
 import Kayley from "./../pictures/Kayley.jpg";
 import Arelis from "./../pictures/Arelis.png";
 import Valentin from "./../pictures/Valentin.jpg";
@@ -16,7 +16,7 @@ import Brenda from "./../pictures/Brenda.jpg";
 
 // Eboard 2020 - 2021
 import Alex from "./../pictures/Alex.jpg";
-import Estefany from "./../pictures/Estefany_Gomez.jpg"
+import Estefany from "./../pictures/Estefany_Gomez.jpg";
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -110,7 +110,7 @@ class EboardMembers extends Component {
           id: 1,
           Title: "President",
           Name: "Rafael Barinas",
-          Picture: profilePlaceHolder,
+          Picture: Rafa,
           Bio: "",
           styles: {
             backgroundColor: "#72a9be",
@@ -247,7 +247,8 @@ class EboardMembers extends Component {
           Title: "Secretary",
           Name: "Estefany Gomez",
           Picture: Estefany,
-          Bio: "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
+          Bio:
+            "Hola Familia, my name is Estefany Gomez and I am secretary of LAESA-SHPE 2020-2021. I am\
            currently a fourth-year Multidisciplinary Civil Engineering student, with a minor in Mathematics.\
             LAESA-SHPE has provided me with the resources I need to succeed professionally and academically.\
              As a member of LAESA-SHPE, I gained the confidence to submit my resume, cover letter, and network.\

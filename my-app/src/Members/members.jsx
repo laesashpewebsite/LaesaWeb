@@ -52,7 +52,7 @@ class Members extends Component {
             </div>
           </div>
 
-          <div className="Gallery">
+          {/* <div className="Gallery">
             <div className="card-color">
               <h2>Graduating Class of Spring 2020</h2>
               <p>
@@ -68,7 +68,7 @@ class Members extends Component {
                 key={this.state.GradList.id}
               />
             </div>
-          </div>
+          </div> */}
         </header>
       </div>
     );
