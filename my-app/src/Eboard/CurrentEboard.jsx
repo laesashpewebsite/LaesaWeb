@@ -17,6 +17,8 @@ import Brenda from "./../pictures/Brenda.jpg";
 // Eboard 2020 - 2021
 import Alex from "./../pictures/Alex_Guerrero.jpg";
 import Estefany from "./../pictures/Estefany_Gomez.jpg"
+import Kyle from "./../pictures/Kyle_Persaud.jpg"
+import Mauricio from "./../pictures/Mauricio_Almonte.jpg"
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -208,8 +210,8 @@ class EboardMembers extends Component {
           is that I like to play soccer, no matter the time I am always down for a game of soccer.\
           At last, some goals I have for this year are the following: 1) I plan on helping out with\
           the construction of our website and deploying it. Throughout the year a team of members is\
-          working on the website that will display LAESA-SHPE history across all platforms, such as\
-          Macs, Windows, Tablets, and phone. 2) I am  also looking forward to working with directors\
+          working on the website that will display LAESA-SHPE history across all platforms.\
+           2) I am  also looking forward to working with directors\
           to try to establish a solid mentorship program for members. We going to keep working on\
           professional-development and  self-development. This year is going to be an exciting one,\
           hopefully everything gets back to normal soon. Stay safe everyone!",
@@ -224,7 +226,14 @@ class EboardMembers extends Component {
           Title: "External Vice-President",
           Name: "Mauricio Almonte",
           Picture: profilePlaceHolder,
-          Bio: "",
+          Bio: "Hello, my name is Mauricio Mino. I am currently a senior studying mechanical\
+           Engineering. This year my Familia has elected me External Vice President and I am\
+            honored. My personal experience with LAESA has helped me experience a home away\
+            from home. I am surrounded by individuals, who like me, seek to not just represent\
+            mi gente but uplift my community. I advocate for immigration reforms, strive for\
+            academic excellence and extend a hand to my peers so we all eat. If im not in the\
+            books you can catch me riding through the streets of NYC on my bike, if you can\
+            keep up that is.",
           styles: {
             backgroundColor: "#72a9be",
             color: "black"
@@ -235,7 +244,13 @@ class EboardMembers extends Component {
           Title: "Treasurer",
           Name: "Kyle Persuad",
           Picture: profilePlaceHolder,
-          Bio: "",
+          Bio: "Hello everyone! My name is Kyle Persaud and I am currently a third-year mechanical\
+           engineering student at the City College of New York. I am on this year's Executive Board\
+          as the Treasurer. I am enthusiastic to be able to give back to the community and chapter\
+          that has brought many great people into my life. All the people that I have interacted with\
+          during my time with LAESA-SHPE, have shown me the ways of the engineer and to prosper as one\
+          in our environment. Some of my favorite things to do are blasting music and going on long\
+          runs. There is a lot to come this year for us, so stay tuned!",
           styles: {
             backgroundColor: "rgb(0, 31, 91, 100)",
             color: "#f26534"
