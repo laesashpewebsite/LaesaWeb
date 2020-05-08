@@ -8,7 +8,7 @@ import Richard from "./../pictures/Richard.png";
 import Keivon from "./../pictures/Keivon.jpg";
 
 // Eboard 2018-2019
-// import Rafa from "./../pictures/Luis.png";
+import Rafa from "./../pictures/Rafa.png";
 import Kayley from "./../pictures/Kayley.jpg";
 import Arelis from "./../pictures/Arelis.png";
 import Valentin from "./../pictures/Valentin.jpg";
@@ -16,16 +16,9 @@ import Brenda from "./../pictures/Brenda.jpg";
 
 // Eboard 2020 - 2021
 import Alex from "./../pictures/Alex_Guerrero.jpg";
-
 import Estefany from "./../pictures/Estefany_Gomez.jpg";
 import Kyle from "./../pictures/Kyle_Persaud.jpg";
 import Mauricio from "./../pictures/Mauricio_Almonte.png";
-
-// import President3 from "./../pictures/Luis.png";
-// import Secretary3 from "./../pictures/Gloria.jpeg";
-// import EVicePresident3 from "./../pictures/Evan.JPG";
-// import IVicePresident23 from "./../pictures/Richard.png";
-// import Treasurer3 from "./../pictures/Keivon.jpg";
 
 import CardProfiles from "../Events/CardProfiles";
 import profilePlaceHolder from "../pictures/SHPE-logo.png";
@@ -42,7 +35,7 @@ class EboardMembers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      thisPage: 2,
+      thisPage: 1,
       count: 1,
       EboardList: [
         {
@@ -116,7 +109,7 @@ class EboardMembers extends Component {
           id: 1,
           Title: "President",
           Name: "Rafael Barinas",
-          Picture: profilePlaceHolder,
+          Picture: Rafa,
           Bio: "",
           styles: {
             backgroundColor: "#72a9be",
@@ -188,12 +181,12 @@ class EboardMembers extends Component {
           Bio:
             "Hello Everyone, Hopefully your having a great day and staying safe from this virus.\
            My name is Richard Martinez and I am the new President of LAESA-SHPE, I am currently a\
-          sophomore in Electrical Engineering and am looking forward to meeting those who view this.\
+          sophomore in Electrical Engineering and I am looking forward to meeting everyone!.\
           One of the many things that influenced me to run for the president position was the goal\
           to grow LAESA and expands its connections so that it can help people in need of information.\
           LAESA-SHPE has impacted me in many ways, one of the ways it has impacted me was the events\
-          building up to the SHPE convention. Another was the career summit but what both of these\
-          events did was teach me skills to be able to talk to recruiters, learn how to network and\
+          building up to the SHPE convention. Another was the career summit, what both of these\
+          events did was teach me the skills to be able to talk to recruiters, learn how to network and\
           finally how to build a solid resume. So I greatly appreciate this skills and thank LAESA\
           and those I have met on the way. Warm Regards, Richard Martinez",
           styles: {
@@ -236,7 +229,7 @@ class EboardMembers extends Component {
           Picture: Mauricio,
           Bio:
             "Hello, my name is Mauricio Mino. I am currently a senior studying mechanical\
-           Engineering. This year my Familia has elected me External Vice President and I am\
+           Engineering. This year my Familia has elected me as External Vice President and I am\
             honored. My personal experience with LAESA has helped me experience a home away\
             from home. I am surrounded by individuals, who like me, seek to not just represent\
             mi gente but uplift my community. I advocate for immigration reforms, strive for\

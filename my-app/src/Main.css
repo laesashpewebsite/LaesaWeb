@@ -116,3 +116,7 @@
 .names {
   font-style: italic;
 }
+.project-names {
+  text-decoration: underline;
+  font-style: italic;
+}

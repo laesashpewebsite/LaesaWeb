@@ -18,9 +18,9 @@ function Projects() {
         <h3> Projects you can currently join </h3>
         <ul>
           <li className="list">
-            LAESA Website: We are currently looking for anyone interested in
-            frontend or backend development. You do not need any web experience
-            to join!
+            <span className="project-names">LAESA Website:</span> We are
+            currently looking for anyone interested in frontend or backend
+            development. You do not need any web experience to join!
             <br />
             If interested contact{" "}
             <span className="names">Ostavo Palacios </span>
