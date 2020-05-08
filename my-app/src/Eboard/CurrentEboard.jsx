@@ -18,7 +18,7 @@ import Brenda from "./../pictures/Brenda.jpg";
 import Alex from "./../pictures/Alex_Guerrero.jpg";
 import Estefany from "./../pictures/Estefany_Gomez.jpg"
 import Kyle from "./../pictures/Kyle_Persaud.jpg"
-import Mauricio from "./../pictures/Mauricio_Almonte.jpg"
+import Mauricio from "./../pictures/Mauricio_Almonte.png"
 
 // import President3 from "./../pictures/Luis.png";
 // import Secretary3 from "./../pictures/Gloria.jpeg";
@@ -201,7 +201,7 @@ class EboardMembers extends Component {
           Picture: Alex,
           Bio:
             "Hello Familia,  My name is Alex Guerrero and I am LAESA-SHPE’s Internal-Vice President\
-           for the academic year 2020-2021. I am 2nd year Electrical Engineering student with a minor in\
+           for the academic year 2020-2021. I'm a 2nd year Electrical Engineering student with a minor in\
           Economics. I am very excited and grateful for the opportunity to give back and help out the\
           chapter which has helped me out throughout the year professionally and academically. Across\
           the year I have learned how to write a resume, how to write a cover letter, participated in\
@@ -225,7 +225,7 @@ class EboardMembers extends Component {
           id: 3,
           Title: "External Vice-President",
           Name: "Mauricio Almonte",
-          Picture: profilePlaceHolder,
+          Picture: Mauricio,
           Bio: "Hello, my name is Mauricio Mino. I am currently a senior studying mechanical\
            Engineering. This year my Familia has elected me External Vice President and I am\
             honored. My personal experience with LAESA has helped me experience a home away\
@@ -243,7 +243,7 @@ class EboardMembers extends Component {
           id: 4,
           Title: "Treasurer",
           Name: "Kyle Persuad",
-          Picture: profilePlaceHolder,
+          Picture: Kyle,
           Bio: "Hello everyone! My name is Kyle Persaud and I am currently a third-year mechanical\
            engineering student at the City College of New York. I am on this year's Executive Board\
           as the Treasurer. I am enthusiastic to be able to give back to the community and chapter\
