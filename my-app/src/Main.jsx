@@ -12,7 +12,7 @@ function main() {
     <div className="Main">
       <header className="header">
         {/* Main Picture */}
-        <div className="card-color">
+        <div className="card-color ">
           <h2> Meet Our Familia! </h2>
           <img
             src={SHPE_Convention}
@@ -21,7 +21,7 @@ function main() {
           />
         </div>
         {/* About LASA-SHPE Information */}
-        <div className="card-color2">
+        <div className="card-color2 fitting ">
           <h2> About LAESA-SHPE </h2>
           <p className="body">
             LAESA–SHPE is the largest and most prominent undergraduate student
@@ -71,7 +71,7 @@ function main() {
           </ul>
         </div>
         {/* LAESA'S Mission and Vision Section */}
-        <div className="card-color">
+        <div className="card-color fitting ">
           <div className="Row">
             <div className="Column1">
               <h2> LAESA SHPE'S MISSION </h2>
@@ -104,7 +104,7 @@ function main() {
             </div>
           </div>
         </div>
-        <div className="card-color2">
+        <div className="card-color2 fitting ">
           <div className="slide-container">
             {/* Title */}
 

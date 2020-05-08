@@ -116,11 +116,17 @@ class PCED extends Component {
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
           <div className="Events-Banner">
-            <h2> Pre-College Engineering Day </h2>
-            <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
+            <div className="card-color fiting">
+              <h2> Pre-College Engineering Day </h2>
+              <img
+                src={PCED_Group}
+                className="Events-Picture"
+                alt="PCED Group"
+              />
+            </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting ">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -162,7 +168,7 @@ class PCED extends Component {
             </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting ">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
@@ -172,7 +178,7 @@ class PCED extends Component {
             key={this.state.DirectorList.id}
           />
 
-          <div className="card-color2 ">
+          <div className="card-color2 fitting ">
             <h2>Goals</h2>
             <ul className="lists">
               <li className="events-list">Raise female ratio by 10%.</li>

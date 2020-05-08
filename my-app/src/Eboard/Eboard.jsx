@@ -7,8 +7,8 @@ function Eboard() {
     <React.Fragment>
       <header className="Eboard-header">
         <div className="Eboard-Banner">
-          <div className="card-color">
-            <h1 className="Text-Banner"> Meet Our Eboard Members </h1>
+          <div className="card-color fitting">
+            <h2> Meet Our Eboard Members </h2>
             <img
               src={Eboardpic}
               alt="Eboard and Alumni"

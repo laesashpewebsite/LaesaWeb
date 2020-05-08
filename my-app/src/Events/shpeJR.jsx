@@ -43,7 +43,7 @@ class shpeJR extends Component {
             " Byron Marcatoma is a computer science student. He has been part          of LAESA-SHPE since his freshman year in 2018 at The City          College of New York. The same year, he became co-director for          SHPE Jr and in May 2019, he directed Noches de Ciencias,          exposing minority students to STEM through science-based          projects and talks from professionals, and officially created a          chapter at Manhattan Bridge,s High school. For the current Year,          Byron is the director for SHPE Jr and aims to expose more          students to the STEM field and careers.",
           styles: {
             backgroundColor: "rgb(0, 31, 91, 100)",
-            color: "aliceblue"
+            color: "#f26534"
           },
           newColor: { color: "aliceblue" }
         }
@@ -99,14 +99,16 @@ class shpeJR extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           <div className="Events-Banner">
-            <h2> SHPE JR. </h2>
-            <img
-              src={SHPEJR_Group}
-              className="Events-Picture"
-              alt="SHPE.Jr Group"
-            />
+            <div className="card-color fitting">
+              <h2> SHPE JR. </h2>
+              <img
+                src={SHPEJR_Group}
+                className="Events-Picture"
+                alt="SHPE.Jr Group"
+              />
+            </div>
           </div>
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <h2>Noche de Ciencias</h2>
             <p>
               At SHPE, we know early exposure to STEM positively influences the
@@ -155,11 +157,11 @@ class shpeJR extends Component {
             </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <h2>Meet Our Directors!</h2>
           </div>
           <CardProfiles DirectorListName={this.state.DirectorList} />
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <h2>Goals</h2>
 
             <ul className="lists">

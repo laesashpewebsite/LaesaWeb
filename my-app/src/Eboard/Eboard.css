@@ -14,6 +14,11 @@
   width: 100%;
   max-height: 130vh;
 }
+.Eboard-header h2 {
+  padding: 5px;
+  text-align: center;
+  font-weight: 700;
+}
 
 .Eboard-header p {
   text-align: justify;

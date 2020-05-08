@@ -97,11 +97,13 @@ class FLL extends Component {
       <div className="Events-Main">
         <header className="Events-header">
           <div className="Events-Banner">
-            <h2>First LEGO League</h2>
-            <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
+            <div className="card-color fitting">
+              <h2>First LEGO League</h2>
+              <img src={FLL_Group} className="Events-Picture" alt="FLL Group" />
+            </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -140,7 +142,7 @@ class FLL extends Component {
             </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* information taken from DirectorList array is put into CardProfiles to map out all the information needed 
@@ -148,10 +150,10 @@ class FLL extends Component {
           <CardProfiles
             DirectorListName={this.state.DirectorList}
           ></CardProfiles>
-          <div className="card-color2 "></div>
+          <div className="card-color2 fitting"></div>
           <div className="card-color fitting">
-            <h2> Director Contact Info </h2>
             <ul className="lists">
+              <h2> Director Contact Info </h2>
               <li className="events-list">P: 347-954-7628 </li>
               <li className="events-list">Email: jeanlucmantoine@gmail.com</li>
             </ul>

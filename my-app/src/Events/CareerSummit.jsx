@@ -86,15 +86,17 @@ class CareerSummit extends Component {
         <header className="Events-header">
           {/*could probably use a banner instead for the event*/}
           <div className="Events-Banner">
-            <h2> Career Summit </h2>
-            <img
-              src={Main}
-              className="Events-Picture"
-              alt="Career Summit Group "
-            />
+            <div className="card-color fitting">
+              <h2> Career Summit </h2>
+              <img
+                src={Main}
+                className="Events-Picture"
+                alt="Career Summit Group "
+              />
+            </div>
           </div>
 
-          <div className="card-color2">
+          <div className="card-color2 fitting ">
             <div className="Row">
               <div className="Column1">
                 <h2> About </h2>
@@ -128,7 +130,7 @@ class CareerSummit extends Component {
               </div>
             </div>
           </div>
-          <div className="card-color2">
+          <div className="card-color2 fitting">
             <h2>Meet Our Directors!</h2>
           </div>
           {/* instantiates CardProfiles with items in array Directorlists */}
@@ -136,7 +138,7 @@ class CareerSummit extends Component {
             DirectorListName={this.state.DirectorList}
             key={this.state.DirectorList.id}
           />
-          <div className="card-color2"></div>
+          <div className="card-color2 fitting"></div>
           <div className="card-color fitting">
             <h2>Director Contact Info</h2>
             <ul className="lists">
