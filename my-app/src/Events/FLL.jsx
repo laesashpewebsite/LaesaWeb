@@ -105,8 +105,11 @@ class FLL extends Component {
               <div className="Column1">
                 <h2> About </h2>
                 <p>
-                  First Lego League's is one of our way's of motivating young
-                  adults to pursue STEM Many of the kids that participate are
+                  First Lego League's is one of our many way's of motivating young
+                  adults to pursue STEM. Since 2002, LAESA-SHPE has been involved
+                  with FIRST LEGO LEAGUE which targets middle school students to 
+                  build LEGO robots, program them, and compete with them while meeting
+                  current's year them. Many of the kids that participate are
                   tasked with a group project that they get to research and
                   present in this competition. There are many opportunities here
                   for young adults to get involved and learn about topics
@@ -120,7 +123,10 @@ class FLL extends Component {
                   First Lego League's mission is to inspire young adults to be
                   science and technology innovators, by engaging them in
                   exciting programs that help them build the necessaries skills
-                  in science, engineering, and technology.
+                  in science, engineering, and technology. Over the year the program has
+                  evolved and it gives middle school students participating in the 
+                  national FIRST Competitions the opportunity to get pratice before the
+                  actual NY Regional Tournament. 
                 </p>
               </div>
             </div>
