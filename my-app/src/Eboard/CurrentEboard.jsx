@@ -222,7 +222,7 @@ class EboardMembers extends Component {
         {
           id: 3,
           Title: "External Vice-President",
-          Name: "Mauricio Almonte",
+          Name: "Mauricio Mino Almonte",
           Picture: profilePlaceHolder,
           Bio: "",
           styles: {
