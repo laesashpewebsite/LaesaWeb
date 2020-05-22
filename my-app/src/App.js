@@ -3,9 +3,8 @@ import React, { Component } from "react";
 
 import Footer from "./Footer.jsx";
 import "./App.css";
-
+import "./Mobile.css";
 import Navigation from "./Navigation";
-
 import Routes from "./Routes";
 
 class App extends Component {

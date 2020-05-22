@@ -187,7 +187,7 @@ class EboardMembers extends Component {
           LAESA-SHPE has impacted me in many ways, one of the ways it has impacted me was the events\
           building up to the SHPE convention. Another was the career summit, what both of these\
           events did was teach me the skills to be able to talk to recruiters, learn how to network and\
-          finally how to build a solid resume. So I greatly appreciate this skills and thank LAESA\
+          finally how to build a solid resume. So I greatly appreciate the skills and I thank LAESA\
           and those I have met on the way. Warm Regards, Richard Martinez",
           styles: {
             backgroundColor: "#72a9be",
