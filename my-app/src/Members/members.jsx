@@ -13,14 +13,12 @@ class Members extends Component {
     GradList: [
       {
         id: 1,
-        // Title: "PCED Co-Director",
         Name: "Henry Guaman",
         Picture: Henry,
         Bio: "Acceptance"
       },
       {
         id: 2,
-        // Title: "PCED Co-Director",
         Name: "Evan Vazquez",
         Picture: Evan,
         Bio: ""
@@ -49,7 +47,7 @@ class Members extends Component {
                 </p>
                 <div style={{ textAlign: "center" }}>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4tOh8jAuZJOYMdrewHTL7kUIDsXJDzHYQtgH4sJ4bCHLrcQ/viewform">
-                    <img src={Membership} width="40%" />
+                    <img src={Membership} width="40%" alt="Membership" />
                   </a>
                 </div>
               </div>
@@ -65,7 +63,7 @@ class Members extends Component {
                 </p>
                 <div style={{ textAlign: "center" }}>
                   <a href="https://venmo.com/laesa_shpe?via=searchbox">
-                    <img src={Venmo} width="40%"></img>
+                    <img src={Venmo} width="40%" alt="LAESA VEnmo" />
                   </a>
                 </div>
               </div>
@@ -81,7 +79,7 @@ class Members extends Component {
           </div>
 
           <div className="Gallery">
-            <div className="card-color">
+            <div className="card-color fitting">
               <h2>Graduating Class of Spring 2020</h2>
               <p>
                 We want to congratulate our Graduating Seniors of Spring 2020

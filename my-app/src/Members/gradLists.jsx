@@ -7,7 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import { fontWeight, fontSize } from "@material-ui/system";
+// import { fontWeight, fontSize } from "@material-ui/system";
 
 const fadeProperties = {
   duration: 500000,
