@@ -82,7 +82,6 @@ export default function CardProfiles(props) {
             style={dl.newColor}
             variant="body2"
           >
-            {/* INFO FOR BIO IS BEING CALLED HERE */}
             {dl.Bio}
           </Typography>
         </CardContent>
