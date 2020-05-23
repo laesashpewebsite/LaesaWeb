@@ -7,6 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { fontWeight, fontSize } from "@material-ui/system";
 
 const fadeProperties = {
   duration: 500000,
@@ -42,7 +43,10 @@ const useStyles = makeStyles(theme => ({
     margin: "auto"
   },
   text: {
-    minWidth: "50%"
+    minWidth: "50%",
+    color: "Black",
+    fontWeight: "700",
+    fontSize: "medium"
   }
 }));
 export default function Graduates(props) {
@@ -73,6 +77,8 @@ export default function Graduates(props) {
                 variant="body2"
                 component="p"
               >
+                <p>What does LAESA-SHPE mean to you?</p>
+                <br />
                 {dl.Bio}
               </Typography>
             </CardContent>
