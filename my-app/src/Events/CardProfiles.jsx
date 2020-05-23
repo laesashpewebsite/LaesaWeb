@@ -86,16 +86,6 @@ export default function CardProfiles(props) {
             {dl.Bio}
           </Typography>
         </CardContent>
-
-        {/* COLLAPSE NOT NEEDED RIGH NOW BUT IT HELPS TO ADD MORE CONTENT */}
-        {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
-        {/* <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-          </Typography>
-        </CardContent> }
-      </Collapse> 
-      */}
       </div>
     </Card>
   ));

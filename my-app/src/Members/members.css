@@ -1,0 +1,21 @@
+.members-header {
+  background-color: rgb(0, 31, 91, 100);
+  color: #f26534;
+}
+.columns {
+  width: 30%;
+  margin: 3px;
+  text-align: center;
+}
+
+.members-header h3 {
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.members-header {
+  text-align: center;
+}
+.members-header h2 {
+  font-weight: 700;
+}

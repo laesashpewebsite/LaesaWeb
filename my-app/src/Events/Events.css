@@ -60,6 +60,11 @@ Specfied targetted css code for a certain Jsx file is named starting with the na
   text-align: center;
   font-weight: 700;
 }
+.Events-header h3 {
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+}
 
 .Events-header h4 {
   font-weight: 700;
