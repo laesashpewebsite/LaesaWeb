@@ -225,6 +225,7 @@ class EboardMembers extends Component {
         {
           id: 3,
           Title: "External Vice-President",
+
           Name: "Mauricio Almonte",
           Picture: Mauricio,
           Bio:
@@ -236,6 +237,7 @@ class EboardMembers extends Component {
             academic excellence and extend a hand to my peers so we all eat. If im not in the\
             books you can catch me riding through the streets of NYC on my bike, if you can\
             keep up that is.",
+
           styles: {
             backgroundColor: "#72a9be",
             color: "#282c34"

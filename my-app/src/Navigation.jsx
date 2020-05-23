@@ -41,13 +41,13 @@ class Navigation extends React.Component {
             >
               Main
             </Nav.Link>
-            {/* <Nav.Link
+            <Nav.Link
               style={{ color: "#D23F26" }}
               eventKey={1}
               onClick={() => history.push("/Members")}
             >
               Members
-            </Nav.Link> */}
+            </Nav.Link>
             <Nav.Link
               style={{ color: "#D23F26" }}
               eventKey={1}
