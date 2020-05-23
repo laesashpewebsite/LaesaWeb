@@ -4,6 +4,9 @@ import GraduatesFiles from "./gradLists.jsx";
 import Venmo from "../pictures/Venmo.jpg";
 import Membership from "../pictures/Membership_Form.png";
 import "./members.css";
+
+import Henry from "../pictures/Graduates/Henry.png";
+import Evan from "../pictures/Evan.JPG";
 class Members extends Component {
   state = {
     // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
@@ -12,14 +15,14 @@ class Members extends Component {
         id: 1,
         // Title: "PCED Co-Director",
         Name: "Henry Guaman",
-        Picture: PCED_Group,
+        Picture: Henry,
         Bio: "Acceptance"
       },
       {
         id: 2,
         // Title: "PCED Co-Director",
         Name: "Evan Vazquez",
-        Picture: PCED_Group,
+        Picture: Evan,
         Bio: ""
       }
     ]
@@ -29,7 +32,7 @@ class Members extends Component {
     return (
       <div className="members-Main">
         <header className="members-header">
-          <div className="members-Banner">
+          <div className="members-banner">
             <h2> Want To Become A Member? </h2>
             <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
           </div>

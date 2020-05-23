@@ -1,11 +1,16 @@
-.members-header {
-  background-color: rgb(0, 31, 91, 100);
+.members-banner {
   color: #f26534;
+  background-color: rgb(0, 31, 91, 100);
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  height: 40%;
 }
 .columns {
-  width: 30%;
+  width: 32%;
   margin: 3px;
   text-align: center;
+  /* border: solid; */
 }
 
 .members-header h3 {
