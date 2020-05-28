@@ -8,7 +8,6 @@ import "./Calendar.css";
 
 // let allViews = Object.keys(Calendar.Views).map(k => Calendar.Views[k]);
 const today = new Date();
-// const newDate = new Date();
 
 const myEvents = [
   {
@@ -66,11 +65,6 @@ const myEvents = [
     end: new Date(2020, 3, 23, 15, 15, 0),
     hexColor: "D23F26",
     isSelect: ""
-
-    // resources: {
-    //   id: 1,
-    //   title: "./PCED"
-    // }
   },
   {
     id: 6,
@@ -206,10 +200,6 @@ const MyCalendar = props => (
       eventPropGetter={eventStyleGetter}
       dayPropGetter={dayStyleGetter}
       onSelectEvent={props.onClick}
-      // onMouseEnter={props.hooverOpen} //if hovering over invoke handleOpen function
-      // onMouseLeave={props.hooverClose} //if not hovering over invoke handleClose function
-      // show={props.glow}
-      // onDrillDown={
     ></Calendar>
   </div>
 );
