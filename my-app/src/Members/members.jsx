@@ -37,7 +37,7 @@ class Members extends Component {
             {/* <img src={PCED_Group} className="Events-Picture" alt="PCED Group" /> */}
           </div>
           <div className="card-color2">
-            <img src={LaesaSteps} />
+            <img src={LaesaSteps} className="Events-Picture" />
           </div>
           {/* <div className="card-color2">
             <h2>Registration Process</h2>
