@@ -3,6 +3,7 @@ import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import GraduatesFiles from "./gradLists.jsx";
 import Venmo from "../pictures/Venmo.jpg";
 import Membership from "../pictures/Membership_Form.png";
+import LaesaSteps from "../pictures/LaesaSteps.png";
 import "./members.css";
 
 import Henry from "../pictures/Graduates/Henry.png";
@@ -21,7 +22,8 @@ class Members extends Component {
         id: 2,
         Name: "Evan Vazquez",
         Picture: Evan,
-        Bio: ""
+        Bio:
+          "LAESA is more than just a chapter of SHPE. It's a place where bonds are made between people who dare to be great."
       }
     ]
   };
@@ -32,10 +34,12 @@ class Members extends Component {
         <header className="members-header">
           <div className="members-banner">
             <h2> Want To Become A Member? </h2>
-            <img src={PCED_Group} className="Events-Picture" alt="PCED Group" />
+            {/* <img src={PCED_Group} className="Events-Picture" alt="PCED Group" /> */}
           </div>
-
           <div className="card-color2">
+            <img src={LaesaSteps} />
+          </div>
+          {/* <div className="card-color2">
             <h2>Registration Process</h2>
             <p>Follow the steps below to become a member!!</p>
             <div className="Row">
@@ -76,7 +80,7 @@ class Members extends Component {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="Gallery">
             <div className="card-color fitting">
