@@ -1,14 +1,21 @@
 .custom-nav {
   background-color: #282c34;
 }
-.justify-content-end {
-  text-align: right;
+.nav-dropdown-text {
+  color: #d23f26;
+  /* background-color: white; */
 }
-.eventsDropdown {
-  border-radius: 20px;
+.navdropdown {
+  /* border: solid; */
+  right: 0%;
+  left: auto;
+  display: block;
+  position: left;
+  width: 30%;
+  margin-right: 70px;
 }
-
-.events-css {
-  position: relative;
-  color: white;
+.eventsDropdownItem:hover {
+  background-color: #d23f26;
+  transition-delay: 0s;
+  right: 0%;
 }

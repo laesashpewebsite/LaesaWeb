@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+  /* start of phone styles */
+  .fitting {
+    font-weight: 600;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* start of phone styles */
+  .fitting {
+    font-weight: 600;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 0.75em;
+  }
+}

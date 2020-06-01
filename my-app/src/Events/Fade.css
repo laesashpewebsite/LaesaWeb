@@ -1,0 +1,15 @@
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+  max-height: 110vh;
+  min-height: 30vh;
+}
+.each-fade h2 {
+  font-size: medium;
+  background: #72a9be;
+  border: black;
+}
