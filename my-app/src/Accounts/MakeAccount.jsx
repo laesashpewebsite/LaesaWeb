@@ -14,7 +14,7 @@ class MakeAccount extends Component {
     render() {
         return (
             <React.Fragment>
-            <div className="card-color">
+            <div className="card-color extra-style">
                 <Form className="formStyles ">
                     <Form.Group controlId="text">
                         <Form.Label>Enter Name</Form.Label>
@@ -54,7 +54,6 @@ class MakeAccount extends Component {
             
         );   
         
-
     }
 }
 export default MakeAccount;

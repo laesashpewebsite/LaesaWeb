@@ -9,7 +9,7 @@ class Login extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card-color">
+                <div className="card-color extra-style">
                 <Form className="formStyles ">
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -25,7 +25,7 @@ class Login extends Component {
                     </Form.Group>
                     
                     <Button variant="outlined" type="submit" color="inherit" style={{padding:"10px",margin:"10px"}}>
-                        Submit
+                        Login
                     </Button>
                     <Link to="MakeAccount" style={{textDecoration:"none" ,color:"inherit"}}>
                         <Button variant="outlined" color="inherit" style={{padding:"10px",margin:"10px"}}>

@@ -53,8 +53,8 @@ class Members extends Component {
                 margin: "10px",
               }}
             >
-              <Link to="/Login">
-                <Button variant="outlined">Make an account</Button>
+              <Link to="/MakeAccount" style={{textDecoration:"none" ,color:"inherit"}}>
+                <Button variant="outlined" color="inherit" style={{padding:"10px",margin:"10px"}}>Make an account</Button>
               </Link>
             </div>
           </div>

@@ -12,7 +12,7 @@ import CareerSummit from "./Events/CareerSummit";
 import Members from "./Members/members";
 import Login from "./Accounts/Login";
 import MakeAccount from "./Accounts/MakeAccount";
-import Profile from "./Accounts/Profile";
+import Profile from "./Accounts/ProfilePage";
 
 export default() => (
     <Switch>
