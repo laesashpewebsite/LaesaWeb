@@ -7,53 +7,62 @@ import Col from "react-bootstrap/Col";
 import "./Accounts.css"
 class MakeAccount extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             firstName: "",
             lastName: "",
             email: "",
             password: "",
-            verifyPassword: ""
-        }
-        this.onSubmit = this.onSubmit.bind(this)
+            verifyPassword: "",
+            // check:1
+        };
         this.getFirstName = this.getFirstName.bind(this)
         this.getLastName = this.getLastName.bind(this)
         this.getEmail = this.getEmail.bind(this)
         this.getPassword = this.getPassword.bind(this)
         this.getVerifyPassword = this.getVerifyPassword.bind(this)
+        this.submitForm = this.submitForm.bind(this)
+        // this.handleClick= this.handleClick.bind(this)
 
     }
-    onSubmit = () => {
-        console.log(this.state.password, "also here")
+
+    
+    getFirstName = (event) => {
+        this.setState({ firstName: event.target.value })
+    }
+    getLastName = (event) => {
+        this.setState({ lastName: event.target.value })
+    }
+    getEmail = (event) => {
+            this.setState({ email: event.target.value })
+    }
+    getPassword = (event) => {
+        this.setState({ password: event.target.value })
+    }
+    getVerifyPassword = (event) => {
+        this.setState({ verifyPassword: event.target.value })
+    }
+    submitForm = (event) => {
+
+        event.preventDefault()
+
+        // console.log(this.state.password, "also here")
         if (this.state.firstName === "") {
-            console.log(this.state.password, "also here")
             alert("Enter a password")
         }
-        if (this.state.password === this.state.verifyPasssword) {
+        if (this.state.password === this.state.verifyPassword) {
 
             this.setState({ firstName: "" })
             this.setState({ lastName: "" })
             this.setState({ email: "" })
             this.setState({ password: "" })
-            this.setState({ verifyPasssword: "" })
+            this.setState({ verifyPassword: "" })
         }
     }
-    getFirstName = (e) => {
-        this.setState({ firstName: e.target.value })
-    }
-    getLastName = (e) => {
-        this.setState({ lastName: e.target.value })
-    }
-    getEmail =
-        (e) => {
-            this.setState({ email: e.target.value })
-        }
-    getPassword = (e) => {
-        this.setState({ email: e.target.value })
-    }
-    getVerifyPassword = (e) => {
-        this.setState({ email: e.target.value })
-    }
+    // handleClick=()=>{
+    //     this.setState({check:2})
+    //     console.log(this.state.check)
+    // }
 
     render() {
 
@@ -61,24 +70,29 @@ class MakeAccount extends Component {
             <React.Fragment>
                 {/* {console.log(this.state.password, "is here")} */}
                 <div className="card-color extra-style">
-                    <Form className="formStyles ">
-                    <Form.Group >
-                        <Form.Label>Enter Name</Form.Label>
-                        <Row>
-                            <Col>
+                    <Form className="formStyles" onSubmit={this.submitForm}>
+                        <Form.Group >
+                            <Form.Label>Enter Name</Form.Label>
+                            <Row>
+                                <Col>
                                     <Form.Control
+                                        as="input"
+                                        type="text"
+                                        placeholder="First name"
+                                        onChange={ this.getFirstName}
                                         value={this.state.firstName}
-                                        type="text" placeholder="First name"
-                                        onChange={() => this.getFirstName} />
-                            </Col>
-                            <Col>
+
+                                    />
+                                </Col>
+                                <Col>
                                     <Form.Control
                                         as="input"
                                         value={this.state.lastName}
                                         type="text" placeholder="Last name"
-                                        onChange={() => this.getLastName} />
-                            </Col>
-                        </Row>                                </Form.Group>
+                                        onChange={ this.getLastName} />
+                                </Col>
+                            </Row>
+                        </Form.Group>
 
 
                         <Form.Group controlId="formBasicEmail">
@@ -86,8 +100,8 @@ class MakeAccount extends Component {
                             <Form.Control
                                 value={this.state.email}
                                 type="email"
-                                placeholder="Enter email" 
-                                onChange={() => this.getEmail} />
+                                placeholder="Enter email"
+                                onChange={this.getEmail} />
 
                         </Form.Group>
 
@@ -97,7 +111,7 @@ class MakeAccount extends Component {
                                 value={this.state.password}
                                 type="password"
                                 placeholder="Password"
-                                onChange={() => this.getPassword} />
+                                onChange={this.getPassword} />
                         </Form.Group>
                         <Form.Group controlId="formBasicVerifyPassword">
                             <Form.Label>Verify Password</Form.Label>
@@ -105,17 +119,20 @@ class MakeAccount extends Component {
                                 value={this.state.verifyPassword}
                                 type="password"
                                 placeholder="Password"
-                                onChange={() => this.getVerifyPassword} />
+                                onChange={this.getVerifyPassword} />
                         </Form.Group>
-
                         <Button
                             variant="outlined"
                             type="submit"
                             color="inherit"
-                            onClick={() => this.onSubmit}>
+                            // onClick={this.onSubmit}
+                            >
                             Submit
                         </Button>
+                        {this.state.check}
+
                     </Form>
+
                 </div>
             </React.Fragment>
 
