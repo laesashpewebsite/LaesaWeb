@@ -100,7 +100,7 @@ export default function Profiles(props) {
             variant="h5"
           >
             {/* {member?s.Bio}?  */}
-            <ul className={"lists",classes.lists}>
+            <ul className={classes.lists}>
               <li>Major:{members.Major}</li>
               <li></li>
 

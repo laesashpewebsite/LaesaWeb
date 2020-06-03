@@ -313,7 +313,7 @@ class EboardMembers extends Component {
       this.setState({EboardList: subArr});
     }
   };
-  pageOutput() {
+  pageOutput=()=>{
     if (this.state.thisPage === 2) {
       return (
         <React.Fragment>
