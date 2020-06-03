@@ -12,7 +12,7 @@
   display: block;
   position: left;
   width: 30%;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 .eventsDropdownItem:hover {
   background-color: #d23f26;

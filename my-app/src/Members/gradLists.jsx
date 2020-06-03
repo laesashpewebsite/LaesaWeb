@@ -77,7 +77,7 @@ export default function Graduates(props) {
                 variant="body2"
                 component="p"
               >
-                <p>What does LAESA-SHPE mean to you?</p>
+                What does LAESA-SHPE mean to you?
                 <br />
                 {dl.Bio}
               </Typography>

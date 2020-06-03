@@ -1,0 +1,13 @@
+.formStyles {
+    width: 50%;
+    padding:10px;
+    margin:auto;
+}
+.card-color .formStyles{
+    color: #f26534;
+}
+
+.link-styles{
+    color: #f26534;
+    text-decoration: none;
+}

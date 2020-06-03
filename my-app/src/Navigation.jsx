@@ -98,6 +98,13 @@ class Navigation extends React.Component {
                 SHPE JR.
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link
+              style={{ color: "#D23F26",marginRight:"20px" }}
+              eventKey={1}
+              onClick={() => history.push("/Login")}
+            >
+              Login
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

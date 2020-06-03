@@ -1,44 +1,64 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import GraduatesFiles from "./gradLists.jsx";
-import Venmo from "../pictures/Venmo.jpg";
-import Membership from "../pictures/Membership_Form.png";
+// import Venmo from "../pictures/Venmo.jpg"; import Membership from
+// "../pictures/Membership_Form.png";
 import LaesaSteps from "../pictures/LaesaSteps.png";
 import "./members.css";
 
 import Henry from "../pictures/Graduates/Henry.png";
 import Evan from "../pictures/Evan.JPG";
+import {Button} from "@material-ui/core";
+import {Link} from "react-router-dom";
 class Members extends Component {
-  state = {
-    // state has the array be in a fixed position and when calls a value in the array it moves on to the next state after it is done calling
-    GradList: [
-      {
-        id: 1,
-        Name: "Henry Guaman",
-        Picture: Henry,
-        Bio: "Acceptance"
-      },
-      {
-        id: 2,
-        Name: "Evan Vazquez",
-        Picture: Evan,
-        Bio:
-          "LAESA is more than just a chapter of SHPE. It's a place where bonds are made between people who dare to be great."
-      }
-    ]
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      GradList: [
+        {
+          id: 1,
+          Name: "Henry Guaman",
+          Picture: Henry,
+          Bio: "Acceptance",
+        },
+        {
+          id: 2,
+          
+          Name: "Evan Vazquez",
+          Picture: Evan,
+          Bio:
+            "LAESA is more than just a chapter of SHPE. It's a place where bonds are made bet" +
+            "ween people who dare to be great.",
+        },
+      ],
+    };
+  }
+
+  // state has the array be in a fixed position and when calls a value in the
+  // array it moves on to the next state after it is done calling
 
   render() {
     return (
       <div className="members-Main">
         <header className="members-header">
           <div className="members-banner">
-            <h2> Want To Become A Member? </h2>
+            <h2>Want To Become A Member?</h2>
             {/* <img src={PCED_Group} className="Events-Picture" alt="PCED Group" /> */}
           </div>
           <div className="card-color2">
-            <img src={LaesaSteps} className="Files" Alt="steps" />
+            <img src={LaesaSteps} className="Files" alt="steps" />
+            <div
+              className={{
+                padding: "10px",
+                margin: "10px",
+              }}
+            >
+              <Link to="/Login">
+                <Button variant="outlined">Make an account</Button>
+              </Link>
+            </div>
           </div>
+
           {/* <div className="card-color2">
             <h2>Registration Process</h2>
             <p>Follow the steps below to become a member!!</p>
