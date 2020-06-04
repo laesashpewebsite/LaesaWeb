@@ -82,13 +82,13 @@ export default function Profiles(props) {
           image={members.Picture}
           title={members.alts}
         />
-        <Typography className={classes.text} variant="h5">Points:</Typography>
+        <Typography className={classes.text} variant="h5">Points:{members.Points}</Typography>
       </div>
       <div className={classes.title}>
         <CardHeader
           // component="h2"
           //   className={classes.title}
-          titleTypographyProps={{ variant: "h3", MuiTypographyh2: "red" }}
+          titleTypographyProps={{ variant: "h3" }}
           title={members.Name}
           subheader={members.Title}
           subheaderTypographyProps={{ variant: "h6", color: "inherit" }}
