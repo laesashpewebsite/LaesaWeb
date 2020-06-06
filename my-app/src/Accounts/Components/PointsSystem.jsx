@@ -100,7 +100,7 @@ class Request extends Component {
     eventLists = () => {
         return (
             <div>
-                <h2>Events Created</h2>
+                <h3>Events Created</h3>
                 <table className="event-table">
                     <tr className="event-row">
                         <th className="event-col">Event</th>
@@ -129,9 +129,11 @@ class Request extends Component {
     }
     pointRequested = () => {
         return (
+            <div>
+            <h3>Member points request</h3>
             <table className="event-table">
                 <tr className="event-row">
-                    <th className="event-col" >Descitption</th>
+                    <th className="event-col" >Descripption</th>
                     <th className="event-col">points</th>
                     <th className="event-col" >
                         Approve/Reject
@@ -139,7 +141,7 @@ class Request extends Component {
 
                 </tr>
                 <tr className="event-row">
-                    <th className="event-col" >Descitption</th>
+                    <th className="event-col" >Description</th>
                     <th className="event-col">points</th>
                     <th className="event-col" >
                         <Button variant="outlined" style={{ margin: "10px" }}>Approve</Button>
@@ -147,6 +149,7 @@ class Request extends Component {
                     </th>
                 </tr>
             </table>
+            </div>
         );
     }
     eboardView = (title) => {
@@ -205,7 +208,7 @@ class Request extends Component {
 
                     {this.eventLists()}
 
-                    <h3>Member points request</h3>
+                    
                     {this.pointRequested()}
                     {this.eBoardLog()}
 
@@ -218,7 +221,7 @@ class Request extends Component {
     render(props) {
         return (
 
-            <div style={{ margin: "20px" }}>
+            <div className="events-standard" >
                 {this.memberView(this.props.MembersRole)}
                 {this.eboardView(this.props.MembersRole)}
             </div>

@@ -1,3 +1,10 @@
+.events-standard{
+    margin: 20px;
+}
+.events-standard h3{
+    margin-top: 20px;
+    border-bottom: solid;
+}
 .formStyles {
     width: 50%;
     padding:10px;
@@ -15,6 +22,7 @@
     padding:50px;
 }
 .event-table{
+    margin: 30px;
     border:solid;
     width:100%;
 }

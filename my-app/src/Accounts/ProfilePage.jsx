@@ -11,7 +11,7 @@ class ProfilePage extends Component {
             DirectorList: [
               {
                 id: 1,
-                Title: "",
+                Title: "Secretary",
                 Name: "Daniel Gaston",
                 Picture: PCED_Director,
                 // Points:1,
