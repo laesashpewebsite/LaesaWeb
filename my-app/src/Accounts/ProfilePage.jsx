@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Profile from "./Profile";
 import PCED_Director from "../pictures/empty-profile-pic.png";
-import PointsSystem from "./Components/PointsSystem";
+// import PointsSystem from "./Components/PointsSystem";
 import MenuBar from "./Components/MenuBar";
 import "./Accounts.css";
 class ProfilePage extends Component {

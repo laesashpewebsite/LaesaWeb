@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
+import React, { Component } from "react";
+// import PCED_Group from "../pictures/PCED_Pictures/Group.JPG";
 import GraduatesFiles from "./gradLists.jsx";
 // import Venmo from "../pictures/Venmo.jpg"; import Membership from
 // "../pictures/Membership_Form.png";
@@ -8,8 +8,8 @@ import "./members.css";
 
 import Henry from "../pictures/Graduates/Henry.png";
 import Evan from "../pictures/Evan.JPG";
-import {Button} from "@material-ui/core";
-import {Link} from "react-router-dom";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 class Members extends Component {
   constructor(props) {
     super(props);
@@ -19,18 +19,18 @@ class Members extends Component {
           id: 1,
           Name: "Henry Guaman",
           Picture: Henry,
-          Bio: "Acceptance",
+          Bio: "Acceptance"
         },
         {
           id: 2,
-          
+
           Name: "Evan Vazquez",
           Picture: Evan,
           Bio:
             "LAESA is more than just a chapter of SHPE. It's a place where bonds are made bet" +
-            "ween people who dare to be great.",
-        },
-      ],
+            "ween people who dare to be great."
+        }
+      ]
     };
   }
 
@@ -50,11 +50,20 @@ class Members extends Component {
             <div
               className={{
                 padding: "10px",
-                margin: "10px",
+                margin: "10px"
               }}
             >
-              <Link to="/MakeAccount" style={{textDecoration:"none" ,color:"inherit"}}>
-                <Button variant="outlined" color="inherit" style={{padding:"10px",margin:"10px"}}>Make an account</Button>
+              <Link
+                to="/MakeAccount"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <Button
+                  variant="outlined"
+                  color="inherit"
+                  style={{ padding: "10px", margin: "10px" }}
+                >
+                  Make an account
+                </Button>
               </Link>
             </div>
           </div>

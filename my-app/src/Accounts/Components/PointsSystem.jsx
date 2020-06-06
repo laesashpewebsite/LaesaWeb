@@ -63,7 +63,11 @@ class Request extends Component {
             <th className="event-col">Yes/no</th>
           </tr>
         </table>
-        <Button variant="outlined" style={{ margin: "10px" }} color="inherit">
+        <Button
+          variant="outlined"
+          style={{ padding: "10px", margin: "10px" }}
+          color="inherit"
+        >
           Request Points
         </Button>
       </React.Fragment>
@@ -113,7 +117,7 @@ class Request extends Component {
             <th className="event-col">
               <Button
                 variant="outlined"
-                style={{ margin: "10px" }}
+                style={{ padding: "10px", margin: "10px" }}
                 color="inherit"
               >
                 Edit
@@ -138,14 +142,14 @@ class Request extends Component {
           <th className="event-col">
             <Button
               variant="outlined"
-              style={{ margin: "10px" }}
+              style={{ padding: "10px", margin: "10px" }}
               color="inherit"
             >
               Approve
             </Button>
             <Button
               variant="outlined"
-              style={{ margin: "10px" }}
+              style={{ padding: "10px", margin: "10px" }}
               color="inherit"
             >
               Reject
@@ -153,6 +157,55 @@ class Request extends Component {
           </th>
         </tr>
       </table>
+    );
+  };
+  addEvent = () => {
+    return (
+      <Form onSubmit={this.handleForm}>
+        <Form.Group>
+          <Row>
+            <Col>
+              <Form.Label>Event</Form.Label>
+              <Form.Control
+                as="input"
+                value={this.state.eventTitle}
+                type="text"
+                placeholder="Event"
+                onChange={this.getEventTitle}
+              ></Form.Control>
+            </Col>
+            <Col>
+              <Form.Label>Points Value</Form.Label>
+              <Form.Control
+                as="input"
+                value={this.state.requestPoints}
+                type="number"
+                placeholder="How Many Points?"
+                onChange={this.getPointsRequested}
+              ></Form.Control>
+            </Col>
+            <Col>
+              <Form.Label>Description</Form.Label>
+              <Form.Control
+                as="input"
+                value={this.state.description}
+                type="text"
+                placeholder="Description"
+                onChange={this.getDescritption}
+              ></Form.Control>
+            </Col>
+            <Col>
+              <Button
+                variant="outlined"
+                color="inherit"
+                style={{ padding: "10px", margin: "10px" }}
+              >
+                Create Event
+              </Button>
+            </Col>
+          </Row>
+        </Form.Group>
+      </Form>
     );
   };
   eboardView = title => {
@@ -164,50 +217,9 @@ class Request extends Component {
       title === "Internal Vice-President"
     ) {
       return (
-        <div style={{ margin: "20px" }}>
-          <Form onSubmit={this.handleForm}>
-            <Form.Group>
-              <Row>
-                <Col>
-                  <Form.Label>Event</Form.Label>
-                  <Form.Control
-                    as="input"
-                    value={this.state.eventTitle}
-                    type="text"
-                    placeholder="Event"
-                    onChange={this.getEventTitle}
-                  ></Form.Control>
-                </Col>
-                <Col>
-                  <Form.Label>Points Value</Form.Label>
-                  <Form.Control
-                    as="input"
-                    value={this.state.requestPoints}
-                    type="number"
-                    placeholder="How Many Points?"
-                    onChange={this.getPointsRequested}
-                  ></Form.Control>
-                </Col>
-                <Col>
-                  <Form.Label>Description</Form.Label>
-                  <Form.Control
-                    as="input"
-                    value={this.state.description}
-                    type="text"
-                    placeholder="Description"
-                    onChange={this.getDescritption}
-                  ></Form.Control>
-                </Col>
-              </Row>
-            </Form.Group>
-            <Button variant="outlined" color="inherit">
-              Create Event
-            </Button>
-          </Form>
-
+        <div>
+          {this.addEvent()}
           {this.eventLists()}
-
-          <h3>Member points request</h3>
           {this.pointRequested()}
           {this.eBoardLog()}
         </div>
@@ -216,12 +228,11 @@ class Request extends Component {
   };
   render(props) {
     return (
-      <div className="display">
+      <div className="events-standard">
         {this.memberView(this.props.MembersRole)}
         {this.eboardView(this.props.MembersRole)}
       </div>
     );
   }
 }
-
 export default Request;
