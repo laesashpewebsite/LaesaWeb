@@ -1,35 +1,51 @@
+.profiles {
+  /* margin: auto; */
+  /* margin: 30px; */
+  padding: 40px;
+}
+.card-color .menu-btn {
+  color: #f26534;
+}
 .formStyles {
-    width: 50%;
-    padding:10px;
-    margin:auto;
-}
-.card-color .formStyles{
-    color: #f26534;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
 }
 
-.link-styles{
-    color: #f26534;
-    text-decoration: none;
+.card-color .formStyles {
+  color: #f26534;
 }
-.extra-style{
-    padding:50px;
-}
-.event-table{
-    border:solid;
-    width:100%;
-}
-.event-row{
-    border-bottom: solid;
-    /* margin: 30px; */
-    /* padding: 50px; */
-}
-.event-col{
-    border-left: solid;
-    padding: 10px;
-}
-.points-log{
-    text-align: left;
-    padding: 10px;
-    border-bottom: solid;
 
+.link-styles {
+  color: #f26534;
+  text-decoration: none;
+}
+.extra-style {
+  padding: 50px;
+}
+.event-table {
+  /* color: black; */
+  border: solid;
+  /* border: solid; */
+  width: 100%;
+}
+.event-row {
+  border-bottom: solid;
+  /* margin: 30px; */
+  /* padding: 50px; */
+}
+.event-col {
+  border-left: solid;
+  padding: 10px;
+}
+.points-log {
+  text-align: left;
+  padding: 10px;
+  border-bottom: solid;
+}
+.display {
+  margin: 20px;
+}
+.display h3 {
+  color: #f26534;
 }
