@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Profile from "./Profile"
 import PCED_Director from "../pictures/empty-profile-pic.png"
-import PointsSystem from "./PointsSystem"
+import PointsSystem from "./Components/PointsSystem"
+import MenuBar from "./Components/MenuBar"
 class ProfilePage extends Component {
     constructor(props) {
         super(props)
@@ -11,7 +12,7 @@ class ProfilePage extends Component {
               {
                 id: 1,
                 Title: "",
-                Name: "Daniel gaston",
+                Name: "Daniel Gaston",
                 Picture: PCED_Director,
                 // Points:1,
                 Bio:
@@ -30,11 +31,12 @@ class ProfilePage extends Component {
     render() {
         return (
             <div>
+
                 <Profile Members={this.state.DirectorList}></Profile>
-                <PointsSystem 
+                <MenuBar
                 MembersPoints={this.state.DirectorList[0].Points}
                 MembersRole={this.state.DirectorList[0].Title}
-                ></PointsSystem>
+                 />
             </div>
         );
     }

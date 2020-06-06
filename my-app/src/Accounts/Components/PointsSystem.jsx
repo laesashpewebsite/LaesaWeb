@@ -120,7 +120,7 @@ class Request extends Component {
                                 style={{ margin: "10px" }}
                             >
                                 Edit
-                              </Button>
+                               </Button>
                         </th>
                     </tr>
                 </table>
