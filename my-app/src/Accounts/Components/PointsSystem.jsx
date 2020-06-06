@@ -10,17 +10,20 @@ class Request extends Component {
     this.state = {
       requestPoints: 0,
       eventTitle: "",
-      description: ""
+      description: "",
+      date: ""
     };
     this.getPointsRequested = this.getPointsRequested.bind(this);
     this.getDescritption = this.getDescritption.bind(this);
     this.getEventTitle = this.getEventTitle.bind(this);
+    this.getDate = this.getDate.bind(this);
   }
 
   handleForm = event => {
     event.preventDefault();
-    //Adds to the events list
-    //update events list
+  };
+  getDate = event => {
+    this.setState({ date: event.target.value });
   };
   getDescritption = event => {
     this.setState({ description: event.target.value });
@@ -175,13 +178,13 @@ class Request extends Component {
               ></Form.Control>
             </Col>
             <Col>
-              <Form.Label>Points Value</Form.Label>
+              <Form.Label>Points</Form.Label>
               <Form.Control
                 as="input"
-                value={this.state.requestPoints}
+                value={this.state.date}
                 type="number"
                 placeholder="How Many Points?"
-                onChange={this.getPointsRequested}
+                onChange={this.getDate}
               ></Form.Control>
             </Col>
             <Col>
@@ -192,6 +195,15 @@ class Request extends Component {
                 type="text"
                 placeholder="Description"
                 onChange={this.getDescritption}
+              ></Form.Control>
+            </Col>
+            <Col>
+              <Form.Label>Date</Form.Label>
+              <Form.Control
+                as="input"
+                value={this.state.date}
+                type="date"
+                onChange={this.getDate}
               ></Form.Control>
             </Col>
             <Col>

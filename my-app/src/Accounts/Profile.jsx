@@ -13,18 +13,16 @@ import { red } from "@material-ui/core/colors";
 
 // import "./CardProfiles.css";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     border: "none",
     // width: "50%",
     backgroundColor: "#72a9be",
     textAlign: "center",
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    paddingTop: "20px",
-    paddingBottom: "30px",
+    padding: "50px"
     // border: "solid"
     // maxheight: "760px"
+    // margin:30px
   },
   //css for the pictures
   media: {
@@ -38,42 +36,40 @@ const useStyles = makeStyles((theme) => ({
     // border:"solid"
     // objectPosition: "10px 30%",
     // margin: "auto"
-    float: "left",
+    float: "left"
   },
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest,
-    }),
+      duration: theme.transitions.duration.shortest
+    })
   },
   expandOpen: {
-    transform: "rotate(180deg)",
+    transform: "rotate(180deg)"
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: red[500]
   },
   text: {
     color: "black",
     clear: "both",
-    padding:"15px",
-    textAlign:"left"
+    padding: "15px",
+    textAlign: "left"
   },
   title: {
     width: "60%",
-    float: "left",
+    float: "left"
   },
-  lists:{
-    textAlign:"left",
+  lists: {
+    textAlign: "left",
     listStyle: "none"
-
   }
-
 }));
 
 export default function Profiles(props) {
   const classes = useStyles();
-  return props.Members.map((members) => (
+  return props.Members.map(members => (
     <Card className={classes.root} style={members.styles} key={members.id}>
       {/* GETS THE PICTURE TO ADD TO THE PFP CAN PROB EDIT THIS USING CLASSNAME */}
       <div className={classes.media}>
@@ -103,7 +99,6 @@ export default function Profiles(props) {
             <ul className={classes.lists}>
               <li>Major:{members.Major}</li>
               <li></li>
-
             </ul>
           </Typography>
         </CardContent>
