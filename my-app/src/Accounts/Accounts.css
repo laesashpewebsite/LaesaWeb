@@ -12,5 +12,24 @@
     text-decoration: none;
 }
 .extra-style{
-    padding:50px
+    padding:50px;
+}
+.event-table{
+    border:solid;
+    width:100%;
+}
+.event-row{
+    border-bottom: solid;
+    /* margin: 30px; */
+    /* padding: 50px; */
+}
+.event-col{
+    border-left: solid;
+    padding: 10px;
+}
+.points-log{
+    text-align: left;
+    padding: 10px;
+    border-bottom: solid;
+
 }
