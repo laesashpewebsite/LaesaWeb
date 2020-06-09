@@ -14,7 +14,7 @@ class Request extends Component {
     this.state = {
       points: 0,
       eventTitle: "",
-      eventType: "",
+      category: "",
       description: "",
       date: "",
       eventHost: ""
@@ -23,7 +23,7 @@ class Request extends Component {
     this.getDescritption = this.getDescritption.bind(this);
     this.getEventTitle = this.getEventTitle.bind(this);
     this.getDate = this.getDate.bind(this);
-    this.getEventType = this.getEventType.bind(this);
+    this.getCategory = this.getCategory.bind(this);
     this.getEventHost = this.getEventHost.bind(this);
   }
 
@@ -42,22 +42,22 @@ class Request extends Component {
   getEventTitle = event => {
     this.setState({ eventTitle: event.target.value });
   };
-  getEventType = event => {
-    this.setState({ eventType: event.target.value });
+  getCategory = event => {
+    this.setState({ category: event.target.value });
   };
   getPointsRequested = event => {
     var val = 0;
-    // console.log(this.state.eventType);
-    if (this.state.eventType === "Workshop") {
+    // console.log(this.state.category);
+    if (this.state.category === "Workshop") {
       val = this.workshopPoints;
-    } else if (this.state.eventType === "Conference") {
+    } else if (this.state.category === "Conference") {
       val = this.conferencePoints;
-    } else if (this.state.eventType === "Event") {
+    } else if (this.state.category === "Event") {
       val = this.volunteerPoints;
-    } else if (this.state.eventType === "Social Event") {
+    } else if (this.state.category === "Social Event") {
       val = this.socialPoints;
     }
-    if (this.state.eventType === "Other")
+    if (this.state.category === "Other")
       this.setState({ points: event.target.value });
     else {
       this.setState({ points: val });
@@ -197,17 +197,17 @@ class Request extends Component {
     );
   };
   showWorkshop() {
-    // console.log(this.state.eventType);
-    if (this.state.eventType === "Workshop") {
+    // console.log(this.state.category);
+    if (this.state.category === "Workshop") {
       return (
         <Col>
           <Form.Label> Host Name</Form.Label>
           <Form.Control
             as="select"
-            value={this.state.eventType}
+            value={this.state.category}
             type="text"
             placeholder="Event"
-            onChange={this.getEventType}
+            onChange={this.getcategory}
           ></Form.Control>
         </Col>
       );
@@ -251,13 +251,13 @@ class Request extends Component {
               ></Form.Control>
             </Col>
             <Col>
-              <Form.Label>Event Type</Form.Label>
+              <Form.Label>Category</Form.Label>
               <Form.Control
                 as="select"
-                value={this.state.eventType}
+                value={this.state.category}
                 type="text"
                 placeholder="Event"
-                onChange={this.getEventType}
+                onChange={this.getcategory}
               >
                 <option>Event</option>
                 <option>Workshop</option>
@@ -266,7 +266,7 @@ class Request extends Component {
                 <option>Other</option>
               </Form.Control>
             </Col>
-            {/* {console.log(this.state.eventType)} */}
+            {/* {console.log(this.state.category)} */}
             {this.showWorkshop()}
 
             <Col>

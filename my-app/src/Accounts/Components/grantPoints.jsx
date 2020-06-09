@@ -103,7 +103,7 @@ export default class grantPoints extends Component {
     }
   };
 
-  grantPoints = () => {
+  grantPoints = Label => {
     return (
       <Form onSubmit={this.handleForm}>
         <Form.Group>
@@ -128,7 +128,6 @@ export default class grantPoints extends Component {
                 onChange={this.getEventType}
               >
                 <option>Academic Donation</option>
-                <option>Won Social Event</option>
                 <option>Recruit</option>
                 <option>Other</option>
               </Form.Control>
@@ -150,7 +149,7 @@ export default class grantPoints extends Component {
                 color="inherit"
                 style={{ padding: "10px", margin: "10px" }}
               >
-                Grant Points
+                {Label}
               </Button>
             </Col>
           </Row>
@@ -161,7 +160,7 @@ export default class grantPoints extends Component {
 
   listOfMembers() {
     return (
-      <div>
+      <div className="events-standard">
         <h3>Member Points</h3>
         <table className="event-table">
           <tbody>
@@ -173,7 +172,7 @@ export default class grantPoints extends Component {
               <th className="event-col">Event 1</th>
               <th className="event-col">Event 2</th>
             </tr>
-            <tr className="event-row">
+            <tr cslassName="event-row">
               <td className="event-col">Name</td>
               <td className="event-col">0</td>
               <td className="event-col"> </td>
@@ -186,12 +185,33 @@ export default class grantPoints extends Component {
       </div>
     );
   }
+  memberView = title => {
+    if (title === "") {
+      return <div>{this.grantPoints("Request Points")}</div>;
+    }
+  };
+  eboardView = title => {
+    if (
+      title === "President" ||
+      title === "Secretary" ||
+      title === "Treasurer" ||
+      title === "External Vice-President " ||
+      title === "Internal Vice-President"
+    ) {
+      return (
+        <div>
+          {this.grantPoints("Grant Points")}
+          {this.listOfMembers()}
+        </div>
+      );
+    }
+  };
+
   render() {
     return (
-      <div>
-        {this.grantPoints()}
-
-        {this.listOfMembers()}
+      <div className="events-standard">
+        {this.memberView(this.props.MembersRole)}
+        {this.eboardView(this.props.MembersRole)}
       </div>
     );
   }
