@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 // import Navigation from "./Navigation";
 import Main from "./Main";
@@ -14,20 +14,19 @@ import Login from "./Accounts/Login";
 import MakeAccount from "./Accounts/MakeAccount";
 import Profile from "./Accounts/ProfilePage";
 
-export default() => (
-    <Switch>
-        <Route exact path="/" component={Main}/>
-        <Route path="/Main" component={Main}/>
-        <Route path="/Eboard" component={Eboard}/>
-        <Route path="/FLL" component={FLL}/>
-        <Route path="/PCED" component={PCED}/>
-        <Route path="/SHPE.JR" component={SHPE_JR}/>
-        <Route path="/Events" component={Events}/>
-        <Route path="/CareerSummit" component={CareerSummit}/>
-        <Route path="/Members" component={Members}/>
-        <Route path="/Login" component={Login}/>
-        <Route path="/MakeAccount" component={MakeAccount}/>
-        <Route path="/Profile" component={Profile}/>
-
-    </Switch>
+export default () => (
+  <Switch>
+    <Route exact path="/" component={Main} />
+    <Route path="/Main" component={Main} />
+    <Route path="/Eboard" component={Eboard} />
+    <Route path="/FLL" component={FLL} />
+    <Route path="/PCED" component={PCED} />
+    <Route path="/SHPE.JR" component={SHPE_JR} />
+    <Route path="/Events" component={Events} />
+    <Route path="/CareerSummit" component={CareerSummit} />
+    <Route path="/Members" component={Members} />
+    <Route path="/Login" component={Login} />
+    <Route path="/MakeAccount" component={MakeAccount} />
+    <Route path="/Profile" component={Profile} />
+  </Switch>
 );

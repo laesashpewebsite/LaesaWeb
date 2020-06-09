@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import PointsSystem from "./PointsSystem.jsx";
 import Awards from "./Awards.jsx";
+import GrantPoints from "./grantPoints.jsx";
+
 class MenuBar extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +32,14 @@ class MenuBar extends Component {
         ></Awards>
       );
     }
+    if (this.state.page === "Points") {
+      return (
+        <GrantPoints
+          MembersPoints={this.props.MembersPoints}
+          MembersRole={this.props.MembersRole}
+        ></GrantPoints>
+      );
+    }
   };
   render() {
     return (
@@ -50,6 +60,14 @@ class MenuBar extends Component {
             style={{ padding: "10px", margin: "10px" }}
           >
             Scholarships/Awards
+          </Button>
+          <Button
+            onClick={() => this.ClickMenuBar("Points")}
+            variant="outlined"
+            color="inherit"
+            style={{ padding: "10px", margin: "10px" }}
+          >
+            Points
           </Button>
           {this.showMenuBar()}
         </div>

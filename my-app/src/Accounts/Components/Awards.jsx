@@ -12,6 +12,9 @@ class Awards extends Component {
       description: ""
     };
   }
+  handleForm = event => {
+    event.preventDefault();
+  };
   getTitle = e => {
     this.setState({ title: e.target.value });
   };
@@ -26,21 +29,24 @@ class Awards extends Component {
       return <div>{this.showAwards()}</div>;
     }
   };
+
   showAwards = () => {
     return (
       <div>
         <h3>Scholarship/Awards</h3>
         <table className="event-table">
-          <tr className="event-row">
-            <th className="event-col">Awards/Scholarship</th>
-            <th className="event-col">Description</th>
-            <th className="event-col">Due Date</th>
-          </tr>
-          <tr className="event-row">
-            <th className="event-col">Title</th>
-            <th className="event-col">description</th>
-            <th className="event-col">Date</th>
-          </tr>
+          <tbody>
+            <tr className="event-row">
+              <th className="event-col">Awards/Scholarship</th>
+              <th className="event-col">Description</th>
+              <th className="event-col">Due Date</th>
+            </tr>
+            <tr className="event-row">
+              <td className="event-col">Title</td>
+              <td className="event-col">description</td>
+              <td className="event-col">Date</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
@@ -56,7 +62,7 @@ class Awards extends Component {
                 as="input"
                 value={this.state.title}
                 type="text"
-                placeholder="Event"
+                placeholder="Title"
                 onChange={this.getTitle}
               ></Form.Control>
             </Col>
@@ -65,8 +71,8 @@ class Awards extends Component {
               <Form.Control
                 as="input"
                 value={this.state.description}
-                type="number"
-                placeholder="How Many Points?"
+                type="text"
+                placeholder="Description"
                 onChange={this.getDescritption}
               ></Form.Control>
             </Col>
@@ -76,7 +82,7 @@ class Awards extends Component {
                 as="input"
                 value={this.state.link}
                 type="text"
-                placeholder="Description"
+                placeholder="Link"
                 onChange={this.getLink}
               ></Form.Control>
             </Col>
