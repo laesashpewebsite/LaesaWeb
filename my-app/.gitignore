@@ -11,6 +11,9 @@
 # production
 /build
 
+#Virtual Environment
+../flask_backend/venv
+
 # misc
 .DS_Store
 .env.local
