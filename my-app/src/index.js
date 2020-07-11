@@ -9,7 +9,7 @@ ReactDOM.render(
   <Router basename="/LAESA">
     <App></App>
   </Router>,
-  document.getElementById("root")
+  document.getElementById("react-target")
 );
 
 // If you want your app to work offline and load faster, you can change

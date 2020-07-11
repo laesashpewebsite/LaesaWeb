@@ -11,7 +11,12 @@
 # production
 /build
 
+# dependencies 
+/node_modules
+# testing 
+/coverage
 # misc
+/.appfairy
 .DS_Store
 .env.local
 .env.development.local
