@@ -1,1 +1,7 @@
 .DS_Store
+.DS_Store
+laesaMongo/experiment.js
+laesaMongo/notes.txt
+laesaMongo/models/Post.js
+laesaMongo/routes/post.js
+laesaMongo/Test/postRequests.rest

@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const { registerValidation, loginValidation } = require("../validation");
 
 router.post("/register", async (req, res) => {
+  // validating the data from the user with the requirements specifed  
   const { error } = registerValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -14,7 +15,7 @@ router.post("/register", async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   const hashPassword = await bcrypt.hash(req.body.password, salt);
   const member = new Member({
-    name: req.body.name,
+    name: req.body.name,              
     email: req.body.email,
     major: req.body.major,
     password: hashPassword,

@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const verify = require("./verifyToken");
-const Scholarship = require("../models/Scholarship");
+const Scholarship = require("../models/Scholarship"); // importing mongoose model/Schema
 
 router.get("/", async (req, res) => {
   try {
-    const scholarships = await Scholarship.find();
+    const scholarships = await Scholarship.find(); // mongoose method
     res.json(scholarships);
   } catch (err) {
     res.json({ message: err });
