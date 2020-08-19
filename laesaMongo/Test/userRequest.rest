@@ -1,0 +1,30 @@
+# Get Users
+
+# Register a new user
+# Returns Member ID
+POST http://localhost:3000/api/member/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jcalle",
+    "email": "Jcalle@gmail.com",
+    "major": "ME",
+    "password": "Mix123"
+}
+
+###
+#Login
+POST http://localhost:3000/api/member/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "Jcalle@gmail.com",
+    "password": "Mix123"
+}
+
+# Returns auth-Token
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1YTMyMDgxMGU1NDRiNzQyNzNlOGIiLCJpYXQiOjE1OTczNTE2MjB9.dGc_58B16W3s5xuBMcFGxOWeJp7bSR4PcG_3x9xn3TU
+###
+{"member":"5f35a320810e544b74273e8b"}
+
+

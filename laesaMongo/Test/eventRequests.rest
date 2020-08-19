@@ -1,0 +1,48 @@
+# Using Rest Client vs extension
+# Get All Events PASS
+GET http://localhost:3000/api/events HTTP/1.1
+Content-Type: application/json
+auth-token: {{$processEnv TEST_AUTH_TOKEN}}
+{{$processEnv process environment variable name}}
+
+###  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1YTMyMDgxMGU1NDRiNzQyNzNlOGIiLCJpYXQiOjE1OTczNTE2MjB9.dGc_58B16W3s5xuBMcFGxOWeJp7bSR4PcG_3x9xn3TU
+# this user token is with MixMaster123
+# Allows you use this token to grab 
+
+###
+# Get a specific event using id PASS
+GET http://localhost:3000/api/events/5f30599c26e1a76106f0936b HTTP/1.1
+#id: 5f30599c26e1a76106f0936b
+
+###
+# Example of adding data to the database Pass
+POST http://localhost:3000/api/events HTTP/1.1
+Content-Type: application/json
+
+{
+    "eventName": "Extreme Engineering",
+    "category": "Competition",
+    "pointsValue": "10000",
+    "description":"Engineering",
+    "speakers" : "Bad Bill Gates"  
+}
+
+###
+DELETE http://localhost:3000/api/events/5f359c67bc8d41442a517308 HTTP/1.1
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1YTMyMDgxMGU1NDRiNzQyNzNlOGIiLCJpYXQiOjE1OTc4NzUxNzZ9.jZ9lGJLbYGz51ifi8vgO1wZztIPyZayFuLOefcO7XOA
+
+###
+#Error 401 - Access Denied
+#we need auth-token
+
+PATCH http://localhost:3000/api/events/8282
+auth-token: 8383.88282
+Content-Type:application/json
+
+{
+
+}
+
+### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1YTMyMDgxMGU1NDRiNzQyNzNlOGIiLCJpYXQiOjE1OTc4NzUxNzZ9.jZ9lGJLbYGz51ifi8vgO1wZztIPyZayFuLOefcO7XOA
+# 5f30599c26e1a76106f0936b
+5f359c67bc8d41442a517308

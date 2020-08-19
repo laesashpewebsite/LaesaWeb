@@ -1,3 +1,5 @@
+// Member.js and auth.js go together 
+
 const mongoose = require("mongoose");
 const memberSchema = mongoose.Schema({
   name: {
