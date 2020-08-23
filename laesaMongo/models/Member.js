@@ -1,4 +1,4 @@
-// Member.js and auth.js go together 
+// Member.js and auth.js go together
 
 const mongoose = require("mongoose");
 const memberSchema = mongoose.Schema({
@@ -20,6 +20,7 @@ const memberSchema = mongoose.Schema({
     type: Number,
     default: 0,
   },
+
   password: {
     type: String,
     required: true,
